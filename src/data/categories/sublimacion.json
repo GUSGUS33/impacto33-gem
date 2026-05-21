@@ -1,0 +1,54 @@
+{
+  "url": "/servicios/sublimacion",
+  "slug": "sublimacion",
+  "parent_slug": "servicios",
+  "search_intent": "Personalización de productos y textiles mediante sublimación",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Sublimación: Personalización de Alta Calidad y Colores Vivos en Textiles y Objetos",
+  "hero_intro": "La **sublimación** es una técnica de impresión que permite transferir imágenes de alta resolución y colores vibrantes a una amplia variedad de superficies, principalmente poliéster y artículos con recubrimiento de polímero. A diferencia de otras técnicas, la tinta se convierte en gas y se fusiona permanentemente con el material, resultando en un diseño que no se siente al tacto, no se agrieta ni se desvanece con los lavados. Es la solución ideal para productos personalizados duraderos y con calidad fotográfica.",
+  "hub_subcategorias_texto": "Explora nuestras soluciones de sublimación por tipo de producto:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir la Sublimación?",
+    "items": [
+      "**Durabilidad Inigualable:** La tinta se integra en el tejido o superficie, resistiendo lavados y el paso del tiempo sin perder color ni calidad.",
+      "**Calidad Fotográfica y Colores Vivos:** Permite reproducir imágenes complejas, degradados y fotografías con una fidelidad de color excepcional.",
+      "**Tacto Cero:** El diseño no añade textura ni peso al material, manteniendo la transpirabilidad y el tacto original del producto.",
+      "**Personalización Total:** Ideal para tiradas cortas o piezas únicas, permitiendo diseños totalmente personalizados sin límites de color."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Ropa Deportiva y Uniformes",
+      "descripcion": "Personalización de camisetas, equipaciones de fútbol, ciclismo y otros deportes con logotipos, números y nombres. La sublimación es perfecta para poliéster, el tejido más común en ropa técnica.",
+      "image_alt": "Uniforme de fútbol sublimado con colores vibrantes y logotipo."
+    },
+    {
+      "titulo": "Tazas y Regalos Personalizados",
+      "descripcion": "Creación de tazas, botellas, llaveros y otros artículos promocionales con diseños únicos para eventos, empresas o regalos personales.",
+      "image_alt": "Taza de cerámica blanca sublimada con un diseño a todo color."
+    },
+    {
+      "titulo": "Merchandising y Eventos",
+      "descripcion": "Producción de artículos para ferias, congresos o campañas de marketing, como alfombrillas de ratón, puzzles, y bolsas de tela no tejida.",
+      "image_alt": "Alfombrilla de ratón sublimada con un diseño corporativo."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué materiales se pueden sublimar?",
+      "respuesta": "La sublimación requiere materiales que contengan poliéster (al menos un 60%) o que estén recubiertos con un barniz o polímero especial para sublimación, como cerámica, metal, vidrio o madera tratada."
+    },
+    {
+      "pregunta": "¿La sublimación se borra con los lavados?",
+      "respuesta": "No. Dado que la tinta se fusiona con las fibras del tejido o el recubrimiento del objeto a nivel molecular, el diseño es extremadamente duradero y no se agrieta, pela o desvanece con los lavados o el uso normal."
+    },
+    {
+      "pregunta": "¿Es posible sublimar sobre algodón?",
+      "respuesta": "La sublimación directa no funciona bien sobre algodón puro. Se requieren tejidos con alto contenido de poliéster. Existen técnicas indirectas o vinilos especiales para algodón, pero la sublimación pura es para poliéster y materiales recubiertos."
+    }
+  ],
+  "texto_final_refuerzo": "Transforma tus ideas en productos tangibles con la técnica de sublimación. Garantizamos colores que perduran y una calidad de impresión que supera las expectativas para cualquier proyecto de personalización.",
+  "cta_textoCta": "Solicita tu Presupuesto de Sublimación Personalizada",
+  "meta_title": "Servicio de Sublimación Profesional | Colores Vivos y Duraderos",
+  "meta_description": "Descubre nuestro servicio de sublimación para personalizar textiles (poliéster) y objetos rígidos. Calidad fotográfica, tacto cero y máxima durabilidad. ¡Pide tu presupuesto!"
+}

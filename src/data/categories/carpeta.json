@@ -1,0 +1,58 @@
+{
+  "url": "/escritura-personalizada/carpeta",
+  "slug": "carpeta",
+  "parent_slug": "escritura-personalizada",
+  "search_intent": "Comprar carpetas personalizadas para eventos y oficina",
+  "siblings_intents": [
+    "boligrafo",
+    "lapiz",
+    "set-escritura",
+    "libreta"
+  ],
+  "hero_tituloPrincipal": "Carpetas Personalizadas: Organización Profesional con tu Marca",
+  "hero_intro": "Las **carpetas personalizadas** son la herramienta esencial para mantener documentos organizados y proyectar una imagen corporativa impecable. Ideales para conferencias, presentaciones a clientes o el uso diario en la oficina, ofrecen un espacio visible para tu logo y mensaje. Elige entre diversos materiales, tamaños y acabados para crear una solución de archivo que hable de la calidad de tu marca.",
+  "hub_subcategorias_texto": "Explora nuestra gama completa de artículos de escritura y oficina. Combina tus carpetas con nuestros bolígrafos y libretas personalizadas para un kit de bienvenida o evento corporativo completo.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Carpetas Personalizadas",
+    "items": [
+      "Máxima durabilidad y resistencia para uso diario",
+      "Impresión de alta calidad con tu logo a todo color",
+      "Variedad de materiales: cartón, polipropileno, PVC",
+      "Diseños adaptados a formatos A4, A5 y tamaños especiales"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Carpetas para Eventos y Congresos",
+      "descripcion": "Entrega material informativo y agendas en una carpeta con tu marca, asegurando que los asistentes se lleven un recuerdo profesional y funcional.",
+      "image_alt": "Carpeta personalizada con logo en evento corporativo",
+      "image_path": "/images/casos-uso/carpeta-evento.webp"
+    },
+    {
+      "titulo": "Impacto en Reuniones con Clientes",
+      "descripcion": "Utiliza una carpeta elegante y de alta calidad para presentar propuestas, contratos y presupuestos, reforzando la seriedad de tu negocio.",
+      "image_alt": "Carpeta de presentación corporativa con documentos",
+      "image_path": "/images/casos-uso/carpeta-presentacion.webp"
+    },
+    {
+      "titulo": "Organización Interna y Archivo",
+      "descripcion": "Mantén los departamentos y proyectos internos organizados con carpetas codificadas por color y personalizadas con el logo de la empresa.",
+      "image_alt": "Carpetas de archivo personalizadas en estantería de oficina",
+      "image_path": "/images/casos-uso/carpeta-archivo.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para carpetas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo, el material y el tipo de impresión seleccionado. Generalmente, nuestros pedidos comienzan a partir de 50 unidades, pero te recomendamos consultar la ficha de producto específica para obtener detalles exactos."
+    },
+    {
+      "pregunta": "¿Qué opciones de personalización están disponibles para las carpetas?",
+      "respuesta": "Ofrecemos diversas técnicas de personalización, incluyendo serigrafía, impresión digital a todo color, grabado en seco (debossing) para un acabado premium, y laminado. También puedes elegir el tipo de cierre (goma, velcro) y la configuración de los bolsillos interiores."
+    }
+  ],
+  "texto_final_refuerzo": "Las **carpetas personalizadas** no son solo un artículo de oficina, son una extensión tangible de tu identidad corporativa. Invertir en calidad y diseño asegura que tu marca sea recordada cada vez que se maneja un documento importante. ¡Empieza a diseñar tu solución de archivo perfecta hoy y eleva tu imagen profesional!",
+  "cta_textoCta": "Personaliza tus Carpetas Ahora",
+  "meta_title": "Carpetas Personalizadas con Logo | Soluciones de Archivo Corporativo",
+  "meta_description": "Diseña carpetas personalizadas de alta calidad para conferencias, presentaciones y oficina. Variedad de materiales y técnicas de impresión para destacar tu marca."
+}

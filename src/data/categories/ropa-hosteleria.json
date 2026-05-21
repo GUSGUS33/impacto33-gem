@@ -1,0 +1,60 @@
+{
+  "url": "/ropa-laboral-personalizada/ropa-hosteleria",
+  "slug": "ropa-hosteleria",
+  "parent_slug": "ropa-laboral-personalizada",
+  "search_intent": "Uniformes de hostelería personalizados para restaurantes, bares, hoteles y catering, con énfasis en durabilidad, imagen profesional y cumplimiento de normativas.",
+  "siblings_intents": [
+    "ropa-sanitaria",
+    "ropa-industrial",
+    "ropa-construccion",
+    "ropa-oficina",
+    "ropa-comercio"
+  ],
+  "hero_tituloPrincipal": "Uniformes de Hostelería Personalizados: La Imagen de tu Negocio en Cada Detalle",
+  "hero_intro": "En el sector HORECA (Hoteles, Restaurantes y Cafeterías), la primera impresión es clave. Ofrecemos vestuario laboral de hostelería que combina **elegancia, comodidad y resistencia** para camareros, cocineros y personal de sala. Personaliza cada prenda con tu logo para reforzar tu marca y garantizar una imagen impecable.",
+  "hub_subcategorias_texto": "Explora nuestra selección de prendas esenciales para cada rol: desde chaquetas de chef y delantales, hasta polos y camisas para el personal de sala. Todo listo para ser personalizado con las técnicas de marcaje más adecuadas.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestro Vestuario de Hostelería",
+    "items": [
+      "Tejidos resistentes a manchas y lavados frecuentes, ideales para el ritmo de la hostelería.",
+      "Diseños que cumplen con la normativa de higiene y seguridad alimentaria.",
+      "Amplia gama de tallas y cortes para asegurar la comodidad y movilidad del personal.",
+      "Personalización de alta calidad (bordado, serigrafía) que perdura en el tiempo."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Restaurante de Alta Cocina",
+      "descripcion": "Diseño de uniformes completos para personal de sala y cocina, utilizando chaquetas de chef bordadas y delantales de cuero sintético para una imagen premium.",
+      "image_alt": "Uniforme de camarero con delantal y camisa bordada en restaurante de alta cocina."
+    },
+    {
+      "titulo": "Cadena de Cafeterías Modernas",
+      "descripcion": "Suministro de polos de algodón orgánico y gorras con el logo impreso para un look casual, cómodo y unificado en todas las sucursales.",
+      "image_alt": "Personal de cafetería con polos personalizados y gorras."
+    },
+    {
+      "titulo": "Hotel Boutique y Catering",
+      "descripcion": "Uniformes elegantes para recepción y eventos, incluyendo blazers ligeros y camisas antiarrugas, manteniendo la coherencia de la marca en todos los servicios.",
+      "image_alt": "Personal de hotel con uniforme elegante y logo discreto."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de prendas son las más solicitadas en hostelería?",
+      "respuesta": "Las prendas más solicitadas son delantales, chaquetas de chef, pantalones de cocina, polos, camisas de sala y calzado antideslizante. La elección depende del rol y el ambiente de trabajo."
+    },
+    {
+      "pregunta": "¿Cuál es la mejor técnica de personalización para ropa de cocina?",
+      "respuesta": "El bordado es ideal para chaquetas y gorros por su durabilidad y aspecto profesional. Para delantales y polos, la serigrafía o el vinilo textil de alta resistencia son buenas opciones por su capacidad de soportar lavados a altas temperaturas."
+    },
+    {
+      "pregunta": "¿Hay requisitos de seguridad o higiene específicos para la ropa de hostelería?",
+      "respuesta": "Sí, especialmente en cocina, se recomienda ropa de colores claros, tejidos transpirables y resistentes al calor, y calzado de seguridad antideslizante. Los delantales deben ser fáciles de limpiar y desinfectar."
+    }
+  ],
+  "texto_final_refuerzo": "Invierte en la imagen y la seguridad de tu equipo. Un uniforme de hostelería personalizado no es solo una prenda, es una herramienta de marketing y un factor clave en la profesionalidad de tu servicio. ¡Empieza a diseñar hoy mismo!",
+  "cta_textoCta": "Personaliza tus Uniformes de Hostelería",
+  "meta_title": "Ropa de Hostelería Personalizada | Uniformes para Bares, Restaurantes y Hoteles",
+  "meta_description": "Diseña uniformes de hostelería personalizados para tu restaurante, bar u hotel. Calidad, resistencia y estilo para camareros, chefs y personal de sala. ¡Pide tu presupuesto!"
+}

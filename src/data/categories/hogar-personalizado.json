@@ -1,0 +1,54 @@
+{
+  "url": "/hogar-personalizado",
+  "slug": "hogar-personalizado",
+  "parent_slug": "",
+  "search_intent": "Decoración y funcionalidad personalizada para el hogar",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Transforma tu Espacio: Decoración y Muebles de Hogar Personalizados",
+  "hero_intro": "Diseña cada rincón de tu casa para reflejar tu estilo único. Ofrecemos soluciones a medida en decoración, textiles y mobiliario, garantizando calidad y exclusividad en cada pieza. Haz de tu hogar un lugar verdaderamente tuyo.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Personalización para tu Hogar",
+    "items": [
+      "Diseños 100% a medida que se adaptan a cualquier espacio.",
+      "Materiales de alta calidad y durabilidad garantizada.",
+      "Asesoramiento experto en decoración e interiorismo.",
+      "Exclusividad: piezas únicas que no encontrarás en tiendas convencionales."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Renovación de Salón con Textiles a Medida",
+      "descripcion": "Diseño de cojines, cortinas y alfombras que combinan perfectamente con el mobiliario existente, creando un ambiente cohesivo y moderno.",
+      "image_alt": "Salón moderno con cojines y cortinas personalizadas"
+    },
+    {
+      "titulo": "Mobiliario Funcional para Oficinas en Casa",
+      "descripcion": "Creación de escritorios y estanterías ergonómicas y modulares, optimizando el espacio y mejorando la productividad en el teletrabajo.",
+      "image_alt": "Oficina en casa con escritorio y estantería hechos a medida"
+    },
+    {
+      "titulo": "Decoración Temática para Habitaciones Infantiles",
+      "descripcion": "Diseño de vinilos, ropa de cama y accesorios con temáticas elegidas por los niños, fomentando su creatividad y creando un espacio mágico.",
+      "image_alt": "Habitación infantil con decoración temática personalizada"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de artículos de decoración puedo personalizar?",
+      "respuesta": "Puedes personalizar una amplia gama de artículos, incluyendo textiles (cortinas, cojines, ropa de cama), mobiliario (mesas, estanterías, cabeceros), vinilos decorativos, iluminación y accesorios de cocina."
+    },
+    {
+      "pregunta": "¿Cuál es el proceso para solicitar un diseño a medida?",
+      "respuesta": "El proceso comienza con una consulta para entender tus necesidades. Luego, nuestro equipo de diseño elabora una propuesta y un presupuesto. Una vez aprobado, se procede a la fabricación y, finalmente, a la instalación o envío."
+    },
+    {
+      "pregunta": "¿Ofrecen servicios de instalación para los muebles personalizados?",
+      "respuesta": "Sí, ofrecemos servicio de montaje e instalación profesional para garantizar que cada pieza se ajuste perfectamente a tu espacio y quede lista para su uso."
+    }
+  ],
+  "texto_final_refuerzo": "No te conformes con lo estándar. La personalización de tu hogar es una inversión en tu bienestar y en el valor de tu propiedad. Empieza hoy a diseñar el hogar de tus sueños con la ayuda de nuestros expertos.",
+  "cta_textoCta": "Comienza a Personalizar tu Hogar",
+  "meta_title": "Hogar Personalizado | Muebles y Decoración a Medida | [Nombre de la Empresa]",
+  "meta_description": "Descubre soluciones de decoración y mobiliario personalizado para tu hogar. Diseños a medida, materiales de calidad y asesoramiento experto para crear espacios únicos."
+}

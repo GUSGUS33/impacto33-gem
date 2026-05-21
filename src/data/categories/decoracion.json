@@ -1,0 +1,66 @@
+{
+  "url": "/hogar-personalizado/decoracion",
+  "slug": "decoracion",
+  "parent_slug": "hogar-personalizado",
+  "search_intent": "decoracion-personalizada-para-el-hogar",
+  "siblings_intents": [
+    "textiles",
+    "cocina-y-mesa",
+    "iluminacion",
+    "almacenamiento"
+  ],
+  "hero_tituloPrincipal": "Decoración Personalizada para el Hogar: Crea Espacios Únicos",
+  "hero_intro": "Transforma cada rincón de tu casa en un reflejo de tu personalidad con nuestra exclusiva colección de artículos de decoración personalizados. Desde cuadros y cojines hasta accesorios únicos, diseña el ambiente perfecto que siempre soñaste.",
+  "hub_subcategorias_texto": "Explora las diferentes formas de dar vida a tus ideas. Ya sea para un regalo especial o para renovar tu propio espacio, la decoración personalizada es la clave para un hogar con alma.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestra Decoración Personalizada?",
+    "items": [
+      "Diseño 100% a tu Gusto: Sube tus fotos, logos o textos y visualiza el resultado al instante.",
+      "Materiales de Alta Calidad: Durabilidad y acabados premium en cada artículo decorativo.",
+      "Impacto Emocional Único: Regalos que tocan el corazón y piezas que definen tu estilo.",
+      "Proceso de Creación Sencillo: Nuestra herramienta de diseño es intuitiva y rápida de usar."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Galería de Recuerdos en Lienzo",
+      "descripcion": "Convierte tus fotos favoritas en cuadros de lienzo personalizados para crear una pared de galería que cuente tu historia familiar.",
+      "image_alt": "Cuadros de lienzo personalizados con fotos familiares en una pared de sala de estar",
+      "image_path": "/images/hogar-personalizado/decoracion/galeria-lienzo.jpg"
+    },
+    {
+      "titulo": "Cojines con Mensajes Inspiradores",
+      "descripcion": "Diseña cojines decorativos con frases motivacionales o el nombre de tus seres queridos para añadir un toque acogedor y personal a tu sofá.",
+      "image_alt": "Cojines personalizados con frases en un sofá moderno",
+      "image_path": "/images/hogar-personalizado/decoracion/cojines-frases.jpg"
+    },
+    {
+      "titulo": "Relojes de Pared con Diseño Propio",
+      "descripcion": "Un reloj de pared que no solo da la hora, sino que también es una pieza central de diseño. Personaliza la esfera con tu arte o logo.",
+      "image_alt": "Reloj de pared personalizado con un diseño geométrico único",
+      "image_path": "/images/hogar-personalizado/decoracion/reloj-diseno.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de artículos de decoración puedo personalizar?",
+      "respuesta": "Ofrecemos una amplia gama que incluye cuadros, lienzos, cojines, mantas, felpudos, relojes de pared, y más. Revisa nuestro catálogo completo para ver todas las opciones."
+    },
+    {
+      "pregunta": "¿Cómo garantizan la calidad de impresión en los artículos?",
+      "respuesta": "Utilizamos técnicas de impresión de alta definición (como sublimación o impresión UV) y tintas resistentes para asegurar colores vibrantes y durabilidad a largo plazo, incluso con el uso diario."
+    },
+    {
+      "pregunta": "¿Puedo ver una previsualización de mi diseño antes de comprar?",
+      "respuesta": "Sí, nuestra herramienta de diseño en línea te permite previsualizar exactamente cómo se verá tu diseño en el producto final antes de confirmar tu pedido."
+    },
+    {
+      "pregunta": "¿Cuál es el tiempo de producción y envío?",
+      "respuesta": "El tiempo de producción varía según el artículo, generalmente entre 3 y 7 días hábiles. A esto se suma el tiempo de envío, que puedes seleccionar al finalizar la compra."
+    }
+  ],
+  "texto_final_refuerzo": "Encuentra la inspiración y las herramientas para que tu hogar hable por ti. Con nuestra decoración personalizada, cada pieza cuenta una historia: la tuya.",
+  "cta_textoCta": "Empieza a Personalizar tu Decoración Ahora",
+  "meta_title": "Decoración Personalizada para el Hogar | Diseña tu Espacio Único",
+  "meta_description": "Crea ambientes con alma. Descubre nuestra colección de decoración personalizada: cuadros, cojines, accesorios y más. ¡Diseño fácil y envío rápido!"
+}

@@ -1,0 +1,49 @@
+{
+  "url": "/ropa-laboral-personalizada/ropa-industria",
+  "slug": "ropa-industria",
+  "parent_slug": "ropa-laboral-personalizada",
+  "search_intent": "ropa laboral industria personalizada",
+  "siblings_intents": [
+    "ropa alta visibilidad",
+    "ropa sanidad",
+    "ropa hosteleria"
+  ],
+  "hero_tituloPrincipal": "Ropa de Trabajo Industrial Personalizada",
+  "hero_intro": "Equipamiento laboral resistente y seguro para el sector industrial. Personaliza uniformes que cumplen normativas y refuerzan la imagen de tu empresa en fábricas y talleres.",
+  "hub_subcategorias_texto": "Vestuario técnico diseñado para la máxima protección y durabilidad:",
+  "ventajasEmpresa": {
+    "titulo": "Seguridad y Resistencia Industrial",
+    "items": [
+      "Tejidos Resistentes: Materiales anti-abrasión y duraderos.",
+      "Cumplimiento Normativo: Prendas certificadas para seguridad.",
+      "Comodidad Operativa: Diseños ergonómicos para el trabajo diario.",
+      "Personalización Duradera: Bordados y serigrafía de alta resistencia."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Fábricas y Talleres",
+      "descripcion": "Uniformes completos para operarios de producción y mantenimiento.",
+      "image_alt": "Ropa laboral para industria"
+    },
+    {
+      "titulo": "Construcción e Instaladores",
+      "descripcion": "Ropa resistente para trabajos exigentes en obra.",
+      "image_alt": "Ropa trabajo construcción"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cumplen con las normativas de seguridad?",
+      "respuesta": "Sí, disponemos de prendas certificadas según normativas EN ISO vigentes para cada riesgo específico."
+    },
+    {
+      "pregunta": "¿Qué técnica de marcaje recomendáis?",
+      "respuesta": "Para industria recomendamos el bordado por su extrema durabilidad a lavados agresivos y roces."
+    }
+  ],
+  "texto_final_refuerzo": "Protege a tu equipo con la mejor ropa industrial personalizada del mercado. Seguridad y marca, de la mano.",
+  "cta_textoCta": "¿Necesitas equipar a tu plantilla industrial?",
+  "meta_title": "Ropa Laboral Industria Personalizada | Uniformes Fábrica | IMPACTO33",
+  "meta_description": "Ropa de trabajo para industria personalizada. Pantalones, monos y chaquetas resistentes para fábricas y talleres. Cumplimiento de normativas de seguridad."
+}

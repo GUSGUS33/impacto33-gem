@@ -1,0 +1,62 @@
+{
+  "url": "/chaquetas-personalizadas/chaqueta-cortavientos",
+  "slug": "chaqueta-cortavientos",
+  "parent_slug": "chaquetas-personalizadas",
+  "search_intent": "Comprar o personalizar chaquetas cortavientos con logo o diseño para empresas y eventos.",
+  "siblings_intents": [
+    "chaqueta-softshell",
+    "chaqueta-impermeable",
+    "chaqueta-bomber",
+    "chaqueta-universitaria"
+  ],
+  "hero_tituloPrincipal": "Chaquetas Cortavientos Personalizadas: Estilo y Protección para tu Marca",
+  "hero_intro": "Las chaquetas cortavientos son la prenda ideal para proteger a tu equipo o clientes del viento y la lluvia ligera, manteniendo la visibilidad de tu marca. Ligeras, cómodas y fáciles de llevar, son perfectas para eventos al aire libre, actividades deportivas o como uniforme de trabajo moderno. Personalízalas con tu logo mediante serigrafía, bordado o vinilo y haz que tu mensaje vuele.",
+  "hub_subcategorias_texto": "Explora nuestra selección de cortavientos, desde modelos básicos hasta opciones técnicas con capucha y forro, todos listos para llevar tu marca.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestros Cortavientos Personalizados?",
+    "items": [
+      "Protección Ligera contra el Viento y Lluvia",
+      "Ideal para Eventos Deportivos y Outdoor",
+      "Amplia Superficie de Personalización para Logos",
+      "Variedad de Colores y Tallas para Uniformidad"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Equipos Deportivos y Carreras",
+      "descripcion": "Entrega cortavientos ligeros a los participantes de tu próxima carrera o a tu equipo deportivo. Son perfectos para el calentamiento y la protección post-ejercicio.",
+      "image_alt": "Corredores usando chaquetas cortavientos personalizadas con el logo del evento",
+      "image_path": "/images/chaquetas/cortavientos-deporte.jpg"
+    },
+    {
+      "titulo": "Regalo Corporativo Funcional",
+      "descripcion": "Un cortavientos de calidad con tu logo bordado es un regalo de empresa que tus clientes usarán constantemente, asegurando una exposición de marca duradera.",
+      "image_alt": "Ejecutivo usando una chaqueta cortavientos corporativa en un entorno urbano",
+      "image_path": "/images/chaquetas/cortavientos-corporativo.jpg"
+    },
+    {
+      "titulo": "Uniformes de Personal de Eventos",
+      "descripcion": "Viste a tu personal de eventos con cortavientos que los identifiquen claramente y los protejan de las inclemencias del tiempo, manteniendo una imagen profesional.",
+      "image_alt": "Personal de un festival usando chaquetas cortavientos de colores brillantes",
+      "image_path": "/images/chaquetas/cortavientos-eventos.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la mejor técnica de personalización para un cortavientos?",
+      "respuesta": "La serigrafía es excelente para logos grandes y colores vibrantes. El bordado ofrece un acabado premium y duradero, ideal para logos más pequeños en el pecho. El vinilo de transferencia es una buena opción para diseños con muchos detalles o pequeñas tiradas."
+    },
+    {
+      "pregunta": "¿Son impermeables estas chaquetas?",
+      "respuesta": "La mayoría de nuestros modelos cortavientos ofrecen resistencia al agua (repelencia) para proteger contra lloviznas o lluvia ligera. Para impermeabilidad total, recomendamos consultar nuestra subcategoría de 'chaquetas impermeables'."
+    },
+    {
+      "pregunta": "¿Qué tallas están disponibles?",
+      "respuesta": "Ofrecemos un amplio rango de tallas, desde XS hasta 3XL, con modelos específicos para hombre, mujer y unisex. Consulta la guía de tallas de cada producto para asegurar el ajuste perfecto."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que el mal tiempo detenga tu promoción. Con nuestras chaquetas cortavientos personalizadas, tu marca estará siempre en movimiento, protegida y visible. Solicita tu presupuesto hoy y recibe una muestra digital gratuita.",
+  "cta_textoCta": "Solicita tu Presupuesto de Cortavientos Personalizados",
+  "meta_title": "Chaquetas Cortavientos Personalizadas con Logo | Protección y Estilo",
+  "meta_description": "Personaliza chaquetas cortavientos ligeras y resistentes al viento para tu empresa, equipo o evento. Variedad de modelos y técnicas de marcaje (bordado, serigrafía)."
+}

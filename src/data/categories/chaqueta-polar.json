@@ -1,0 +1,52 @@
+{
+  "url": "/ropa-personalizada/chaquetas/polares/",
+  "slug": "polares",
+  "parent_slug": "chaquetas",
+  "search_intent": "forros polares personalizados",
+  "siblings_intents": [
+    "softshell",
+    "chalecos"
+  ],
+  "hero_tituloPrincipal": "Forros Polares",
+  "hero_intro": "Descubre nuestra colección de forros polares. Calidad superior y personalización a medida para tu empresa o evento.",
+  "hub_subcategorias_texto": "Explora las opciones disponibles:",
+  "ventajasEmpresa": {
+    "titulo": "Calidad y Personalización Garantizada",
+    "items": [
+      "Tejidos de alta durabilidad",
+      "Impresión nítida y resistente",
+      "Variedad de tallas y colores",
+      "Precios competitivos por volumen"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos Corporativos",
+      "descripcion": "Ideal para ferias, congresos y team building.",
+      "image_alt": "Forros Polares en evento corporativo"
+    },
+    {
+      "titulo": "Uniformes de Trabajo",
+      "descripcion": "Ropa cómoda y profesional para el día a día.",
+      "image_alt": "Forros Polares como uniforme laboral"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo?",
+      "respuesta": "Trabajamos a partir de 10 unidades para garantizar el mejor precio."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización utilizáis?",
+      "respuesta": "Dependiendo de la prenda, usamos serigrafía, bordado, sublimación o DTF."
+    },
+    {
+      "pregunta": "¿Puedo ver una muestra antes de pedir?",
+      "respuesta": "Sí, podemos enviarte una muestra virtual o física (con coste) para tu aprobación."
+    }
+  ],
+  "texto_final_refuerzo": "Confía en IMPACTO33 para vestir a tu equipo con la mejor imagen.",
+  "cta_textoCta": "Solicita tu presupuesto personalizado ahora",
+  "meta_title": "Forros Polares | Ropa Personalizada | IMPACTO33",
+  "meta_description": "Compra forros polares personalizadas al mejor precio. Calidad garantizada y entrega rápida. ¡Pide presupuesto!"
+}

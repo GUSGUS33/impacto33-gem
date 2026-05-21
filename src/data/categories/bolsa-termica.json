@@ -1,0 +1,60 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-termica",
+  "slug": "bolsa-termica",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar bolsas térmicas personalizadas para merchandising o eventos corporativos.",
+  "siblings_intents": [
+    "bolsas-de-tela",
+    "bolsas-de-papel",
+    "bolsas-de-plastico",
+    "mochilas-personalizadas",
+    "bolsas-de-yute"
+  ],
+  "hero_tituloPrincipal": "Bolsas Térmicas Personalizadas: Conserva el Estilo y la Temperatura",
+  "hero_intro": "Las **bolsas térmicas personalizadas** son el artículo de merchandising perfecto para combinar utilidad, visibilidad de marca y un mensaje de cuidado. Ideales para transportar alimentos y bebidas manteniendo su temperatura, se han convertido en un regalo corporativo de alto valor percibido y gran impacto publicitario. Personaliza la tuya con tu logo y lleva tu marca a picnics, oficinas y eventos al aire libre.",
+  "hub_subcategorias_texto": "Descubre nuestra amplia gama de bolsas térmicas, desde modelos compactos para el almuerzo hasta neveras portátiles de gran capacidad. Todos nuestros modelos están listos para ser personalizados con tu diseño, garantizando la máxima calidad de impresión y aislamiento.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestras Bolsas Térmicas Promocionales",
+    "items": [
+      "Alto Valor Percibido: Un regalo útil y duradero que tus clientes usarán constantemente.",
+      "Máxima Visibilidad de Marca: Tu logo expuesto en oficinas, parques y eventos.",
+      "Conservación Eficaz: Materiales aislantes de primera calidad para mantener frío o calor.",
+      "Variedad de Modelos: Desde bolsas de almuerzo individuales hasta neveras familiares."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo para Eventos Deportivos y Maratones",
+      "descripcion": "Entrega bolsas térmicas con bebidas isotónicas y snacks al finalizar un evento deportivo. Los participantes las usarán para sus próximas salidas, llevando tu marca a todas partes.",
+      "image_alt": "Bolsa térmica personalizada en un evento deportivo"
+    },
+    {
+      "titulo": "Merchandising para Empresas de Alimentación",
+      "descripcion": "Ideal para supermercados, tiendas gourmet o servicios de entrega de comida. Refuerza la imagen de marca asociada a la frescura y la calidad de los alimentos.",
+      "image_alt": "Bolsa térmica con logo de empresa de alimentación"
+    },
+    {
+      "titulo": "Detalle Corporativo para Empleados",
+      "descripcion": "Fomenta el 'tupper' y la alimentación saludable entre tus empleados. Una bolsa térmica de almuerzo personalizada es un gesto práctico que mejora el ambiente laboral.",
+      "image_alt": "Bolsa térmica de almuerzo en un escritorio de oficina"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Las bolsas térmicas personalizadas mantienen el frío y el calor?",
+      "respuesta": "Sí, gracias a su forro interior aislante (generalmente PEVA o aluminio), nuestras bolsas están diseñadas para conservar la temperatura de los alimentos y bebidas, ya sea frío o calor, durante varias horas."
+    },
+    {
+      "pregunta": "¿Cuál es el área de impresión disponible para mi logo?",
+      "respuesta": "El área de impresión varía según el modelo de bolsa, pero la mayoría ofrece un amplio espacio en la parte frontal o superior, lo que garantiza que tu logo tenga la máxima visibilidad. Ofrecemos diversas técnicas de marcaje como serigrafía, transfer o bordado."
+    },
+    {
+      "pregunta": "¿Son las bolsas térmicas un buen artículo de merchandising?",
+      "respuesta": "Absolutamente. Son un artículo de alta utilidad y durabilidad, lo que se traduce en una exposición prolongada de tu marca. Son perfectas para ferias, congresos, regalos de empresa y promociones de verano."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que tu marca pase desapercibida. Invierte en **bolsas térmicas personalizadas** y ofrece a tus clientes un producto que usarán semana tras semana, asegurando que tu mensaje se mantenga fresco y visible.",
+  "cta_textoCta": "Personaliza tu Bolsa Térmica Ahora",
+  "meta_title": "Bolsas Térmicas Personalizadas con Logo | Neveras Promocionales",
+  "meta_description": "Diseña bolsas térmicas personalizadas con tu logo. Perfectas como regalo de empresa o merchandising. Conserva el frío y el calor con estilo. ¡Pide tu presupuesto online!"
+}

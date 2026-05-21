@@ -1,0 +1,45 @@
+{
+  "url": "/accesorios-viaje/maleta",
+  "slug": "maleta",
+  "parent_slug": "accesorios-viaje",
+  "search_intent": "maletas personalizadas empresa",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Maletas y Trolleys Personalizados",
+  "hero_intro": "Eleva el nivel de tus regalos corporativos con maletas y trolleys de cabina personalizados. El obsequio ejecutivo definitivo para equipos comerciales y clientes VIP que viajan frecuentemente.",
+  "hub_subcategorias_texto": "Equipaje de calidad para viajeros frecuentes:",
+  "ventajasEmpresa": {
+    "titulo": "Prestigio en cada viaje",
+    "items": [
+      "Imagen Premium: Asocia tu marca a calidad y exclusividad.",
+      "Visibilidad Internacional: Tu logo en aeropuertos de todo el mundo.",
+      "Durabilidad Extrema: Materiales rígidos (ABS/PC) o textiles resistentes.",
+      "Regalo de Alto Valor: Ideal para fidelización y directivos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Incentivos Comerciales",
+      "descripcion": "Premia a tu fuerza de ventas con equipaje de alta gama.",
+      "image_alt": "Maletas para comerciales"
+    },
+    {
+      "titulo": "Regalos Ejecutivos",
+      "descripcion": "Un detalle exclusivo para clientes importantes y directivos.",
+      "image_alt": "Trolleys personalizados empresa"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Son aptas para cabina?",
+      "respuesta": "La mayoría de nuestros modelos cumplen con las medidas estándar de equipaje de mano (55x40x20cm)."
+    },
+    {
+      "pregunta": "¿Cómo se personalizan?",
+      "respuesta": "Normalmente mediante doming (gota de resina) en el tirador o placa metálica láser para un acabado elegante y discreto."
+    }
+  ],
+  "texto_final_refuerzo": "Acompaña a tus clientes hasta el fin del mundo con maletas personalizadas de primera calidad.",
+  "cta_textoCta": "¿Interesado en equipaje corporativo?",
+  "meta_title": "Maletas Personalizadas Empresa | Trolleys Publicitarios | IMPACTO33",
+  "meta_description": "Maletas y trolleys personalizados para empresas. Equipaje de cabina y viaje con tu logo. Regalos corporativos premium y para ejecutivos."
+}

@@ -1,0 +1,63 @@
+{
+  "url": "/bolsas-mochilas/bolsas/algodon",
+  "slug": "algodon",
+  "parent_slug": "bolsas",
+  "search_intent": "bolsas algodón personalizadas",
+  "siblings_intents": [
+    "bolsas yute",
+    "bolsas poliester",
+    "bolsas non woven",
+    "bolsas papel"
+  ],
+  "hero_tituloPrincipal": "Bolsas de Algodón Personalizadas",
+  "hero_intro": "Las bolsas de algodón son el estándar de oro en merchandising sostenible. Su tacto natural, durabilidad y excelente superficie de impresión las convierten en el soporte publicitario perfecto para marcas comprometidas con el medio ambiente.",
+  "hub_subcategorias_texto": "Elige el gramaje y acabado perfecto para tu proyecto:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por qué elegir bolsas de algodón?",
+    "items": [
+      "Sostenibilidad Real: Material 100% biodegradable y renovable.",
+      "Reutilización Infinita: Resistencia para cientos de usos.",
+      "Tacto Premium: Suavidad superior al plástico.",
+      "Impresión Versátil: Serigrafía, digital y transfer."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Ferias y Congresos",
+      "descripcion": "La bolsa oficial del evento que todos querrán conservar y reutilizar.",
+      "image_alt": "Bolsas de algodón para ferias"
+    },
+    {
+      "titulo": "Tiendas y Boutiques",
+      "descripcion": "Sustituye las bolsas de plástico por una opción reutilizable.",
+      "image_alt": "Bolsas de algodón para tiendas"
+    },
+    {
+      "titulo": "Kits de Bienvenida",
+      "descripcion": "El contenedor ideal para entregar material corporativo.",
+      "image_alt": "Bolsas de algodón welcome pack"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué gramaje es el adecuado?",
+      "respuesta": "Para ferias recomendamos 140g/m². Para tiendas o regalos premium, opta por 180g/m² o superior (canvas)."
+    },
+    {
+      "pregunta": "¿Tenéis algodón orgánico?",
+      "respuesta": "Sí, disponemos de una amplia gama de bolsas de algodón orgánico certificado GOTS."
+    },
+    {
+      "pregunta": "¿Se encogen al lavar?",
+      "respuesta": "El algodón natural puede encoger ligeramente (5-10%) en el primer lavado. Recomendamos lavar en frío."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima?",
+      "respuesta": "Podemos personalizar desde 25 unidades, aunque el precio mejora significativamente a partir de 100."
+    }
+  ],
+  "texto_final_refuerzo": "Las bolsas de algodón personalizadas son más que un regalo; son una declaración de intenciones. Elige calidad y sostenibilidad con IMPACTO33.",
+  "cta_textoCta": "¿Buscas bolsas de algodón al mejor precio?",
+  "meta_title": "Bolsas de Algodón Personalizadas | Tote Bags Algodón | IMPACTO33",
+  "meta_description": "Bolsas de algodón personalizadas con tu logo. Tote bags de algodón natural, orgánico y reciclado. Ideales para eventos, ferias y merchandising sostenible."
+}

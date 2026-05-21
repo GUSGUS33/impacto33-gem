@@ -1,0 +1,61 @@
+{
+  "url": "/ropa-laboral-personalizada/ropa-alta-visibilidad",
+  "slug": "ropa-alta-visibilidad",
+  "parent_slug": "ropa-laboral-personalizada",
+  "search_intent": "ropa de alta visibilidad personalizada para seguridad laboral",
+  "siblings_intents": [
+    "camisas-personalizadas",
+    "polos-personalizados",
+    "chalecos-personalizados",
+    "sudaderas-personalizadas",
+    "pantalones-laborales",
+    "uniformes-trabajo"
+  ],
+  "hero_tituloPrincipal": "Ropa de Alta Visibilidad Personalizada: Seguridad y Marca en un Solo Uniforme",
+  "hero_intro": "La **ropa de alta visibilidad personalizada** es esencial para garantizar la seguridad de tus empleados en entornos de riesgo, como obras, carreteras o almacenes con poca luz. Al incorporar el logo de tu empresa, no solo cumples con la normativa de seguridad (EN ISO 20471), sino que también refuerzas la imagen de tu marca, convirtiendo cada prenda en un potente elemento publicitario. Ofrecemos una amplia gama de chalecos, chaquetas y pantalones reflectantes, personalizables con serigrafía, bordado o vinilo.",
+  "hub_subcategorias_texto": "Explora nuestra selección de prendas de alta visibilidad, desde chalecos reflectantes ligeros hasta parkas impermeables, todas listas para ser personalizadas con tu diseño.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Personalizar tu Ropa de Alta Visibilidad",
+    "items": [
+      "Cumplimiento estricto de la normativa de seguridad (EN ISO 20471).",
+      "Máxima visibilidad en condiciones de baja luz o nocturnas.",
+      "Refuerzo de la imagen corporativa y profesionalidad.",
+      "Durabilidad y resistencia para entornos de trabajo exigentes."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Equipos de Construcción Seguros",
+      "descripcion": "Chalecos y parkas reflectantes para operarios que trabajan en carreteras y zonas de alto tráfico, asegurando su visibilidad a grandes distancias.",
+      "image_alt": "Trabajadores de construcción con chalecos de alta visibilidad personalizados."
+    },
+    {
+      "titulo": "Personal de Almacén y Logística",
+      "descripcion": "Polos y sudaderas de alta visibilidad para personal que opera en almacenes con maquinaria pesada, mejorando la prevención de accidentes.",
+      "image_alt": "Personal de logística con ropa de alta visibilidad y logo de empresa."
+    },
+    {
+      "titulo": "Servicios de Emergencia y Mantenimiento",
+      "descripcion": "Chaquetas impermeables y pantalones reflectantes para equipos de mantenimiento y servicios de emergencia que trabajan a la intemperie.",
+      "image_alt": "Técnicos de mantenimiento con chaquetas reflectantes personalizadas."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué normativas de seguridad cumplen sus prendas de alta visibilidad?",
+      "respuesta": "Nuestra ropa de alta visibilidad cumple principalmente con la norma europea **EN ISO 20471**, que especifica los requisitos para la ropa que señaliza visualmente al usuario. También ofrecemos prendas que cumplen con otras normativas específicas según el sector."
+    },
+    {
+      "pregunta": "¿Qué métodos de personalización se recomiendan para la ropa reflectante?",
+      "respuesta": "Recomendamos el **vinilo textil de alta resistencia** o la **serigrafía** para asegurar que la personalización no comprometa las propiedades reflectantes ni la durabilidad de la prenda. El bordado es posible, pero debe usarse con precaución para no perforar las bandas reflectantes."
+    },
+    {
+      "pregunta": "¿Cuál es el plazo de entrega para un pedido de ropa de alta visibilidad personalizada?",
+      "respuesta": "El plazo de entrega estándar es de 10 a 15 días laborables tras la aprobación del diseño final. Los pedidos urgentes pueden tener un plazo reducido, sujeto a disponibilidad y volumen."
+    }
+  ],
+  "texto_final_refuerzo": "Invertir en ropa de alta visibilidad personalizada es invertir en la seguridad de tu equipo y en la visibilidad de tu marca. No comprometas la protección por la imagen; con nosotros, obtienes ambas. ¡Equipa a tus profesionales con la mejor protección y el mejor diseño!",
+  "cta_textoCta": "Solicita tu Presupuesto de Ropa Reflectante Personalizada",
+  "meta_title": "Ropa de Alta Visibilidad Personalizada | Chalecos y Parkas Reflectantes con Logo",
+  "meta_description": "Compra ropa de alta visibilidad personalizada (chalecos, chaquetas, pantalones) que cumple la normativa EN ISO 20471. Máxima seguridad y refuerzo de marca."
+}

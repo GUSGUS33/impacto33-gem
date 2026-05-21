@@ -1,0 +1,57 @@
+{
+  "url": "/sudaderas-personalizadas",
+  "slug": "sudaderas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "Compra y diseño de sudaderas personalizadas online.",
+  "siblings_intents": [
+    "camisetas-personalizadas",
+    "gorras-personalizadas"
+  ],
+  "hero_tituloPrincipal": "Sudaderas Personalizadas: Diseño Único con Impresión de Alta Calidad",
+  "hero_intro": "Crea sudaderas únicas que reflejen tu estilo, marca o evento. Ofrecemos la mejor calidad en personalización con técnicas como bordado, serigrafía e impresión digital. Diseña online de forma fácil y recibe tu pedido rápidamente.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegirnos para tus Sudaderas Personalizadas?",
+    "items": [
+      "Calidad Premium en Tejidos y Acabados",
+      "Múltiples Técnicas de Personalización (Bordado, Serigrafía, DTF)",
+      "Diseñador Online Fácil e Intuitivo",
+      "Entrega Rápida y Garantizada en Toda España"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Uniformes Corporativos y Merchandising",
+      "descripcion": "Fortalece la imagen de tu marca y el sentido de pertenencia entre tus empleados. Perfectas para eventos, ferias o como regalo promocional.",
+      "image_alt": "Sudaderas personalizadas con logo de empresa para uniformes corporativos"
+    },
+    {
+      "titulo": "Eventos, Despedidas y Viajes de Estudios",
+      "descripcion": "Diseña sudaderas memorables para tu grupo, equipo deportivo o promoción. Un recuerdo duradero y unificador para cualquier ocasión especial.",
+      "image_alt": "Grupo de amigos o estudiantes con sudaderas personalizadas a juego"
+    },
+    {
+      "titulo": "Regalos Originales y Moda Personal",
+      "descripcion": "Expresa tu estilo único o crea un regalo significativo. Personaliza con fotos, frases o diseños exclusivos para destacar entre la multitud.",
+      "image_alt": "Sudadera personalizada con un diseño único o una foto como regalo"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué técnicas de personalización ofrecen para sudaderas?",
+      "respuesta": "Ofrecemos las técnicas más populares y duraderas: Bordado (ideal para logos y un acabado premium), Serigrafía (para grandes cantidades y colores planos) e Impresión Digital DTF (para diseños complejos y a todo color)."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo de sudaderas personalizadas?",
+      "respuesta": "El pedido mínimo varía según la técnica de impresión, pero generalmente comenzamos desde 1 unidad para impresión digital y un mínimo de 10-25 unidades para serigrafía o bordado. Consulta la ficha de producto para detalles específicos."
+    },
+    {
+      "pregunta": "¿Puedo diseñar mi sudadera online?",
+      "respuesta": "Sí, contamos con un diseñador online intuitivo que te permite subir tu logo o diseño, elegir colores, tallas y previsualizar el resultado antes de realizar tu pedido."
+    }
+  ],
+  "texto_final_refuerzo": "No esperes más para dar vida a tus ideas. Las sudaderas personalizadas son la prenda perfecta para unir a tu equipo, promocionar tu marca o simplemente vestir con un estilo inconfundible. ¡Empieza a diseñar hoy mismo!",
+  "cta_textoCta": "¡Diseña tu Sudadera Personalizada Ahora!",
+  "meta_title": "Sudaderas Personalizadas Baratas y de Calidad | Diseña Online",
+  "meta_description": "Crea sudaderas personalizadas con tu logo o diseño. Elige entre bordado, serigrafía o DTF. Calidad garantizada, sin pedido mínimo y envío rápido."
+}

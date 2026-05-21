@@ -1,0 +1,63 @@
+{
+  "url": "/camisetas-personalizadas/camiseta-ecologica",
+  "slug": "camiseta-ecologica",
+  "parent_slug": "camisetas-personalizadas",
+  "search_intent": "Comprar o personalizar camisetas ecológicas y sostenibles con logo o diseño propio.",
+  "siblings_intents": [
+    "camiseta-algodon-organico",
+    "camiseta-reciclada",
+    "camiseta-de-bambu",
+    "camiseta-de-cañamo"
+  ],
+  "hero_tituloPrincipal": "Camisetas Ecológicas Personalizadas: Sostenibilidad y Estilo para tu Marca",
+  "hero_intro": "Impulsa la imagen de tu empresa con **camisetas ecológicas personalizadas** de alta calidad. Fabricadas con materiales sostenibles como algodón orgánico y poliéster reciclado, son la elección perfecta para marcas comprometidas con el medio ambiente. Personaliza con tu logo mediante técnicas de impresión eco-friendly y demuestra tu responsabilidad social corporativa.",
+  "hub_subcategorias_texto": "Explora nuestra selección de subcategorías de camisetas ecológicas para encontrar el material perfecto que se alinee con los valores de tu marca.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Camisetas Ecológicas Personalizadas",
+    "items": [
+      "Materiales 100% Sostenibles: Algodón orgánico certificado GOTS, poliéster reciclado y más.",
+      "Impresión Eco-Friendly: Utilizamos tintas al agua y técnicas de bajo impacto ambiental.",
+      "Certificaciones de Confianza: Prendas con sellos como GOTS, Oeko-Tex y Fair Wear.",
+      "Impacto Positivo en tu Marca: Mejora tu imagen corporativa y atrae a clientes conscientes."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Merchandising Sostenible para Eventos",
+      "descripcion": "Crea un impacto memorable en ferias y congresos. Nuestras camisetas ecológicas son el regalo promocional que comunica tus valores de sostenibilidad.",
+      "image_alt": "Grupo de personas en un evento vistiendo camisetas ecológicas personalizadas con el logo de una empresa."
+    },
+    {
+      "titulo": "Uniformes de Empresa Responsables",
+      "descripcion": "Viste a tu equipo con uniformes cómodos y éticos. La elección de ropa ecológica refuerza el compromiso de tu empresa con la responsabilidad social.",
+      "image_alt": "Empleados de una startup con camisetas de algodón orgánico personalizadas en un entorno de oficina moderno."
+    },
+    {
+      "titulo": "Colecciones de Moda Ética",
+      "descripcion": "Lanza tu propia línea de ropa con una base sostenible. Ofrecemos la calidad y las certificaciones necesarias para tu marca de moda ecológica.",
+      "image_alt": "Modelo vistiendo una camiseta ecológica de diseño exclusivo en un fondo neutro."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué materiales se consideran ecológicos para las camisetas?",
+      "respuesta": "Los materiales más comunes son el algodón orgánico (cultivado sin pesticidas ni químicos tóxicos), el poliéster reciclado (a partir de botellas de plástico) y fibras naturales como el cáñamo o el bambú."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización son eco-friendly?",
+      "respuesta": "Recomendamos la serigrafía con tintas al agua, la impresión digital directa (DTG) con tintas ecológicas certificadas y el bordado, que no utiliza químicos."
+    },
+    {
+      "pregunta": "¿Qué certificaciones debo buscar en una camiseta ecológica?",
+      "respuesta": "Las certificaciones clave incluyen GOTS (Global Organic Textile Standard), Oeko-Tex Standard 100 (ausencia de sustancias nocivas) y Fair Wear Foundation (condiciones laborales justas)."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para camisetas ecológicas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el tipo de camiseta y la técnica de personalización. Generalmente, es posible realizar pedidos a partir de 25 unidades, pero recomendamos consultar para pedidos más pequeños."
+    }
+  ],
+  "texto_final_refuerzo": "La elección de camisetas ecológicas personalizadas es una declaración de principios. No solo obtienes una prenda de alta calidad y duradera, sino que también contribuyes a un ciclo de producción más justo y sostenible. Empieza hoy a construir una marca con conciencia.",
+  "cta_textoCta": "Solicita tu Presupuesto de Camisetas Ecológicas",
+  "meta_title": "Camisetas Ecológicas Personalizadas | Algodón Orgánico y Reciclado",
+  "meta_description": "Personaliza camisetas ecológicas con tu logo. Algodón orgánico GOTS, poliéster reciclado y tintas eco-friendly. Calidad y sostenibilidad para tu marca."
+}

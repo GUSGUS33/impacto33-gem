@@ -1,0 +1,49 @@
+{
+  "url": "/verano-personalizado/sombrilla-playa",
+  "slug": "sombrilla-playa",
+  "parent_slug": "verano-personalizado",
+  "search_intent": "sombrillas playa personalizadas",
+  "siblings_intents": [
+    "toallas playa",
+    "gafas sol",
+    "neveras playa"
+  ],
+  "hero_tituloPrincipal": "Sombrillas de Playa Personalizadas",
+  "hero_intro": "Convierte las playas en tu escaparate publicitario. Las sombrillas personalizadas ofrecen una visibilidad masiva y protección solar, asociando tu marca al disfrute y el verano.",
+  "hub_subcategorias_texto": "Protección y visibilidad bajo el sol:",
+  "ventajasEmpresa": {
+    "titulo": "Publicidad de gran formato",
+    "items": [
+      "Visibilidad Máxima: Gran superficie de impresión visible a distancia.",
+      "Asociación Positiva: Tu marca vinculada al ocio y vacaciones.",
+      "Protección UV: Regala salud y cuidado a tus clientes.",
+      "Durabilidad: Estructuras resistentes al viento y salitre."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Promociones de Verano",
+      "descripcion": "El regalo estrella para campañas estivales de gran impacto.",
+      "image_alt": "Sombrillas publicidad playa"
+    },
+    {
+      "titulo": "Hoteles y Chiringuitos",
+      "descripcion": "Equipamiento corporativo para zonas de playa y piscina.",
+      "image_alt": "Sombrillas corporativas hotel"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tamaño tienen?",
+      "respuesta": "Disponemos de diámetros desde 160cm hasta 200cm o más para uso profesional."
+    },
+    {
+      "pregunta": "¿Incluyen funda?",
+      "respuesta": "La mayoría de modelos incluyen funda de transporte a juego, también personalizable."
+    }
+  ],
+  "texto_final_refuerzo": "Haz que tu marca sea la sombra que todos buscan este verano con nuestras sombrillas personalizadas.",
+  "cta_textoCta": "¿Preparas tu campaña de verano?",
+  "meta_title": "Sombrillas Playa Personalizadas | Parasoles Publicitarios | IMPACTO33",
+  "meta_description": "Sombrillas de playa personalizadas con tu logo. Parasoles publicitarios para promociones de verano, hoteles y eventos. Gran visibilidad para tu marca."
+}

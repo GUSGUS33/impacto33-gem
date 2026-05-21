@@ -1,0 +1,52 @@
+{
+  "url": "/merchandising/tecnologia/power-banks/",
+  "slug": "power-banks",
+  "parent_slug": "tecnologia",
+  "search_intent": "baterías externas personalizadas",
+  "siblings_intents": [
+    "usb",
+    "altavoces"
+  ],
+  "hero_tituloPrincipal": "Power Banks",
+  "hero_intro": "Los mejores artículos de power banks. Innovación y utilidad para potenciar tu marca.",
+  "hub_subcategorias_texto": "Categorías destacadas:",
+  "ventajasEmpresa": {
+    "titulo": "Impacto Garantizado",
+    "items": [
+      "Artículos de tendencia",
+      "Personalización de alta precisión",
+      "Stock permanente",
+      "Asesoramiento personalizado"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Campañas de Marketing",
+      "descripcion": "Aumenta el ROI de tus campañas con regalos útiles.",
+      "image_alt": "Power Banks campaña marketing"
+    },
+    {
+      "titulo": "Fidelización de Clientes",
+      "descripcion": "Detalles que marcan la diferencia y crean recuerdo de marca.",
+      "image_alt": "Power Banks fidelización"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el plazo de entrega?",
+      "respuesta": "Para artículos en stock con personalización estándar, el plazo es de 7 a 10 días laborables."
+    },
+    {
+      "pregunta": "¿Hacéis envíos urgentes?",
+      "respuesta": "Sí, disponemos de servicio express para pedidos urgentes. Consúltanos."
+    },
+    {
+      "pregunta": "¿Tenéis catálogo físico?",
+      "respuesta": "Priorizamos el catálogo digital por sostenibilidad, pero podemos enviarte muestras físicas."
+    }
+  ],
+  "texto_final_refuerzo": "Diferénciate de la competencia con el merchandising más original de IMPACTO33.",
+  "cta_textoCta": "Solicita cotización hoy mismo",
+  "meta_title": "Power Banks | Merchandising | IMPACTO33",
+  "meta_description": "Amplio catálogo de power banks para empresas. Personalización premium y precios competitivos. ¡Entra ahora!"
+}

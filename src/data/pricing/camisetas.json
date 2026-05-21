@@ -1,0 +1,22 @@
+{
+  "categoria": "Camisetas",
+  "cantidad_minima": 25,
+  "factores_escalado": {
+    "10": 6.45,
+    "25": 5.16,
+    "50": 3.69,
+    "100": 2.47,
+    "250": 1.85,
+    "500": 1.32,
+    "1000": 1.0,
+    "2000": 0.89
+  },
+  "coste_personalizacion": {
+    "frontal": 0.45,
+    "espalda": 0.40,
+    "manga_izquierda": 0.50,
+    "manga_derecha": 0.50
+  },
+  "zonas_permitidas": ["frontal", "espalda", "manga_izquierda", "manga_derecha"],
+  "notas": "Precios IVA incluido, personalización full color DTF"
+}

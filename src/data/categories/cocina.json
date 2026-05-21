@@ -1,0 +1,52 @@
+{
+  "url": "/merchandising/hogar/cocina/",
+  "slug": "cocina",
+  "parent_slug": "hogar",
+  "search_intent": "accesorios cocina personalizados",
+  "siblings_intents": [
+    "delantales",
+    "tablas cortar"
+  ],
+  "hero_tituloPrincipal": "Utensilios de Cocina",
+  "hero_intro": "Los mejores artículos de utensilios de cocina. Innovación y utilidad para potenciar tu marca.",
+  "hub_subcategorias_texto": "Categorías destacadas:",
+  "ventajasEmpresa": {
+    "titulo": "Impacto Garantizado",
+    "items": [
+      "Artículos de tendencia",
+      "Personalización de alta precisión",
+      "Stock permanente",
+      "Asesoramiento personalizado"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Campañas de Marketing",
+      "descripcion": "Aumenta el ROI de tus campañas con regalos útiles.",
+      "image_alt": "Utensilios de Cocina campaña marketing"
+    },
+    {
+      "titulo": "Fidelización de Clientes",
+      "descripcion": "Detalles que marcan la diferencia y crean recuerdo de marca.",
+      "image_alt": "Utensilios de Cocina fidelización"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el plazo de entrega?",
+      "respuesta": "Para artículos en stock con personalización estándar, el plazo es de 7 a 10 días laborables."
+    },
+    {
+      "pregunta": "¿Hacéis envíos urgentes?",
+      "respuesta": "Sí, disponemos de servicio express para pedidos urgentes. Consúltanos."
+    },
+    {
+      "pregunta": "¿Tenéis catálogo físico?",
+      "respuesta": "Priorizamos el catálogo digital por sostenibilidad, pero podemos enviarte muestras físicas."
+    }
+  ],
+  "texto_final_refuerzo": "Diferénciate de la competencia con el merchandising más original de IMPACTO33.",
+  "cta_textoCta": "Solicita cotización hoy mismo",
+  "meta_title": "Utensilios de Cocina | Merchandising | IMPACTO33",
+  "meta_description": "Amplio catálogo de utensilios de cocina para empresas. Personalización premium y precios competitivos. ¡Entra ahora!"
+}

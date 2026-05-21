@@ -1,0 +1,60 @@
+{
+  "url": "/eventos-personalizados/chapa",
+  "slug": "chapa",
+  "parent_slug": "eventos-personalizados",
+  "search_intent": "comprar chapas personalizadas para eventos",
+  "siblings_intents": [
+    "pulsera",
+    "lanyard",
+    "taza",
+    "boligrafo",
+    "llavero"
+  ],
+  "hero_tituloPrincipal": "Chapas Personalizadas para Eventos: El Detalle Perfecto y Único",
+  "hero_intro": "Las chapas personalizadas son el recuerdo ideal para cualquier celebración, congreso o campaña de marketing. Diseña la tuya con el logo de tu empresa, una fecha especial o un mensaje divertido y crea un impacto memorable en tus invitados o asistentes. Ofrecemos la mejor calidad de impresión y una amplia variedad de tamaños y acabados.",
+  "hub_subcategorias_texto": "Explora nuestra gama de artículos promocionales y de recuerdo para eventos. Combina tus chapas con otros productos personalizados para una experiencia de marca completa.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Chapas Personalizadas",
+    "items": [
+      "Asesoramiento de diseño gratuito para asegurar el mejor resultado.",
+      "Entrega rápida garantizada para cumplir con las fechas de tu evento.",
+      "Impresión digital de alta resolución con colores vibrantes y duraderos.",
+      "Opciones de materiales ecológicos y cierres de seguridad."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos Corporativos y Ferias",
+      "descripcion": "Utiliza chapas con el logo de tu empresa para identificar a tu equipo, como regalo promocional o para lanzar un nuevo producto. Son un excelente rompehielos y una forma económica de aumentar la visibilidad de marca.",
+      "image_alt": "Chapas personalizadas con logo de empresa para feria"
+    },
+    {
+      "titulo": "Bodas, Bautizos y Cumpleaños",
+      "descripcion": "Crea un recuerdo inolvidable para tus invitados. Personaliza las chapas con los nombres de los novios, la fecha del evento o mensajes divertidos para que todos se lleven un detalle único de la celebración.",
+      "image_alt": "Chapas de recuerdo para invitados de boda"
+    },
+    {
+      "titulo": "Campañas Sociales y Conciertos",
+      "descripcion": "Las chapas son un símbolo de apoyo y pertenencia. Perfectas para merchandising de bandas, causas sociales o eventos benéficos, permitiendo a los participantes llevar su mensaje con orgullo.",
+      "image_alt": "Chapas con eslóganes para campaña social"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de cierre están disponibles para las chapas?",
+      "respuesta": "Ofrecemos varios tipos de cierre, incluyendo el clásico imperdible, cierre de imán para no dañar la ropa y cierre de espejo para un uso más funcional. Consulta las opciones disponibles en la configuración del producto."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima de pedido para chapas personalizadas?",
+      "respuesta": "Nuestra cantidad mínima de pedido es de 50 unidades. Esto nos permite ofrecer precios competitivos manteniendo la calidad de la personalización. Para pedidos grandes, ofrecemos descuentos por volumen."
+    },
+    {
+      "pregunta": "¿Puedo subir mi propio diseño o necesito ayuda?",
+      "respuesta": "Puedes subir tu diseño fácilmente a través de nuestra plataforma. Si necesitas asistencia o un diseño desde cero, nuestro equipo de diseño gráfico está disponible para ayudarte sin coste adicional."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes pasar la oportunidad de dar un toque original y personal a tu próximo evento. Nuestras chapas son la herramienta de marketing y recuerdo más versátil, económica y con mayor potencial de viralización. ¡Empieza a diseñar tus chapas personalizadas hoy mismo y haz que tu evento sea inolvidable!",
+  "cta_textoCta": "Diseña y Pide tus Chapas Personalizadas Ahora",
+  "meta_title": "Chapas Personalizadas para Eventos | Diseña Online y Recibe Rápido",
+  "meta_description": "Crea chapas únicas para tu boda, congreso o fiesta. Alta calidad, varios tamaños y el mejor precio. ¡Empieza a personalizar tus chapas hoy y recibe tu pedido a tiempo!"
+}

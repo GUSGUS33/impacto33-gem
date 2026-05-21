@@ -1,0 +1,58 @@
+{
+  "url": "/polos-personalizados/polo-deportivo",
+  "slug": "polo-deportivo",
+  "parent_slug": "polos-personalizados",
+  "search_intent": "Comprar o personalizar polos deportivos de alta calidad para equipos, eventos o uniformes de trabajo.",
+  "siblings_intents": [
+    "polo-pique",
+    "polo-algodon",
+    "polo-publicitario"
+  ],
+  "hero_tituloPrincipal": "Polos Deportivos Personalizados: Transpirables, Ligeros y con tu Logo",
+  "hero_intro": "Diseña polos deportivos de alto rendimiento para tu equipo, gimnasio o evento. Ofrecemos tejidos técnicos transpirables y ligeros, ideales para la actividad física, con opciones de personalización en serigrafía, bordado o vinilo. ¡Viste la pasión por el deporte con calidad y estilo!",
+  "hub_subcategorias_texto": "Explora nuestra gama de polos técnicos y de secado rápido, perfectos para mantener la comodidad y el rendimiento. Encuentra el modelo ideal para personalizar con el diseño de tu marca o club.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestros Polos Deportivos para Personalizar",
+    "items": [
+      "Tejidos Técnicos de Secado Rápido (Quick Dry)",
+      "Máxima Transpirabilidad y Comodidad en Movimiento",
+      "Personalización Duradera: Bordado, Serigrafía o Vinilo Textil",
+      "Ideales para Equipos Deportivos, Gimnasios y Eventos de Running"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Uniformes para Gimnasios y Entrenadores",
+      "descripcion": "Polos técnicos personalizados con el logo del gimnasio, ofreciendo una imagen profesional y cómoda para el personal y los entrenadores.",
+      "image_alt": "Entrenador con polo deportivo personalizado en un gimnasio"
+    },
+    {
+      "titulo": "Equipaciones para Clubes y Torneos",
+      "descripcion": "Diseño de polos deportivos para equipos de pádel, tenis o golf, asegurando un alto rendimiento y visibilidad de la marca o patrocinador.",
+      "image_alt": "Equipo de pádel con polos deportivos idénticos y logo bordado"
+    },
+    {
+      "titulo": "Merchandising para Eventos Deportivos",
+      "descripcion": "Creación de polos ligeros y transpirables como regalo promocional o uniforme para voluntarios en maratones y carreras populares.",
+      "image_alt": "Voluntarios de un maratón usando polos deportivos personalizados"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de tejido usan los polos deportivos?",
+      "respuesta": "Utilizamos principalmente tejidos técnicos como el poliéster piqué o el 'quick dry', que son ligeros, transpirables y facilitan la rápida evaporación del sudor, manteniéndote seco y cómodo."
+    },
+    {
+      "pregunta": "¿Cuál es la mejor técnica de personalización para polos deportivos?",
+      "respuesta": "El vinilo textil y la serigrafía son excelentes opciones para grandes áreas y diseños vibrantes. El bordado es ideal para logos pequeños en el pecho, ofreciendo un acabado premium y duradero, aunque puede ser menos transpirable en la zona bordada."
+    },
+    {
+      "pregunta": "¿Puedo pedir diferentes tallas y colores en el mismo pedido?",
+      "respuesta": "Sí, puedes combinar diferentes tallas y colores de polos deportivos para alcanzar la cantidad mínima de pedido, lo que te permite equipar a todo tu equipo o evento con facilidad."
+    }
+  ],
+  "texto_final_refuerzo": "No comprometas el rendimiento por el estilo. Nuestros polos deportivos personalizados combinan la tecnología textil más avanzada con una personalización de alta calidad. ¡Pide tu presupuesto hoy y lleva tu marca al campo de juego!",
+  "cta_textoCta": "Personaliza tus Polos Deportivos Ahora",
+  "meta_title": "Polos Deportivos Personalizados | Poliéster Técnico y Secado Rápido",
+  "meta_description": "Polos deportivos personalizados para equipos, gimnasios y eventos. Tejidos técnicos transpirables, ligeros y de secado rápido. Personaliza con tu logo en bordado o serigrafía."
+}

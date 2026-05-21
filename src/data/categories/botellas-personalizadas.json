@@ -1,0 +1,54 @@
+{
+  "url": "/botellas-personalizadas",
+  "slug": "botellas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "Comprar botellas personalizadas para empresa o evento",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Botellas Personalizadas para Empresas y Eventos",
+  "hero_intro": "Impulsa tu marca con botellas reutilizables de alta calidad. Ofrecemos una amplia gama de materiales (aluminio, cristal, tritan) y técnicas de personalización (grabado láser, serigrafía, impresión digital) para crear el regalo promocional perfecto, funcional y sostenible.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Por qué elegir nuestras botellas personalizadas",
+    "items": [
+      "Sostenibilidad y Reutilización: Reduce el uso de plásticos de un solo uso.",
+      "Alta Calidad y Durabilidad: Productos resistentes para un impacto duradero.",
+      "Personalización Avanzada: Múltiples técnicas para un acabado profesional.",
+      "Variedad de Modelos: Botellas deportivas, térmicas, de cristal y más."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo de Bienvenida para Empleados (Onboarding)",
+      "descripcion": "Una botella térmica personalizada con el logo de la empresa es un regalo práctico y valorado para nuevos empleados, fomentando la cultura de bienestar y sostenibilidad.",
+      "image_alt": "Botella térmica personalizada con logo de empresa"
+    },
+    {
+      "titulo": "Merchandising para Eventos y Ferias",
+      "descripcion": "Entrega botellas de agua reutilizables en tu stand. Son un artículo promocional útil que asegura visibilidad de marca durante y después del evento.",
+      "image_alt": "Botellas de aluminio personalizadas en un evento"
+    },
+    {
+      "titulo": "Campaña de Marketing Sostenible",
+      "descripcion": "Utiliza botellas de cristal o tritan como parte de una campaña que destaque el compromiso de tu marca con el medio ambiente.",
+      "image_alt": "Botella de cristal personalizada con diseño minimalista"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de botellas se pueden personalizar?",
+      "respuesta": "Ofrecemos personalización en botellas de aluminio, acero inoxidable (térmicas), cristal, y plástico Tritan. Cada material es ideal para diferentes usos y presupuestos."
+    },
+    {
+      "pregunta": "¿Cuáles son las técnicas de personalización disponibles?",
+      "respuesta": "Las técnicas más comunes son el grabado láser (ideal para metal), la serigrafía (económica para grandes cantidades) y la impresión digital a todo color (para diseños complejos)."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para botellas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo y la técnica de personalización, pero generalmente comienza a partir de 25 o 50 unidades. Consulta la ficha de producto para detalles específicos."
+    }
+  ],
+  "texto_final_refuerzo": "No importa si buscas un detalle corporativo elegante o un artículo promocional masivo, nuestras botellas personalizadas son la solución perfecta para hidratar y promocionar tu marca de forma responsable.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado Ahora",
+  "meta_title": "Botellas Personalizadas Baratas y de Calidad | Grabado Láser y Serigrafía",
+  "meta_description": "Personaliza botellas de agua, térmicas, de aluminio o cristal con tu logo. Ideales para merchandising, eventos y regalos corporativos. ¡Precios y calidad garantizados!"
+}

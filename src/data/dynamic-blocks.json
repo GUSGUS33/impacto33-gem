@@ -1,0 +1,416 @@
+[
+  {
+    "url": "/camisetas-personalizadas/",
+    "catalog_category_slug": "t_shirts",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/camisetas-personalizadas/manga-corta/",
+    "catalog_category_slug": "cam",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/camisetas-personalizadas/manga-larga/",
+    "catalog_category_slug": "cam_w",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/camisetas-personalizadas/tirantes/",
+    "catalog_category_slug": "cat",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/camisetas-personalizadas/deportivas/",
+    "catalog_category_slug": "sp_tshi",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/sudaderas-personalizadas/",
+    "catalog_category_slug": "sudaderas",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/sudaderas-personalizadas/sudadera-con-capucha/",
+    "catalog_category_slug": "sudaderas",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/sudaderas-personalizadas/sudadera-sin-capucha/",
+    "catalog_category_slug": "sudaderas",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/sudaderas-personalizadas/sudadera-alta-visibilidad/",
+    "catalog_category_slug": "highviz",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/polos-personalizados/",
+    "catalog_category_slug": "cam_po",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/polos-personalizados/polo-manga-corta/",
+    "catalog_category_slug": "cam_po",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/polos-personalizados/polo-manga-larga/",
+    "catalog_category_slug": "cam_po",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/polos-personalizados/polo-deportivo/",
+    "catalog_category_slug": "cam_sp",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/chaquetas-personalizadas/",
+    "catalog_category_slug": "coats",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/chaquetas-personalizadas/chaqueta-softshell/",
+    "catalog_category_slug": "coats",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/chaquetas-personalizadas/chaqueta-polar/",
+    "catalog_category_slug": "coats",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/chaquetas-personalizadas/chaqueta-impermeable/",
+    "catalog_category_slug": "raincoats",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/ropa-laboral-personalizada/",
+    "catalog_category_slug": "highviz",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/ropa-laboral-personalizada/ropa-industria/",
+    "catalog_category_slug": "industry_services",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/ropa-laboral-personalizada/ropa-alta-visibilidad/",
+    "catalog_category_slug": "highviz",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/ropa-laboral-personalizada/ropa-sanidad/",
+    "catalog_category_slug": "sanitarybata",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/ropa-laboral-personalizada/ropa-hosteleria/",
+    "catalog_category_slug": "horeca",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-algodon/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-papel/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-plegable/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-yute/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-non-woven/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/bolsas-personalizadas/bolsa-botella/",
+    "catalog_category_slug": "bags",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/mochilas-personalizadas/",
+    "catalog_category_slug": "bags_travel",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/mochilas-personalizadas/mochila-estandar/",
+    "catalog_category_slug": "bags_travel",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/mochilas-personalizadas/mochila-escolar/",
+    "catalog_category_slug": "bags_travel",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/mochilas-personalizadas/mochila-portatil/",
+    "catalog_category_slug": "bags_travel",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/mochilas-personalizadas/mochila-cuerdas/",
+    "catalog_category_slug": "bags_travel",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/accesorios-viaje/",
+    "catalog_category_slug": "travel_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/accesorios-viaje/maleta/",
+    "catalog_category_slug": "travel_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/accesorios-viaje/neceser/",
+    "catalog_category_slug": "travel_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/accesorios-viaje/identificador-maleta/",
+    "catalog_category_slug": "travel_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tazas-personalizadas/",
+    "catalog_category_slug": "mugs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tazas-personalizadas/taza-ceramica/",
+    "catalog_category_slug": "mugs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tazas-personalizadas/taza-sublimacion/",
+    "catalog_category_slug": "mugs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tazas-personalizadas/taza-metalica/",
+    "catalog_category_slug": "mugs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/botellas-personalizadas/",
+    "catalog_category_slug": "bottles_thermos_flas",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/botellas-personalizadas/botella-aluminio/",
+    "catalog_category_slug": "bottles",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/botellas-personalizadas/botella-cristal/",
+    "catalog_category_slug": "glass_bottles",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/botellas-personalizadas/termo/",
+    "catalog_category_slug": "thermos_flasks",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tecnologia-personalizada/",
+    "catalog_category_slug": "tech_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tecnologia-personalizada/power-bank/",
+    "catalog_category_slug": "tech_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tecnologia-personalizada/memoria-usb/",
+    "catalog_category_slug": "tech_accessories",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tecnologia-personalizada/altavoz/",
+    "catalog_category_slug": "speakers",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/tecnologia-personalizada/auriculares/",
+    "catalog_category_slug": "earphones",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/escritura-personalizada/",
+    "catalog_category_slug": "writing_office",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/escritura-personalizada/boligrafo-plastico/",
+    "catalog_category_slug": "ball_pens",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/escritura-personalizada/boligrafo-metalico/",
+    "catalog_category_slug": "ball_pens",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/escritura-personalizada/libreta/",
+    "catalog_category_slug": "notebooks",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/escritura-personalizada/carpeta/",
+    "catalog_category_slug": "writing_office",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/hogar-personalizado/",
+    "catalog_category_slug": "decoration",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/hogar-personalizado/cocina/",
+    "catalog_category_slug": "kitchen",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/hogar-personalizado/decoracion/",
+    "catalog_category_slug": "decoration",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/hogar-personalizado/manta/",
+    "catalog_category_slug": "decoration",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/hogar-personalizado/vela/",
+    "catalog_category_slug": "decoration",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/eventos-personalizados/",
+    "catalog_category_slug": "conferences_fairs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/eventos-personalizados/lanyard/",
+    "catalog_category_slug": "conferences_fairs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/eventos-personalizados/chapa/",
+    "catalog_category_slug": "conferences_fairs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/eventos-personalizados/pulsera/",
+    "catalog_category_slug": "conferences_fairs",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/verano-personalizado/",
+    "catalog_category_slug": "beach_items",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/verano-personalizado/toalla-playa/",
+    "catalog_category_slug": "beach_items",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/verano-personalizado/sombrilla-playa/",
+    "catalog_category_slug": "beach_items",
+    "limit": 20,
+    "columns": 4
+  },
+  {
+    "url": "/verano-personalizado/gafas-sol/",
+    "catalog_category_slug": "sunglasses",
+    "limit": 20,
+    "columns": 4
+  }
+]

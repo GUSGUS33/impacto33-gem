@@ -1,0 +1,54 @@
+{
+  "url": "/escritura-personalizada",
+  "slug": "escritura-personalizada",
+  "parent_slug": "",
+  "search_intent": "Contratar servicios profesionales de redacción, corrección y ghostwriting a medida.",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Servicios de Escritura Personalizada: Contenido Único y Profesional para Cada Necesidad",
+  "hero_intro": "En un mundo saturado de información, la **escritura personalizada** es la clave para destacar. Ofrecemos soluciones de redacción a medida, desde contenido web y artículos académicos hasta novelas y discursos. Nuestro equipo de profesionales garantiza textos originales, de alta calidad y perfectamente adaptados a tu voz, audiencia y objetivos específicos. Deja de lado las plantillas genéricas y eleva tu comunicación al siguiente nivel con un servicio completamente dedicado a tu proyecto.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestra Escritura a Medida",
+    "items": [
+      "**Originalidad Garantizada:** Cada texto es creado desde cero, asegurando contenido 100% libre de plagio.",
+      "**Expertos en Diversas Áreas:** Contamos con redactores especializados en múltiples sectores (literario, académico, técnico, marketing).",
+      "**Confidencialidad Total:** Tu proyecto y tus datos están protegidos bajo estrictos acuerdos de privacidad.",
+      "**Entrega a Tiempo y Revisión:** Cumplimos con los plazos acordados y ofrecemos rondas de revisión para tu satisfacción."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Ghostwriting de Libros y Novelas",
+      "descripcion": "Convierte tu idea en un libro publicado sin necesidad de escribir una sola palabra. Desarrollamos la trama, los personajes y el estilo narrativo que deseas.",
+      "image_alt": "Escritor profesional redactando una novela en un ordenador portátil"
+    },
+    {
+      "titulo": "Redacción de Contenido Web y SEO",
+      "descripcion": "Artículos de blog, descripciones de productos y páginas de aterrizaje optimizadas para motores de búsqueda, atrayendo tráfico cualificado a tu negocio.",
+      "image_alt": "Gráfico de SEO mostrando aumento de tráfico web gracias a contenido de calidad"
+    },
+    {
+      "titulo": "Corrección y Edición de Manuscritos",
+      "descripcion": "Servicio de pulido profesional para tu manuscrito, tesis o informe. Mejoramos la gramática, el estilo, la coherencia y la claridad del texto.",
+      "image_alt": "Mano marcando correcciones en un manuscrito impreso con bolígrafo rojo"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de contenido pueden escribir?",
+      "respuesta": "Ofrecemos una amplia gama de servicios, incluyendo ghostwriting de libros, artículos de blog, contenido web, discursos, informes técnicos, material de marketing y redacción académica (tesis, ensayos, papers)."
+    },
+    {
+      "pregunta": "¿Cómo se garantiza la originalidad y calidad del texto?",
+      "respuesta": "Todos nuestros textos son redactados por escritores profesionales y pasan por un riguroso proceso de control de calidad y verificación anti-plagio antes de la entrega."
+    },
+    {
+      "pregunta": "¿El servicio incluye revisiones?",
+      "respuesta": "Sí, nuestro servicio estándar incluye un número determinado de rondas de revisión para asegurar que el resultado final cumpla exactamente con tus expectativas y requisitos iniciales."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que una mala redacción comprometa tu mensaje. Invierte en escritura personalizada que hable directamente a tu audiencia y te posicione como una autoridad en tu campo. Estamos listos para dar vida a tus ideas con la palabra escrita.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado Hoy Mismo",
+  "meta_title": "Escritura Personalizada | Redacción Profesional y Ghostwriting a Medida",
+  "meta_description": "Servicios de escritura personalizada para libros, contenido web, artículos y más. Contrata expertos en redacción y ghostwriting para obtener textos únicos y de alta calidad."
+}

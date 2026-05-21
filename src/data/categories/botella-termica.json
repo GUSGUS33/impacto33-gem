@@ -1,0 +1,67 @@
+{
+  "url": "/botellas-personalizadas/botella-termica",
+  "slug": "botella-termica",
+  "parent_slug": "botellas-personalizadas",
+  "search_intent": "Comprar botellas térmicas personalizadas de acero inoxidable con logo para merchandising y regalos de empresa.",
+  "siblings_intents": [
+    "botella-deportiva",
+    "botella-aluminio",
+    "botella-cristal",
+    "botella-plastico",
+    "botella-ecologica"
+  ],
+  "hero_tituloPrincipal": "Botellas Térmicas Personalizadas con Logo: La Mejor Opción para tu Merchandising Sostenible",
+  "hero_intro": "Las **botellas térmicas personalizadas** son el regalo de empresa perfecto para demostrar el compromiso de tu marca con la sostenibilidad y el bienestar. Fabricadas en acero inoxidable de alta calidad, mantienen las bebidas frías hasta 24 horas y calientes hasta 12. Personaliza con tu logo mediante grabado láser o serigrafía para un impacto duradero en tus clientes y empleados.",
+  "hub_subcategorias_texto": "Descubre la variedad de tamaños, colores y materiales de nuestras botellas térmicas. Elige el modelo que mejor se adapte a la imagen de tu marca y a las necesidades de tus clientes.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Botellas Térmicas Personalizadas",
+    "items": [
+      "Doble pared de acero inoxidable para máximo aislamiento.",
+      "Personalización duradera con grabado láser o impresión a todo color.",
+      "Compromiso ecológico: reduce el uso de plásticos de un solo uso.",
+      "Precios competitivos y descuentos por volumen para grandes pedidos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo de Bienvenida para Empleados",
+      "descripcion": "Entrega una botella térmica con el logo de la empresa a cada nuevo empleado. Fomenta la hidratación y el sentido de pertenencia.",
+      "image_alt": "Empleado usando una botella térmica personalizada en la oficina",
+      "image_path": "/assets/images/casos-uso/botella-termica-empleados.webp"
+    },
+    {
+      "titulo": "Merchandising para Eventos y Ferias",
+      "descripcion": "Utiliza botellas térmicas como obsequio premium en tu stand. Un regalo práctico que garantiza visibilidad de marca a largo plazo.",
+      "image_alt": "Botellas térmicas personalizadas en un stand de feria",
+      "image_path": "/assets/images/casos-uso/botella-termica-feria.webp"
+    },
+    {
+      "titulo": "Campaña de Marketing Sostenible",
+      "descripcion": "Lanza una campaña promoviendo la reducción de residuos. Regala botellas térmicas a clientes que se unan a la iniciativa.",
+      "image_alt": "Persona rellenando una botella térmica en una fuente de agua",
+      "image_path": "/assets/images/casos-uso/botella-termica-sostenibilidad.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el tiempo de aislamiento de las botellas térmicas?",
+      "respuesta": "Nuestras botellas térmicas de doble pared mantienen las bebidas frías hasta 24 horas y calientes hasta 12 horas, dependiendo de las condiciones ambientales y el modelo específico."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización están disponibles?",
+      "respuesta": "Ofrecemos principalmente grabado láser para un acabado elegante y permanente, y serigrafía o impresión digital para logos a color. La técnica ideal dependerá del material de la botella y tu diseño."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para botellas térmicas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo, pero generalmente comienza a partir de 50 unidades. Consulta la ficha de producto para detalles específicos."
+    },
+    {
+      "pregunta": "¿Son seguras para la salud y libres de BPA?",
+      "respuesta": "Sí, todas nuestras botellas térmicas están fabricadas con acero inoxidable de grado alimenticio y son completamente libres de BPA (Bisfenol A), garantizando la máxima seguridad."
+    }
+  ],
+  "texto_final_refuerzo": "Invertir en **botellas térmicas personalizadas** es invertir en la imagen de una marca moderna, consciente y de calidad. Un artículo de uso diario que asegura miles de impresiones de tu logo. ¡Empieza a crear tu diseño hoy mismo!",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado",
+  "meta_title": "Botellas Térmicas Personalizadas con Logo | Merchandising Sostenible",
+  "meta_description": "Descubre botellas térmicas personalizadas de acero inoxidable para tu empresa. Mantén tus bebidas frías o calientes y promociona tu marca de forma ecológica. ¡Pide tu presupuesto!"
+}

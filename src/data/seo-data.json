@@ -1,0 +1,854 @@
+{
+  "ropa-personalizada": {
+    "url": "/ropa-personalizada/",
+    "slug": "ropa-personalizada",
+    "parent_slug": "",
+    "search_intent": "ropa personalizada",
+    "siblings_intents": ["camisetas personalizadas", "sudaderas personalizadas", "polos personalizados", "ropa de trabajo"],
+    "hero_tituloPrincipal": "Ropa Personalizada para Empresas y Eventos",
+    "hero_intro": "Viste a tu equipo y promociona tu marca con nuestra amplia selección de ropa personalizada. Desde camisetas y sudaderas hasta uniformes laborales, ofrecemos prendas de calidad con tu logo impreso o bordado.",
+    "hub_subcategorias_texto": "Explora nuestro catálogo textil completo:",
+    "ventajasEmpresa": {
+      "titulo": "Por qué elegir nuestra ropa personalizada",
+      "items": [
+        "Gran variedad de marcas y calidades",
+        "Técnicas de impresión duraderas (Serigrafía, DTF, Bordado)",
+        "Tallas para todos: hombre, mujer y niño",
+        "Descuentos por volumen para grandes pedidos"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Uniformes Corporativos",
+        "descripcion": "Crea una imagen profesional y cohesiva para tu plantilla con polos y camisas bordadas.",
+        "image_alt": "Equipo de trabajo con uniformes corporativos"
+      },
+      {
+        "titulo": "Merchandising para Eventos",
+        "descripcion": "Camisetas promocionales económicas para regalar en ferias, carreras o festivales.",
+        "image_alt": "Grupo de personas con camisetas promocionales en un evento"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Cuál es el pedido mínimo para ropa personalizada?",
+        "respuesta": "Generalmente trabajamos a partir de 10 unidades para poder ofrecer precios competitivos, aunque depende de la técnica de marcaje."
+      },
+      {
+        "pregunta": "¿Puedo mezclar tallas y colores en el mismo pedido?",
+        "respuesta": "Sí, puedes combinar diferentes tallas y colores de la misma prenda siempre que el diseño y el color de la tinta sean los mismos."
+      },
+      {
+        "pregunta": "¿Qué técnica de impresión recomendáis para camisetas?",
+        "respuesta": "Para grandes tiradas y diseños sencillos, la serigrafía es lo más económico. Para fotos o degradados, recomendamos impresión digital DTF."
+      },
+      {
+        "pregunta": "¿Hacéis ropa laboral de alta visibilidad?",
+        "respuesta": "Sí, disponemos de chalecos, parkas y pantalones homologados con bandas reflectantes para seguridad laboral."
+      },
+      {
+        "pregunta": "¿Cuánto tardáis en entregar los pedidos textiles?",
+        "respuesta": "El plazo estándar es de 10-15 días laborables tras la aprobación del boceto, pero tenemos servicio exprés disponible."
+      },
+      {
+        "pregunta": "¿Puedo enviar mis propias prendas para personalizar?",
+        "respuesta": "Normalmente trabajamos con nuestro propio catálogo para garantizar la calidad del marcaje, pero consúltanos tu caso específico."
+      }
+    ],
+    "texto_final_refuerzo": "En IMPACTO33 somos expertos en personalización textil. Ya sea para vestir a tu empresa, un club deportivo o un evento promocional, te garantizamos resultados impecables y duraderos.",
+    "cta_textoCta": "Solicita presupuesto para tu ropa personalizada y recibe asesoramiento gratuito hoy mismo.",
+    "meta_title": "Ropa Personalizada para Empresas y Grupos | IMPACTO33",
+    "meta_description": "Catálogo de ropa personalizada: camisetas, sudaderas, polos y ropa laboral con tu logo. Calidad y precio garantizados. ¡Pide presupuesto!"
+  },
+  "camisetas": {
+    "url": "/ropa-personalizada/camisetas/",
+    "slug": "camisetas",
+    "parent_slug": "ropa-personalizada",
+    "search_intent": "camisetas personalizadas",
+    "siblings_intents": ["sudaderas personalizadas", "polos personalizados", "gorras personalizadas"],
+    "hero_tituloPrincipal": "Camisetas Personalizadas Baratas y de Calidad",
+    "hero_intro": "Las camisetas personalizadas son el rey del merchandising. Ideales para promociones, eventos, despedidas o uniformes informales. Disponibles en algodón, poliéster técnico y mezclas.",
+    "hub_subcategorias_texto": "Encuentra el tipo de camiseta perfecto para tu proyecto:",
+    "ventajasEmpresa": {
+      "titulo": "Tus camisetas con la mejor impresión",
+      "items": [
+        "Modelos económicos para publicidad masiva",
+        "Camisetas premium de alto gramaje para marcas",
+        "Impresión a todo color disponible",
+        "Marcas reconocidas: Fruit of the Loom, Roly, B&C"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Publicidad y Marketing",
+        "descripcion": "Convierte a tus clientes en embajadores de marca con camisetas que querrán usar.",
+        "image_alt": "Camiseta publicitaria con logo grande en el pecho"
+      },
+      {
+        "titulo": "Peñas y Fiestas",
+        "descripcion": "Diseños divertidos y coloridos para grupos, peñas y celebraciones populares.",
+        "image_alt": "Grupo de amigos con camisetas de peña iguales"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué es mejor, algodón o poliéster?",
+        "respuesta": "El algodón es ideal para moda y tacto suave. El poliéster es perfecto para deporte porque transpira mejor y seca rápido."
+      },
+      {
+        "pregunta": "¿Se borra el dibujo con los lavados?",
+        "respuesta": "Nuestras técnicas de serigrafía y DTF son de alta durabilidad. Siguiendo las instrucciones de lavado (agua fría, del revés), duran años."
+      },
+      {
+        "pregunta": "¿Hacéis camisetas para despedidas de soltero?",
+        "respuesta": "¡Claro! Son uno de nuestros productos estrella. Podemos imprimir fotos, frases graciosas y nombres individuales."
+      },
+      {
+        "pregunta": "¿Cuál es la cantidad mínima para camisetas?",
+        "respuesta": "Desde 10 unidades puedes hacer tu pedido. Para cantidades menores, el coste unitario sube considerablemente."
+      },
+      {
+        "pregunta": "¿Tenéis camisetas de tirantes?",
+        "respuesta": "Sí, tenemos modelos de tirantes para hombre, mujer y unisex, ideales para verano o gimnasios."
+      },
+      {
+        "pregunta": "¿Puedo imprimir en las mangas?",
+        "respuesta": "Sí, podemos personalizar pecho, espalda, mangas e incluso etiquetas en el cuello en ciertos modelos."
+      }
+    ],
+    "texto_final_refuerzo": "Confía en IMPACTO33 para tus camisetas personalizadas. Miles de clientes satisfechos avalan nuestra calidad de impresión y rapidez en la entrega.",
+    "cta_textoCta": "¿Necesitas camisetas para tu próximo evento? Pídenos precio ahora.",
+    "meta_title": "Camisetas Personalizadas Baratas | Serigrafía Camisetas | IMPACTO33",
+    "meta_description": "Impresión de camisetas personalizadas para empresas, eventos y grupos. Serigrafía, DTF y sublimación. ¡Precios de fábrica!"
+  },
+  "sudaderas": {
+    "url": "/ropa-personalizada/sudaderas/",
+    "slug": "sudaderas",
+    "parent_slug": "ropa-personalizada",
+    "search_intent": "sudaderas personalizadas",
+    "siblings_intents": ["camisetas personalizadas", "chaquetas personalizadas", "polares personalizados"],
+    "hero_tituloPrincipal": "Sudaderas Personalizadas con tu Logo o Diseño",
+    "hero_intro": "Abriga a tu equipo con estilo. Nuestras sudaderas personalizadas son perfectas para invierno, colegios, universidades y merchandising de marca. Disponibles con capucha, cuello redondo y cremallera.",
+    "hub_subcategorias_texto": "Elige el estilo de sudadera que mejor encaje:",
+    "ventajasEmpresa": {
+      "titulo": "Calidez y marca en una sola prenda",
+      "items": [
+        "Tejidos de felpa suave y resistente",
+        "Gran superficie de impresión en pecho y espalda",
+        "Opción de bordado para un acabado premium",
+        "Variedad de colores para combinar con tu imagen corporativa"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Ropa Universitaria",
+        "descripcion": "Las clásicas sudaderas de facultad o viaje de fin de curso que crean sentimiento de pertenencia.",
+        "image_alt": "Estudiantes con sudaderas universitarias personalizadas"
+      },
+      {
+        "titulo": "Marcas de Ropa",
+        "descripcion": "Sudaderas de alta calidad listas para re-etiquetar y vender con tu propia marca de moda.",
+        "image_alt": "Sudadera de diseño urbano doblada sobre una mesa"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué composición tienen las sudaderas?",
+        "respuesta": "La mayoría son mezcla 50% algodón / 50% poliéster para combinar suavidad y resistencia, aunque tenemos opciones 100% algodón u orgánicas."
+      },
+      {
+        "pregunta": "¿Es mejor estampar o bordar una sudadera?",
+        "respuesta": "El bordado queda muy elegante y dura para siempre, ideal para logos pequeños. Para diseños grandes en la espalda, mejor serigrafía."
+      },
+      {
+        "pregunta": "¿Tenéis sudaderas para niños?",
+        "respuesta": "Sí, nuestro catálogo incluye tallas infantiles desde los 3-4 años en muchos modelos y colores."
+      },
+      {
+        "pregunta": "¿Encogen al lavarlas?",
+        "respuesta": "Nuestras prendas vienen pre-encogidas, pero siempre recomendamos lavar en frío y no usar secadora para mantenerlas perfectas."
+      },
+      {
+        "pregunta": "¿Puedo personalizar la capucha?",
+        "respuesta": "Es posible en algunos modelos, aunque la zona de impresión es limitada. Consúltanos para ver viabilidad."
+      },
+      {
+        "pregunta": "¿Hacéis sudaderas técnicas deportivas?",
+        "respuesta": "Sí, disponemos de sudaderas de tejido técnico transpirable ideales para entrenamiento y calentamiento deportivo."
+      }
+    ],
+    "texto_final_refuerzo": "Las sudaderas son una prenda versátil y muy valorada. En IMPACTO33 te ayudamos a crear la sudadera perfecta que todos querrán llevar puesta.",
+    "cta_textoCta": "Consigue tus sudaderas personalizadas al mejor precio. ¡Contáctanos!",
+    "meta_title": "Sudaderas Personalizadas Baratas | Bordado y Serigrafía | IMPACTO33",
+    "meta_description": "Compra sudaderas personalizadas online. Con capucha, cuello redondo o cremallera. Ideales para universidades, empresas y marcas."
+  },
+  "bolsas-mochilas": {
+    "url": "/bolsas-mochilas/",
+    "slug": "bolsas-mochilas",
+    "parent_slug": "",
+    "search_intent": "bolsas y mochilas personalizadas",
+    "siblings_intents": ["bolsas de tela", "mochilas cuerdas", "bolsas compra"],
+    "hero_tituloPrincipal": "Bolsas y Mochilas Publicitarias",
+    "hero_intro": "Lleva tu marca a todas partes con nuestras bolsas y mochilas personalizadas. El soporte publicitario con mayor visibilidad y utilidad diaria para tus clientes.",
+    "hub_subcategorias_texto": "Descubre nuestras soluciones de transporte y promoción:",
+    "ventajasEmpresa": {
+      "titulo": "Publicidad en movimiento",
+      "items": [
+        "Gran área de marcaje para tu logo",
+        "Materiales ecológicos: algodón, yute, rPET",
+        "Precios muy económicos para grandes campañas",
+        "Utilidad real = mayor impacto de marca"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Ferias y Congresos",
+        "descripcion": "La clásica bolsa de tela (tote bag) para entregar catálogos y muestras. Imprescindible en cualquier stand.",
+        "image_alt": "Visitante de feria llevando una tote bag con logo"
+      },
+      {
+        "titulo": "Comercio Local",
+        "descripcion": "Sustituye las bolsas de plástico por bolsas reutilizables con tu logo que tus clientes pasearán por toda la ciudad.",
+        "image_alt": "Cliente saliendo de tienda con bolsa de compra reutilizable"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué gramaje tienen las bolsas de algodón?",
+        "respuesta": "Tenemos desde las promocionales de 140g (las más comunes) hasta bolsas premium de canvas de 280g o 340g."
+      },
+      {
+        "pregunta": "¿Imprimís a todo color en bolsas?",
+        "respuesta": "Sí, mediante transferencia digital o DTF podemos imprimir fotos y diseños complejos sobre textil."
+      },
+      {
+        "pregunta": "¿Tenéis mochilas para portátiles?",
+        "respuesta": "Sí, contamos con una línea ejecutiva de mochilas acolchadas con compartimento para ordenador, ideales para regalo corporativo."
+      },
+      {
+        "pregunta": "¿Cuál es la bolsa más barata?",
+        "respuesta": "Las bolsas de 'non-woven' (tejido no tejido) son la opción más económica para grandes volúmenes y ferias."
+      },
+      {
+        "pregunta": "¿Son lavables las bolsas personalizadas?",
+        "respuesta": "Las de algodón sí, preferiblemente a mano o en frío. Las de non-woven o papel no se deben lavar."
+      },
+      {
+        "pregunta": "¿Hacéis bolsas de papel para tiendas?",
+        "respuesta": "Sí, personalizamos bolsas de papel kraft o lujo con asa rizada o plana para comercios y boutiques."
+      }
+    ],
+    "texto_final_refuerzo": "Una bolsa reutilizable genera miles de impactos visuales a lo largo de su vida útil. Invierte en publicidad rentable y sostenible con IMPACTO33.",
+    "cta_textoCta": "Pide presupuesto para tus bolsas o mochilas corporativas ahora.",
+    "meta_title": "Bolsas y Mochilas Personalizadas | Regalos Publicitarios | IMPACTO33",
+    "meta_description": "Fábrica de bolsas de tela, mochilas y tote bags personalizadas. El mejor precio en bolsas publicitarias para ferias y comercios."
+  },
+  "bolsas": {
+    "url": "/bolsas-mochilas/bolsas/",
+    "slug": "bolsas",
+    "parent_slug": "bolsas-mochilas",
+    "search_intent": "bolsas personalizadas",
+    "siblings_intents": ["mochilas personalizadas", "bolsas viaje", "riñoneras"],
+    "hero_tituloPrincipal": "Bolsas de Tela y Compra Personalizadas",
+    "hero_intro": "Las bolsas personalizadas (tote bags) son tendencia. Ecológicas, prácticas y con una superficie perfecta para lucir tu diseño. Disponibles en algodón, yute, poliéster y materiales reciclados.",
+    "hub_subcategorias_texto": "Tipos de bolsas disponibles:",
+    "ventajasEmpresa": {
+      "titulo": "Tu marca en la mano de tus clientes",
+      "items": [
+        "Alternativa sostenible al plástico",
+        "Modelos con fuelle para mayor capacidad",
+        "Asas largas o cortas según preferencia",
+        "Entrega rápida para eventos urgentes"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Welcome Packs",
+        "descripcion": "El envoltorio perfecto para entregar el kit de bienvenida a nuevos empleados o asistentes a un curso.",
+        "image_alt": "Kit de bienvenida dentro de una bolsa de algodón personalizada"
+      },
+      {
+        "titulo": "Bodas y Celebraciones",
+        "descripcion": "Un detalle útil para los invitados, con los nombres de los novios y la fecha del enlace.",
+        "image_alt": "Bolsa de tela con diseño de boda romántico"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué es el algodón orgánico?",
+        "respuesta": "Es algodón cultivado sin pesticidas ni fertilizantes químicos, certificado. Una opción ética y sostenible muy demandada."
+      },
+      {
+        "pregunta": "¿Puedo imprimir en las dos caras?",
+        "respuesta": "Sí, podemos personalizar una o ambas caras de la bolsa, con el mismo diseño o diferentes."
+      },
+      {
+        "pregunta": "¿Aguantan mucho peso?",
+        "respuesta": "Las bolsas de algodón estándar (140g) aguantan bien el peso de libros o compra diaria (5-8 kg). Para más peso, elige gramajes superiores."
+      },
+      {
+        "pregunta": "¿Tenéis bolsas para botellas de vino?",
+        "respuesta": "Sí, disponemos de bolsas específicas de yute o non-woven diseñadas para transportar botellas de forma segura y elegante."
+      },
+      {
+        "pregunta": "¿Cuál es el tamaño estándar de una tote bag?",
+        "respuesta": "La medida más habitual es 38x42 cm, ideal para meter carpetas A4 y objetos cotidianos."
+      },
+      {
+        "pregunta": "¿Hacéis bolsas plegables?",
+        "respuesta": "Sí, tenemos bolsas de poliéster que se pliegan en forma de fruta o en una pequeña funda, perfectas para llevar en el bolso."
+      }
+    ],
+    "texto_final_refuerzo": "Elige la sostenibilidad y la visibilidad. Las bolsas personalizadas de IMPACTO33 son el regalo promocional que nunca falla.",
+    "cta_textoCta": "Cotiza tus bolsas personalizadas en un clic. ¡Respuesta rápida!",
+    "meta_title": "Bolsas de Tela Personalizadas | Tote Bags Baratas | IMPACTO33",
+    "meta_description": "Venta de bolsas de algodón, yute y non-woven personalizadas. Tote bags publicitarias al por mayor. ¡Diseño y envío rápido!"
+  },
+  "tazas-botellas": {
+    "url": "/tazas-botellas/",
+    "slug": "tazas-botellas",
+    "parent_slug": "",
+    "search_intent": "tazas y botellas personalizadas",
+    "siblings_intents": ["tazas publicidad", "botellas agua personalizadas", "termos personalizados"],
+    "hero_tituloPrincipal": "Tazas y Botellas para Hidratarse con Estilo",
+    "hero_intro": "Desde la taza de café de la mañana hasta la botella de agua en el gimnasio. Personaliza recipientes de bebida (drinkware) que tus clientes usarán una y otra vez, generando recuerdo de marca constante.",
+    "hub_subcategorias_texto": "Elige tu recipiente ideal:",
+    "ventajasEmpresa": {
+      "titulo": "Drinkware de calidad certificada",
+      "items": [
+        "Materiales libres de BPA y seguros para alimentación",
+        "Opciones térmicas que mantienen frío/calor horas",
+        "Impresión resistente al lavavajillas (según modelo)",
+        "Diseños modernos y funcionales"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Oficinas Sostenibles",
+        "descripcion": "Elimina los vasos de plástico regalando una botella o taza corporativa a cada empleado.",
+        "image_alt": "Escritorio de oficina con botella de agua corporativa"
+      },
+      {
+        "titulo": "Gimnasios y Clubes",
+        "descripcion": "Botellas deportivas (bidones) con el logo del club para vender o regalar a los socios.",
+        "image_alt": "Bidón de agua deportivo con logo de gimnasio"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Las botellas mantienen el agua fría?",
+        "respuesta": "Las botellas térmicas de doble pared de acero inoxidable pueden mantener el frío hasta 24h y el calor hasta 12h."
+      },
+      {
+        "pregunta": "¿Se pueden meter en el lavavajillas?",
+        "respuesta": "Las tazas de cerámica sublimadas suelen ser aptas. En botellas y termos, recomendamos lavado a mano para preservar el marcaje exterior."
+      },
+      {
+        "pregunta": "¿Tenéis botellas de cristal?",
+        "respuesta": "Sí, botellas de borosilicato (cristal resistente) con fundas de neopreno o silicona para protegerlas."
+      },
+      {
+        "pregunta": "¿Hacéis tazas mágicas?",
+        "respuesta": "Sí, tazas que cambian de color con el calor, revelando tu diseño cuando se vierte líquido caliente. ¡Un efecto wow!"
+      },
+      {
+        "pregunta": "¿Cuál es la capacidad habitual?",
+        "respuesta": "Las tazas suelen ser de 350ml. Las botellas varían entre 500ml (estándar) y 750ml o 1L."
+      },
+      {
+        "pregunta": "¿Podéis grabar a láser?",
+        "respuesta": "Sí, en las botellas y tazas metálicas o con recubrimiento de bambú, el grabado láser queda elegante y es imborrable."
+      }
+    ],
+    "texto_final_refuerzo": "Regala utilidad y salud. Las tazas y botellas de IMPACTO33 son un soporte publicitario de alto valor percibido que tus clientes agradecerán.",
+    "cta_textoCta": "Solicita catálogo y precios de tazas y botellas personalizadas.",
+    "meta_title": "Tazas y Botellas Personalizadas | Bidones y Termos | IMPACTO33",
+    "meta_description": "Amplio catálogo de tazas, botellas térmicas y bidones deportivos personalizados. Regalos de empresa prácticos y sostenibles."
+  },
+  "tazas": {
+    "url": "/tazas-botellas/tazas/",
+    "slug": "tazas",
+    "parent_slug": "tazas-botellas",
+    "search_intent": "tazas personalizadas",
+    "siblings_intents": ["botellas personalizadas", "vasos personalizados", "termos"],
+    "hero_tituloPrincipal": "Tazas Personalizadas: El Clásico que Nunca Falla",
+    "hero_intro": "La taza personalizada es el regalo promocional por excelencia. Económica, útil y con una visibilidad enorme en mesas de oficina y hogares. Disponemos de modelos de cerámica, metal vintage y porcelana.",
+    "hub_subcategorias_texto": "Variedades de tazas:",
+    "ventajasEmpresa": {
+      "titulo": "Tazas para todos los gustos",
+      "items": [
+        "Impresión 360º alrededor de la taza",
+        "Colores interiores y asas a contraste",
+        "Presentación en caja individual disponible",
+        "Modelos apilables para hostelería"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Desayunos de Empresa",
+        "descripcion": "Equipa la cocina de tu oficina con tazas corporativas para crear cultura de empresa en cada pausa café.",
+        "image_alt": "Zona de café en oficina con tazas corporativas"
+      },
+      {
+        "titulo": "Souvenirs Turísticos",
+        "descripcion": "Tazas con fotos de monumentos o diseños locales para tiendas de regalos y museos.",
+        "image_alt": "Estantería de tienda con tazas de souvenir"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Se rompen en el envío?",
+        "respuesta": "Embalamos con mucho cuidado y cajas especiales. Aún así, si alguna llega rota, la reponemos o abonamos sin problemas."
+      },
+      {
+        "pregunta": "¿Qué es la sublimación en tazas?",
+        "respuesta": "Es una técnica que funde la tinta con el esmalte de la taza, permitiendo fotos a todo color con acabado brillante e imperceptible al tacto."
+      },
+      {
+        "pregunta": "¿Tenéis tazas de metal tipo antiguo?",
+        "respuesta": "Sí, las tazas de esmalte vintage (tipo camping) están muy de moda y son irrompibles, ideales para aire libre."
+      },
+      {
+        "pregunta": "¿Hacéis tazas con nombre individual?",
+        "respuesta": "Sí, podemos personalizar cada taza con un nombre diferente para que cada empleado tenga la suya propia."
+      },
+      {
+        "pregunta": "¿Cuál es el plazo de entrega de tazas?",
+        "respuesta": "Para sublimación (pequeñas cantidades) podemos ser muy rápidos (3-5 días). Para serigrafía industrial, unos 10-12 días."
+      },
+      {
+        "pregunta": "¿Tenéis tazas de café pequeñas?",
+        "respuesta": "Sí, disponemos de juegos de café (tamaño espresso) con plato, ideales para hostelería y regalos VIP."
+      }
+    ],
+    "texto_final_refuerzo": "Una taza acompaña a tu cliente en sus momentos de relax y trabajo. Haz que tu marca sea parte de esa rutina con IMPACTO33.",
+    "cta_textoCta": "¿Quieres tazas únicas? Pide tu presupuesto personalizado ya.",
+    "meta_title": "Tazas Personalizadas Baratas | Mugs Publicitarios | IMPACTO33",
+    "meta_description": "Fábrica de tazas personalizadas. Sublimación y serigrafía en tazas de cerámica, metal y cristal. ¡Desde 1 unidad!"
+  },
+  "merchandising": {
+    "url": "/merchandising/",
+    "slug": "merchandising",
+    "parent_slug": "",
+    "search_intent": "merchandising empresas",
+    "siblings_intents": ["regalos publicitarios", "artículos promocionales", "gadgets personalizados"],
+    "hero_tituloPrincipal": "Merchandising y Regalos Originales para Empresas",
+    "hero_intro": "Más allá de lo textil. Encuentra el gadget perfecto, el artículo de oficina indispensable o el detalle tecnológico que sorprenderá a tus clientes. Miles de referencias para cubrir cualquier necesidad promocional.",
+    "hub_subcategorias_texto": "Categorías destacadas de merchandising:",
+    "ventajasEmpresa": {
+      "titulo": "Todo lo que puedas imaginar",
+      "items": [
+        "Catálogo inmenso con novedades constantes",
+        "Precios para todos los presupuestos (desde céntimos)",
+        "Personalización adaptada a cada material",
+        "Asesoramiento para encontrar ideas originales"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Kits de Bienvenida",
+        "descripcion": "Crea packs con libreta, boli, USB y botella para nuevos empleados o cursos de formación.",
+        "image_alt": "Pack de bienvenida con varios artículos de merchandising"
+      },
+      {
+        "titulo": "Regalos Tecnológicos VIP",
+        "descripcion": "Power banks, altavoces o auriculares de marca para clientes especiales o directivos.",
+        "image_alt": "Altavoz bluetooth elegante con logo grabado"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Tenéis bolígrafos baratos?",
+        "respuesta": "Sí, tenemos bolígrafos promocionales desde pocos céntimos para campañas masivas de publicidad."
+      },
+      {
+        "pregunta": "¿Hacéis memorias USB personalizadas?",
+        "respuesta": "Sí, pendrives con tu logo e incluso con formas personalizadas 2D/3D fabricadas a medida en goma."
+      },
+      {
+        "pregunta": "¿Qué es un lanyard?",
+        "respuesta": "Es la cinta para colgar acreditaciones al cuello, imprescindible en congresos, ferias y eventos corporativos."
+      },
+      {
+        "pregunta": "¿Tenéis paraguas personalizados?",
+        "respuesta": "Sí, paraguas plegables y de golf, un regalo muy valorado en zonas de lluvia que ofrece gran visibilidad."
+      },
+      {
+        "pregunta": "¿Hacéis llaveros?",
+        "respuesta": "De metal, madera, acrílico, con forma de casa, coche, moneda para carrito... tenemos cientos de modelos."
+      },
+      {
+        "pregunta": "¿Podéis conseguir artículos que no veo en la web?",
+        "respuesta": "Sí, trabajamos con stock internacional y fabricación a medida. Si existe, te lo conseguimos."
+      }
+    ],
+    "texto_final_refuerzo": "El merchandising efectivo es el que se usa y se conserva. En IMPACTO33 te ayudamos a elegir artículos que aporten valor y visibilidad a tu marca.",
+    "cta_textoCta": "Descubre el regalo perfecto para tu campaña. ¡Contáctanos!",
+    "meta_title": "Merchandising Empresas | Regalos Publicitarios Originales | IMPACTO33",
+    "meta_description": "Tienda online de merchandising y regalos de empresa. Tecnología, oficina, hogar y eventos. Personalización total y precios mayoristas."
+  },
+  "servicios": {
+    "url": "/servicios/",
+    "slug": "servicios",
+    "parent_slug": "",
+    "search_intent": "servicios de personalización",
+    "siblings_intents": ["taller serigrafía", "bordados industriales", "imprenta textil"],
+    "hero_tituloPrincipal": "Nuestros Servicios de Personalización",
+    "hero_intro": "No solo vendemos productos, somos expertos en las técnicas de marcaje. Contamos con talleres propios para garantizar que tu logo quede perfecto sobre cualquier superficie.",
+    "hub_subcategorias_texto": "Conoce nuestras técnicas:",
+    "ventajasEmpresa": {
+      "titulo": "Maestros de la impresión",
+      "items": [
+        "Talleres propios = Mayor control y rapidez",
+        "Asesoramiento técnico sobre la mejor técnica",
+        "Maquinaria de última generación",
+        "Capacidad para grandes producciones industriales"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Marcas de Moda",
+        "descripcion": "Servicio de re-etiquetado, embolsado y acabados premium para lanzamientos de colecciones textiles.",
+        "image_alt": "Prenda de ropa siendo etiquetada en taller"
+      },
+      {
+        "titulo": "Agencias de Publicidad",
+        "descripcion": "Somos el partner de producción de confianza para agencias que necesitan cumplir plazos y calidades exigentes.",
+        "image_alt": "Reunión creativa en agencia de publicidad"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué es la serigrafía?",
+        "respuesta": "Es la técnica reina para textil. Se aplica tinta a través de una pantalla. Económica en grandes cantidades y muy duradera."
+      },
+      {
+        "pregunta": "¿Hacéis bordados?",
+        "respuesta": "Sí, tenemos máquinas multicabezal para bordar polos, gorras, polares y parches con hilos de alta calidad."
+      },
+      {
+        "pregunta": "¿Qué es el DTF?",
+        "respuesta": "Direct to Film. Una técnica digital revolucionaria que permite imprimir a todo color con tacto suave y gran resistencia en cualquier tejido."
+      },
+      {
+        "pregunta": "¿Podéis imprimir sobre metal o cristal?",
+        "respuesta": "Sí, utilizamos tampografía, láser o serigrafía vitrificable según el material y la forma del objeto."
+      },
+      {
+        "pregunta": "¿Revisáis los archivos de diseño?",
+        "respuesta": "Siempre. Nuestro equipo de diseño comprueba calidad y formatos antes de pasar a producción para evitar errores."
+      },
+      {
+        "pregunta": "¿Hacéis manipulados especiales?",
+        "respuesta": "Sí, podemos hacer kits, empaquetados especiales, colocación de pegatinas, etc. Cuéntanos qué necesitas."
+      }
+    ],
+    "texto_final_refuerzo": "La calidad de la personalización dice mucho de tu marca. No te la juegues. Confía en los servicios profesionales de IMPACTO33.",
+    "cta_textoCta": "¿Dudas sobre qué técnica elegir? Te asesoramos gratis.",
+    "meta_title": "Servicios de Serigrafía, Bordado y Personalización | IMPACTO33",
+    "meta_description": "Taller de personalización textil y merchandising. Serigrafía, bordado, sublimación, DTF, láser y tampografía. Calidad profesional."  },
+  "polos": {   "url": "/ropa-personalizada/polos/",
+    "slug": "polos",
+    "parent_slug": "ropa-personalizada",
+    "search_intent": "polos personalizados",
+    "siblings_intents": ["camisetas personalizadas", "sudaderas personalizadas", "ropa laboral"],
+    "hero_tituloPrincipal": "Polos Personalizados Bordados y Serigrafiados",
+    "hero_intro": "El equilibrio perfecto entre elegancia y comodidad. Los polos personalizados son la prenda estrella para uniformes corporativos, eventos de golf y ropa casual de empresa. Disponibles en piqué, algodón y tejido técnico.",
+    "hub_subcategorias_texto": "Elige tu estilo de polo:",
+    "ventajasEmpresa": {
+      "titulo": "Imagen profesional garantizada",
+      "items": [
+        "Bordado de alta calidad para un acabado premium",
+        "Tejidos transpirables y duraderos",
+        "Corte clásico o entallado (mujer/hombre)",
+        "Gran variedad de colores corporativos"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Uniformes de Hostelería",
+        "descripcion": "Polos resistentes y elegantes para camareros y personal de sala, fáciles de lavar y planchar.",
+        "image_alt": "Camarero sirviendo con polo corporativo bordado"
+      },
+      {
+        "titulo": "Eventos Deportivos y Golf",
+        "descripcion": "Polos técnicos que permiten libertad de movimiento, ideales para torneos y clubes.",
+        "image_alt": "Jugador de golf con polo técnico personalizado"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Es mejor bordar o serigrafiar un polo?",
+        "respuesta": "Para polos, recomendamos encarecidamente el bordado. Aporta valor, elegancia y es extremadamente duradero, ideal para uniformes."
+      },
+      {
+        "pregunta": "¿Tenéis polos de manga larga?",
+        "respuesta": "Sí, disponemos de modelos de manga larga para invierno y entretiempo, en los mismos colores que la manga corta."
+      },
+      {
+        "pregunta": "¿Cuál es el gramaje de un buen polo?",
+        "respuesta": "Un polo de calidad estándar suele tener entre 180g y 200g. Para un acabado superior, recomendamos 220g."
+      },
+      {
+        "pregunta": "¿Tenéis polos con bolsillo?",
+        "respuesta": "Sí, contamos con modelos clásicos con bolsillo en el pecho, muy demandados para ropa de trabajo y mantenimiento."
+      },
+      {
+        "pregunta": "¿Se pueden personalizar el cuello y las mangas?",
+        "respuesta": "Algunos modelos premium permiten contrastes de color en cuello y bocamangas (ribetes), dando un toque muy deportivo."
+      },
+      {
+        "pregunta": "¿Hacéis polos técnicos?",
+        "respuesta": "Sí, de poliéster transpirable, perfectos para pádel, tenis y equipos deportivos que buscan ir un poco más vestidos."
+      }
+    ],
+    "texto_final_refuerzo": "Un polo bien hecho transmite seriedad y confianza. En IMPACTO33 cuidamos cada puntada para que tu equipo luzca impecable.",
+    "cta_textoCta": "Viste a tu empresa con clase. Pide presupuesto de polos personalizados.",
+    "meta_title": "Polos Personalizados Bordados | Ropa Laboral | IMPACTO33",
+    "meta_description": "Polos personalizados para empresas y particulares. Bordado de logotipos y serigrafía. Polos de algodón y técnicos al mejor precio."
+  },
+  "gorras": {
+    "url": "/ropa-personalizada/gorras/",
+    "slug": "gorras",
+    "parent_slug": "ropa-personalizada",
+    "search_intent": "gorras personalizadas",
+    "siblings_intents": ["camisetas personalizadas", "sombreros personalizados", "viseras"],
+    "hero_tituloPrincipal": "Gorras Personalizadas: Tu Marca a la Vista",
+    "hero_intro": "Protege del sol y promociona tu marca con estilo. Las gorras personalizadas son un accesorio de moda imprescindible y un regalo publicitario muy visible. Desde la clásica gorra de béisbol hasta la moderna trucker.",
+    "hub_subcategorias_texto": "Tipos de gorras disponibles:",
+    "ventajasEmpresa": {
+      "titulo": "Visibilidad a la altura de los ojos",
+      "items": [
+        "Modelos económicos para grandes eventos",
+        "Gorras premium tipo Flexfit o Snapback",
+        "Bordado 3D con relieve disponible",
+        "Cierre ajustable para talla única"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Festivales y Conciertos",
+        "descripcion": "El accesorio que todos quieren en un evento al aire libre. Tu marca en miles de cabezas.",
+        "image_alt": "Público en festival con gorras personalizadas iguales"
+      },
+      {
+        "titulo": "Equipos Deportivos",
+        "descripcion": "Completa la equipación de tu club con gorras bordadas con el escudo del equipo.",
+        "image_alt": "Equipo de béisbol con gorras corporativas"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué es una gorra trucker?",
+        "respuesta": "Es la gorra 'camionero' con rejilla en la parte trasera y frontal de espuma. Muy de moda, transpirable y económica."
+      },
+      {
+        "pregunta": "¿Hacéis bordado 3D?",
+        "respuesta": "Sí, podemos dar volumen a tu logo con bordado 3D (puff), ideal para letras gruesas y logotipos sencillos."
+      },
+      {
+        "pregunta": "¿Se pueden imprimir fotos en gorras?",
+        "respuesta": "Sí, mediante transfer digital o parches sublimados podemos poner imágenes a todo color en el frontal."
+      },
+      {
+        "pregunta": "¿Tenéis gorras para niños?",
+        "respuesta": "Sí, disponemos de tallas infantiles ajustables para colegios, campamentos y eventos familiares."
+      },
+      {
+        "pregunta": "¿Cuál es el pedido mínimo de gorras?",
+        "respuesta": "Desde 25 unidades para bordado. Para cantidades menores, consultar opciones de impresión digital."
+      },
+      {
+        "pregunta": "¿Hacéis gorros de invierno?",
+        "respuesta": "Sí, tenemos gorros de lana (beanies) personalizables con bordado o etiqueta cosida, perfectos para el frío."
+      }
+    ],
+    "texto_final_refuerzo": "Pon tu marca en lo más alto. Las gorras de IMPACTO33 son el complemento perfecto para cualquier campaña promocional veraniega o deportiva.",
+    "cta_textoCta": "¿Buscas gorras únicas? Contáctanos y te diseñamos la tuya.",
+    "meta_title": "Gorras Personalizadas Baratas | Bordado de Gorras | IMPACTO33",
+    "meta_description": "Fábrica de gorras personalizadas: trucker, béisbol, planas. Bordado 3D y serigrafía. Gorras publicitarias al por mayor."
+  },
+  "mochilas": {
+    "url": "/bolsas-mochilas/mochilas/",
+    "slug": "mochilas",
+    "parent_slug": "bolsas-mochilas",
+    "search_intent": "mochilas personalizadas",
+    "siblings_intents": ["bolsas personalizadas", "mochilas cuerdas", "maletines"],
+    "hero_tituloPrincipal": "Mochilas Personalizadas para el Día a Día",
+    "hero_intro": "Desde mochilas escolares hasta modelos ejecutivos antirrobo. La mochila personalizada es un regalo de alto valor que tus clientes usarán a diario para ir al trabajo, al gimnasio o de viaje.",
+    "hub_subcategorias_texto": "Encuentra la mochila ideal:",
+    "ventajasEmpresa": {
+      "titulo": "Comodidad y marca a la espalda",
+      "items": [
+        "Modelos ergonómicos y acolchados",
+        "Compartimentos para portátil y tablet",
+        "Mochilas saco (gymsacks) muy económicas",
+        "Materiales resistentes: poliéster 600D, nylon"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Regalo Corporativo Premium",
+        "descripcion": "Mochilas tecnológicas con puerto USB y diseño minimalista para regalar a empleados y clientes VIP.",
+        "image_alt": "Ejecutivo caminando con mochila corporativa moderna"
+      },
+      {
+        "titulo": "Eventos Deportivos",
+        "descripcion": "Mochilas de cuerdas ligeras para entregar el kit del corredor en maratones y carreras.",
+        "image_alt": "Corredores con mochilas de cuerdas a la espalda"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Tenéis mochilas antirrobo?",
+        "respuesta": "Sí, modelos con cremalleras ocultas en la espalda y materiales a prueba de cortes, muy demandadas para viajes urbanos."
+      },
+      {
+        "pregunta": "¿Cómo se personaliza una mochila?",
+        "respuesta": "Depende del material. Serigrafía para logos sencillos, transfer para color, o bordado para un acabado más resistente y elegante."
+      },
+      {
+        "pregunta": "¿Hacéis mochilas escolares?",
+        "respuesta": "Sí, mochilas reforzadas con múltiples bolsillos, ideales para colegios, academias y clubes deportivos infantiles."
+      },
+      {
+        "pregunta": "¿Qué es una mochila saco?",
+        "respuesta": "Es una mochila ligera de cuerdas (gymsack), muy barata, ideal para promociones masivas, festivales y deporte."
+      },
+      {
+        "pregunta": "¿Tenéis mochilas ecológicas?",
+        "respuesta": "Sí, disponemos de la línea RPET, fabricada a partir de botellas de plástico recicladas, certificada y sostenible."
+      },
+      {
+        "pregunta": "¿Cuál es el plazo de entrega?",
+        "respuesta": "Unos 10-12 días laborables para mochilas personalizadas. Si las necesitas sin marcar, en 48-72h las tienes."
+      }
+    ],
+    "texto_final_refuerzo": "Acompaña a tus clientes en cada aventura. Una mochila de calidad de IMPACTO33 es un escaparate móvil para tu marca durante años.",
+    "cta_textoCta": "Solicita catálogo de mochilas y precios por cantidad.",
+    "meta_title": "Mochilas Personalizadas | Mochilas Publicitarias | IMPACTO33",
+    "meta_description": "Venta de mochilas personalizadas para empresas, colegios y eventos. Mochilas saco, escolares y para portátil con tu logo."
+  },
+  "botellas": {
+    "url": "/tazas-botellas/botellas/",
+    "slug": "botellas",
+    "parent_slug": "tazas-botellas",
+    "search_intent": "botellas personalizadas",
+    "siblings_intents": ["tazas personalizadas", "termos personalizados", "bidones"],
+    "hero_tituloPrincipal": "Botellas Personalizadas: Hidratación Sostenible",
+    "hero_intro": "Di adiós al plástico de un solo uso. Las botellas personalizadas reutilizables son el regalo eco-friendly del momento. Elegantes, útiles y con una gran superficie para grabar tu mensaje.",
+    "hub_subcategorias_texto": "Tipos de botellas:",
+    "ventajasEmpresa": {
+      "titulo": "Sostenibilidad y diseño",
+      "items": [
+        "Acero inoxidable, cristal, aluminio y tritán",
+        "Libres de BPA y ftalatos",
+        "Tapones antigoteo y herméticos",
+        "Grabado láser circular 360º disponible"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Merchandising Ecológico",
+        "descripcion": "Asocia tu marca a valores de sostenibilidad regalando botellas reutilizables en lugar de folletos.",
+        "image_alt": "Botella reutilizable con logo sobre mesa de madera"
+      },
+      {
+        "titulo": "Equipación Deportiva",
+        "descripcion": "Bidones ligeros y resistentes para equipos de ciclismo, fútbol o gimnasios.",
+        "image_alt": "Ciclista bebiendo de bidón personalizado"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Cuál es la diferencia entre aluminio y acero?",
+        "respuesta": "El aluminio es muy ligero y barato (necesita recubrimiento interior). El acero es más resistente, higiénico y no necesita recubrimiento."
+      },
+      {
+        "pregunta": "¿Las botellas térmicas pesan mucho?",
+        "respuesta": "Pesan un poco más que las simples por la doble pared, pero mantienen la temperatura horas. Son el regalo premium ideal."
+      },
+      {
+        "pregunta": "¿Se puede imprimir a todo color?",
+        "respuesta": "Sí, mediante impresión digital circular o sublimación podemos poner diseños complejos envolviendo la botella."
+      },
+      {
+        "pregunta": "¿Tenéis botellas con pajita?",
+        "respuesta": "Sí, modelos deportivos con boquilla abatible o pajita interior, muy cómodos para beber haciendo deporte."
+      },
+      {
+        "pregunta": "¿El grabado láser se borra?",
+        "respuesta": "No, el láser quema la capa superficial de pintura dejando ver el material base. Es permanente y muy elegante."
+      },
+      {
+        "pregunta": "¿Hacéis botellas de cristal?",
+        "respuesta": "Sí, de borosilicato resistente al calor, muchas veces con funda de silicona o neopreno para protegerlas de golpes."
+      }
+    ],
+    "texto_final_refuerzo": "Regala salud y conciencia ecológica. Las botellas de IMPACTO33 son un detalle que tus clientes usarán a diario en su mesa de trabajo.",
+    "cta_textoCta": "Pide precio para tus botellas corporativas hoy mismo.",
+    "meta_title": "Botellas Personalizadas | Botellas de Agua con Logo | IMPACTO33",
+    "meta_description": "Botellas de agua personalizadas reutilizables. Acero inoxidable, aluminio y cristal. Grabado láser y serigrafía circular."
+  },
+  "tecnologia": {
+    "url": "/merchandising/tecnologia/",
+    "slug": "tecnologia",
+    "parent_slug": "merchandising",
+    "search_intent": "regalos tecnológicos personalizados",
+    "siblings_intents": ["usb personalizados", "power banks", "altavoces"],
+    "hero_tituloPrincipal": "Regalos Tecnológicos Personalizados",
+    "hero_intro": "La tecnología es el regalo más deseado. Sorprende con gadgets útiles y modernos: power banks, altavoces, auriculares y accesorios para móvil. Merchandising que conecta con tu audiencia.",
+    "hub_subcategorias_texto": "Gadgets destacados:",
+    "ventajasEmpresa": {
+      "titulo": "Innovación para tu marca",
+      "items": [
+        "Artículos de alto valor percibido",
+        "Novedades constantes del mercado tech",
+        "Personalización a todo color o láser",
+        "Chips de memoria de calidad garantizada (en USB)"
+      ]
+    },
+    "casosUso": [
+      {
+        "titulo": "Congresos Tecnológicos",
+        "descripcion": "Entrega la documentación del evento en una memoria USB personalizada en lugar de papel.",
+        "image_alt": "Memoria USB con logo conectada a portátil"
+      },
+      {
+        "titulo": "Regalos de Navidad",
+        "descripcion": "Unos buenos auriculares o un altavoz bluetooth son el regalo de empresa perfecto para cerrar el año.",
+        "image_alt": "Caja de regalo con auriculares inalámbricos personalizados"
+      }
+    ],
+    "faq": [
+      {
+        "pregunta": "¿Qué capacidad tienen los Power Banks?",
+        "respuesta": "Desde los de emergencia de 2.000mAh hasta baterías de gran capacidad de 10.000mAh o 20.000mAh para cargar varios dispositivos."
+      },
+      {
+        "pregunta": "¿Hacéis USB con formas especiales?",
+        "respuesta": "Sí, podemos fabricar un pendrive con la forma exacta de tu logo o producto en goma PVC blanda (Soft PVC)."
+      },
+      {
+        "pregunta": "¿Tenéis cargadores inalámbricos?",
+        "respuesta": "Sí, bases de carga Qi personalizables, muy prácticas para tener en el escritorio de la oficina."
+      },
+      {
+        "pregunta": "¿Cuál es el pedido mínimo en tecnología?",
+        "respuesta": "Depende del artículo, pero en USB y gadgets solemos trabajar desde 25 o 50 unidades."
+      },
+      {
+        "pregunta": "¿Pagáis canon digital?",
+        "respuesta": "Sí, todos nuestros precios de memorias y dispositivos de almacenamiento incluyen el canon digital obligatorio por ley."
+      },
+      {
+        "pregunta": "¿Garantizáis los chips de los USB?",
+        "respuesta": "Absolutamente. Solo usamos chips originales (Toshiba, Samsung, etc.) con garantía de capacidad real y durabilidad."
+      }
+    ],
+    "texto_final_refuerzo": "Conecta con tus clientes a través de la tecnología. En IMPACTO33 tenemos los gadgets más innovadores para modernizar tu imagen de marca.",
+    "cta_textoCta": "Solicita catálogo de regalos tecnológicos y sorprende.",
+    "meta_title": "Regalos Tecnológicos Personalizados | Gadgets Empresa | IMPACTO33",
+    "meta_description": "Merchandising tecnológico: Power banks, USB, altavoces y auriculares personalizados. Regalos de empresa modernos y útiles."
+  }
+}

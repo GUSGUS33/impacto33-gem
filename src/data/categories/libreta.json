@@ -1,0 +1,63 @@
+{
+  "url": "/escritura-personalizada/libreta",
+  "slug": "libreta",
+  "parent_slug": "escritura-personalizada",
+  "search_intent": "Comprar libretas y cuadernos personalizados para merchandising y regalos corporativos",
+  "siblings_intents": [
+    "boligrafo",
+    "lapiz",
+    "set-escritura",
+    "agenda"
+  ],
+  "hero_tituloPrincipal": "Libretas Personalizadas para Empresas: Tu Marca en Cada Página",
+  "hero_intro": "Descubre nuestra amplia selección de libretas y cuadernos personalizables, el regalo corporativo perfecto para potenciar la imagen de tu marca. Ideales para congresos, ferias o como material de oficina de alta calidad. Ofrecemos opciones ecológicas, de tapa dura o blanda, y con diversos métodos de marcaje.",
+  "hub_subcategorias_texto": "Explora las diferentes opciones de personalización disponibles para libretas, desde el tipo de papel y tamaño (A4, A5, A6) hasta los acabados premium como el grabado láser o la serigrafía a todo color.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestras Libretas Personalizadas",
+    "items": [
+      "Visibilidad de Marca Duradera y Uso Diario",
+      "Regalo Corporativo de Alto Valor Percibido y Utilidad",
+      "Amplia Gama de Materiales: Ecológicas, Corcho, Bambú y Más",
+      "Personalización de Alta Calidad con Serigrafía, Grabado o Impresión Digital"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo en Eventos y Ferias",
+      "descripcion": "Entrega libretas con tu logo a los asistentes de tu próximo evento. Un detalle práctico que garantiza que tu marca sea recordada y utilizada mucho después de que el evento termine.",
+      "image_alt": "Libreta personalizada con logo de empresa en un stand de feria"
+    },
+    {
+      "titulo": "Material de Oficina Corporativo",
+      "descripcion": "Mejora la imagen interna y fomenta la cohesión del equipo proporcionando libretas de marca para el uso diario en la oficina, reuniones y toma de notas.",
+      "image_alt": "Pila de libretas corporativas sobre un escritorio con bolígrafos"
+    },
+    {
+      "titulo": "Merchandising para Clientes VIP",
+      "descripcion": "Utiliza libretas de alta calidad, con acabados premium como el grabado láser o tapas de corcho, como parte de un pack de bienvenida o regalo exclusivo para clientes importantes.",
+      "image_alt": "Libreta de tapa dura con grabado láser y cinta de marcaje"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la cantidad mínima de pedido para las libretas personalizadas?",
+      "respuesta": "La cantidad mínima varía según el modelo de libreta y el tipo de personalización. Generalmente, nuestros pedidos comienzan a partir de 50 o 100 unidades. Consulta la ficha de producto específica para obtener el detalle exacto."
+    },
+    {
+      "pregunta": "¿Qué tipos de personalización están disponibles para las libretas?",
+      "respuesta": "Ofrecemos diversas técnicas, incluyendo serigrafía (ideal para logos a color), grabado láser (para un acabado elegante en tapas de madera o corcho), y tampografía o impresión digital (para diseños más complejos)."
+    },
+    {
+      "pregunta": "¿Puedo personalizar el interior de la libreta, como las hojas?",
+      "respuesta": "Sí, en muchos de nuestros modelos es posible personalizar las primeras páginas interiores con información de la empresa, calendarios o diseños específicos, además de elegir entre hojas rayadas, cuadriculadas o lisas."
+    },
+    {
+      "pregunta": "¿Qué materiales ecológicos ofrecen para las libretas?",
+      "respuesta": "Contamos con una amplia gama de libretas ecológicas fabricadas con materiales sostenibles como papel reciclado, corcho, bambú o cartón reciclado, perfectas para una imagen de marca responsable."
+    }
+  ],
+  "texto_final_refuerzo": "Las libretas personalizadas son una herramienta de marketing atemporal y funcional. Asegura que tu marca esté presente en el día a día de tus clientes y empleados con un producto de calidad que realmente utilizarán. ¡Empieza a diseñar tu libreta perfecta hoy mismo!",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado y Muestras",
+  "meta_title": "Libretas Personalizadas para Empresas | Merchandising y Regalos Corporativos",
+  "meta_description": "Amplia selección de libretas y cuadernos personalizados con tu logo. Opciones ecológicas, tapa dura y blanda. Ideales para eventos, ferias y material de oficina. ¡Pide tu presupuesto sin compromiso!"
+}

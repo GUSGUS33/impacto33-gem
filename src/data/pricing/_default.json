@@ -1,0 +1,22 @@
+{
+  "categoria": "General",
+  "cantidad_minima": 10,
+  "factores_escalado": {
+    "10": 5.16,
+    "25": 3.69,
+    "50": 2.97,
+    "100": 2.13,
+    "250": 1.67,
+    "500": 1.32,
+    "1000": 1.0,
+    "2000": 0.89
+  },
+  "coste_personalizacion": {
+    "frontal": 0.50,
+    "espalda": 0.45,
+    "manga_izquierda": 0.50,
+    "manga_derecha": 0.50
+  },
+  "zonas_permitidas": ["frontal", "espalda", "manga_izquierda", "manga_derecha"],
+  "notas": "Precios IVA incluido"
+}

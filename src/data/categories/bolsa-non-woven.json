@@ -1,0 +1,59 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-non-woven",
+  "slug": "bolsa-non-woven",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar bolsas non-woven personalizadas al por mayor",
+  "siblings_intents": [
+    "bolsa-papel",
+    "bolsa-tela",
+    "bolsa-algodon",
+    "bolsa-yute"
+  ],
+  "hero_tituloPrincipal": "Bolsas Non-Woven Personalizadas: La Opción Ecológica y Duradera para tu Marca",
+  "hero_intro": "Descubre la versatilidad y resistencia de nuestras **bolsas non-woven personalizadas**. Fabricadas con polipropileno reciclable, son la alternativa perfecta a las bolsas de plástico. Ideales para ferias, eventos y tiendas, ofrecen una gran área de impresión para maximizar la visibilidad de tu logo con un bajo coste por impacto. Elige entre una amplia gama de colores y tamaños y haz que tu marca viaje lejos.",
+  "hub_subcategorias_texto": "Explora nuestra selección de bolsas non-woven, el material más popular para merchandising por su equilibrio entre precio, durabilidad y compromiso ecológico. Desde modelos plegables hasta formatos con fuelle, encuentra la bolsa perfecta para tus necesidades de promoción.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestras Bolsas Non-Woven",
+    "items": [
+      "Máxima durabilidad y reutilización, prolongando la vida útil de tu publicidad.",
+      "Material 100% reciclable y ligero, alineado con la sostenibilidad de tu empresa.",
+      "Excelente relación calidad-precio, ideal para grandes tiradas promocionales.",
+      "Amplia superficie de impresión para logos y diseños complejos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Feria Comercial y Congresos",
+      "descripcion": "Entrega tus catálogos y regalos promocionales en una bolsa non-woven resistente. Los asistentes la reutilizarán, llevando tu marca por toda la ciudad.",
+      "image_alt": "Bolsa non-woven con logo de empresa en un stand de feria"
+    },
+    {
+      "titulo": "Tiendas Retail y Boutiques",
+      "descripcion": "Sustituye las bolsas de plástico por una opción más premium y reutilizable. Mejora la percepción de valor de tu producto y la imagen de tu marca.",
+      "image_alt": "Cliente saliendo de una tienda con una bolsa non-woven personalizada"
+    },
+    {
+      "titulo": "Eventos Deportivos y Kits de Bienvenida",
+      "descripcion": "Perfecta para incluir botellas de agua, camisetas y folletos. Su resistencia garantiza que el kit llegue intacto a manos del participante.",
+      "image_alt": "Bolsa non-woven con equipamiento deportivo para un maratón"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué es el material non-woven y por qué es popular?",
+      "respuesta": "El non-woven (o 'tejido no tejido') es un material similar a la tela, fabricado a partir de fibras de polipropileno unidas por procesos térmicos o químicos. Es popular por ser económico, muy resistente, reutilizable y 100% reciclable, lo que lo convierte en un favorito para merchandising ecológico."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima de pedido para bolsas non-woven personalizadas?",
+      "respuesta": "Nuestras bolsas non-woven están pensadas para pedidos al por mayor. La cantidad mínima de pedido (MOQ) suele comenzar a partir de 100 unidades, lo que nos permite ofrecer los precios más competitivos del mercado."
+    },
+    {
+      "pregunta": "¿Qué técnicas de impresión se utilizan en las bolsas non-woven?",
+      "respuesta": "Principalmente utilizamos la serigrafía para logos sencillos y la impresión por transferencia o digital para diseños a todo color. La elección depende de la complejidad de tu diseño y la cantidad de colores."
+    }
+  ],
+  "texto_final_refuerzo": "Las bolsas non-woven son una inversión inteligente en marketing. Ofrecen una gran visibilidad a largo plazo y refuerzan el compromiso de tu marca con la sostenibilidad. ¡Pide tu presupuesto hoy y comienza a promocionar tu negocio de forma responsable!",
+  "cta_textoCta": "Personaliza tus Bolsas Non-Woven Ahora",
+  "meta_title": "Bolsas Non-Woven Personalizadas | Ecológicas, Baratas y Reutilizables",
+  "meta_description": "Diseña tus bolsas non-woven personalizadas al por mayor. Material resistente, 100% reciclable y la mejor opción para ferias, eventos y tiendas. ¡Pide presupuesto sin compromiso!"
+}

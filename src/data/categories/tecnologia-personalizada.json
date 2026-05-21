@@ -1,0 +1,58 @@
+{
+  "url": "/tecnologia-personalizada",
+  "slug": "tecnologia-personalizada",
+  "parent_slug": "",
+  "search_intent": "Intención Comercial/Transaccional: Búsqueda de soluciones tecnológicas adaptadas a necesidades específicas (software, hardware, servicios de consultoría).",
+  "siblings_intents": [
+    "Intención Informativa: ¿Qué es la personalización tecnológica?",
+    "Intención Comercial: Soluciones de IA para personalización",
+    "Intención Comercial: Dispositivos tecnológicos a medida"
+  ],
+  "hero_tituloPrincipal": "Tecnología Personalizada: Soluciones a Medida para su Éxito",
+  "hero_intro": "En un mundo digital en constante evolución, la **tecnología personalizada** es la clave para desbloquear la máxima eficiencia y una experiencia de usuario inigualable. Diseñamos y desarrollamos soluciones tecnológicas (software, hardware y plataformas) que se adaptan con precisión milimétrica a los procesos, objetivos y desafíos únicos de su empresa, eliminando las ineficiencias de las soluciones genéricas y potenciando su ventaja competitiva.",
+  "hub_subcategorias_texto": "Descubra cómo podemos transformar su negocio con tecnología hecha a su medida:",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Invertir en Tecnología Diseñada para Usted",
+    "items": [
+      "Máxima Eficiencia Operacional: Soluciones que se integran perfectamente con sus flujos de trabajo existentes.",
+      "Experiencia de Usuario Superior: Interfaces intuitivas y funcionalidades centradas en las necesidades reales de sus empleados y clientes.",
+      "Escalabilidad y Flexibilidad: Sistemas construidos para crecer con su negocio y adaptarse a futuros cambios sin fricciones.",
+      "Ventaja Competitiva Sostenible: Funcionalidades únicas que no están disponibles en productos de software o hardware estándar."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Software de Gestión Empresarial (ERP/CRM) a Medida",
+      "descripcion": "Desarrollo de plataformas de gestión que consolidan todas las operaciones (ventas, inventario, contabilidad) en un único sistema, eliminando la necesidad de múltiples herramientas desconectadas.",
+      "image_alt": "Ilustración de un dashboard de software ERP/CRM personalizado con gráficos y datos"
+    },
+    {
+      "titulo": "Dispositivos IoT y Hardware Específico",
+      "descripcion": "Creación de dispositivos inteligentes (IoT) o hardware especializado para entornos industriales o comerciales, optimizando la recolección de datos y la automatización de procesos físicos.",
+      "image_alt": "Imagen de un sensor IoT industrial o un dispositivo de hardware diseñado a medida"
+    },
+    {
+      "titulo": "Plataformas de Experiencia del Cliente (CX)",
+      "descripcion": "Implementación de portales de cliente, aplicaciones móviles o sistemas de recomendación basados en IA que ofrecen interacciones hiper-personalizadas, aumentando la retención y la satisfacción.",
+      "image_alt": "Captura de pantalla de una aplicación móvil o portal web con contenido personalizado para el usuario"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué diferencia a la tecnología personalizada de una solución estándar?",
+      "respuesta": "Una solución estándar ofrece un conjunto fijo de funcionalidades para un mercado amplio. La tecnología personalizada se diseña desde cero para resolver sus problemas específicos, ajustándose a sus procesos de negocio únicos y ofreciendo una ventaja competitiva que las soluciones 'de caja' no pueden igualar."
+    },
+    {
+      "pregunta": "¿Cuánto tiempo tarda el desarrollo de una solución personalizada?",
+      "respuesta": "El tiempo varía según la complejidad, pero nuestro proceso ágil se enfoca en entregar valor rápidamente. Comenzamos con un prototipo funcional en pocas semanas y trabajamos en ciclos iterativos para asegurar que el producto final cumpla con todas sus expectativas en el menor tiempo posible."
+    },
+    {
+      "pregunta": "¿Es más costosa la tecnología personalizada que el software comercial?",
+      "respuesta": "La inversión inicial puede ser mayor, pero a largo plazo, la tecnología personalizada resulta más rentable. Elimina costos de licencias recurrentes, reduce la necesidad de costosas integraciones y aumenta la productividad de manera significativa, ofreciendo un Retorno de Inversión (ROI) superior."
+    }
+  ],
+  "texto_final_refuerzo": "No se conforme con herramientas que solo cumplen parcialmente sus requisitos. Dé el salto a la **Tecnología Personalizada** y obtenga una solución que no solo se ajusta a su negocio, sino que lo impulsa hacia el futuro. Hablemos de su proyecto.",
+  "cta_textoCta": "Solicite una Consultoría Gratuita",
+  "meta_title": "Tecnología Personalizada | Soluciones de Software y Hardware a Medida",
+  "meta_description": "Diseñamos y desarrollamos tecnología personalizada (software, hardware, plataformas) para empresas. Soluciones a medida que garantizan máxima eficiencia y una experiencia de usuario superior."
+}

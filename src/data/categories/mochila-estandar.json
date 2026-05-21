@@ -1,0 +1,49 @@
+{
+  "url": "/mochilas-personalizadas/mochila-estandar",
+  "slug": "mochila-estandar",
+  "parent_slug": "mochilas-personalizadas",
+  "search_intent": "mochilas personalizadas baratas",
+  "siblings_intents": [
+    "mochilas cuerdas",
+    "mochilas portatil",
+    "mochilas escolares"
+  ],
+  "hero_tituloPrincipal": "Mochilas Personalizadas Estándar",
+  "hero_intro": "La mochila clásica reinventada para tu marca. Versatilidad, capacidad y una gran superficie de marcaje hacen de este modelo el regalo promocional por excelencia para cualquier público.",
+  "hub_subcategorias_texto": "Modelos versátiles para el día a día:",
+  "ventajasEmpresa": {
+    "titulo": "El regalo publicitario universal",
+    "items": [
+      "Alta Visibilidad: Tu logo en movimiento por toda la ciudad.",
+      "Utilidad Diaria: Un regalo que tus clientes usarán realmente.",
+      "Gran Capacidad: Espacio para todo lo necesario.",
+      "Coste Efectivo: Excelente relación impacto/precio."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos Corporativos",
+      "descripcion": "El regalo perfecto para asistentes a congresos y ferias.",
+      "image_alt": "Mochilas para eventos"
+    },
+    {
+      "titulo": "Gimnasios y Clubes",
+      "descripcion": "Mochilas deportivas para socios y equipos.",
+      "image_alt": "Mochilas deportivas personalizadas"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿De qué material son?",
+      "respuesta": "Principalmente poliéster 600D de alta resistencia, aunque tenemos opciones en nylon y materiales reciclados."
+    },
+    {
+      "pregunta": "¿Se pueden imprimir a todo color?",
+      "respuesta": "Sí, mediante transfer digital o serigrafía a varios colores según el diseño."
+    }
+  ],
+  "texto_final_refuerzo": "Lleva tu marca a hombros de tus clientes con nuestras mochilas personalizadas estándar.",
+  "cta_textoCta": "¿Buscas mochilas promocionales?",
+  "meta_title": "Mochilas Personalizadas Estándar | Mochilas Publicitarias | IMPACTO33",
+  "meta_description": "Mochilas personalizadas baratas para publicidad. Modelos estándar de poliéster ideales para eventos, gimnasios y merchandising corporativo."
+}

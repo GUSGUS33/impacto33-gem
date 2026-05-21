@@ -1,0 +1,60 @@
+{
+  "url": "/tecnologia-personalizada/altavoz",
+  "slug": "altavoz",
+  "parent_slug": "tecnologia-personalizada",
+  "search_intent": "Comprar altavoces personalizados para merchandising o regalos de empresa",
+  "siblings_intents": [
+    "memorias-usb",
+    "power-banks",
+    "auriculares",
+    "cargadores",
+    "smartwatches"
+  ],
+  "hero_tituloPrincipal": "Altavoces Personalizados para Empresas: El Regalo Tecnológico que Resuena con tu Marca",
+  "hero_intro": "En la era digital, un **altavoz personalizado** no es solo un gadget, es una potente herramienta de marketing. Ofrece a tus clientes y empleados un sonido de alta calidad con el logo de tu empresa, asegurando que tu marca sea escuchada alto y claro en cada reunión, viaje o momento de ocio. Descubre nuestra amplia gama de altavoces Bluetooth, desde modelos compactos hasta opciones premium, todos listos para ser el embajador de tu marca.",
+  "hub_subcategorias_texto": "",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestros Altavoces Personalizados?",
+    "items": [
+      "Alta Visibilidad de Marca: Un producto de uso diario que garantiza la exposición constante de tu logo.",
+      "Percepción de Calidad: Asocia tu marca con la tecnología y el buen sonido, elevando su valor percibido.",
+      "Versatilidad de Modelos: Desde altavoces impermeables para exteriores hasta elegantes modelos de bambú ecológico.",
+      "Conexión Emocional: La música genera recuerdos, y tu marca estará ligada a esos momentos positivos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos y Ferias Tecnológicas",
+      "descripcion": "Regala un mini altavoz Bluetooth con tu logo en la próxima feria. Es un artículo práctico que los asistentes usarán inmediatamente, atrayendo miradas hacia tu stand.",
+      "image_alt": "Altavoz personalizado en un stand de feria tecnológica."
+    },
+    {
+      "titulo": "Regalo de Bienvenida para Empleados (Onboarding)",
+      "descripcion": "Incluye un altavoz de diseño en el kit de bienvenida de nuevos empleados. Fomenta un ambiente de trabajo moderno y demuestra aprecio por su incorporación.",
+      "image_alt": "Kit de bienvenida con altavoz personalizado sobre un escritorio."
+    },
+    {
+      "titulo": "Campañas de Fidelización de Clientes Premium",
+      "descripcion": "Utiliza un altavoz de alta gama como incentivo para compras grandes o para agradecer la lealtad de tus clientes más valiosos. Un regalo que realmente impresiona.",
+      "image_alt": "Altavoz Bluetooth premium con logo de empresa."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de altavoces se pueden personalizar?",
+      "respuesta": "Ofrecemos una amplia variedad, incluyendo altavoces Bluetooth portátiles, altavoces impermeables, modelos con carga inalámbrica, y opciones ecológicas fabricadas con materiales como bambú o corcho."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima de pedido (MOQ) para altavoces personalizados?",
+      "respuesta": "La cantidad mínima varía según el modelo y la técnica de personalización. Generalmente, comienza a partir de 25 o 50 unidades. Consulta la ficha de producto específica para más detalles."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización están disponibles?",
+      "respuesta": "Las técnicas más comunes son la serigrafía para logos a color, el grabado láser para un acabado elegante y duradero, y la impresión digital para diseños complejos o fotografías."
+    }
+  ],
+  "texto_final_refuerzo": "Convierte el sonido en el sello de tu marca. Nuestros altavoces personalizados son la fusión perfecta de utilidad, diseño y tecnología, garantizando que tu mensaje corporativo se escuche con la mejor calidad.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado y Haz que tu Marca Suene Fuerte",
+  "meta_title": "Altavoces Personalizados con Logo | Merchandising Tecnológico para Empresas",
+  "meta_description": "Descubre nuestra selección de altavoces Bluetooth personalizados. El regalo tecnológico ideal para eventos, ferias y fidelización de clientes. ¡Alta calidad y sonido potente!"
+}

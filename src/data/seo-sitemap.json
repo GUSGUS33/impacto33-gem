@@ -1,0 +1,2309 @@
+[
+    {
+        "url": "/camisetas-personalizadas/",
+        "slug": "camisetas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "camisetas personalizadas",
+        "siblings_intents": [
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas",
+          "pantalones personalizados",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Camisetas personalizadas",
+        "children": [
+          {
+            "url": "/camisetas-personalizadas/camisetas-tirantes/",
+            "anchor": "Camisetas de tirantes"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-manga-corta/",
+            "anchor": "Camisetas manga corta"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-manga-larga/",
+            "anchor": "Camisetas manga larga"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-ecologicas/",
+            "anchor": "Camisetas ecológicas"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-industria/",
+            "anchor": "Camisetas industria"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-ignifugas/",
+            "anchor": "Camisetas ignífugas"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-reflectantes/",
+            "anchor": "Camisetas reflectantes"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-roly-dry/",
+            "anchor": "Camisetas Roly Dry"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-deporte/",
+            "anchor": "Camisetas deporte"
+          },
+          {
+            "url": "/camisetas-personalizadas/camisetas-tecnicas/",
+            "anchor": "Camisetas técnicas"
+          }
+        ]
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-tirantes/",
+        "slug": "camisetas-tirantes",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas de tirantes",
+        "siblings_intents": [
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria",
+          "camisetas ignífugas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas de tirantes",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-manga-corta/",
+        "slug": "camisetas-manga-corta",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas manga corta",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria",
+          "camisetas ignífugas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas manga corta",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-manga-larga/",
+        "slug": "camisetas-manga-larga",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas manga larga",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas ecológicas",
+          "camisetas industria",
+          "camisetas ignífugas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas manga larga",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-ecologicas/",
+        "slug": "camisetas-ecologicas",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas ecológicas",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas industria",
+          "camisetas ignífugas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas ecológicas",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-industria/",
+        "slug": "camisetas-industria",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas industria",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas ignífugas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas industria",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-ignifugas/",
+        "slug": "camisetas-ignifugas",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas ignífugas",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas ignífugas",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-reflectantes/",
+        "slug": "camisetas-reflectantes",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas reflectantes",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas reflectantes",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-roly-dry/",
+        "slug": "camisetas-roly-dry",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas roly dry",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas Roly Dry",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-deporte/",
+        "slug": "camisetas-deporte",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas deporte",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas deporte",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/camisetas-personalizadas/camisetas-tecnicas/",
+        "slug": "camisetas-tecnicas",
+        "parent_slug": "camisetas-personalizadas",
+        "search_intent": "camisetas técnicas",
+        "siblings_intents": [
+          "camisetas de tirantes",
+          "camisetas manga corta",
+          "camisetas manga larga",
+          "camisetas ecológicas",
+          "camisetas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas técnicas",
+        "parent": "/camisetas-personalizadas/"
+      },
+      {
+        "url": "/polos-personalizados/",
+        "slug": "polos-personalizados",
+        "parent_slug": "",
+        "search_intent": "polos personalizados",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas",
+          "pantalones personalizados",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Polos personalizados",
+        "children": [
+          {
+            "url": "/polos-personalizados/polos-manga-corta/",
+            "anchor": "Polos manga corta"
+          },
+          {
+            "url": "/polos-personalizados/polos-manga-larga/",
+            "anchor": "Polos manga larga"
+          },
+          {
+            "url": "/polos-personalizados/polos-industria/",
+            "anchor": "Polos industria"
+          },
+          {
+            "url": "/polos-personalizados/polos-ignifugos/",
+            "anchor": "Polos ignífugos"
+          },
+          {
+            "url": "/polos-personalizados/polos-deportivos/",
+            "anchor": "Polos deportivos"
+          },
+          {
+            "url": "/polos-personalizados/polos-reflectantes/",
+            "anchor": "Polos reflectantes"
+          }
+        ]
+      },
+      {
+        "url": "/polos-personalizados/polos-manga-corta/",
+        "slug": "polos-manga-corta",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos manga corta",
+        "siblings_intents": [
+          "polos manga larga",
+          "polos industria",
+          "polos ignífugos",
+          "polos deportivos",
+          "polos reflectantes"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos manga corta",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/polos-personalizados/polos-manga-larga/",
+        "slug": "polos-manga-larga",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos manga larga",
+        "siblings_intents": [
+          "polos manga corta",
+          "polos industria",
+          "polos ignífugos",
+          "polos deportivos",
+          "polos reflectantes"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos manga larga",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/polos-personalizados/polos-industria/",
+        "slug": "polos-industria",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos industria",
+        "siblings_intents": [
+          "polos manga corta",
+          "polos manga larga",
+          "polos ignífugos",
+          "polos deportivos",
+          "polos reflectantes"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos industria",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/polos-personalizados/polos-ignifugos/",
+        "slug": "polos-ignifugos",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos ignífugos",
+        "siblings_intents": [
+          "polos manga corta",
+          "polos manga larga",
+          "polos industria",
+          "polos deportivos",
+          "polos reflectantes"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos ignífugos",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/polos-personalizados/polos-deportivos/",
+        "slug": "polos-deportivos",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos deportivos",
+        "siblings_intents": [
+          "polos manga corta",
+          "polos manga larga",
+          "polos industria",
+          "polos ignífugos",
+          "polos reflectantes"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos deportivos",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/polos-personalizados/polos-reflectantes/",
+        "slug": "polos-reflectantes",
+        "parent_slug": "polos-personalizados",
+        "search_intent": "polos reflectantes",
+        "siblings_intents": [
+          "polos manga corta",
+          "polos manga larga",
+          "polos industria",
+          "polos ignífugos",
+          "polos deportivos"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Polos reflectantes",
+        "parent": "/polos-personalizados/"
+      },
+      {
+        "url": "/sudaderas-personalizadas/",
+        "slug": "sudaderas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "sudaderas personalizadas",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "polos personalizados",
+          "chaquetas personalizadas",
+          "pantalones personalizados",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Sudaderas personalizadas",
+        "children": [
+          {
+            "url": "/sudaderas-personalizadas/sudaderas-con-capucha/",
+            "anchor": "Sudaderas con capucha"
+          },
+          {
+            "url": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha/",
+            "anchor": "Sudaderas sin capucha"
+          },
+          {
+            "url": "/sudaderas-personalizadas/sudaderas-industria/",
+            "anchor": "Sudaderas industria"
+          },
+          {
+            "url": "/sudaderas-personalizadas/sudaderas-alta-visibilidad/",
+            "anchor": "Sudaderas alta visibilidad"
+          }
+        ]
+      },
+      {
+        "url": "/sudaderas-personalizadas/sudaderas-con-capucha/",
+        "slug": "sudaderas-con-capucha",
+        "parent_slug": "sudaderas-personalizadas",
+        "search_intent": "sudaderas con capucha",
+        "siblings_intents": [
+          "sudaderas sin capucha",
+          "sudaderas industria",
+          "sudaderas alta visibilidad"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sudaderas con capucha",
+        "parent": "/sudaderas-personalizadas/"
+      },
+      {
+        "url": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha/",
+        "slug": "sudaderas-sin-capucha",
+        "parent_slug": "sudaderas-personalizadas",
+        "search_intent": "sudaderas sin capucha",
+        "siblings_intents": [
+          "sudaderas con capucha",
+          "sudaderas industria",
+          "sudaderas alta visibilidad"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sudaderas sin capucha",
+        "parent": "/sudaderas-personalizadas/"
+      },
+      {
+        "url": "/sudaderas-personalizadas/sudaderas-industria/",
+        "slug": "sudaderas-industria",
+        "parent_slug": "sudaderas-personalizadas",
+        "search_intent": "sudaderas industria",
+        "siblings_intents": [
+          "sudaderas con capucha",
+          "sudaderas sin capucha",
+          "sudaderas alta visibilidad"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sudaderas industria",
+        "parent": "/sudaderas-personalizadas/"
+      },
+      {
+        "url": "/sudaderas-personalizadas/sudaderas-alta-visibilidad/",
+        "slug": "sudaderas-alta-visibilidad",
+        "parent_slug": "sudaderas-personalizadas",
+        "search_intent": "sudaderas alta visibilidad",
+        "siblings_intents": [
+          "sudaderas con capucha",
+          "sudaderas sin capucha",
+          "sudaderas industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sudaderas alta visibilidad",
+        "parent": "/sudaderas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/",
+        "slug": "chaquetas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "chaquetas personalizadas",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "pantalones personalizados",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Chaquetas personalizadas",
+        "children": [
+          {
+            "url": "/chaquetas-personalizadas/abrigos/",
+            "anchor": "Abrigos"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-softshell/",
+            "anchor": "Chaquetas Softshell"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-ignifugas/",
+            "anchor": "Chaquetas ignífugas"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-polares/",
+            "anchor": "Chaquetas polares"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-horeca/",
+            "anchor": "Chaquetas horeca"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-cortaviento/",
+            "anchor": "Cortavientos"
+          },
+          {
+            "url": "/chaquetas-personalizadas/chaquetas-impermeables/",
+            "anchor": "Chaquetas impermeables"
+          }
+        ]
+      },
+      {
+        "url": "/chaquetas-personalizadas/abrigos/",
+        "slug": "abrigos",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "abrigos",
+        "siblings_intents": [
+          "chaquetas softshell",
+          "chaquetas ignífugas",
+          "chaquetas polares",
+          "chaquetas horeca",
+          "cortavientos",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Abrigos",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-softshell/",
+        "slug": "chaquetas-softshell",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "chaquetas softshell",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas ignífugas",
+          "chaquetas polares",
+          "chaquetas horeca",
+          "cortavientos",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chaquetas Softshell",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-ignifugas/",
+        "slug": "chaquetas-ignifugas",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "chaquetas ignífugas",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas softshell",
+          "chaquetas polares",
+          "chaquetas horeca",
+          "cortavientos",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chaquetas ignífugas",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-polares/",
+        "slug": "chaquetas-polares",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "chaquetas polares",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas softshell",
+          "chaquetas ignífugas",
+          "chaquetas horeca",
+          "cortavientos",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chaquetas polares",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-horeca/",
+        "slug": "chaquetas-horeca",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "chaquetas horeca",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas softshell",
+          "chaquetas ignífugas",
+          "chaquetas polares",
+          "cortavientos",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chaquetas horeca",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-cortaviento/",
+        "slug": "chaquetas-cortavientos",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "cortavientos",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas softshell",
+          "chaquetas ignífugas",
+          "chaquetas polares",
+          "chaquetas horeca",
+          "chaquetas impermeables"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Cortavientos",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/chaquetas-personalizadas/chaquetas-impermeables/",
+        "slug": "chaquetas-impermeables",
+        "parent_slug": "chaquetas-personalizadas",
+        "search_intent": "chaquetas impermeables",
+        "siblings_intents": [
+          "abrigos",
+          "chaquetas softshell",
+          "chaquetas ignífugas",
+          "chaquetas polares",
+          "chaquetas horeca",
+          "cortavientos"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chaquetas impermeables",
+        "parent": "/chaquetas-personalizadas/"
+      },
+      {
+        "url": "/pantalones-personalizados/",
+        "slug": "pantalones-personalizados",
+        "parent_slug": "",
+        "search_intent": "pantalones personalizados",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Pantalones personalizados",
+        "children": [
+          {
+            "url": "/pantalones-personalizados/pantalones-largos/",
+            "anchor": "Pantalones largos"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-deportivos/",
+            "anchor": "Pantalones deportivos"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-ignifugos/",
+            "anchor": "Pantalones ignífugos"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-industria/",
+            "anchor": "Pantalones industria"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-alimentacion/",
+            "anchor": "Pantalones alimentación"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-horeca/",
+            "anchor": "Pantalones horeca"
+          },
+          {
+            "url": "/pantalones-personalizados/pantalones-sanitarios/",
+            "anchor": "Pantalones sanitarios"
+          }
+        ]
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-largos/",
+        "slug": "pantalones-largos",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones largos",
+        "siblings_intents": [
+          "pantalones deportivos",
+          "pantalones ignífugos",
+          "pantalones industria",
+          "pantalones alimentación",
+          "pantalones horeca",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones largos",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-deportivos/",
+        "slug": "pantalones-deportivos",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones deportivos",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones ignífugos",
+          "pantalones industria",
+          "pantalones alimentación",
+          "pantalones horeca",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones deportivos",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-ignifugos/",
+        "slug": "pantalones-ignifugos",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones ignífugos",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones deportivos",
+          "pantalones industria",
+          "pantalones alimentación",
+          "pantalones horeca",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones ignífugos",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-industria/",
+        "slug": "pantalones-industria",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones industria",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones deportivos",
+          "pantalones ignífugos",
+          "pantalones alimentación",
+          "pantalones horeca",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones industria",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-alimentacion/",
+        "slug": "pantalones-alimentacion",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones alimentación",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones deportivos",
+          "pantalones ignífugos",
+          "pantalones industria",
+          "pantalones horeca",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones alimentación",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-horeca/",
+        "slug": "pantalones-horeca",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones horeca",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones deportivos",
+          "pantalones ignífugos",
+          "pantalones industria",
+          "pantalones alimentación",
+          "pantalones sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones horeca",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/pantalones-personalizados/pantalones-sanitarios/",
+        "slug": "pantalones-sanitarios",
+        "parent_slug": "pantalones-personalizados",
+        "search_intent": "pantalones sanitarios",
+        "siblings_intents": [
+          "pantalones largos",
+          "pantalones deportivos",
+          "pantalones ignífugos",
+          "pantalones industria",
+          "pantalones alimentación",
+          "pantalones horeca"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones sanitarios",
+        "parent": "/pantalones-personalizados/"
+      },
+      {
+        "url": "/monos-personalizados/",
+        "slug": "monos-personalizados",
+        "parent_slug": "",
+        "search_intent": "monos personalizados",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas",
+          "pantalones personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Monos personalizados",
+        "children": [
+          {
+            "url": "/monos-personalizados/monos-industria/",
+            "anchor": "Monos industria"
+          },
+          {
+            "url": "/monos-personalizados/monos-ignifugos/",
+            "anchor": "Monos ignífugos"
+          }
+        ]
+      },
+      {
+        "url": "/monos-personalizados/monos-industria/",
+        "slug": "monos-industria",
+        "parent_slug": "monos-personalizados",
+        "search_intent": "monos industria",
+        "siblings_intents": [
+          "monos ignífugos"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Monos industria",
+        "parent": "/monos-personalizados/"
+      },
+      {
+        "url": "/monos-personalizados/monos-ignifugos/",
+        "slug": "monos-ignifugos",
+        "parent_slug": "monos-personalizados",
+        "search_intent": "monos ignífugos",
+        "siblings_intents": [
+          "monos industria"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Monos ignífugos",
+        "parent": "/monos-personalizados/"
+      },
+      {
+        "url": "/vestuario-laboral/",
+        "slug": "vestuario-laboral",
+        "parent_slug": "",
+        "search_intent": "vestuario laboral",
+        "siblings_intents": [
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas",
+          "pantalones personalizados",
+          "monos personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Vestuario laboral",
+        "children": [
+          {
+            "url": "/vestuario-laboral/industria/",
+            "anchor": "Vestuario industria"
+          },
+          {
+            "url": "/vestuario-laboral/alimentaria/",
+            "anchor": "Ropa alimentación"
+          },
+          {
+            "url": "/vestuario-laboral/sanitario/",
+            "anchor": "Uniformes sanitarios"
+          },
+          {
+            "url": "/vestuario-laboral/hosteleria/",
+            "anchor": "Uniformes hostelería"
+          },
+          {
+            "url": "/vestuario-laboral/alta-visibilidad/",
+            "anchor": "Ropa alta visibilidad"
+          },
+          {
+            "url": "/vestuario-laboral/ignifugo/",
+            "anchor": "Ropa ignífuga"
+          }
+        ]
+      },
+      {
+        "url": "/vestuario-laboral/industria/",
+        "slug": "industria",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "ropa industria",
+        "siblings_intents": [
+          "ropa alimentación",
+          "uniformes sanitarios",
+          "uniformes hostelería",
+          "ropa alta visibilidad",
+          "ropa ignífuga"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Vestuario industria",
+        "parent": "/vestuario-laboral/"
+      },
+      {
+        "url": "/vestuario-laboral/alimentaria/",
+        "slug": "alimentaria",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "ropa alimentación",
+        "siblings_intents": [
+          "ropa industria",
+          "uniformes sanitarios",
+          "uniformes hostelería",
+          "ropa alta visibilidad",
+          "ropa ignífuga"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Ropa alimentación",
+        "parent": "/vestuario-laboral/",
+        "children": [
+          {
+            "url": "/vestuario-laboral/alimentaria/batas/",
+            "anchor": "Batas alimentación"
+          },
+          {
+            "url": "/vestuario-laboral/alimentaria/gorros/",
+            "anchor": "Gorros alimentación"
+          }
+        ]
+      },
+      {
+        "url": "/vestuario-laboral/alimentaria/batas/",
+        "slug": "batas-alimentacion",
+        "parent_slug": "alimentaria",
+        "search_intent": "batas alimentación",
+        "siblings_intents": [
+          "gorros alimentación"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Batas alimentación",
+        "parent": "/vestuario-laboral/alimentaria/"
+      },
+      {
+        "url": "/vestuario-laboral/alimentaria/gorros/",
+        "slug": "gorros-alimentacion",
+        "parent_slug": "alimentaria",
+        "search_intent": "gorros alimentación",
+        "siblings_intents": [
+          "batas alimentación"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Gorros alimentación",
+        "parent": "/vestuario-laboral/alimentaria/"
+      },
+      {
+        "url": "/vestuario-laboral/sanitario/",
+        "slug": "sanitario",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "uniformes sanitarios",
+        "siblings_intents": [
+          "ropa industria",
+          "ropa alimentación",
+          "uniformes hostelería",
+          "ropa alta visibilidad",
+          "ropa ignífuga"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Uniformes sanitarios",
+        "parent": "/vestuario-laboral/",
+        "children": [
+          {
+            "url": "/vestuario-laboral/sanitario/batas/",
+            "anchor": "Batas sanitarias"
+          },
+          {
+            "url": "/vestuario-laboral/sanitario/gorros/",
+            "anchor": "Gorros sanitarios"
+          }
+        ]
+      },
+      {
+        "url": "/vestuario-laboral/sanitario/batas/",
+        "slug": "batas-sanitarias",
+        "parent_slug": "sanitario",
+        "search_intent": "batas sanitarias",
+        "siblings_intents": [
+          "gorros sanitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Batas sanitarias",
+        "parent": "/vestuario-laboral/sanitario/"
+      },
+      {
+        "url": "/vestuario-laboral/sanitario/gorros/",
+        "slug": "gorros-sanitarios",
+        "parent_slug": "sanitario",
+        "search_intent": "gorros sanitarios",
+        "siblings_intents": [
+          "batas sanitarias"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Gorros sanitarios",
+        "parent": "/vestuario-laboral/sanitario/"
+      },
+      {
+        "url": "/vestuario-laboral/hosteleria/",
+        "slug": "vestuario-hosteleria",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "uniformes hostelería",
+        "siblings_intents": [
+          "ropa industria",
+          "ropa alimentación",
+          "uniformes sanitarios",
+          "ropa alta visibilidad",
+          "ropa ignífuga"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Uniformes hostelería",
+        "parent": "/vestuario-laboral/"
+      },
+      {
+        "url": "/vestuario-laboral/alta-visibilidad/",
+        "slug": "vestuario-alta-visibilidad",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "ropa alta visibilidad",
+        "siblings_intents": [
+          "ropa industria",
+          "ropa alimentación",
+          "uniformes sanitarios",
+          "uniformes hostelería",
+          "ropa ignífuga"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Ropa alta visibilidad",
+        "parent": "/vestuario-laboral/"
+      },
+      {
+        "url": "/vestuario-laboral/ignifugo/",
+        "slug": "vestuario-ignifugo",
+        "parent_slug": "vestuario-laboral",
+        "search_intent": "ropa ignífuga",
+        "siblings_intents": [
+          "ropa industria",
+          "ropa alimentación",
+          "uniformes sanitarios",
+          "uniformes hostelería",
+          "ropa alta visibilidad"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Ropa ignífuga",
+        "parent": "/vestuario-laboral/"
+      },
+      {
+        "url": "/mochilas-personalizadas/",
+        "slug": "mochilas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "mochilas personalizadas",
+        "siblings_intents": [
+          "bolsas personalizadas",
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Mochilas personalizadas",
+        "children": [
+          {
+            "url": "/mochilas-personalizadas/mochilas-estandar/",
+            "anchor": "Mochilas estándar"
+          },
+          {
+            "url": "/mochilas-personalizadas/mochilas-cuerdas/",
+            "anchor": "Mochilas de cuerdas"
+          },
+          {
+            "url": "/mochilas-personalizadas/mochilas-escolar/",
+            "anchor": "Mochilas escolares"
+          },
+          {
+            "url": "/mochilas-personalizadas/mochilas-portatil/",
+            "anchor": "Mochilas para portátil"
+          }
+        ]
+      },
+      {
+        "url": "/mochilas-personalizadas/mochilas-estandar/",
+        "slug": "mochilas-estandar",
+        "parent_slug": "mochilas-personalizadas",
+        "search_intent": "mochilas estándar",
+        "siblings_intents": [
+          "mochilas de cuerdas",
+          "mochilas escolares",
+          "mochilas para portátil"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Mochilas estándar",
+        "parent": "/mochilas-personalizadas/"
+      },
+      {
+        "url": "/mochilas-personalizadas/mochilas-cuerdas/",
+        "slug": "mochilas-cuerdas",
+        "parent_slug": "mochilas-personalizadas",
+        "search_intent": "mochilas de cuerdas",
+        "siblings_intents": [
+          "mochilas estándar",
+          "mochilas escolares",
+          "mochilas para portátil"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Mochilas de cuerdas",
+        "parent": "/mochilas-personalizadas/"
+      },
+      {
+        "url": "/mochilas-personalizadas/mochilas-escolar/",
+        "slug": "mochilas-escolar",
+        "parent_slug": "mochilas-personalizadas",
+        "search_intent": "mochilas escolares",
+        "siblings_intents": [
+          "mochilas estándar",
+          "mochilas de cuerdas",
+          "mochilas para portátil"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Mochilas escolares",
+        "parent": "/mochilas-personalizadas/"
+      },
+      {
+        "url": "/mochilas-personalizadas/mochilas-portatil/",
+        "slug": "mochilas-portatil",
+        "parent_slug": "mochilas-personalizadas",
+        "search_intent": "mochilas para portátil",
+        "siblings_intents": [
+          "mochilas estándar",
+          "mochilas de cuerdas",
+          "mochilas escolares"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Mochilas para portátil",
+        "parent": "/mochilas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/",
+        "slug": "bolsas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "bolsas personalizadas",
+        "siblings_intents": [
+          "mochilas personalizadas",
+          "camisetas personalizadas",
+          "polos personalizados",
+          "sudaderas personalizadas",
+          "chaquetas personalizadas"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Bolsas personalizadas",
+        "children": [
+          { "url": "/bolsas-personalizadas/bolsas-algodon/", "anchor": "Bolsas de algodón" },
+          { "url": "/bolsas-personalizadas/bolsas-papel/", "anchor": "Bolsas de papel" },
+          { "url": "/bolsas-personalizadas/bolsas-plegables/", "anchor": "Bolsas plegables" },
+          { "url": "/bolsas-personalizadas/bolsas-yute/", "anchor": "Bolsas de yute" },
+          { "url": "/bolsas-personalizadas/bolsas-non-woven/", "anchor": "Bolsas non woven" },
+          { "url": "/bolsas-personalizadas/bolsas-botella/", "anchor": "Bolsas para botellas" },
+          { "url": "/bolsas-personalizadas/bolsas-viaje/", "anchor": "Bolsas de viaje" },
+          { "url": "/bolsas-personalizadas/bolsas-estancas/", "anchor": "Bolsas estancas" },
+          { "url": "/bolsas-personalizadas/bolsas-termicas/", "anchor": "Bolsas térmicas" },
+          { "url": "/bolsas-personalizadas/bolsas-baratas/", "anchor": "Bolsas baratas" },
+          { "url": "/bolsas-personalizadas/bolsas-para-tiendas/", "anchor": "Bolsas para tiendas" },
+          { "url": "/bolsas-personalizadas/bolsas-regalo/", "anchor": "Bolsas de regalo" },
+          { "url": "/bolsas-personalizadas/bolsas-al-por-mayor/", "anchor": "Bolsas al por mayor" }
+        ]
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-algodon/",
+        "slug": "bolsas-algodon",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas de algodón personalizadas",
+        "siblings_intents": [
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas de algodón",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-papel/",
+        "slug": "bolsas-papel",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas de papel personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas de papel",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-plegables/",
+        "slug": "bolsas-plegables",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas plegables personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas plegables",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-yute/",
+        "slug": "bolsas-yute",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas de yute personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas de yute",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-non-woven/",
+        "slug": "bolsas-non-woven",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas non woven personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas non woven",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-botella/",
+        "slug": "bolsas-botella",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas para botellas personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas para botellas",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-viaje/",
+        "slug": "bolsas-viaje",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas de viaje personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas de viaje",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-estancas/",
+        "slug": "bolsas-estancas",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas estancas personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas estancas",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-termicas/",
+        "slug": "bolsas-termicas",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas térmicas personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas térmicas",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-baratas/",
+        "slug": "bolsas-baratas",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas baratas personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas para tiendas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas baratas",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-para-tiendas/",
+        "slug": "bolsas-para-tiendas",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas para tiendas personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas de regalo",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas para tiendas",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-regalo/",
+        "slug": "bolsas-regalo",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas regalo personalizadas",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas al por mayor"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas de regalo",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/bolsas-personalizadas/bolsas-al-por-mayor/",
+        "slug": "bolsas-al-por-mayor",
+        "parent_slug": "bolsas-personalizadas",
+        "search_intent": "bolsas personalizadas al por mayor",
+        "siblings_intents": [
+          "bolsas de algodón",
+          "bolsas de papel",
+          "bolsas plegables",
+          "bolsas de yute",
+          "bolsas non woven",
+          "bolsas para botellas",
+          "bolsas de viaje",
+          "bolsas estancas",
+          "bolsas térmicas",
+          "bolsas baratas",
+          "bolsas para tiendas",
+          "bolsas de regalo"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolsas al por mayor",
+        "parent": "/bolsas-personalizadas/"
+      },
+      {
+        "url": "/accesorios-viaje/",
+        "slug": "accesorios-viaje",
+        "parent_slug": "",
+        "search_intent": "accesorios de viaje personalizados",
+        "siblings_intents": [
+          "bolsas personalizadas",
+          "mochilas personalizadas",
+          "tazas personalizadas",
+          "botellas personalizadas"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Accesorios de viaje",
+        "children": [
+          { "url": "/accesorios-viaje/maletas/", "anchor": "Maletas" },
+          { "url": "/accesorios-viaje/neceser/", "anchor": "Neceser de viaje" },
+          { "url": "/accesorios-viaje/identificador-maleta/", "anchor": "Identificadores de maleta" }
+        ]
+      },
+      {
+        "url": "/accesorios-viaje/maletas/",
+        "slug": "maletas",
+        "parent_slug": "accesorios-viaje",
+        "search_intent": "maletas personalizadas",
+        "siblings_intents": [
+          "neceser de viaje",
+          "identificadores de maleta"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Maletas",
+        "parent": "/accesorios-viaje/"
+      },
+      {
+        "url": "/accesorios-viaje/neceser/",
+        "slug": "neceser",
+        "parent_slug": "accesorios-viaje",
+        "search_intent": "neceser de viaje personalizado",
+        "siblings_intents": [
+          "maletas",
+          "identificadores de maleta"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Neceser de viaje",
+        "parent": "/accesorios-viaje/"
+      },
+      {
+        "url": "/accesorios-viaje/identificador-maleta/",
+        "slug": "identificador-maleta",
+        "parent_slug": "accesorios-viaje",
+        "search_intent": "identificadores de maleta personalizados",
+        "siblings_intents": [
+          "maletas",
+          "neceser de viaje"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Identificadores de maleta",
+        "parent": "/accesorios-viaje/"
+      },
+      {
+        "url": "/papeleria-personalizada/",
+        "slug": "papeleria-personalizada",
+        "parent_slug": "",
+        "search_intent": "papelería personalizada",
+        "siblings_intents": [
+          "bolígrafos personalizados",
+          "libretas personalizadas",
+          "carpetas personalizadas"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Papelería personalizada",
+        "children": [
+          {
+            "url": "/papeleria-personalizada/agendas/",
+            "anchor": "Agendas personalizadas"
+          }
+        ]
+      },
+      {
+        "url": "/papeleria-personalizada/agendas/",
+        "slug": "agendas",
+        "parent_slug": "papeleria-personalizada",
+        "search_intent": "agendas personalizadas",
+        "siblings_intents": [],
+        "tipo": "categoria_hija",
+        "anchor": "Agendas personalizadas",
+        "parent": "/papeleria-personalizada/"
+      },
+      {
+        "url": "/escritura-personalizada/",
+        "slug": "escritura-personalizada",
+        "parent_slug": "",
+        "search_intent": "escritura personalizada",
+        "siblings_intents": [
+          "bolígrafos personalizados",
+          "libretas personalizadas",
+          "carpetas personalizadas",
+          "papelería personalizada"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Escritura personalizada",
+        "children": [
+          { "url": "/boligrafos-personalizados/", "anchor": "Bolígrafos personalizados" },
+          { "url": "/libretas-personalizadas/", "anchor": "Libretas personalizadas" },
+          { "url": "/carpetas-personalizadas/", "anchor": "Carpetas personalizadas" }
+        ]
+      },
+      {
+        "url": "/boligrafos-personalizados/",
+        "slug": "boligrafos-personalizados",
+        "parent_slug": "escritura-personalizada",
+        "search_intent": "bolígrafos personalizados",
+        "siblings_intents": [
+          "libretas personalizadas",
+          "carpetas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolígrafos personalizados",
+        "parent": "/escritura-personalizada/",
+        "children": [
+          { "url": "/boligrafos-personalizados/plastico/", "anchor": "Bolígrafos de plástico" },
+          { "url": "/boligrafos-personalizados/metalicos/", "anchor": "Bolígrafos metálicos" },
+          { "url": "/boligrafos-personalizados/madera/", "anchor": "Bolígrafos de madera" },
+          { "url": "/boligrafos-personalizados/ecologicos/", "anchor": "Bolígrafos ecológicos" },
+          { "url": "/boligrafos-personalizados/sets-escritura/", "anchor": "Sets de escritura" }
+        ]
+      },
+      {
+        "url": "/boligrafos-personalizados/plastico/",
+        "slug": "boligrafos-plastico",
+        "parent_slug": "boligrafos-personalizados",
+        "search_intent": "bolígrafos de plástico personalizados",
+        "siblings_intents": [
+          "bolígrafos metálicos",
+          "bolígrafos de madera",
+          "bolígrafos ecológicos",
+          "sets de escritura"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolígrafos de plástico",
+        "parent": "/boligrafos-personalizados/"
+      },
+      {
+        "url": "/boligrafos-personalizados/metalicos/",
+        "slug": "boligrafos-metalicos",
+        "parent_slug": "boligrafos-personalizados",
+        "search_intent": "bolígrafos metálicos personalizados",
+        "siblings_intents": [
+          "bolígrafos de plástico",
+          "bolígrafos de madera",
+          "bolígrafos ecológicos",
+          "sets de escritura"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolígrafos metálicos",
+        "parent": "/boligrafos-personalizados/"
+      },
+      {
+        "url": "/boligrafos-personalizados/madera/",
+        "slug": "boligrafos-madera",
+        "parent_slug": "boligrafos-personalizados",
+        "search_intent": "bolígrafos de madera personalizados",
+        "siblings_intents": [
+          "bolígrafos de plástico",
+          "bolígrafos metálicos",
+          "bolígrafos ecológicos",
+          "sets de escritura"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolígrafos de madera",
+        "parent": "/boligrafos-personalizados/"
+      },
+      {
+        "url": "/boligrafos-personalizados/ecologicos/",
+        "slug": "boligrafos-ecologicos",
+        "parent_slug": "boligrafos-personalizados",
+        "search_intent": "bolígrafos ecológicos personalizados",
+        "siblings_intents": [
+          "bolígrafos de plástico",
+          "bolígrafos metálicos",
+          "bolígrafos de madera",
+          "sets de escritura"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Bolígrafos ecológicos",
+        "parent": "/boligrafos-personalizados/"
+      },
+      {
+        "url": "/boligrafos-personalizados/sets-escritura/",
+        "slug": "sets-escritura",
+        "parent_slug": "boligrafos-personalizados",
+        "search_intent": "sets de escritura personalizados",
+        "siblings_intents": [
+          "bolígrafos de plástico",
+          "bolígrafos metálicos",
+          "bolígrafos de madera",
+          "bolígrafos ecológicos"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sets de escritura",
+        "parent": "/boligrafos-personalizados/"
+      },
+      {
+        "url": "/libretas-personalizadas/",
+        "slug": "libretas-personalizadas",
+        "parent_slug": "escritura-personalizada",
+        "search_intent": "libretas personalizadas",
+        "siblings_intents": [
+          "bolígrafos personalizados",
+          "carpetas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Libretas personalizadas",
+        "parent": "/escritura-personalizada/",
+        "children": [
+          { "url": "/libretas-personalizadas/libretas-publicitarias/", "anchor": "Libretas publicitarias" },
+          { "url": "/libretas-personalizadas/portafolios-personalizados/", "anchor": "Portafolios personalizados" },
+          { "url": "/libretas-personalizadas/libretas-corporativas-bolsillo/", "anchor": "Libretas corporativas de bolsillo" },
+          { "url": "/libretas-personalizadas/con-boligrafo/", "anchor": "Libretas con bolígrafo" },
+          { "url": "/libretas-personalizadas/recicladas-ecologicas/", "anchor": "Libretas recicladas y ecológicas" },
+          { "url": "/libretas-personalizadas/notas-adhesivas-personalizadas/", "anchor": "Notas adhesivas personalizadas" }
+        ]
+      },
+      {
+        "url": "/libretas-personalizadas/libretas-publicitarias/",
+        "slug": "libretas-publicitarias",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "libretas publicitarias personalizadas",
+        "siblings_intents": [
+          "portafolios personalizados",
+          "libretas corporativas de bolsillo",
+          "libretas con bolígrafo",
+          "libretas ecológicas",
+          "notas adhesivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Libretas publicitarias",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/libretas-personalizadas/portafolios-personalizados/",
+        "slug": "portafolios-personalizados",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "portafolios personalizados",
+        "siblings_intents": [
+          "libretas publicitarias",
+          "libretas corporativas de bolsillo",
+          "libretas con bolígrafo",
+          "libretas ecológicas",
+          "notas adhesivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Portafolios personalizados",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/libretas-personalizadas/libretas-corporativas-bolsillo/",
+        "slug": "libretas-corporativas-bolsillo",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "libretas corporativas de bolsillo",
+        "siblings_intents": [
+          "libretas publicitarias",
+          "portafolios personalizados",
+          "libretas con bolígrafo",
+          "libretas ecológicas",
+          "notas adhesivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Libretas corporativas de bolsillo",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/libretas-personalizadas/con-boligrafo/",
+        "slug": "libretas-con-boligrafo",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "libretas con bolígrafo personalizadas",
+        "siblings_intents": [
+          "libretas publicitarias",
+          "portafolios personalizados",
+          "libretas corporativas de bolsillo",
+          "libretas ecológicas",
+          "notas adhesivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Libretas con bolígrafo",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/libretas-personalizadas/recicladas-ecologicas/",
+        "slug": "libretas-recicladas-ecologicas",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "libretas ecológicas personalizadas",
+        "siblings_intents": [
+          "libretas publicitarias",
+          "portafolios personalizados",
+          "libretas corporativas de bolsillo",
+          "libretas con bolígrafo",
+          "notas adhesivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Libretas recicladas y ecológicas",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/libretas-personalizadas/notas-adhesivas-personalizadas/",
+        "slug": "notas-adhesivas-personalizadas",
+        "parent_slug": "libretas-personalizadas",
+        "search_intent": "notas adhesivas personalizadas",
+        "siblings_intents": [
+          "libretas publicitarias",
+          "portafolios personalizados",
+          "libretas corporativas de bolsillo",
+          "libretas con bolígrafo",
+          "libretas ecológicas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Notas adhesivas personalizadas",
+        "parent": "/libretas-personalizadas/"
+      },
+      {
+        "url": "/carpetas-personalizadas/",
+        "slug": "carpetas-personalizadas",
+        "parent_slug": "escritura-personalizada",
+        "search_intent": "carpetas personalizadas",
+        "siblings_intents": [
+          "bolígrafos personalizados",
+          "libretas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Carpetas personalizadas",
+        "parent": "/escritura-personalizada/"
+      },
+      {
+        "url": "/tecnologia-personalizada/",
+        "slug": "tecnologia-personalizada",
+        "parent_slug": "",
+        "search_intent": "tecnología personalizada",
+        "siblings_intents": [
+          "bolígrafos personalizados",
+          "tazas personalizadas",
+          "botellas personalizadas"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Tecnología personalizada",
+        "children": [
+          { "url": "/tecnologia-personalizada/power-bank/", "anchor": "Power bank personalizados" },
+          { "url": "/tecnologia-personalizada/memoria-usb/", "anchor": "Memorias USB personalizadas" },
+          { "url": "/tecnologia-personalizada/altavoz/", "anchor": "Altavoces personalizados" },
+          { "url": "/tecnologia-personalizada/auriculares/", "anchor": "Auriculares personalizados" }
+        ]
+      },
+      {
+        "url": "/tecnologia-personalizada/power-bank/",
+        "slug": "power-bank",
+        "parent_slug": "tecnologia-personalizada",
+        "search_intent": "power bank personalizados",
+        "siblings_intents": [
+          "memorias usb",
+          "altavoces personalizados",
+          "auriculares personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Power bank personalizados",
+        "parent": "/tecnologia-personalizada/"
+      },
+      {
+        "url": "/tecnologia-personalizada/memoria-usb/",
+        "slug": "memoria-usb",
+        "parent_slug": "tecnologia-personalizada",
+        "search_intent": "memorias usb personalizadas",
+        "siblings_intents": [
+          "power bank personalizados",
+          "altavoces personalizados",
+          "auriculares personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Memorias USB personalizadas",
+        "parent": "/tecnologia-personalizada/"
+      },
+      {
+        "url": "/tecnologia-personalizada/altavoz/",
+        "slug": "altavoz",
+        "parent_slug": "tecnologia-personalizada",
+        "search_intent": "altavoces personalizados",
+        "siblings_intents": [
+          "power bank personalizados",
+          "memorias usb",
+          "auriculares personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Altavoces personalizados",
+        "parent": "/tecnologia-personalizada/"
+      },
+      {
+        "url": "/tecnologia-personalizada/auriculares/",
+        "slug": "auriculares",
+        "parent_slug": "tecnologia-personalizada",
+        "search_intent": "auriculares personalizados",
+        "siblings_intents": [
+          "power bank personalizados",
+          "memorias usb",
+          "altavoces personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Auriculares personalizados",
+        "parent": "/tecnologia-personalizada/"
+      },
+      {
+        "url": "/hogar-personalizado/",
+        "slug": "hogar-personalizado",
+        "parent_slug": "",
+        "search_intent": "regalos para el hogar personalizados",
+        "siblings_intents": [
+          "tazas personalizadas",
+          "textil personalizado",
+          "decoración personalizada"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Hogar personalizado",
+        "children": [
+          { "url": "/hogar-personalizado/cocina/", "anchor": "Cocina" },
+          { "url": "/hogar-personalizado/decoracion/", "anchor": "Decoración" },
+          { "url": "/hogar-personalizado/mantas/", "anchor": "Mantas personalizadas" },
+          { "url": "/hogar-personalizado/velas/", "anchor": "Velas personalizadas" }
+        ]
+      },
+      {
+        "url": "/hogar-personalizado/cocina/",
+        "slug": "cocina",
+        "parent_slug": "hogar-personalizado",
+        "search_intent": "artículos de cocina personalizados",
+        "siblings_intents": [
+          "decoración personalizada",
+          "mantas personalizadas",
+          "velas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Cocina",
+        "parent": "/hogar-personalizado/"
+      },
+      {
+        "url": "/hogar-personalizado/decoracion/",
+        "slug": "decoracion",
+        "parent_slug": "hogar-personalizado",
+        "search_intent": "decoración personalizada",
+        "siblings_intents": [
+          "artículos de cocina personalizados",
+          "mantas personalizadas",
+          "velas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Decoración",
+        "parent": "/hogar-personalizado/"
+      },
+      {
+        "url": "/hogar-personalizado/mantas/",
+        "slug": "mantas",
+        "parent_slug": "hogar-personalizado",
+        "search_intent": "mantas personalizadas",
+        "siblings_intents": [
+          "artículos de cocina personalizados",
+          "decoración personalizada",
+          "velas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Mantas personalizadas",
+        "parent": "/hogar-personalizado/"
+      },
+      {
+        "url": "/hogar-personalizado/velas/",
+        "slug": "velas",
+        "parent_slug": "hogar-personalizado",
+        "search_intent": "velas personalizadas",
+        "siblings_intents": [
+          "artículos de cocina personalizados",
+          "decoración personalizada",
+          "mantas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Velas personalizadas",
+        "parent": "/hogar-personalizado/"
+      },
+      {
+        "url": "/merchandising-eventos/",
+        "slug": "merchandising-eventos",
+        "parent_slug": "",
+        "search_intent": "merchandising para eventos",
+        "siblings_intents": [
+          "regalos publicitarios",
+          "regalos de empresa",
+          "textil publicitario"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Merchandising para eventos",
+        "children": [
+          { "url": "/imanes-personalizados/", "anchor": "Imanes personalizados" },
+          { "url": "/lanyards-personalizados/", "anchor": "Lanyards personalizados" },
+          { "url": "/llaveros-personalizados/", "anchor": "Llaveros personalizados" },
+          { "url": "/chapas-personalizadas/", "anchor": "Chapas personalizadas" }
+        ]
+      },
+      {
+        "url": "/imanes-personalizados/",
+        "slug": "imanes-personalizados",
+        "parent_slug": "merchandising-eventos",
+        "search_intent": "imanes personalizados",
+        "siblings_intents": [
+          "lanyards personalizados",
+          "llaveros personalizados",
+          "chapas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Imanes personalizados",
+        "parent": "/merchandising-eventos/"
+      },
+      {
+        "url": "/lanyards-personalizados/",
+        "slug": "lanyards-personalizados",
+        "parent_slug": "merchandising-eventos",
+        "search_intent": "lanyards personalizados",
+        "siblings_intents": [
+          "imanes personalizados",
+          "llaveros personalizados",
+          "chapas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Lanyards personalizados",
+        "parent": "/merchandising-eventos/"
+      },
+      {
+        "url": "/llaveros-personalizados/",
+        "slug": "llaveros-personalizados",
+        "parent_slug": "merchandising-eventos",
+        "search_intent": "llaveros personalizados",
+        "siblings_intents": [
+          "imanes personalizados",
+          "lanyards personalizados",
+          "chapas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Llaveros personalizados",
+        "parent": "/merchandising-eventos/"
+      },
+      {
+        "url": "/chapas-personalizadas/",
+        "slug": "chapas-personalizadas",
+        "parent_slug": "merchandising-eventos",
+        "search_intent": "chapas personalizadas",
+        "siblings_intents": [
+          "imanes personalizados",
+          "lanyards personalizados",
+          "llaveros personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Chapas personalizadas",
+        "parent": "/merchandising-eventos/"
+      },
+      {
+        "url": "/verano-personalizado/",
+        "slug": "verano-personalizado",
+        "parent_slug": "",
+        "search_intent": "artículos de verano personalizados",
+        "siblings_intents": [
+          "artículos de playa personalizados",
+          "accesorios verano personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Artículos de verano",
+        "children": [
+          { "url": "/verano-personalizado/toalla-playa/", "anchor": "Toallas de playa personalizadas" },
+          { "url": "/verano-personalizado/sombrilla-playa/", "anchor": "Sombrillas de playa personalizadas" },
+          { "url": "/verano-personalizado/gafas-sol/", "anchor": "Gafas de sol personalizadas" }
+        ]
+      },
+      {
+        "url": "/verano-personalizado/toalla-playa/",
+        "slug": "toalla-playa",
+        "parent_slug": "verano-personalizado",
+        "search_intent": "toallas de playa personalizadas",
+        "siblings_intents": [
+          "sombrillas de playa personalizadas",
+          "gafas de sol personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Toallas de playa personalizadas",
+        "parent": "/verano-personalizado/"
+      },
+      {
+        "url": "/verano-personalizado/sombrilla-playa/",
+        "slug": "sombrilla-playa",
+        "parent_slug": "verano-personalizado",
+        "search_intent": "sombrillas de playa personalizadas",
+        "siblings_intents": [
+          "toallas de playa personalizadas",
+          "gafas de sol personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Sombrillas de playa personalizadas",
+        "parent": "/verano-personalizado/"
+      },
+      {
+        "url": "/verano-personalizado/gafas-sol/",
+        "slug": "gafas-sol",
+        "parent_slug": "verano-personalizado",
+        "search_intent": "gafas de sol personalizadas",
+        "siblings_intents": [
+          "toallas de playa personalizadas",
+          "sombrillas de playa personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Gafas de sol personalizadas",
+        "parent": "/verano-personalizado/"
+      },
+      {
+        "url": "/mascotas-personalizadas/",
+        "slug": "mascotas-personalizadas",
+        "parent_slug": "",
+        "search_intent": "accesorios para mascotas personalizados",
+        "siblings_intents": [
+          "artículos de verano personalizados",
+          "accesorios deporte",
+          "regalos publicitarios"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Accesorios para mascotas",
+        "children": [
+          { "url": "/mascotas-personalizadas/perros/", "anchor": "Accesorios para perros" },
+          { "url": "/mascotas-personalizadas/gatos/", "anchor": "Accesorios para gatos" }
+        ]
+      },
+      {
+        "url": "/mascotas-personalizadas/perros/",
+        "slug": "perros",
+        "parent_slug": "mascotas-personalizadas",
+        "search_intent": "accesorios para perros personalizados",
+        "siblings_intents": [
+          "accesorios para gatos personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Accesorios para perros",
+        "parent": "/mascotas-personalizadas/"
+      },
+      {
+        "url": "/mascotas-personalizadas/gatos/",
+        "slug": "gatos",
+        "parent_slug": "mascotas-personalizadas",
+        "search_intent": "accesorios para gatos personalizados",
+        "siblings_intents": [
+          "accesorios para perros personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Accesorios para gatos",
+        "parent": "/mascotas-personalizadas/"
+      },
+      {
+        "url": "/deporte-personalizado/",
+        "slug": "deporte-personalizado",
+        "parent_slug": "",
+        "search_intent": "ropa deportiva personalizada",
+        "siblings_intents": [
+          "ropa de trabajo",
+          "artículos de verano personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Ropa deportiva personalizada",
+        "children": [
+          { "url": "/deporte-personalizado/equipaciones/", "anchor": "Equipaciones deportivas" },
+          { "url": "/deporte-personalizado/accesorios/", "anchor": "Accesorios de deporte" }
+        ]
+      },
+      {
+        "url": "/deporte-personalizado/equipaciones/",
+        "slug": "equipaciones",
+        "parent_slug": "deporte-personalizado",
+        "search_intent": "equipaciones deportivas personalizadas",
+        "siblings_intents": [
+          "accesorios de deporte"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Equipaciones deportivas",
+        "parent": "/deporte-personalizado/",
+        "children": [
+          { "url": "/deporte-personalizado/equipaciones/camisetas/", "anchor": "Camisetas deportivas personalizadas" },
+          { "url": "/deporte-personalizado/equipaciones/pantalones/", "anchor": "Pantalones deportivos personalizados" }
+        ]
+      },
+      {
+        "url": "/deporte-personalizado/equipaciones/camisetas/",
+        "slug": "equipaciones-camisetas",
+        "parent_slug": "equipaciones",
+        "search_intent": "camisetas deportivas personalizadas",
+        "siblings_intents": [
+          "pantalones deportivos personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Camisetas deportivas personalizadas",
+        "parent": "/deporte-personalizado/equipaciones/"
+      },
+      {
+        "url": "/deporte-personalizado/equipaciones/pantalones/",
+        "slug": "equipaciones-pantalones",
+        "parent_slug": "equipaciones",
+        "search_intent": "pantalones deportivos personalizados",
+        "siblings_intents": [
+          "camisetas deportivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Pantalones deportivos personalizados",
+        "parent": "/deporte-personalizado/equipaciones/"
+      },
+      {
+        "url": "/deporte-personalizado/accesorios/",
+        "slug": "accesorios-deporte",
+        "parent_slug": "deporte-personalizado",
+        "search_intent": "accesorios deportivos personalizados",
+        "siblings_intents": [
+          "equipaciones deportivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Accesorios de deporte",
+        "parent": "/deporte-personalizado/",
+        "children": [
+          { "url": "/deporte-personalizado/accesorios/botellas/", "anchor": "Botellas deportivas personalizadas" },
+          { "url": "/deporte-personalizado/accesorios/toallas/", "anchor": "Toallas deportivas personalizadas" }
+        ]
+      },
+      {
+        "url": "/deporte-personalizado/accesorios/botellas/",
+        "slug": "accesorios-botellas",
+        "parent_slug": "accesorios-deporte",
+        "search_intent": "botellas deportivas personalizadas",
+        "siblings_intents": [
+          "toallas deportivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Botellas deportivas personalizadas",
+        "parent": "/deporte-personalizado/accesorios/"
+      },
+      {
+        "url": "/deporte-personalizado/accesorios/toallas/",
+        "slug": "accesorios-toallas",
+        "parent_slug": "accesorios-deporte",
+        "search_intent": "toallas deportivas personalizadas",
+        "siblings_intents": [
+          "botellas deportivas personalizadas"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Toallas deportivas personalizadas",
+        "parent": "/deporte-personalizado/accesorios/"
+      },
+      {
+        "url": "/invierno-personalizado/",
+        "slug": "invierno-personalizado",
+        "parent_slug": "",
+        "search_intent": "ropa de invierno personalizada",
+        "siblings_intents": [
+          "ropa deportiva personalizada",
+          "ropa de trabajo"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Ropa de invierno",
+        "children": [
+          { "url": "/invierno-personalizado/guantes/", "anchor": "Guantes personalizados" },
+          { "url": "/invierno-personalizado/termicos/", "anchor": "Ropa térmica personalizada" }
+        ]
+      },
+      {
+        "url": "/invierno-personalizado/guantes/",
+        "slug": "invierno-guantes",
+        "parent_slug": "invierno-personalizado",
+        "search_intent": "guantes personalizados",
+        "siblings_intents": [
+          "ropa térmica personalizada"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Guantes personalizados",
+        "parent": "/invierno-personalizado/"
+      },
+      {
+        "url": "/invierno-personalizado/termicos/",
+        "slug": "invierno-termicos",
+        "parent_slug": "invierno-personalizado",
+        "search_intent": "ropa térmica personalizada",
+        "siblings_intents": [
+          "guantes personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Ropa térmica personalizada",
+        "parent": "/invierno-personalizado/"
+      },
+      {
+        "url": "/paraguas-personalizados/",
+        "slug": "paraguas-personalizados",
+        "parent_slug": "",
+        "search_intent": "paraguas personalizados",
+        "siblings_intents": [
+          "ropa de invierno personalizada",
+          "artículos de lluvia personalizados"
+        ],
+        "tipo": "categoria_madre",
+        "anchor": "Paraguas personalizados",
+        "children": [
+          { "url": "/paraguas-personalizados/paraguas-publicitarios-clasicos/", "anchor": "Paraguas publicitarios clásicos" },
+          { "url": "/paraguas-personalizados/paraguas-promocionales-plegables/", "anchor": "Paraguas plegables promocionales" },
+          { "url": "/paraguas-personalizados/paraguas-xxl/", "anchor": "Paraguas XXL personalizados" },
+          { "url": "/paraguas-personalizados/paraguas-tormenta-publicidad/", "anchor": "Paraguas tormenta publicitarios" }
+        ]
+      },
+      {
+        "url": "/paraguas-personalizados/paraguas-publicitarios-clasicos/",
+        "slug": "paraguas-publicitarios-clasicos",
+        "parent_slug": "paraguas-personalizados",
+        "search_intent": "paraguas publicitarios clásicos",
+        "siblings_intents": [
+          "paraguas plegables promocionales",
+          "paraguas xxl personalizados",
+          "paraguas tormenta publicitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Paraguas publicitarios clásicos",
+        "parent": "/paraguas-personalizados/"
+      },
+      {
+        "url": "/paraguas-personalizados/paraguas-promocionales-plegables/",
+        "slug": "paraguas-promocionales-plegables",
+        "parent_slug": "paraguas-personalizados",
+        "search_intent": "paraguas plegables personalizados",
+        "siblings_intents": [
+          "paraguas publicitarios clásicos",
+          "paraguas xxl personalizados",
+          "paraguas tormenta publicitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Paraguas plegables promocionales",
+        "parent": "/paraguas-personalizados/"
+      },
+      {
+        "url": "/paraguas-personalizados/paraguas-xxl/",
+        "slug": "paraguas-xxl",
+        "parent_slug": "paraguas-personalizados",
+        "search_intent": "paraguas xxl personalizados",
+        "siblings_intents": [
+          "paraguas publicitarios clásicos",
+          "paraguas plegables promocionales",
+          "paraguas tormenta publicitarios"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Paraguas XXL personalizados",
+        "parent": "/paraguas-personalizados/"
+      },
+      {
+        "url": "/paraguas-personalizados/paraguas-tormenta-publicidad/",
+        "slug": "paraguas-tormenta-publicidad",
+        "parent_slug": "paraguas-personalizados",
+        "search_intent": "paraguas tormenta publicitarios",
+        "siblings_intents": [
+          "paraguas publicitarios clásicos",
+          "paraguas plegables promocionales",
+          "paraguas xxl personalizados"
+        ],
+        "tipo": "categoria_hija",
+        "anchor": "Paraguas tormenta publicitarios",
+        "parent": "/paraguas-personalizados/"
+      }
+]

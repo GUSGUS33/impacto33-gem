@@ -1,0 +1,60 @@
+{
+  "url": "/chaquetas-personalizadas/abrigo",
+  "slug": "abrigo",
+  "parent_slug": "chaquetas-personalizadas",
+  "search_intent": "Abrigos personalizados para el frío",
+  "siblings_intents": [
+    "cazadora",
+    "cortavientos",
+    "chaleco",
+    "parka",
+    "softshell"
+  ],
+  "hero_tituloPrincipal": "Abrigos Personalizados de Alta Calidad para Uniformes Corporativos",
+  "hero_intro": "Protege a tu equipo del frío con estilo y profesionalidad. Nuestros abrigos personalizados son la solución perfecta para mantener la imagen de tu marca impecable incluso en las condiciones más adversas. Elige entre una amplia gama de modelos, materiales y técnicas de personalización, como el bordado de alta definición, para que tu logo destaque con elegancia.",
+  "hub_subcategorias_texto": "",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestros Abrigos Personalizados",
+    "items": [
+      "Máxima protección contra el frío y la lluvia.",
+      "Personalización duradera con bordado o serigrafía.",
+      "Diseños modernos y profesionales para cualquier sector.",
+      "Asesoramiento experto y entrega rápida garantizada."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Uniformes de Invierno para Personal de Eventos",
+      "descripcion": "Asegura que tu equipo de eventos esté visible y abrigado durante ferias o promociones al aire libre. Un abrigo con el logo bordado proyecta una imagen de marca sólida y organizada.",
+      "image_alt": "Personal de eventos con abrigos corporativos bordados"
+    },
+    {
+      "titulo": "Ropa de Trabajo para Equipos de Logística y Exterior",
+      "descripcion": "Para el personal que trabaja en almacenes o a la intemperie, ofrecemos abrigos técnicos y resistentes que combinan seguridad, calidez y la identidad visual de tu empresa.",
+      "image_alt": "Abrigos de alta visibilidad personalizados para logística"
+    },
+    {
+      "titulo": "Regalo Corporativo de Lujo para Clientes VIP",
+      "descripcion": "Un abrigo de alta gama personalizado es un regalo de empresa memorable que refuerza la lealtad y el prestigio de tu marca. Ideal para ejecutivos y clientes especiales.",
+      "image_alt": "Abrigo de lana personalizado como regalo corporativo"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la técnica de personalización más recomendada para abrigos?",
+      "respuesta": "El **bordado** es la técnica por excelencia para abrigos, ya que ofrece una durabilidad superior y un acabado de alta calidad que resiste el uso rudo y los lavados frecuentes, manteniendo el logo impecable."
+    },
+    {
+      "pregunta": "¿Hay un pedido mínimo para personalizar abrigos?",
+      "respuesta": "Sí, generalmente establecemos un pedido mínimo para garantizar la eficiencia de la producción y los costes de personalización. Consulta con nuestro equipo comercial para conocer los mínimos específicos por modelo."
+    },
+    {
+      "pregunta": "¿Qué tipos de abrigos ofrecen para personalizar?",
+      "respuesta": "Nuestra selección incluye abrigos de lana, parkas acolchadas, chaquetones impermeables y modelos técnicos softshell, adaptándonos a las necesidades climáticas y de estilo de cada empresa."
+    }
+  ],
+  "texto_final_refuerzo": "No comprometas la imagen de tu marca por el frío. Con nuestros abrigos personalizados, tu equipo estará cómodo, protegido y será el mejor embajador de tu empresa. Calidad, calidez y visibilidad garantizadas.",
+  "cta_textoCta": "Diseña Ahora tu Abrigo Corporativo",
+  "meta_title": "Abrigos Personalizados para Empresas | Bordado y Calidad Premium",
+  "meta_description": "Abrigos personalizados de alta calidad para uniformes corporativos. Protege a tu equipo del frío con estilo. Bordado profesional de tu logo. ¡Pide presupuesto sin compromiso!"
+}

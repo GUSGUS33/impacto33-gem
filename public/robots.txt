@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /_next/static/
+Allow: /_next/image/
+Allow: /images/
+
+Disallow: /admin
+Disallow: /administrador
+Disallow: /api/
+Disallow: /private/
+Disallow: /mi-cuenta/
+Disallow: /pedidos/
+Disallow: /carrito/
+Disallow: /checkout/
+Disallow: /*?*filter=*
+Disallow: /*?*sort=*
+
+Sitemap: https://impacto33.com/sitemap.xml

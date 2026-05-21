@@ -1,0 +1,63 @@
+{
+  "url": "/sudaderas-personalizadas/sudadera-alta-visibilidad",
+  "slug": "sudadera-alta-visibilidad",
+  "parent_slug": "sudaderas-personalizadas",
+  "search_intent": "Comprar sudaderas de alta visibilidad personalizadas con logo o diseño para seguridad laboral",
+  "siblings_intents": [
+    "sudadera-con-capucha",
+    "sudadera-sin-capucha",
+    "sudadera-de-trabajo",
+    "sudadera-ecologica"
+  ],
+  "hero_tituloPrincipal": "Sudaderas de Alta Visibilidad Personalizadas: Seguridad y Marca",
+  "hero_intro": "Garantice la máxima seguridad de su equipo en entornos de baja luminosidad o alto riesgo con nuestras **sudaderas de alta visibilidad personalizadas**. Cumpliendo con las normativas de seguridad más exigentes (como la EN ISO 20471), estas prendas combinan la calidez y comodidad de una sudadera con la funcionalidad de la ropa reflectante. Personalícelas con el logo de su empresa para reforzar la imagen de marca mientras protege a sus trabajadores.",
+  "hub_subcategorias_texto": "Explore nuestra gama de sudaderas de seguridad, disponibles en colores fluorescentes (amarillo y naranja) y con bandas reflectantes de alta calidad. Ideales para construcción, logística, servicios de emergencia y trabajos en carretera.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Sudaderas de Alta Visibilidad",
+    "items": [
+      "Máxima Seguridad: Cumplimiento de la normativa EN ISO 20471 para visibilidad profesional.",
+      "Personalización Duradera: Estampado o bordado de su logo resistente a lavados industriales.",
+      "Comodidad y Calidez: Tejidos interiores afelpados y resistentes, perfectos para el frío.",
+      "Variedad de Modelos: Sudaderas con o sin capucha, con cremallera o cuello redondo."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Equipos de Construcción y Obra",
+      "descripcion": "Sudaderas de alta visibilidad personalizadas para capataces y operarios, asegurando que sean visibles en todo momento en la obra, especialmente al amanecer o atardecer.",
+      "image_alt": "Trabajadores de construcción con sudaderas reflectantes personalizadas"
+    },
+    {
+      "titulo": "Logística y Almacén Exterior",
+      "descripcion": "Prendas cálidas y reflectantes para personal de carga y descarga en muelles o almacenes con tráfico de vehículos, mejorando la identificación y previniendo accidentes.",
+      "image_alt": "Personal de logística con sudadera de alta visibilidad y logo de empresa"
+    },
+    {
+      "titulo": "Servicios de Mantenimiento y Carreteras",
+      "descripcion": "Uniformes que cumplen con la normativa para trabajos en vías públicas, garantizando que el personal de mantenimiento sea detectado a gran distancia por los conductores.",
+      "image_alt": "Técnico de mantenimiento vial con sudadera fluorescente y bandas reflectantes"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué normativa deben cumplir las sudaderas de alta visibilidad?",
+      "respuesta": "Deben cumplir principalmente con la norma europea **EN ISO 20471**, que especifica los requisitos para la ropa de alta visibilidad, incluyendo el área mínima de material de fondo fluorescente y material retrorreflectante."
+    },
+    {
+      "pregunta": "¿Qué colores se consideran de alta visibilidad?",
+      "respuesta": "Los colores de fondo reconocidos por la normativa son el **amarillo fluorescente**, el **naranja fluorescente** y el **rojo fluorescente**. Estos colores garantizan la visibilidad diurna."
+    },
+    {
+      "pregunta": "¿Se puede personalizar una sudadera de alta visibilidad sin comprometer la norma?",
+      "respuesta": "Sí, la personalización (bordado o estampado) debe realizarse en áreas específicas que no interfieran con el área mínima requerida de material fluorescente y reflectante, generalmente en el pecho o la espalda, siguiendo las directrices del fabricante y la normativa."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia entre Clase 1, Clase 2 y Clase 3?",
+      "respuesta": "La norma EN ISO 20471 clasifica las prendas según el nivel de visibilidad. La **Clase 3** ofrece el nivel más alto (mayor área de material), la **Clase 2** un nivel intermedio, y la **Clase 1** el nivel más bajo, adecuado para situaciones de menor riesgo."
+    }
+  ],
+  "texto_final_refuerzo": "Invertir en sudaderas de alta visibilidad personalizadas es invertir en la seguridad de su plantilla y en la profesionalidad de su marca. Ofrecemos soluciones que cumplen con la ley y superan las expectativas de confort. Pida su presupuesto y reciba una muestra digital gratuita.",
+  "cta_textoCta": "Solicite su Presupuesto de Sudaderas de Seguridad Personalizadas",
+  "meta_title": "Sudaderas de Alta Visibilidad Personalizadas | EN ISO 20471 | [Marca]",
+  "meta_description": "Compre sudaderas de alta visibilidad (EN ISO 20471) personalizadas con su logo. Máxima seguridad, calidad y confort para su equipo de trabajo. ¡Pida presupuesto online!"
+}
