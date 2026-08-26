@@ -8,6 +8,23 @@ interface EmailConfig {
   pass: string;
 }
 
+function escapeHtml(value: string): string {
+  return value.replace(/[&<>'"]/g, character => {
+    const entities: Record<string, string> = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      "'": '&#39;',
+      '"': '&quot;',
+    };
+    return entities[character];
+  });
+}
+
+function sanitizeHeaderValue(value: string): string {
+  return value.replace(/[\r\n]+/g, ' ').trim();
+}
+
 function getEmailConfig(): EmailConfig {
   const host = process.env.SMTP_HOST || '';
   const port = parseInt(process.env.SMTP_PORT || '587', 10);
@@ -16,6 +33,10 @@ function getEmailConfig(): EmailConfig {
 
   if (!host || !user || !pass) {
     throw new Error('SMTP credentials not configured. Please set SMTP_HOST, SMTP_PORT, SMTP_USER, and SMTP_PASS environment variables.');
+  }
+
+  if (!Number.isInteger(port) || port < 1 || port > 65535) {
+    throw new Error('SMTP_PORT must be an integer between 1 and 65535.');
   }
 
   return { host, port, user, pass };
@@ -29,15 +50,17 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
     const transporter = nodemailer.createTransport({
       host: config.host,
       port: config.port,
-      secure: false, // true for 465, false for other ports
+      secure: config.port === 465,
+      requireTLS: config.port !== 465,
       auth: {
         user: config.user,
         pass: config.pass,
       },
       tls: {
-        ciphers: 'SSLv3',
-        rejectUnauthorized: false
-      }
+        minVersion: 'TLSv1.2',
+      },
+      disableFileAccess: true,
+      disableUrlAccess: true,
     });
 
     // Verificar conexión
@@ -48,13 +71,27 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
       .filter(([_, qty]) => qty > 0)
       .map(([size, qty]) => `
         <tr>
-          <td style="padding: 8px; border: 1px solid #e5e7eb;">Talla ${size}</td>
+          <td style="padding: 8px; border: 1px solid #e5e7eb;">Talla ${escapeHtml(size)}</td>
           <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: center;">${qty} uds.</td>
           <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${data.pricing.precioUnitarioFinal.toFixed(2)}€</td>
           <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${(qty * data.pricing.precioUnitarioFinal).toFixed(2)}€</td>
         </tr>
       `)
       .join('');
+
+    const safeCustomer = {
+      name: escapeHtml(data.customer.name),
+      email: escapeHtml(data.customer.email),
+      company: escapeHtml(data.customer.company ?? ''),
+      phone: escapeHtml(data.customer.phone ?? ''),
+      message: escapeHtml(data.customer.message ?? ''),
+    };
+    const safeProduct = {
+      id: escapeHtml(data.product.id),
+      name: escapeHtml(data.product.name),
+      selectedColor: escapeHtml(data.product.selectedColor),
+      selectedZones: data.product.selectedZones.map(escapeHtml),
+    };
 
     // HTML para el cliente
     const customerHtml = `
@@ -80,14 +117,14 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
             <h1>¡Gracias por tu solicitud!</h1>
           </div>
           <div class="content">
-            <p>Hola <strong>${data.customer.name}</strong>,</p>
+            <p>Hola <strong>${safeCustomer.name}</strong>,</p>
             <p>Hemos recibido tu solicitud de presupuesto correctamente. Te enviaremos el presupuesto detallado en menos de 24 horas.</p>
             
             <div class="product-info">
               <h2 style="margin-top: 0;">Resumen de tu solicitud</h2>
-              <p><strong>Producto:</strong> ${data.product.name}</p>
-              <p><strong>Color seleccionado:</strong> ${data.product.selectedColor}</p>
-              ${data.product.selectedZones.length > 0 ? `<p><strong>Zonas de personalización:</strong> ${data.product.selectedZones.join(', ')}</p>` : ''}
+              <p><strong>Producto:</strong> ${safeProduct.name}</p>
+              <p><strong>Color seleccionado:</strong> ${safeProduct.selectedColor}</p>
+              ${safeProduct.selectedZones.length > 0 ? `<p><strong>Zonas de personalización:</strong> ${safeProduct.selectedZones.join(', ')}</p>` : ''}
               
               <h3>Desglose por talla</h3>
               <table>
@@ -120,7 +157,7 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
               </table>
             </div>
             
-            ${data.customer.message ? `<p><strong>Tu mensaje:</strong><br>${data.customer.message}</p>` : ''}
+            ${data.customer.message ? `<p><strong>Tu mensaje:</strong><br>${safeCustomer.message}</p>` : ''}
             
             <p style="margin-top: 20px;">Si tienes alguna duda, no dudes en contactarnos.</p>
             <p><strong>IMPACTO33</strong><br>
@@ -162,18 +199,18 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
           <div class="content">
             <div class="section">
               <h2 style="margin-top: 0;">📋 Datos del Cliente</h2>
-              <p><strong>Nombre:</strong> ${data.customer.name}</p>
-              <p><strong>Email:</strong> <a href="mailto:${data.customer.email}">${data.customer.email}</a></p>
-              ${data.customer.company ? `<p><strong>Empresa:</strong> ${data.customer.company}</p>` : ''}
-              ${data.customer.phone ? `<p><strong>Teléfono:</strong> <a href="tel:${data.customer.phone}">${data.customer.phone}</a></p>` : ''}
+              <p><strong>Nombre:</strong> ${safeCustomer.name}</p>
+              <p><strong>Email:</strong> <a href="mailto:${safeCustomer.email}">${safeCustomer.email}</a></p>
+              ${data.customer.company ? `<p><strong>Empresa:</strong> ${safeCustomer.company}</p>` : ''}
+              ${data.customer.phone ? `<p><strong>Teléfono:</strong> <a href="tel:${safeCustomer.phone}">${safeCustomer.phone}</a></p>` : ''}
             </div>
             
             <div class="section">
               <h2 style="margin-top: 0;">🛍️ Detalles del Producto</h2>
-              <p><strong>Producto:</strong> ${data.product.name}</p>
-              <p><strong>ID:</strong> ${data.product.id}</p>
-              <p><strong>Color:</strong> ${data.product.selectedColor}</p>
-              ${data.product.selectedZones.length > 0 ? `<p><strong>Zonas personalizadas:</strong> ${data.product.selectedZones.join(', ')}</p>` : ''}
+              <p><strong>Producto:</strong> ${safeProduct.name}</p>
+              <p><strong>ID:</strong> ${safeProduct.id}</p>
+              <p><strong>Color:</strong> ${safeProduct.selectedColor}</p>
+              ${safeProduct.selectedZones.length > 0 ? `<p><strong>Zonas personalizadas:</strong> ${safeProduct.selectedZones.join(', ')}</p>` : ''}
               
               <h3>Cantidades solicitadas</h3>
               <table>
@@ -198,7 +235,7 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
             ${data.customer.message ? `
             <div class="section">
               <h2 style="margin-top: 0;">💬 Mensaje del Cliente</h2>
-              <p style="white-space: pre-wrap;">${data.customer.message}</p>
+              <p style="white-space: pre-wrap;">${safeCustomer.message}</p>
             </div>
             ` : ''}
             
@@ -223,12 +260,12 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
     await transporter.sendMail({
       from: `"Sistema IMPACTO33" <${config.user}>`,
       to: config.user, // info@impacto33.com
-      subject: `🎯 Nueva solicitud: ${data.customer.name} - ${data.product.name}`,
+      subject: `🎯 Nueva solicitud: ${sanitizeHeaderValue(data.customer.name)} - ${sanitizeHeaderValue(data.product.name)}`,
       html: companyHtml,
       replyTo: data.customer.email,
     });
 
-    console.log(`✅ Emails enviados correctamente a ${data.customer.email} y ${config.user}`);
+    console.log(`✅ Emails enviados correctamente a ${sanitizeHeaderValue(data.customer.email)} y ${config.user}`);
     return true;
   } catch (error) {
     console.error('❌ Error al enviar emails:', error);
