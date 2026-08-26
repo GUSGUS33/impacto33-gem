@@ -1,0 +1,52 @@
+{
+  "url": "/servicios/serigrafia/",
+  "slug": "serigrafia",
+  "parent_slug": "servicios",
+  "search_intent": "serigrafía camisetas",
+  "siblings_intents": [
+    "sublimación",
+    "bordado"
+  ],
+  "hero_tituloPrincipal": "Serigrafía Textil",
+  "hero_intro": "Expertos en serigrafía textil. La mejor calidad de impresión para tus prendas y artículos promocionales.",
+  "hub_subcategorias_texto": "Otras técnicas disponibles:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por qué elegirnos?",
+    "items": [
+      "Maquinaria de última generación",
+      "Acabados profesionales y duraderos",
+      "Asesoramiento técnico especializado",
+      "Plazos de entrega ajustados"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Grandes Tiradas",
+      "descripcion": "Ideal para eventos masivos y promociones.",
+      "image_alt": "Serigrafía Textil grandes cantidades"
+    },
+    {
+      "titulo": "Alta Definición",
+      "descripcion": "Resultados fotográficos y detalles precisos.",
+      "image_alt": "Serigrafía Textil alta calidad"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué materiales se pueden personalizar?",
+      "respuesta": "Depende de la técnica. Consúltanos para saber qué método es mejor para tu producto."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima?",
+      "respuesta": "Para la mayoría de técnicas partimos de 10 unidades, aunque en impresión digital podemos hacer desde 1 unidad."
+    },
+    {
+      "pregunta": "¿Necesito un archivo vectorial?",
+      "respuesta": "Es lo ideal para garantizar la máxima calidad, pero nuestro equipo de diseño puede ayudarte si no lo tienes."
+    }
+  ],
+  "texto_final_refuerzo": "Garantizamos el mejor resultado para tu marca con nuestra tecnología de vanguardia.",
+  "cta_textoCta": "Pide presupuesto de personalización",
+  "meta_title": "Serigrafía Textil | Servicios de Impresión | IMPACTO33",
+  "meta_description": "Servicio profesional de serigrafía textil. Calidad, rapidez y precios competitivos. ¡Infórmate aquí!"
+}

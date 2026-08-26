@@ -1,0 +1,58 @@
+{
+  "url": "/mochilas-personalizadas/mochila-cuerdas",
+  "slug": "mochila-cuerdas",
+  "parent_slug": "mochilas-personalizadas",
+  "search_intent": "Promocionar marca con un regalo práctico, económico y de alta visibilidad para eventos y público joven.",
+  "siblings_intents": [
+    "mochila-portatil",
+    "mochila-deportiva",
+    "mochila-plegable"
+  ],
+  "hero_tituloPrincipal": "Mochilas de Cuerdas Personalizadas: El Regalo Promocional Versátil y Económico",
+  "hero_intro": "Las **mochilas de cuerdas personalizadas** son el *merchandising* perfecto para eventos, ferias o como parte de una campaña de *marketing* juvenil. Su diseño ligero, gran superficie de marcaje y bajo coste las convierten en una herramienta publicitaria de alto impacto que tus clientes usarán una y otra vez.",
+  "hub_subcategorias_texto": "Descubre nuestra amplia gama de mochilas personalizables, desde modelos básicos de poliéster hasta opciones ecológicas de algodón o *non-woven*. Encuentra la opción ideal para llevar tu marca a todas partes.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por qué elegir nuestras Mochilas de Cuerdas?",
+    "items": [
+      "**Alta Visibilidad de Marca**: Gran área de impresión para tu logo.",
+      "**Versatilidad de Uso**: Ideales para gimnasio, playa, eventos y uso diario.",
+      "**Económicas y Ligeras**: Solución de *merchandising* con excelente relación calidad-precio.",
+      "**Variedad de Materiales**: Opciones en poliéster, algodón, y materiales reciclados."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos Deportivos y Maratones",
+      "descripcion": "Entrega mochilas de cuerdas con el logo del evento a los participantes. Son perfectas para guardar la camiseta, la botella de agua y otros artículos promocionales.",
+      "image_alt": "Participantes de una maratón llevando mochilas de cuerdas personalizadas."
+    },
+    {
+      "titulo": "Ferias Comerciales y Congresos",
+      "descripcion": "Utiliza las mochilas como bolsa de bienvenida para que los asistentes guarden folletos y regalos. Asegura que tu marca sea visible en todo el recinto.",
+      "image_alt": "Asistentes a una feria con mochilas de cuerdas con logos de empresas."
+    },
+    {
+      "titulo": "Regalo para Estudiantes y Universidades",
+      "descripcion": "Un regalo práctico y apreciado por el público joven. Ideal para promocionar cursos, jornadas de puertas abiertas o como parte del *kit* de bienvenida.",
+      "image_alt": "Estudiantes usando mochilas de cuerdas en un campus universitario."
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el material más común para las mochilas de cuerdas?",
+      "respuesta": "El material más común es el poliéster, debido a su durabilidad, ligereza y bajo coste. También ofrecemos opciones ecológicas como el algodón orgánico o el RPET (poliéster reciclado)."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización se pueden usar?",
+      "respuesta": "Las técnicas más populares son la serigrafía (para logos sencillos y grandes cantidades) y la transferencia digital (para diseños a todo color y detalles finos). Nuestro equipo te asesorará sobre la mejor opción para tu diseño."
+    },
+    {
+      "pregunta": "¿Son resistentes al agua?",
+      "respuesta": "La mayoría de nuestros modelos de poliéster ofrecen cierta resistencia a salpicaduras, pero no son completamente impermeables. Si necesitas una opción más robusta, consulta nuestros modelos de mayor gramaje o con recubrimiento especial."
+    }
+  ],
+  "texto_final_refuerzo": "No subestimes el poder de un regalo promocional útil. Las mochilas de cuerdas personalizadas garantizan que tu marca se mueva con tus clientes, ofreciendo un retorno de inversión excepcional gracias a su bajo coste y alta frecuencia de uso.",
+  "cta_textoCta": "¡Personaliza tus Mochilas de Cuerdas y Lanza tu Campaña Hoy!",
+  "meta_title": "Mochilas de Cuerdas Personalizadas | Merchandising Económico y Versátil",
+  "meta_description": "Diseña tus mochilas de cuerdas personalizadas con tu logo. Ideales para eventos, ferias y promociones. Gran variedad de colores y materiales al mejor precio."
+}

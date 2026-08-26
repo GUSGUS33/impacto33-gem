@@ -1,0 +1,54 @@
+{
+  "url": "/eventos-personalizados",
+  "slug": "eventos-personalizados",
+  "parent_slug": "",
+  "search_intent": "Organización de eventos personalizados y a medida",
+  "siblings_intents": ["Regalos corporativos", "Merchandising para ferias", "Diseño de stands"],
+  "hero_tituloPrincipal": "Organización de Eventos Personalizados y a Medida: Experiencias Inolvidables",
+  "hero_intro": "Transformamos tus ideas en eventos únicos y memorables. Desde lanzamientos de producto hasta fiestas de empresa y congresos, nuestro equipo se encarga de cada detalle para asegurar el éxito y la máxima personalización, reflejando la identidad de tu marca en cada momento.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegirnos para tu Evento",
+    "items": [
+      "Creatividad y Diseño de Concepto Único",
+      "Gestión Integral de Proveedores y Logística",
+      "Personalización de Materiales y Merchandising",
+      "Soporte Técnico y Asistencia en el Lugar del Evento"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Lanzamiento de Producto Innovador",
+      "descripcion": "Creamos un evento inmersivo que destacó las características únicas del nuevo producto, generando expectación y cobertura mediática.",
+      "image_alt": "Evento de lanzamiento de producto con iluminación y pantallas LED"
+    },
+    {
+      "titulo": "Fiesta de Aniversario Corporativo",
+      "descripcion": "Diseñamos una celebración elegante y divertida para empleados y socios, reforzando la cultura y los valores de la empresa.",
+      "image_alt": "Fiesta corporativa con decoración personalizada y música en vivo"
+    },
+    {
+      "titulo": "Congreso y Jornadas Profesionales",
+      "descripcion": "Organización completa de un congreso de varios días, incluyendo gestión de ponentes, catering y material de apoyo personalizado.",
+      "image_alt": "Panel de discusión en un congreso profesional con branding de la empresa"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de eventos pueden personalizar?",
+      "respuesta": "Personalizamos una amplia gama de eventos, incluyendo lanzamientos de producto, congresos, ferias, fiestas de empresa, team building, y activaciones de marca. Nos adaptamos a cualquier necesidad y escala."
+    },
+    {
+      "pregunta": "¿Cómo se gestiona la personalización del merchandising?",
+      "respuesta": "Ofrecemos un servicio integral que incluye el diseño, la producción y la personalización de todo el material promocional (regalos, uniformes, señalética) necesario para el evento, asegurando la coherencia con la imagen de marca."
+    },
+    {
+      "pregunta": "¿Con cuánto tiempo de antelación debo contactar para organizar un evento?",
+      "respuesta": "Recomendamos contactar con la mayor antelación posible, idealmente entre 3 y 6 meses para eventos grandes, para asegurar la disponibilidad de fechas y la planificación detallada de todos los elementos."
+    }
+  ],
+  "texto_final_refuerzo": "Deja la complejidad de la organización en manos de expertos. Con nuestros eventos personalizados, tu marca no solo será vista, sino recordada.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado para Eventos",
+  "meta_title": "Eventos Personalizados y a Medida para Empresas | Organización Integral",
+  "meta_description": "Organización integral de eventos personalizados para empresas: lanzamientos, congresos, fiestas y más. Diseño de concepto único y gestión completa de principio a fin."
+}

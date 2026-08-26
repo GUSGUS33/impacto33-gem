@@ -1,0 +1,58 @@
+{
+  "url": "/bolsas-personalizadas",
+  "slug": "bolsas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "Comprar bolsas personalizadas con logo para empresas y negocios.",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Bolsas Personalizadas con tu Logo: La Mejor Publicidad para tu Marca",
+  "hero_intro": "Las bolsas personalizadas son una herramienta de marketing esencial que combina funcionalidad y promoción. Ofrecemos una amplia gama de materiales duraderos y ecológicos, como papel Kraft, tela y plástico reciclado, para que tu marca no solo se vea bien, sino que también refleje un compromiso con la sostenibilidad. Desde el diseño hasta la impresión, te ayudamos a crear una identidad visual única que tus clientes llevarán a todas partes, convirtiendo cada bolsa en un anuncio móvil.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Beneficios Clave de Invertir en Bolsas Personalizadas",
+    "items": [
+      "Marketing y Branding: Actúan como publicidad móvil, aumentando la visibilidad y el recuerdo de tu marca en la calle.",
+      "Sostenibilidad y Responsabilidad Social: Elige opciones ecológicas, reutilizables y reciclables, alineando tu negocio con valores ambientales.",
+      "Identidad Única y Profesional: Permiten crear una imagen corporativa coherente y diferenciada con colores, diseños y logotipos propios.",
+      "Durabilidad y Calidad: Utilizamos materiales resistentes para asegurar un uso prolongado, reforzando la percepción de calidad de tus productos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Tiendas Retail y Boutiques",
+      "descripcion": "Entrega tus productos en bolsas elegantes y resistentes que refuercen la experiencia de compra premium y sirvan como recordatorio de marca.",
+      "image_alt": "Bolsa de papel Kraft personalizada con logo de boutique"
+    },
+    {
+      "titulo": "Eventos, Ferias y Congresos",
+      "descripcion": "Utiliza bolsas personalizadas como 'goodie bags' para entregar material promocional, muestras y regalos a los asistentes, maximizando el impacto de tu presencia.",
+      "image_alt": "Bolsa de tela personalizada en un stand de feria"
+    },
+    {
+      "titulo": "Servicios de Alimentación y Delivery",
+      "descripcion": "Bolsas de papel o Stand Up Pouches personalizadas, ideales para el servicio de comida para llevar y delivery, asegurando que tu marca viaje con cada pedido.",
+      "image_alt": "Bolsa de papel con asas para delivery de restaurante"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de materiales están disponibles para las bolsas personalizadas?",
+      "respuesta": "Ofrecemos una amplia variedad de materiales, incluyendo papel Kraft (blanco y marrón), tela (algodón, non-woven), y plástico reciclado. La elección dependerá del uso, la imagen de marca y el presupuesto."
+    },
+    {
+      "pregunta": "¿Se puede imprimir el logo en ambas caras de la bolsa?",
+      "respuesta": "Sí, en la mayoría de nuestros modelos es posible personalizar la impresión en ambas caras de la bolsa, e incluso con diseños diferentes en cada lado, para maximizar la exposición de tu mensaje."
+    },
+    {
+      "pregunta": "¿Hay un pedido mínimo para las bolsas personalizadas?",
+      "respuesta": "Aunque trabajamos principalmente con venta mayorista, ofrecemos soluciones flexibles. El pedido mínimo varía según el material y el tipo de impresión, pero contamos con opciones de fabricación local que pueden reducir las cantidades mínimas."
+    },
+    {
+      "pregunta": "¿Cuál es el tiempo de entrega estimado?",
+      "respuesta": "El tiempo de producción y entrega varía según la complejidad del diseño, el material seleccionado y la cantidad. Generalmente, el proceso completo toma entre 2 y 4 semanas desde la aprobación final del diseño."
+    }
+  ],
+  "texto_final_refuerzo": "No subestimes el poder de una bolsa bien diseñada. Es la última impresión que dejas en tu cliente y una de las herramientas de marketing más rentables. Invierte en calidad y diseño para que tu marca destaque en cada esquina.",
+  "cta_textoCta": "¡Cotiza tus Bolsas Personalizadas Hoy y Recibe una Muestra Digital!",
+  "meta_title": "Bolsas Personalizadas con Logo para Empresas | Materiales Ecológicos y Duraderos",
+  "meta_description": "Diseña bolsas personalizadas con tu logo para impulsar tu marca. Amplia variedad de materiales (tela, papel, reciclado) y opciones de impresión. ¡Pide tu cotización sin compromiso!"
+}

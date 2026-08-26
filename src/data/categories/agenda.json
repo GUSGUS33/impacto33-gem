@@ -1,0 +1,62 @@
+{
+  "url": "/papeleria-personalizada/agenda",
+  "slug": "agenda",
+  "parent_slug": "papeleria-personalizada",
+  "search_intent": "Comprar o diseñar agendas personalizadas para uso personal o corporativo (merchandising).",
+  "siblings_intents": [
+    "papel-de-carta",
+    "blocs-de-notas",
+    "calendarios",
+    "tarjetas-de-felicitacion"
+  ],
+  "hero_tituloPrincipal": "Agenda Personalizada: La Herramienta de Organización y Merchandising Perfecta",
+  "hero_intro": "Transforma la planificación diaria en una poderosa estrategia de marca. Nuestras agendas personalizadas son el regalo corporativo ideal que garantiza la visibilidad de tu empresa durante todo el año, combinando funcionalidad, diseño exclusivo y la máxima calidad de impresión.",
+  "hub_subcategorias_texto": "Explora nuestras opciones de personalización, desde el tipo de encuadernación y el diseño de las tapas hasta el formato interior (día por página, semana vista, etc.).",
+  "ventajasEmpresa": {
+    "titulo": "Beneficios Clave de Regalar Agendas Personalizadas",
+    "items": [
+      "Visibilidad de Marca Constante: Tu logo presente 365 días al año en el escritorio de clientes y colaboradores.",
+      "Herramienta de Productividad: Fomenta la organización y la planificación eficiente dentro de tu equipo.",
+      "Regalo Corporativo de Alto Valor: Un obsequio práctico y duradero que refuerza la lealtad y el aprecio.",
+      "Diseño Totalmente Adaptable: Personaliza tapas, interiores y añade secciones informativas específicas de tu negocio."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Merchandising para Clientes VIP",
+      "descripcion": "Entrega una agenda de alta gama con tu marca en eventos, ferias o como regalo de fin de año. Un detalle elegante que asegura que tu empresa sea recordada.",
+      "image_alt": "Agenda personalizada de tapa dura como regalo corporativo de lujo",
+      "image_path": "/images/papeleria-personalizada/agenda-merchandising.jpg"
+    },
+    {
+      "titulo": "Herramienta de Trabajo para Empleados",
+      "descripcion": "Proporciona a tu equipo agendas corporativas para unificar la imagen interna y mejorar la gestión de tareas y reuniones. Unifica la cultura de planificación.",
+      "image_alt": "Agendas personalizadas para uso interno de empleados en una oficina",
+      "image_path": "/images/papeleria-personalizada/agenda-uso-interno.jpg"
+    },
+    {
+      "titulo": "Lanzamiento de Productos y Eventos",
+      "descripcion": "Crea una edición especial de agendas con información clave sobre un nuevo producto o un evento. Sirve como material promocional y guía práctica para los asistentes.",
+      "image_alt": "Agenda promocional con diseño temático para el lanzamiento de un nuevo producto",
+      "image_path": "/images/papeleria-personalizada/agenda-lanzamiento-evento.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para agendas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo y el nivel de personalización (tapas, interiores, extras). Consulta nuestra tabla de precios o contacta a nuestro equipo para un presupuesto a medida."
+    },
+    {
+      "pregunta": "¿Qué opciones de personalización están disponibles?",
+      "respuesta": "Ofrecemos personalización completa: tipo de encuadernación (espiral, cosida), material de la tapa (cartón, polipiel), impresión de logo a color o grabado, y diseño de las páginas interiores (calendarios, secciones de notas, información corporativa)."
+    },
+    {
+      "pregunta": "¿Cuánto tiempo tarda la producción y entrega?",
+      "respuesta": "El tiempo de producción estándar es de 10 a 15 días hábiles tras la aprobación del diseño final. Ofrecemos opciones de envío urgente si necesitas tus agendas con mayor rapidez."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que tu marca se pierda en el día a día. Con una agenda personalizada, ofreces un valor real a tus contactos mientras mantienes tu identidad corporativa visible y profesional. Empieza a diseñar hoy y planifica el éxito de tu próximo año.",
+  "cta_textoCta": "Comienza a Diseñar tu Agenda Única",
+  "meta_title": "Agendas Personalizadas para Empresas | Merchandising y Organización",
+  "meta_description": "Diseña agendas personalizadas con tu logo y estilo. Perfectas como regalo corporativo o herramienta de organización interna. Calidad, variedad de formatos y envío rápido."
+}

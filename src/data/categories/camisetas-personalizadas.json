@@ -1,0 +1,48 @@
+{
+  "url": "/camisetas-personalizadas",
+  "slug": "camisetas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "camisetas personalizadas",
+  "siblings_intents": [
+    "sudaderas personalizadas",
+    "polos personalizados"
+  ],
+  "hero_tituloPrincipal": "Camisetas Personalizadas para Empresas y Eventos",
+  "hero_intro": "La prenda promocional por excelencia. Desde camisetas básicas para grandes eventos hasta modelos premium para uniformidad corporativa. Calidad de impresión garantizada en serigrafía, transfer y bordado.",
+  "hub_subcategorias_texto": "Encuentra el modelo perfecto para tu necesidad:",
+  "ventajasEmpresa": {
+    "titulo": "Líderes en personalización textil",
+    "items": [
+      "Catálogo Extenso: Más de 500 modelos disponibles.",
+      "Todas las Técnicas: Serigrafía, DTG, bordado y sublimación.",
+      "Rapidez: Plazos de entrega adaptados a tus urgencias.",
+      "Asesoramiento: Te guiamos para elegir el mejor gramaje y tejido."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Promociones Masivas",
+      "descripcion": "Camisetas económicas para regalar en ferias y eventos multitudinarios.",
+      "image_alt": "Camisetas publicidad eventos"
+    },
+    {
+      "titulo": "Merchandising de Marca",
+      "descripcion": "Diseños exclusivos para venta o regalo a clientes VIP.",
+      "image_alt": "Camisetas marca moda"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la mejor técnica para fotos?",
+      "respuesta": "Para fotografías o diseños con muchos colores y degradados, recomendamos la impresión digital directa (DTG) o el transfer digital."
+    },
+    {
+      "pregunta": "¿Tenéis tallas grandes?",
+      "respuesta": "Sí, disponemos de modelos hasta la 5XL en colores básicos."
+    }
+  ],
+  "texto_final_refuerzo": "Viste tu marca con la calidad que merece. Camisetas personalizadas que dejan huella.",
+  "cta_textoCta": "¿Empezamos con tus camisetas?",
+  "meta_title": "Camisetas Personalizadas Baratas | Impresión Camisetas | IMPACTO33",
+  "meta_description": "Camisetas personalizadas al por mayor. Serigrafía y bordado de camisetas para empresas, eventos y publicidad. Precios de fábrica y envío rápido."
+}

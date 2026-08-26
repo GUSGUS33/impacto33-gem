@@ -1,0 +1,61 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-yute",
+  "slug": "bolsa-yute",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "comprar bolsas de yute personalizadas al por mayor",
+  "siblings_intents": [
+    "bolsa-papel",
+    "bolsa-tela",
+    "bolsa-algodon",
+    "bolsa-non-woven",
+    "bolsa-biodegradable",
+    "bolsa-ecologica"
+  ],
+  "hero_tituloPrincipal": "Bolsas de Yute Personalizadas: La Opción Ecológica y Duradera para tu Marca",
+  "hero_intro": "Descubre la resistencia y el estilo rústico-elegante de nuestras **bolsas de yute personalizadas**. Ideales para eventos, ferias o como un embalaje premium, el yute es una fibra natural, 100% biodegradable y con una huella de carbono mínima. Personaliza estas bolsas con tu logo para un impacto de marca duradero y sostenible.",
+  "hub_subcategorias_texto": "Explora nuestra variedad de tamaños y acabados en bolsas de yute, perfectas para cualquier necesidad de merchandising o packaging ecológico. Desde pequeñas bolsas para regalos hasta grandes sacos para compras.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Bolsas de Yute",
+    "items": [
+      "Material 100% natural y biodegradable",
+      "Alta resistencia y durabilidad para uso prolongado",
+      "Impresión de alta calidad para logos y diseños",
+      "Compromiso con la sostenibilidad y el comercio justo"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Packaging para Productos Gourmet",
+      "descripcion": "Una tienda de productos orgánicos utilizó nuestras bolsas de yute para crear un embalaje premium y reutilizable para sus cestas de regalo y productos frescos.",
+      "image_alt": "Bolsa de yute personalizada con logo de tienda gourmet"
+    },
+    {
+      "titulo": "Merchandising para Eventos y Ferias",
+      "descripcion": "Una empresa de tecnología distribuyó kits de bienvenida en bolsas de yute en una feria, destacando su compromiso con la ecología y ofreciendo un recuerdo útil.",
+      "image_alt": "Bolsa de yute con asas de algodón en un stand de feria"
+    },
+    {
+      "titulo": "Bolsas de Compra Reutilizables",
+      "descripcion": "Supermercados y tiendas a granel ofrecen la bolsa de yute como una alternativa robusta y ecológica a las bolsas de plástico, fomentando la reutilización.",
+      "image_alt": "Cliente usando una bolsa de yute grande para la compra"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de impresión se recomiendan para el yute?",
+      "respuesta": "Recomendamos la serigrafía para logos y textos sencillos, ya que ofrece una excelente cobertura y durabilidad en la textura rugosa del yute. Para diseños más complejos, la impresión digital textil puede ser una opción."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para bolsas de yute personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo y el tipo de personalización, pero generalmente comienza a partir de 100 unidades para garantizar la eficiencia en el proceso de impresión."
+    },
+    {
+      "pregunta": "¿Son las bolsas de yute resistentes al agua?",
+      "respuesta": "El yute es una fibra natural que no es impermeable. Aunque resiste salpicaduras leves, no se recomienda su uso bajo lluvia intensa. Ofrecemos modelos con laminado interior para mayor protección si es necesario."
+    }
+  ],
+  "texto_final_refuerzo": "Elige el yute para comunicar un mensaje de marca sólido, natural y responsable. Nuestras bolsas no son solo un artículo promocional, sino una declaración de principios ecológicos que tus clientes valorarán.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado de Bolsas de Yute",
+  "meta_title": "Bolsas de Yute Personalizadas | Ecológicas y Duraderas | [Nombre de la Empresa]",
+  "meta_description": "Personaliza tus bolsas de yute con tu logo. La opción más ecológica, resistente y con estilo para packaging y merchandising. Pide tu presupuesto sin compromiso."
+}

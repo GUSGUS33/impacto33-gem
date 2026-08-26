@@ -1,0 +1,201 @@
+{
+  "url": "/boligrafos-personalizados/",
+  "slug": "boligrafos-personalizados",
+  "parent_slug": "escritura-personalizada",
+  "catalog_category_slug": "ball_pens",
+  "canonical": "https://impacto33.com/boligrafos-personalizados/",
+  
+  "h1": "Bolígrafos personalizados con logo para empresas",
+  
+  "breadcrumbs": [
+    {
+      "label": "Inicio",
+      "url": "/"
+    },
+    {
+      "label": "Escritura personalizada",
+      "url": "/escritura-personalizada"
+    },
+    {
+      "label": "Bolígrafos personalizados",
+      "url": "/boligrafos-personalizados"
+    }
+  ],
+  
+  "search_intent": "bolígrafos personalizados para empresas",
+  
+  "related_categories": [
+    {
+      "title": "Libretas personalizadas",
+      "url": "/libretas-personalizadas",
+      "description": "Complementa tus bolígrafos con libretas corporativas",
+      "image": "/images/categories/libretas-thumb.jpg"
+    },
+    {
+      "title": "Carpetas personalizadas",
+      "url": "/carpetas-personalizadas",
+      "description": "Organiza documentos con carpetas con tu logo",
+      "image": "/images/categories/carpetas-thumb.jpg"
+    },
+    {
+      "title": "Sets de escritura",
+      "url": "/boligrafos-personalizados/sets-escritura",
+      "description": "Packs completos de bolígrafos y accesorios",
+      "image": "/images/categories/sets-escritura-thumb.jpg"
+    }
+  ],
+  
+  "subcategories": [
+    {
+      "title": "Bolígrafos de plástico",
+      "url": "/boligrafos-personalizados/boligrafos-plastico",
+      "description": "Económicos y versátiles para grandes cantidades"
+    },
+    {
+      "title": "Bolígrafos metálicos",
+      "url": "/boligrafos-personalizados/boligrafos-metalicos",
+      "description": "Premium y duraderos para regalos corporativos"
+    },
+    {
+      "title": "Bolígrafos de madera",
+      "url": "/boligrafos-personalizados/boligrafos-madera",
+      "description": "Naturales y sostenibles con acabado elegante"
+    },
+    {
+      "title": "Bolígrafos ecológicos",
+      "url": "/boligrafos-personalizados/boligrafos-ecologicos",
+      "description": "Fabricados con materiales reciclados y biodegradables"
+    },
+    {
+      "title": "Sets de escritura",
+      "url": "/boligrafos-personalizados/sets-escritura",
+      "description": "Packs completos con estuche personalizado"
+    }
+  ],
+  
+  "hero_tituloPrincipal": "Bolígrafos personalizados con logo para empresas",
+  "hero_intro": "Elige entre un amplio catálogo de bolígrafos personalizados para acciones de marketing, eventos y uso diario en tu oficina. Imprimimos tu logo o mensaje con técnicas de marcaje profesionales para que tu marca acompañe a tus clientes cada día. Completa tu kit de bienvenida combinando estos bolígrafos con nuestras libretas y carpetas personalizadas.",
+  
+  "hub_subcategorias_texto": "Encuentra el tipo de bolígrafo personalizado que mejor encaja con tu marca:",
+  
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de comprar bolígrafos personalizados en IMPACTO33",
+    "items": [
+      "Amplia variedad de modelos: bolígrafos de plástico, metálicos, ecológicos y sets de escritura.",
+      "Marcaje profesional con distintas técnicas según el material y el acabado.",
+      "Asesoramiento experto para elegir el bolígrafo que mejor encaje con tu presupuesto y objetivo.",
+      "Plazos de entrega ajustados para campañas, eventos y ferias.",
+      "Posibilidad de combinar bolígrafos con otros artículos de papelería corporativa."
+    ]
+  },
+  
+  "casosUso": [
+    {
+      "titulo": "Bolígrafos para campañas de marketing y ferias",
+      "descripcion": "Los bolígrafos son uno de los regalos publicitarios más efectivos en ferias, congresos y presentaciones comerciales. Son ligeros, útiles y generan recuerdo de marca cada vez que se utilizan.",
+      "image": "/images/use-cases/boligrafos-feria.jpg",
+      "image_alt": "Bolígrafos personalizados repartidos en un stand de feria"
+    },
+    {
+      "titulo": "Bolígrafos corporativos para tu equipo",
+      "descripcion": "Equipa a tu equipo con bolígrafos corporativos a juego con tu identidad visual. Perfectos para uso interno, visitas comerciales y reuniones con clientes.",
+      "image": "/images/use-cases/boligrafos-oficina.jpg",
+      "image_alt": "Bolígrafos personalizados usados en una reunión de empresa"
+    }
+  ],
+  
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo de bolígrafos personalizados?",
+      "respuesta": "El pedido mínimo suele partir de 50–100 unidades según el modelo. Si necesitas menos unidades, consúltanos y buscaremos la mejor opción disponible."
+    },
+    {
+      "pregunta": "¿Qué técnicas de marcaje utilizáis para los bolígrafos?",
+      "respuesta": "Trabajamos con serigrafía, tampografía y láser para modelos metálicos. Te asesoraremos sobre la técnica más adecuada según el material y el diseño de tu logo."
+    },
+    {
+      "pregunta": "¿Cuánto tardan en llegar los bolígrafos personalizados?",
+      "respuesta": "Para modelos estándar en stock, el plazo orientativo suele ser de 7 a 10 días laborables desde la aprobación del diseño. Si tienes una fecha concreta, háznoslo saber para ajustar la producción."
+    },
+    {
+      "pregunta": "¿Puedo combinar varios modelos en un mismo pedido?",
+      "respuesta": "Sí, es posible combinar distintos modelos y colores dentro de un mismo pedido, siempre respetando el mínimo por referencia. También puedes añadir libretas o carpetas personalizadas para crear packs completos."
+    },
+    {
+      "pregunta": "¿Ofrecéis muestras antes de hacer el pedido completo?",
+      "respuesta": "Sí, podemos enviarte muestras de los modelos que te interesen para que valores la calidad antes de confirmar tu pedido. Consulta condiciones y coste de envío."
+    }
+  ],
+  
+  "featured_review": {
+    "text": "Excelente calidad de impresión en los bolígrafos metálicos. Perfectos para nuestros clientes VIP y el servicio de atención fue impecable.",
+    "author": "María López",
+    "company": "Responsable Marketing",
+    "rating": 5,
+    "date": "2024-11"
+  },
+  
+  "texto_final_refuerzo": "Haz que tu marca esté presente en el día a día de tus clientes con bolígrafos personalizados de calidad. En IMPACTO33 te ayudamos a elegir el modelo perfecto para cada acción, con asesoramiento personalizado y plazos de entrega competitivos. Solicita tu presupuesto sin compromiso.",
+  
+  "cta_textoCta": "Pide presupuesto de bolígrafos personalizados",
+  "cta_url": "/presupuesto-rapido?categoria=boligrafos-personalizados",
+  
+  "filters_seo": {
+    "material": [
+      "Plástico",
+      "Metálico",
+      "Madera",
+      "Ecológico"
+    ],
+    "precio": [
+      "Económicos",
+      "Gama media",
+      "Premium"
+    ],
+    "color": [
+      "Azul",
+      "Negro",
+      "Rojo",
+      "Blanco",
+      "Verde",
+      "Personalizado"
+    ],
+    "mecanismo": [
+      "Pulsador",
+      "Giratorio",
+      "Tapa"
+    ]
+  },
+  
+  "meta_title": "Bolígrafos personalizados con logo para empresas | IMPACTO33",
+  "meta_description": "Catálogo de bolígrafos personalizados con logo para empresas. Modelos de plástico, metálicos y ecológicos con marcaje profesional. Pide presupuesto en IMPACTO33.",
+  "meta_keywords": "bolígrafos personalizados, bolígrafos con logo, bolígrafos para empresas, bolígrafos publicitarios, regalos corporativos",
+  
+  "og": {
+    "title": "Bolígrafos personalizados con logo para empresas | IMPACTO33",
+    "description": "Amplio catálogo de bolígrafos personalizados con marcaje profesional. Desde 50 unidades. Plástico, metal, madera y ecológicos.",
+    "image": "https://impacto33.com/images/og/boligrafos-personalizados.jpg",
+    "image_width": 1200,
+    "image_height": 630,
+    "type": "product.group",
+    "url": "https://impacto33.com/boligrafos-personalizados/"
+  },
+  
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Bolígrafos personalizados con logo | IMPACTO33",
+    "description": "Catálogo de bolígrafos personalizados para empresas. Marcaje profesional desde 50 unidades.",
+    "image": "https://impacto33.com/images/og/boligrafos-personalizados.jpg"
+  },
+  
+
+  
+  "alternate_urls": {
+    "es": "https://impacto33.com/boligrafos-personalizados/",
+    "en": "https://impacto33.com/en/custom-pens/"
+  },
+  
+  "last_updated": "2024-12-14",
+  "priority": 0.9,
+  "changefreq": "weekly"
+}

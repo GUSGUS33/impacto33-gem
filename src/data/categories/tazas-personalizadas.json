@@ -1,0 +1,58 @@
+{
+  "url": "/tazas-personalizadas",
+  "slug": "tazas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "Comprar tazas personalizadas online para regalos, empresas y eventos.",
+  "siblings_intents": [
+    "camisetas-personalizadas",
+    "botellas-personalizadas",
+    "gorras-personalizadas"
+  ],
+  "hero_tituloPrincipal": "Tazas Personalizadas Baratas y de Calidad | Diseña con tu Foto o Logo",
+  "hero_intro": "Descubre la forma más original de empezar el día o de hacer un regalo inolvidable. En nuestra plataforma, puedes crear tazas personalizadas únicas con tus fotos, diseños o el logo de tu empresa. Ofrecemos una amplia gama de modelos, desde tazas de cerámica clásicas hasta mágicas o de viaje, todas con impresión de alta durabilidad y colores vibrantes. ¡Personaliza tu taza perfecta en minutos!",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestras Tazas Personalizadas?",
+    "items": [
+      "Impresión de Alta Calidad y Duradera (Apta para lavavajillas)",
+      "Diseño Fácil y Rápido con nuestro Editor Online",
+      "Amplia Variedad de Modelos: Mágicas, de Viaje, Cerámica, etc.",
+      "Precios Competitivos y Descuentos por Volumen para Empresas"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalos Originales y Emotivos",
+      "descripcion": "Una taza con una foto familiar, un mensaje especial o un diseño divertido es el regalo perfecto para cumpleaños, aniversarios o el Día de la Madre/Padre. Es un detalle práctico que se usa a diario y mantiene vivo el recuerdo.",
+      "image_alt": "Taza personalizada con foto de familia para regalo de cumpleaños"
+    },
+    {
+      "titulo": "Merchandising para Empresas",
+      "descripcion": "Las tazas con el logo de tu empresa son un excelente artículo de merchandising. Ideales para regalar a clientes, usar en la oficina o distribuir en ferias y eventos, aumentando la visibilidad de tu marca.",
+      "image_alt": "Tazas de cerámica personalizadas con logo de empresa para merchandising"
+    },
+    {
+      "titulo": "Eventos y Celebraciones",
+      "descripcion": "Personaliza tazas para bodas, bautizos, comuniones o despedidas de soltero. Sirven como un recuerdo funcional y memorable para todos tus invitados.",
+      "image_alt": "Tazas personalizadas para invitados de boda con fecha y nombres"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Son aptas las tazas personalizadas para lavavajillas y microondas?",
+      "respuesta": "Sí, la gran mayoría de nuestras tazas de cerámica están preparadas para resistir el uso diario, incluyendo lavavajillas y microondas, gracias a nuestra técnica de sublimación de alta calidad. Consulta la ficha de producto para confirmar las especificaciones exactas de cada modelo."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para tazas personalizadas?",
+      "respuesta": "No tenemos pedido mínimo. Puedes personalizar y comprar desde una sola unidad. Ofrecemos descuentos por volumen que se aplican automáticamente a partir de ciertas cantidades, ideales para pedidos de empresa o eventos."
+    },
+    {
+      "pregunta": "¿Qué tipo de diseños puedo imprimir en mi taza?",
+      "respuesta": "Puedes imprimir cualquier tipo de imagen, foto, logo o texto. Nuestro editor online te permite subir tus propios archivos y ajustarlos fácilmente al área de impresión. Recomendamos imágenes de alta resolución para un resultado óptimo."
+    }
+  ],
+  "texto_final_refuerzo": "No esperes más para dar vida a tus ideas. Con nuestro proceso de diseño sencillo y nuestra garantía de calidad, tus tazas personalizadas serán el centro de todas las miradas. ¡Empieza a crear hoy mismo y recibe tu pedido rápidamente!",
+  "cta_textoCta": "¡Diseña tu Taza Personalizada Ahora!",
+  "meta_title": "Tazas Personalizadas con Foto y Logo | Baratas y Envío Rápido",
+  "meta_description": "Crea tus tazas personalizadas online con fotos, diseños o el logo de tu empresa. Impresión de alta calidad, aptas para lavavajillas y precios sin competencia. ¡El regalo perfecto o el mejor merchandising!"
+}

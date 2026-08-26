@@ -1,0 +1,890 @@
+{
+  "ropa-personalizada": {
+    "title": "Ropa Personalizada",
+    "href": "#",
+    "columns": [
+      {
+        "title": "CAMISETAS",
+        "href": "/camisetas-personalizadas",
+        "items": [
+          {
+            "label": "Camisetas Manga Corta",
+            "href": "/camisetas-personalizadas/camisetas-manga-corta",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/03/6554_98_1_5.jpg",
+              "altText": "Camisetas Manga Corta"
+            }
+          },
+          {
+            "label": "Camisetas Manga Larga",
+            "href": "/camisetas-personalizadas/camisetas-manga-larga",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1096_02_1_1.jpg",
+              "altText": "Camisetas Manga Larga"
+            }
+          },
+          {
+            "label": "Camisetas de Tirantes",
+            "href": "/camisetas-personalizadas/camisetas-tirantes",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/6517_55_1_1.jpg",
+              "altText": "Camisetas de Tirantes"
+            }
+          },
+          {
+            "label": "Camisetas Ecológicas",
+            "href": "/camisetas-personalizadas/camisetas-ecologicas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/6698_168_1_1.jpg",
+              "altText": "Camisetas Ecológicas"
+            }
+          },
+          {
+            "label": "camisetas Técnicas",
+            "href": "/camisetas-personalizadas/camisetas-tecnicas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/0312_481_1_1.jpg",
+              "altText": "camisetas Técnicas"
+            }
+          },
+          {
+            "label": "Camisetas Reflectantes Alta Visibilidad",
+            "href": "/camisetas-personalizadas/camisetas-reflectantes",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9310_55221_1_1.jpg",
+              "altText": "Ropa laboral personalizada"
+            }
+          },
+          {
+            "label": "Camisetas Ignífugas",
+            "href": "/camisetas-personalizadas/camisetas-ignifugas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9401_55_1_1.jpg",
+              "altText": "Camisetas Ignífugas"
+            }
+          },
+          {
+            "label": "Camisetas Industria",
+            "href": "/camisetas-personalizadas/camisetas-industria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8411_0260_1_4.jpg",
+              "altText": "Camisetas Industria"
+            }
+          }
+        ]
+      },
+      {
+        "title": "SUDADERAS",
+        "href": "/sudaderas-personalizadas",
+        "items": [
+          {
+            "label": "Sudaderas con Capucha",
+            "href": "/sudaderas-personalizadas/sudaderas-con-capucha",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1067_263_1_1.jpg",
+              "altText": "Sudaderas con Capucha"
+            }
+          },
+          {
+            "label": "Sudaderas Sin Capucha",
+            "href": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1070_263_1_1.jpg",
+              "altText": "Sudaderas Sin Capucha"
+            }
+          },
+          {
+            "label": "Sudaderas Alta Visibilidad Reflectantes",
+            "href": "/sudaderas-personalizadas/sudaderas-alta-visibilidad",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/p_9314_221_1_1.jpg",
+              "altText": "Sudaderas Alta Visibilidad Reflectantes"
+            }
+          },
+          {
+            "label": "Sudaderas Baratas",
+            "href": "/sudaderas-personalizadas/sudaderas-baratas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1070_263_1_1.jpg",
+              "altText": "Sudaderas Baratas"
+            }
+          },
+          {
+            "label": "Sudaderas Bordadas",
+            "href": "/sudaderas-personalizadas/sudaderas-bordadas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/2203_802_1_2-scaled.jpg",
+              "altText": "Sudaderas Bordadas"
+            }
+          },
+          {
+            "label": "Sudaderas para empresas",
+            "href": "/sudaderas-personalizadas/sudaderas-para-empresas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1109_57_1_1.jpg",
+              "altText": "Sudaderas para empresas"
+            }
+          },
+          {
+            "label": "Sudaderas Para Grupos",
+            "href": "/sudaderas-personalizadas/sudaderas-para-grupos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1058_5558_1_1.jpg",
+              "altText": "Sudaderas Para Grupos"
+            }
+          }
+        ]
+      },
+      {
+        "title": "POLOS",
+        "href": "/polos-personalizados",
+        "items": [
+          {
+            "label": "Polos Deportivos Técnicos",
+            "href": "/polos-personalizados/polos-deportivos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/0404_225_1_1.jpg",
+              "altText": "Polos Deportivos Técnicos"
+            }
+          },
+          {
+            "label": "Polos Ignífugos Certificados",
+            "href": "/polos-personalizados/polos-ignifugos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9402_55_1_1.jpg",
+              "altText": "Polos Ignífugos Certificados"
+            }
+          },
+          {
+            "label": "Polos Industria",
+            "href": "/polos-personalizados/polos-industria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8410_2302_1_1.jpg",
+              "altText": "Polos Industria"
+            }
+          },
+          {
+            "label": "Polos Manga Corta",
+            "href": "/polos-personalizados/polos-manga-corta",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/6634_263_1_1.jpg",
+              "altText": "Polos Manga Corta"
+            }
+          },
+          {
+            "label": "Polos Manga Larga",
+            "href": "/polos-personalizados/polos-manga-larga",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/6635_58_1_1.jpg",
+              "altText": "Polos Manga Larga"
+            }
+          },
+          {
+            "label": "Polos Reflectantes Alta Visibilidad",
+            "href": "/polos-personalizados/polos-reflectantes",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9315_55221_1_1.jpg",
+              "altText": "Ropa laboral"
+            }
+          }
+        ]
+      },
+      {
+        "title": "CHAQUETAS",
+        "href": "/chaquetas-personalizadas",
+        "items": [
+          {
+            "label": "Abrigos",
+            "href": "/chaquetas-personalizadas/abrigos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/5075_22502_1_1.jpg",
+              "altText": "Abrigos"
+            }
+          },
+          {
+            "label": "Chaquetas Softshell",
+            "href": "/chaquetas-personalizadas/chaquetas-softshell",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/6432_05_1_1.jpg",
+              "altText": "Chaquetas Softshell"
+            }
+          },
+          {
+            "label": "Chaquetas Polares",
+            "href": "/chaquetas-personalizadas/chaquetas-polares",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/6414_05_3_3.jpg",
+              "altText": "Chaquetas Polares"
+            }
+          },
+          {
+            "label": "Cortavientos",
+            "href": "/chaquetas-personalizadas/cortavientos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/5050_64_1_1.jpg",
+              "altText": "Cortavientos"
+            }
+          },
+          {
+            "label": "Chaquetas Impermeables",
+            "href": "/chaquetas-personalizadas/chaquetas-impermeables",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/5201_02_1_4.jpg",
+              "altText": "Chaquetas Impermeables"
+            }
+          },
+          {
+            "label": "Chaquetas Alta Visibilidad",
+            "href": "/chaquetas-personalizadas/chaquetas-alta-visibilidad",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9303_55221_1_1.jpg",
+              "altText": "Chaquetas Alta Visibilidad"
+            }
+          },
+          {
+            "label": "Chaquetas  cocina",
+            "href": "/chaquetas-personalizadas/chaquetas-horeca-cocina",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/4500_01_1_1.jpg",
+              "altText": "Chaquetas  cocina"
+            }
+          }
+        ]
+      },
+      {
+        "title": "PANTALONES UNIFORMES",
+        "href": "/pantalones-personalizados",
+        "items": [
+          {
+            "label": "Pantalones Sanitarios",
+            "href": "/pantalones-personalizados/pantalones-sanitarios",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9097_78_1_1.jpg",
+              "altText": "Pantalones Sanitarios"
+            }
+          },
+          {
+            "label": "Pantalones Largos",
+            "href": "/pantalones-personalizados/pantalones-largos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9118_55_1_3.jpg",
+              "altText": "Pantalones Largos"
+            }
+          },
+          {
+            "label": "Pantalones Industria",
+            "href": "/pantalones-personalizados/pantalones-industria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8400_02_1_3.jpg",
+              "altText": "Pantalones Industria"
+            }
+          },
+          {
+            "label": "Pantalones Ignífugos",
+            "href": "/pantalones-personalizados/pantalones-ignifugos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9400_55_1_3.jpg",
+              "altText": "Pantalones Ignífugos"
+            }
+          },
+          {
+            "label": "Pantalones  Hostelería",
+            "href": "/pantalones-personalizados/pantalones-horeca",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9109_02_1_3.jpg",
+              "altText": "Pantalones  Hostelería"
+            }
+          },
+          {
+            "label": "Pantalones Deportivos",
+            "href": "/pantalones-personalizados/pantalones-deportivos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1174_58_1_1.jpg",
+              "altText": "Pantalones Deportivos"
+            }
+          },
+          {
+            "label": "Pantalones Alimentación",
+            "href": "/pantalones-personalizados/pantalones-alimentacion",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9088_01_2_1.jpg",
+              "altText": "Pantalones Alimentación"
+            }
+          }
+        ]
+      },
+      {
+        "title": "VESTUARIO LABORAL",
+        "href": "/vestuario-laboral",
+        "items": [
+          {
+            "label": "Monos Ignífugos",
+            "href": "/vestuario-laboral/monos-ignifugos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9404_55_1_1.jpg",
+              "altText": "Monos Ignífugos"
+            }
+          },
+          {
+            "label": "Ropa Alta Visibilidad",
+            "href": "/vestuario-laboral/alta-visibilidad",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9304_55221_1_1.jpg",
+              "altText": "Ropa Alta Visibilidad"
+            }
+          },
+          {
+            "label": "Ropa Laboral para Alimentaria",
+            "href": "/vestuario-laboral/alimentaria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9092_01_1_1.jpg",
+              "altText": "Ropa Laboral para Alimentaria"
+            }
+          },
+          {
+            "label": "Ropa Laboral para Hostelería",
+            "href": "/vestuario-laboral/hosteleria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9124_02_1_1.jpg",
+              "altText": "Ropa Laboral para Hostelería"
+            }
+          },
+          {
+            "label": "Ropa Laboral para Industria",
+            "href": "/vestuario-laboral/industria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9403_55_1_1.jpg",
+              "altText": "Ropa Laboral para Industria"
+            }
+          },
+          {
+            "label": "Monos de Industria",
+            "href": "/vestuario-laboral/monos-industria",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8401_07_1_1.jpg",
+              "altText": "Monos de Industria"
+            }
+          },
+          {
+            "label": "Ropa Laboral para Sanidad",
+            "href": "/vestuario-laboral/sanidad",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/9098_95_1_1.jpg",
+              "altText": "Ropa Laboral para Sanidad"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "bolsas-y-mochilas": {
+    "title": "Bolsas y Mochilas",
+    "href": "#",
+    "columns": [
+      {
+        "title": "BOLSAS",
+        "href": "/bolsas-personalizadas",
+        "items": [
+          {
+            "label": "Bolsas Algodón",
+            "href": "/bolsas-personalizadas/bolsas-algodon",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1650_29_1_1.jpg",
+              "altText": "Bolsas Algodón"
+            }
+          },
+          {
+            "label": "Bolsas Non Woven",
+            "href": "/bolsas-personalizadas/bolsas-non-woven",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7501_60_1_1.jpg",
+              "altText": "Bolsas Non Woven"
+            }
+          },
+          {
+            "label": "Bolsas Botellas",
+            "href": "/bolsas-personalizadas/bolsas-botella",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7611_29_1_1.jpg",
+              "altText": "Bolsas Botellas"
+            }
+          },
+          {
+            "label": "Bolsas Papel Kraft",
+            "href": "/bolsas-personalizadas/bolsas-papel",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7538_29_1_1.jpg",
+              "altText": "Bolsas Papel Kraft"
+            }
+          },
+          {
+            "label": "Bolsas   Waterproof",
+            "href": "/bolsas-personalizadas/bolsas-estancas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7533_60_2_1.jpg",
+              "altText": "Bolsas   Waterproof"
+            }
+          },
+          {
+            "label": "Bolsas Para Tiendas",
+            "href": "/bolsas-personalizadas/bolsas-para-tiendas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7166_05_1_1.jpg",
+              "altText": "Bolsas Para Tiendas"
+            }
+          },
+          {
+            "label": "Bolsas Personalizadas al Por Mayor",
+            "href": "/bolsas-personalizadas/bolsas-al-por-mayor",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1621_271_1_1.jpg",
+              "altText": "Bolsas Personalizadas al Por Mayor"
+            }
+          },
+          {
+            "label": "Bolsas Plegables",
+            "href": "/bolsas-personalizadas/bolsas-plegables",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1951_49_3_1.jpg",
+              "altText": "Bolsas Plegables"
+            }
+          },
+          {
+            "label": "Bolsas Regalo",
+            "href": "/bolsas-personalizadas/bolsas-regalo",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1156_29_3_2.jpg",
+              "altText": "Bolsas Regalo"
+            }
+          },
+          {
+            "label": "Bolsas Térmicas",
+            "href": "/bolsas-personalizadas/bolsas-termicas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7608_243_1_1.jpg",
+              "altText": "Bolsas Térmicas"
+            }
+          },
+          {
+            "label": "Bolsas Viaje",
+            "href": "/bolsas-personalizadas/bolsas-viaje",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1783_107_1_1.jpg",
+              "altText": "Bolsas Viaje"
+            }
+          },
+          {
+            "label": "Bolsas Yute",
+            "href": "/bolsas-personalizadas/bolsas-yute",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7148_29_1_1.jpg",
+              "altText": "Bolsas Yute"
+            }
+          },
+          {
+            "label": "Bolsas Baratas",
+            "href": "/bolsas-personalizadas/bolsas-baratas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7551_29_2_1.jpg",
+              "altText": "Bolsas Baratas"
+            }
+          }
+        ]
+      },
+      {
+        "title": "MOCHILAS",
+        "href": "/mochilas-personalizadas",
+        "items": [
+          {
+            "label": "Mochilas Baratas",
+            "href": "/mochilas-personalizadas/mochilas-baratas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7153_55_1_1.jpg",
+              "altText": "Mochilas Baratas"
+            }
+          },
+          {
+            "label": "Mochilas Cuerdas",
+            "href": "/mochilas-personalizadas/mochilas-cuerdas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1785_60_1_1.jpg",
+              "altText": "Mochilas Cuerdas"
+            }
+          },
+          {
+            "label": "Mochilas Deportivas",
+            "href": "/mochilas-personalizadas/mochilas-deportivas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1201_02_1_1.jpg",
+              "altText": "Mochilas Deportivas"
+            }
+          },
+          {
+            "label": "Mochilas Escolares",
+            "href": "/mochilas-personalizadas/mochilas-escolares",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1868_60_1_1.jpg",
+              "altText": "Mochilas Escolares"
+            }
+          },
+          {
+            "label": "Mochilas Estándar",
+            "href": "/mochilas-personalizadas/mochilas-estandar",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1953_47_1_1.jpg",
+              "altText": "Mochilas Estándar"
+            }
+          },
+          {
+            "label": "Mochilas Infantiles",
+            "href": "/mochilas-personalizadas/mochilas-infantiles",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1710_03_1_1.jpg",
+              "altText": "Mochilas Infantiles"
+            }
+          },
+          {
+            "label": "Mochilas Para Empresas",
+            "href": "/mochilas-personalizadas/mochilas-para-empresas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/2034_107_1_1.jpg",
+              "altText": "Mochilas Para Empresas"
+            }
+          },
+          {
+            "label": "Mochilas Portátil",
+            "href": "/mochilas-personalizadas/mochilas-portatil",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7083_02_1_1.jpg",
+              "altText": "Mochilas Portátil"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "tazas-y-botellas": {
+    "title": "Tazas y Botellas",
+    "href": "#",
+    "columns": [
+      {
+        "title": "TAZAS",
+        "href": "/tazas-personalizadas",
+        "items": [
+          {
+            "label": "Tazas Cerámica",
+            "href": "/tazas-personalizadas/tazas-ceramica",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/3999_01_1_1.jpg",
+              "altText": "Tazas Cerámica"
+            }
+          },
+          {
+            "label": "Tazas Metálicas",
+            "href": "/tazas-personalizadas/tazas-metalicas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/4082_60_1_1.jpg",
+              "altText": "Tazas Metálicas"
+            }
+          },
+          {
+            "label": "Tazas Sublimación",
+            "href": "/tazas-personalizadas/tazas-sublimacion",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1711_01_1_1.jpg",
+              "altText": "Tazas Sublimación"
+            }
+          }
+        ]
+      },
+      {
+        "title": "BOTELLAS Y TERMOS",
+        "href": "/botellas-personalizadas",
+        "items": [
+          {
+            "label": "Botellas Aluminio",
+            "href": "/botellas-personalizadas/botellas-aluminio",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1553_251_2_1.jpg",
+              "altText": "Botellas Aluminio"
+            }
+          },
+          {
+            "label": "Botellas Cristal",
+            "href": "/botellas-personalizadas/botellas-cristal",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/4020_29_1_1.jpg",
+              "altText": "Botellas Cristal"
+            }
+          },
+          {
+            "label": "Botellas Plástico",
+            "href": "/botellas-personalizadas/botellas-plastico",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/4036_60_2_1.jpg",
+              "altText": "Botellas Plástico"
+            }
+          },
+          {
+            "label": "Termos Acero Inoxidable",
+            "href": "/botellas-personalizadas/termos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/4123_226_1_1.jpg",
+              "altText": "Termos Acero Inoxidable"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "merchandising": {
+    "title": "Merchandising",
+    "href": "#",
+    "columns": [
+      {
+        "title": "TECNOLOGÍA",
+        "href": "/tecnologia-personalizada",
+        "items": [
+          {
+            "label": "Power Banks",
+            "href": "/tecnologia-personalizada/power-banks-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1522_05_1_1.jpg",
+              "altText": "Power Banks"
+            }
+          },
+          {
+            "label": "Altavoces",
+            "href": "/tecnologia-personalizada/altavoces-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/3199_29_1_1.jpg",
+              "altText": "Altavoces"
+            }
+          },
+          {
+            "label": "Auriculares",
+            "href": "/tecnologia-personalizada/auriculares-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/3035_29_1_1.jpg",
+              "altText": "Auriculares"
+            }
+          },
+          {
+            "label": "Memorias USB",
+            "href": "/tecnologia-personalizada/memorias-usb-personalizadas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/4186_31_1_1.jpg",
+              "altText": "Memorias USB"
+            }
+          }
+        ]
+      },
+      {
+        "title": "MATERIAL ESCRITURA",
+        "href": "/escritura-personalizada",
+        "items": [
+          {
+            "label": "Bolígrafos Personalizados",
+            "href": "/escritura-personalizada/boligrafos-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8008_03_1_1.jpg",
+              "altText": "Bolígrafos Personalizados"
+            }
+          },
+          {
+            "label": "Bolígrafos Plástico",
+            "href": "/escritura-personalizada/boligrafos-plastico",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8045_31_1_1.jpg",
+              "altText": "Bolígrafos Plástico"
+            }
+          },
+          {
+            "label": "Bolígrafos Ecológicos",
+            "href": "/escritura-personalizada/boligrafos-ecologicos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1515_242_1_1.jpg",
+              "altText": "Bolígrafos Ecológicos"
+            }
+          },
+          {
+            "label": "Bolígrafos Metálicos",
+            "href": "/escritura-personalizada/boligrafos-metalicos",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8078_03_1_1.jpg",
+              "altText": "Bolígrafos Metálicos"
+            }
+          },
+          {
+            "label": "Bolígrafos Madera",
+            "href": "/escritura-personalizada/boligrafos-madera",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/8036_29_1_1.jpg",
+              "altText": "Bolígrafos Madera"
+            }
+          },
+          {
+            "label": "Carpetas Personalizadas",
+            "href": "/escritura-personalizada/carpetas-personalizadas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1820_47_1_1.jpg",
+              "altText": "Carpetas Personalizadas"
+            }
+          },
+          {
+            "label": "Libretas Personalizadas",
+            "href": "/escritura-personalizada/libretas-personalizadas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7979_255_3_1.jpg",
+              "altText": "Libretas Personalizadas"
+            }
+          }
+        ]
+      },
+      {
+        "title": "HOGAR Y DECORACIÓN",
+        "href": "/hogar-personalizado",
+        "items": [
+          {
+            "label": "Accesorios de Cocina",
+            "href": "/hogar-personalizado/cocina",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/4146_999_1_1.jpg",
+              "altText": "Accesorios de Cocina"
+            }
+          },
+          {
+            "label": "Decoración Personalizada",
+            "href": "/hogar-personalizado/decoracion",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/2989_01_1_1.jpg",
+              "altText": "Decoración Personalizada"
+            }
+          },
+          {
+            "label": "Mantas Personalizadas",
+            "href": "/hogar-personalizado/mantas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/5626_06_1_1.jpg",
+              "altText": "Mantas Personalizadas"
+            }
+          },
+          {
+            "label": "Velas Aromáticas Personalizadas",
+            "href": "/hogar-personalizado/velas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1171_01_3_1.jpg",
+              "altText": "Velas Aromáticas Personalizadas"
+            }
+          }
+        ]
+      },
+      {
+        "title": "MERCHANDISING PARA EVENTOS",
+        "href": "/merchandising-eventos",
+        "items": [
+          {
+            "label": "Chapas Personalizadas",
+            "href": "/merchandising-eventos/chapas-personalizadas",
+            "image": null
+          },
+          {
+            "label": "Imanes Personalizados",
+            "href": "/merchandising-eventos/imanes-personalizados",
+            "image": null
+          },
+          {
+            "label": "Lanyards Personalizados",
+            "href": "/merchandising-eventos/lanyards-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/7053_48_1_1.jpg",
+              "altText": "Lanyards Personalizados"
+            }
+          },
+          {
+            "label": "Llaveros Personalizados",
+            "href": "/merchandising-eventos/llaveros-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/1148_29_1_1.jpg",
+              "altText": "Llaveros Personalizados"
+            }
+          }
+        ]
+      },
+      {
+        "title": "ARTÍCULOS DE VERANO",
+        "href": "/verano-personalizado",
+        "items": [
+          {
+            "label": "Gafas de Sol Personalizadas",
+            "href": "/verano-personalizado/gafas-sol",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1960_02_1_1.jpg",
+              "altText": "Gafas de Sol Personalizadas"
+            }
+          },
+          {
+            "label": "Sombrillas Personalizadas con Logo",
+            "href": "/verano-personalizado/sombrilla-playa",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1006_05_1_1.jpg",
+              "altText": "Sombrillas Personalizadas con Logo"
+            }
+          },
+          {
+            "label": "Toallas de Playa Personalizadas",
+            "href": "/verano-personalizado/toalla-playa",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2026/01/1272_242_1_1.jpg",
+              "altText": "Toallas de Playa Personalizadas"
+            }
+          }
+        ]
+      },
+      {
+        "title": "ARTÍCULOS DEPORTIVOS",
+        "href": "/deportes-personalizados",
+        "items": [
+          {
+            "label": "Equipaciones Personalizadas",
+            "href": "/deportes-personalizados/equipaciones-personalizadas",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/p_0525_22602_1_1.jpg",
+              "altText": "Equipaciones Personalizadas"
+            }
+          },
+          {
+            "label": "Accesorios Deportivos",
+            "href": "/deportes-personalizados/accesorios-deportivos-personalizados",
+            "image": {
+              "src": "https://creativu.es/wp-content/uploads/2025/06/p_0491_55_1_1.jpg",
+              "altText": "Accesorios Deportivos"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "servicios": {
+    "title": "Servicios",
+    "href": "/servicios",
+    "columns": [
+      {
+        "title": "IMPRESIÓN DTF PARA EMPRESAS",
+        "href": "/servicios/impresion-dtf"
+      },
+      {
+        "title": "SERIGRAFÍA TEXTIL PARA EMPRESAS",
+        "href": "/servicios/serigrafia"
+      },
+      {
+        "title": "BORDADO PARA PERSONALIZACIÓN DE EMPRESA",
+        "href": "/servicios/bordado"
+      },
+      {
+        "title": "SUBLIMACIÓN PARA PERSONALIZACIÓN DE EMPRESA",
+        "href": "/servicios/sublimacion"
+      }
+    ]
+  }
+}

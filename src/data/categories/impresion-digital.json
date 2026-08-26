@@ -1,0 +1,52 @@
+{
+  "url": "/servicios/impresion-digital/",
+  "slug": "impresion-digital",
+  "parent_slug": "servicios",
+  "search_intent": "impresión digital camisetas",
+  "siblings_intents": [
+    "sublimación",
+    "vinilo"
+  ],
+  "hero_tituloPrincipal": "Impresión Digital (DTG/DTF)",
+  "hero_intro": "Expertos en impresión digital (dtg/dtf). La mejor calidad de impresión para tus prendas y artículos promocionales.",
+  "hub_subcategorias_texto": "Otras técnicas disponibles:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por qué elegirnos?",
+    "items": [
+      "Maquinaria de última generación",
+      "Acabados profesionales y duraderos",
+      "Asesoramiento técnico especializado",
+      "Plazos de entrega ajustados"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Grandes Tiradas",
+      "descripcion": "Ideal para eventos masivos y promociones.",
+      "image_alt": "Impresión Digital (DTG/DTF) grandes cantidades"
+    },
+    {
+      "titulo": "Alta Definición",
+      "descripcion": "Resultados fotográficos y detalles precisos.",
+      "image_alt": "Impresión Digital (DTG/DTF) alta calidad"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué materiales se pueden personalizar?",
+      "respuesta": "Depende de la técnica. Consúltanos para saber qué método es mejor para tu producto."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima?",
+      "respuesta": "Para la mayoría de técnicas partimos de 10 unidades, aunque en impresión digital podemos hacer desde 1 unidad."
+    },
+    {
+      "pregunta": "¿Necesito un archivo vectorial?",
+      "respuesta": "Es lo ideal para garantizar la máxima calidad, pero nuestro equipo de diseño puede ayudarte si no lo tienes."
+    }
+  ],
+  "texto_final_refuerzo": "Garantizamos el mejor resultado para tu marca con nuestra tecnología de vanguardia.",
+  "cta_textoCta": "Pide presupuesto de personalización",
+  "meta_title": "Impresión Digital (DTG/DTF) | Servicios de Impresión | IMPACTO33",
+  "meta_description": "Servicio profesional de impresión digital (dtg/dtf). Calidad, rapidez y precios competitivos. ¡Infórmate aquí!"
+}

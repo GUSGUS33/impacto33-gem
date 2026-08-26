@@ -1,0 +1,60 @@
+{
+  "url": "/verano-personalizado/gafas-sol",
+  "slug": "gafas-sol",
+  "parent_slug": "verano-personalizado",
+  "search_intent": "Comprar gafas de sol personalizadas con logo o diseño para eventos, regalos promocionales o merchandising de verano.",
+  "siblings_intents": [
+    "gorras",
+    "toallas-playa",
+    "abanicos",
+    "bolsas-playa",
+    "botellas-termicas"
+  ],
+  "hero_tituloPrincipal": "Gafas de Sol Personalizadas: El Regalo Promocional de Verano Perfecto",
+  "hero_intro": "Las **gafas de sol personalizadas** son un artículo de merchandising imprescindible para cualquier campaña de verano. Ofrecen una gran visibilidad de marca, son prácticas y se asocian directamente con el ocio, la diversión y el buen tiempo. Personaliza monturas y lentes con tu logo, eslogan o diseño exclusivo para destacar en festivales, eventos corporativos o como regalo a tus clientes.",
+  "hub_subcategorias_texto": "Descubre nuestra amplia gama de modelos, desde las clásicas de estilo *wayfarer* hasta opciones plegables o ecológicas. Todas listas para ser personalizadas con la máxima calidad de impresión o grabado.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Gafas de Sol Personalizadas",
+    "items": [
+      "Alta Protección UV: Todas nuestras gafas cumplen con la normativa de protección UV400.",
+      "Variedad de Estilos: Monturas en diversos colores, materiales (bambú, reciclado) y formas.",
+      "Personalización Duradera: Impresión de alta calidad o grabado láser de tu logo.",
+      "Entrega Rápida: Plazos de producción y envío ajustados a tus necesidades de campaña."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Festivales y Eventos Musicales",
+      "descripcion": "Regala gafas de sol con el logo del festival a los asistentes. Se convierten en un recuerdo funcional y en publicidad visible durante todo el evento.",
+      "image_alt": "Gafas de sol personalizadas con logo de festival en un evento al aire libre"
+    },
+    {
+      "titulo": "Regalo de Empresa en Verano",
+      "descripcion": "Incluye unas gafas de sol personalizadas en el 'kit de verano' para empleados o clientes, fomentando el bienestar y la imagen de marca.",
+      "image_alt": "Kit de verano con gafas de sol, toalla y botella térmica con logo corporativo"
+    },
+    {
+      "titulo": "Promociones en Playas y Zonas Turísticas",
+      "descripcion": "Lanza una campaña de marketing directo regalando gafas de sol con tu marca en zonas de alta afluencia turística para un impacto inmediato.",
+      "image_alt": "Persona usando gafas de sol personalizadas en la playa"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de personalización se puede hacer en las gafas?",
+      "respuesta": "Ofrecemos impresión a todo color en las patillas, grabado láser para un acabado premium y, en algunos modelos, personalización de la lente o la funda."
+    },
+    {
+      "pregunta": "¿Cuál es la cantidad mínima de pedido (MOQ)?",
+      "respuesta": "La cantidad mínima varía según el modelo, pero disponemos de opciones a partir de 50 unidades para pedidos pequeños y urgentes."
+    },
+    {
+      "pregunta": "¿Las gafas de sol personalizadas ofrecen protección UV?",
+      "respuesta": "Sí, todas nuestras gafas promocionales están certificadas con protección UV400, garantizando la seguridad y el cuidado de los ojos."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que tu marca pase desapercibida este verano. Las gafas de sol personalizadas son un vehículo de marketing dinámico y divertido que asegura que tu mensaje sea visto bajo el sol. ¡Empieza a diseñar las tuyas hoy mismo!",
+  "cta_textoCta": "Diseña tus Gafas de Sol Promocionales Ahora",
+  "meta_title": "Gafas de Sol Personalizadas con Logo | Merchandising de Verano",
+  "meta_description": "Gafas de sol personalizadas con tu logo para eventos, festivales y regalos promocionales de verano. Protección UV400 y gran variedad de estilos. ¡Pide tu presupuesto!"
+}

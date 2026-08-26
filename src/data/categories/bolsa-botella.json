@@ -1,0 +1,57 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-botella",
+  "slug": "bolsa-botella",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar o cotizar bolsas personalizadas diseñadas específicamente para transportar o regalar botellas (vino, licores, aceites, etc.), con énfasis en la personalización (logo, diseño).",
+  "siblings_intents": [
+    "bolsa-papel",
+    "bolsa-tela",
+    "bolsa-compra",
+    "bolsa-nevera",
+    "bolsa-mochila"
+  ],
+  "hero_tituloPrincipal": "Bolsas Personalizadas para Botellas: El Toque Elegante para Vinos y Licores",
+  "hero_intro": "Eleve la presentación de sus vinos, licores o aceites con nuestras **bolsas para botellas personalizadas**. Ideales para bodegas, eventos corporativos, catas y regalos promocionales, estas bolsas combinan funcionalidad, protección y un diseño exclusivo que lleva su marca directamente a la mesa de sus clientes. Elija entre materiales como yute, algodón o TNT, y personalice con su logo para un impacto memorable.",
+  "hub_subcategorias_texto": "Descubra la variedad de materiales y formatos disponibles para crear la bolsa de botella perfecta que se adapte a la ocasión y al tipo de bebida. Desde diseños individuales hasta opciones para packs de varias botellas.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestras Bolsas para Botellas Personalizadas?",
+    "items": [
+      "Máxima protección: Materiales resistentes que amortiguan y protegen el contenido.",
+      "Impacto de marca: Superficie ideal para una impresión de alta calidad de su logo o mensaje.",
+      "Sostenibilidad: Opciones ecológicas y reutilizables como yute, algodón y papel kraft.",
+      "Versatilidad: Perfectas para vino, cava, aceite, cervezas artesanales y regalos gourmet."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo Corporativo de Fin de Año",
+      "descripcion": "Una bodega de prestigio utilizó bolsas de yute personalizadas con su logo bordado para entregar sus botellas de reserva a clientes VIP, logrando una percepción de lujo y exclusividad.",
+      "image_alt": "Bolsa de yute personalizada con botella de vino para regalo corporativo",
+      "image_path": "/assets/casos-uso/bolsa-botella-corporativo.webp"
+    },
+    {
+      "titulo": "Promoción en Ferias y Catas",
+      "descripcion": "Una marca de aceite de oliva virgen extra usó bolsas de algodón con ventana transparente para regalar muestras de sus productos en eventos gastronómicos, facilitando el transporte y destacando la calidad.",
+      "image_alt": "Bolsa de algodón con ventana para botella de aceite en feria",
+      "image_path": "/assets/casos-uso/bolsa-botella-feria.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué materiales están disponibles para las bolsas de botella?",
+      "respuesta": "Ofrecemos una amplia gama, incluyendo yute, algodón, non-woven (TNT), papel kraft laminado y fieltro. La elección dependerá de la estética deseada y el nivel de protección requerido."
+    },
+    {
+      "pregunta": "¿Se pueden personalizar para botellas de diferentes tamaños?",
+      "respuesta": "Sí. Contamos con modelos estándar para botellas de vino (750 ml) y cava, pero también podemos fabricar bolsas a medida para botellas magnum, botellas de cerveza artesanal o packs de dos y tres unidades."
+    },
+    {
+      "pregunta": "¿Cuál es la técnica de impresión recomendada para el logo?",
+      "respuesta": "Depende del material. Para yute y algodón, recomendamos la serigrafía o el bordado. Para papel y TNT, la serigrafía o la impresión digital a todo color son excelentes opciones para garantizar la máxima visibilidad de su marca."
+    }
+  ],
+  "texto_final_refuerzo": "Las bolsas para botellas personalizadas son más que un simple envoltorio; son una extensión de la calidad de su producto y un potente vehículo publicitario. Invierta en la presentación que su marca merece.",
+  "cta_textoCta": "Solicite su Cotización de Bolsas para Botellas Personalizadas",
+  "meta_title": "Bolsas Personalizadas para Botellas de Vino y Licores | Diseño Exclusivo",
+  "meta_description": "Diseñe bolsas personalizadas para botellas con su logo. Opciones en yute, algodón y papel. Ideales para bodegas, regalos corporativos y eventos. ¡Pida su presupuesto!"
+}

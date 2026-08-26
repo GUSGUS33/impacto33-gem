@@ -1,0 +1,49 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-papel",
+  "slug": "bolsa-papel",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "bolsas papel personalizadas",
+  "siblings_intents": [
+    "bolsas algodon",
+    "bolsas yute",
+    "bolsas non woven"
+  ],
+  "hero_tituloPrincipal": "Bolsas de Papel Personalizadas",
+  "hero_intro": "La solución clásica y sostenible para comercios y eventos. Bolsas de papel kraft o celulosa personalizadas con tu logo, ideales para transmitir una imagen ecológica y cuidar el medio ambiente.",
+  "hub_subcategorias_texto": "Opciones versátiles para tu negocio:",
+  "ventajasEmpresa": {
+    "titulo": "Packaging sostenible y eficaz",
+    "items": [
+      "Ecológicas: 100% reciclables y biodegradables.",
+      "Económicas: La opción más rentable para grandes volúmenes.",
+      "Variedad: Asas rizadas, planas o troqueladas.",
+      "Imagen Natural: El papel kraft transmite valores eco-friendly."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Comercios y Tiendas",
+      "descripcion": "Packaging diario para entregar productos a tus clientes.",
+      "image_alt": "Bolsas papel tienda"
+    },
+    {
+      "titulo": "Ferias y Eventos",
+      "descripcion": "Bolsas económicas para entregar folletos y muestras.",
+      "image_alt": "Bolsas papel feria"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué resistencia tienen?",
+      "respuesta": "Depende del gramaje (80-120g), pero nuestras bolsas de asa rizada soportan perfectamente compras estándar de ropa o regalos."
+    },
+    {
+      "pregunta": "¿Se pueden imprimir a todo color?",
+      "respuesta": "Sí, aunque la serigrafía a 1 o 2 tintas es lo más habitual y económico en papel kraft."
+    }
+  ],
+  "texto_final_refuerzo": "Envuelve tu marca en sostenibilidad con nuestras bolsas de papel personalizadas.",
+  "cta_textoCta": "¿Necesitas bolsas para tu tienda?",
+  "meta_title": "Bolsas de Papel Personalizadas | Bolsas Kraft Baratas | IMPACTO33",
+  "meta_description": "Bolsas de papel personalizadas para tiendas y eventos. Bolsas kraft con asa rizada o plana impresas con tu logo. Packaging ecológico y económico."
+}

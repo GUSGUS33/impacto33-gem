@@ -1,0 +1,62 @@
+{
+  "url": "/tazas-personalizadas/taza-sublimacion",
+  "slug": "taza-sublimacion",
+  "parent_slug": "tazas-personalizadas",
+  "search_intent": "Comprar tazas de sublimación personalizadas para regalos de empresa y merchandising.",
+  "siblings_intents": [
+    "taza-ceramica",
+    "taza-metalica",
+    "taza-magica",
+    "taza-con-cuchara"
+  ],
+  "hero_tituloPrincipal": "Tazas de Sublimación Personalizadas: El Regalo Promocional que Marca la Diferencia",
+  "hero_intro": "Descubre la versatilidad y el impacto visual de nuestras tazas de sublimación. Perfectas para plasmar diseños a todo color con una durabilidad excepcional. Ideales para merchandising, eventos corporativos o como un detalle único para tus clientes y empleados. La técnica de sublimación garantiza una impresión de alta calidad que resiste el paso del tiempo y los lavados.",
+  "hub_subcategorias_texto": "Explora nuestra gama completa de tazas personalizables, desde la clásica cerámica hasta opciones más innovadoras. Si buscas una impresión vibrante y resistente, la sublimación es tu mejor opción.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Tazas de Sublimación",
+    "items": [
+      "Impresión a todo color y de alta definición.",
+      "Máxima durabilidad: resistente a lavavajillas y microondas.",
+      "Entrega rápida y pedidos desde pocas unidades.",
+      "Asesoramiento experto en diseño y selección de modelos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Merchandising para Ferias y Congresos",
+      "descripcion": "Utiliza tazas de sublimación con el logo de tu empresa para regalar en ferias. Son prácticas, visibles y aseguran que tu marca permanezca en el escritorio de tus contactos.",
+      "image_alt": "Taza de sublimación con logo de empresa en un stand de feria.",
+      "image_path": "/images/casos-uso/taza-sublimacion-feria.webp"
+    },
+    {
+      "titulo": "Regalo de Bienvenida para Nuevos Empleados",
+      "descripcion": "Personaliza tazas con el nombre y el logo de la empresa para el 'kit de bienvenida' de nuevos empleados. Fomenta el sentido de pertenencia y es un elemento útil en el día a día.",
+      "image_alt": "Taza de sublimación en un escritorio de oficina junto a un ordenador.",
+      "image_path": "/images/casos-uso/taza-sublimacion-oficina.webp"
+    },
+    {
+      "titulo": "Promociones de Productos Estacionales",
+      "descripcion": "Lanza ediciones limitadas de tazas con diseños temáticos para campañas navideñas, de verano o de lanzamiento de nuevos productos. La sublimación permite gran detalle.",
+      "image_alt": "Taza de sublimación con diseño navideño y colores vivos.",
+      "image_path": "/images/casos-uso/taza-sublimacion-promocion.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué es la sublimación y por qué es ideal para tazas?",
+      "respuesta": "La sublimación es una técnica de impresión que transfiere la tinta directamente a la superficie de la taza mediante calor, convirtiéndola en gas. Esto permite que el diseño se integre permanentemente en el material, ofreciendo colores vibrantes, alta resolución y una resistencia total al lavado y al uso diario."
+    },
+    {
+      "pregunta": "¿Se pueden sublimar tazas de cualquier material?",
+      "respuesta": "La sublimación requiere un recubrimiento de poliéster. Nuestras tazas de sublimación están preparadas con este recubrimiento especial, generalmente de cerámica o metal, para garantizar la máxima calidad y durabilidad de la impresión."
+    },
+    {
+      "pregunta": "¿Cuál es el área máxima de impresión en una taza de sublimación?",
+      "respuesta": "El área de impresión varía según el modelo de taza, pero generalmente permite cubrir casi toda la superficie cilíndrica, ofreciendo un diseño panorámico. Consulta las plantillas específicas de cada modelo para conocer las dimensiones exactas."
+    }
+  ],
+  "texto_final_refuerzo": "No comprometas la calidad de tu marca. Con nuestras tazas de sublimación, obtendrás un producto promocional de alto impacto, duradero y que tus clientes usarán y verán cada día. Pide tu presupuesto sin compromiso y empieza a crear tu diseño perfecto.",
+  "cta_textoCta": "Personaliza tus Tazas de Sublimación Ahora",
+  "meta_title": "Tazas de Sublimación Personalizadas para Empresas | Alta Calidad y Color",
+  "meta_description": "Crea tazas de sublimación personalizadas con tu logo a todo color. Ideales para merchandising, regalos de empresa y eventos. Impresión duradera y resistente al lavavajillas."
+}

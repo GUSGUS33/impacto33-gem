@@ -1,0 +1,8 @@
+{
+  "name": "Impacto33 B2B Ecommerce",
+  "description": "Migración de Vite SPA a Next.js 14 App Router para impacto33.com.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

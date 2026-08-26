@@ -1,0 +1,60 @@
+{
+  "url": "/ropa-laboral-personalizada/ropa-sanidad",
+  "slug": "ropa-sanidad",
+  "parent_slug": "ropa-laboral-personalizada",
+  "search_intent": "Comprar uniformes sanitarios personalizados, ropa de trabajo para médicos, enfermeros y personal de clínicas.",
+  "siblings_intents": [
+    "ropa-hosteleria",
+    "ropa-construccion",
+    "ropa-industria",
+    "ropa-peluqueria-estetica",
+    "ropa-alta-visibilidad"
+  ],
+  "hero_tituloPrincipal": "Ropa Sanitaria Personalizada: Uniformes de Calidad para Profesionales de la Salud",
+  "hero_intro": "En el sector sanitario, la higiene, la comodidad y la imagen profesional son fundamentales. Ofrecemos una amplia gama de vestuario laboral sanitario, desde batas y casacas hasta pantalones y pijamas, todos personalizables con el logo de tu clínica, hospital o farmacia. Garantizamos prendas duraderas, resistentes a lavados frecuentes y que cumplen con los más altos estándares de calidad.",
+  "hub_subcategorias_texto": "Explora nuestras colecciones especializadas para cada área: uniformes de enfermería, ropa para médicos, vestuario para dentistas y batas de farmacia. La personalización con bordado o serigrafía refuerza la identidad de tu equipo y transmite confianza a los pacientes.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por qué elegir nuestra Ropa Sanitaria Personalizada?",
+    "items": [
+      "Máxima Higiene y Durabilidad: Tejidos resistentes a altas temperaturas y lavados industriales.",
+      "Comodidad y Movilidad: Diseños ergonómicos pensados para largas jornadas de trabajo.",
+      "Imagen Profesional Unificada: Refuerza la marca de tu centro con uniformes corporativos.",
+      "Amplia Gama de Colores y Tallas: Soluciones para todo el personal sanitario."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Uniformes para Clínica Dental",
+      "descripcion": "Casacas y pantalones ligeros en colores claros, personalizados con el logo bordado en el bolsillo. Transmiten pulcritud y profesionalidad.",
+      "image_alt": "Uniforme sanitario personalizado para clínica dental"
+    },
+    {
+      "titulo": "Pijamas Quirúrgicos para Hospital",
+      "descripcion": "Conjuntos de pijama quirúrgico en tejido técnico, ideales para quirófanos y áreas de alta exigencia de esterilización.",
+      "image_alt": "Pijama quirúrgico personalizado para personal de hospital"
+    },
+    {
+      "titulo": "Batas de Farmacia Personalizadas",
+      "descripcion": "Batas de manga larga con tejido anti-manchas y logo serigrafiado, ofreciendo una imagen de confianza y autoridad.",
+      "image_alt": "Batas de farmacia con logo serigrafiado"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipo de personalización es mejor para la ropa sanitaria?",
+      "respuesta": "El bordado es ideal para logos pequeños en batas y casacas, ya que es muy duradero. Para grandes cantidades o diseños más grandes, la serigrafía o el vinilo textil son opciones económicas y resistentes a los lavados."
+    },
+    {
+      "pregunta": "¿Son resistentes a los lavados a alta temperatura?",
+      "respuesta": "Sí, la mayoría de nuestros tejidos sanitarios están diseñados para soportar lavados a 60ºC o más, cumpliendo con los requisitos de desinfección del sector."
+    },
+    {
+      "pregunta": "¿Ofrecen tallas especiales o diseños unisex?",
+      "respuesta": "Sí, disponemos de un amplio tallaje y la mayoría de nuestros modelos son unisex o tienen versiones específicas para hombre y mujer, asegurando un ajuste cómodo para todo el equipo."
+    }
+  ],
+  "texto_final_refuerzo": "La elección de la ropa laboral en sanidad no es solo una cuestión de estética, sino de seguridad y funcionalidad. Invierte en uniformes que protejan a tu equipo y proyecten la seriedad y el cuidado que tus pacientes esperan.",
+  "cta_textoCta": "Solicita tu Presupuesto de Uniformes Sanitarios Personalizados",
+  "meta_title": "Ropa Sanitaria Personalizada | Uniformes Médicos y de Enfermería",
+  "meta_description": "Uniformes sanitarios personalizados de alta calidad para clínicas, hospitales y farmacias. Batas, casacas y pijamas resistentes y cómodos. ¡Pide tu presupuesto!"
+}

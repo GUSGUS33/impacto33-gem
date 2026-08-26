@@ -1,0 +1,57 @@
+{
+  "url": "/ropa-laboral-personalizada",
+  "slug": "ropa-laboral-personalizada",
+  "parent_slug": "",
+  "search_intent": "Comprar ropa de trabajo personalizada para empresas",
+  "siblings_intents": [],
+  "hero_tituloPrincipal": "Ropa Laboral Personalizada para Empresas: Uniformes con Imagen y Seguridad",
+  "hero_intro": "Refuerza la identidad de tu marca y garantiza la seguridad de tu equipo con nuestra selección de ropa laboral personalizable. Ofrecemos soluciones de vestuario profesional de alta calidad, adaptadas a cada sector y con las mejores técnicas de marcaje para proyectar una imagen corporativa unificada y profesional.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestra Ropa de Trabajo Personalizada",
+    "items": [
+      "Refuerzo de la **Identidad Corporativa** y la marca.",
+      "Mejora la **Cohesión del Equipo** y el sentido de pertenencia.",
+      "Aumento de la **Confianza** y la percepción de profesionalismo ante el cliente.",
+      "Garantía de **Seguridad y Comodidad** con prendas técnicas y normativas."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Construcción y Obra Civil",
+      "descripcion": "Uniformes de alta visibilidad, resistentes y con protección para condiciones extremas, personalizados con el logo de la constructora.",
+      "image_alt": "Trabajadores de construcción con chalecos de alta visibilidad personalizados.",
+      "image_path": "/assets/images/casos-uso/construccion.webp"
+    },
+    {
+      "titulo": "Hostelería y Restauración",
+      "descripcion": "Delantales, chaquetas de chef y polos elegantes, diseñados para la comodidad y la higiene, con un toque de marca distintivo.",
+      "image_alt": "Chef con chaqueta personalizada y camarero con delantal con logo en un restaurante.",
+      "image_path": "/assets/images/casos-uso/hosteleria.webp"
+    },
+    {
+      "titulo": "Servicios Técnicos e Industriales",
+      "descripcion": "Pantalones multibolsillos, monos y cazadoras duraderas, ideales para mecánicos y técnicos que requieren funcionalidad y resistencia.",
+      "image_alt": "Técnico industrial con mono de trabajo personalizado revisando maquinaria.",
+      "image_path": "/assets/images/casos-uso/industria.webp"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué técnicas de personalización ofrecen para la ropa laboral?",
+      "respuesta": "Ofrecemos las principales técnicas de marcaje, incluyendo **serigrafía**, **bordado**, **vinilo de corte** y **transfer digital**. La elección dependerá del tipo de tejido, la complejidad del diseño y la durabilidad requerida."
+    },
+    {
+      "pregunta": "¿Existe un pedido mínimo para personalizar la ropa de trabajo?",
+      "respuesta": "Sí, la mayoría de nuestros productos tienen un pedido mínimo que varía según la prenda y la técnica de personalización. Consulta la ficha de cada producto o contacta con nuestro equipo para un presupuesto a medida."
+    },
+    {
+      "pregunta": "¿Cuánto tiempo tarda la entrega de un pedido de ropa laboral personalizada?",
+      "respuesta": "El plazo de entrega estándar es de 10 a 15 días laborables tras la aprobación del diseño final. Los pedidos sin personalización se entregan en 48-72 horas. Ofrecemos opciones de envío urgente para proyectos con plazos ajustados."
+    }
+  ],
+  "texto_final_refuerzo": "Invierte en la imagen y la seguridad de tu equipo. La ropa laboral personalizada es una herramienta de marketing poderosa y una inversión en el bienestar de tus empleados. ¡Solicita tu presupuesto sin compromiso hoy mismo!",
+  "cta_textoCta": "Personaliza tus Uniformes Ahora",
+  "meta_title": "Ropa Laboral Personalizada para Empresas | Uniformes de Trabajo con Logo",
+  "meta_description": "Diseña y compra ropa laboral personalizada de alta calidad para tu empresa. Uniformes de trabajo, vestuario de hostelería, seguridad y más, con tu logo bordado o serigrafiado."
+}

@@ -1,0 +1,57 @@
+{
+  "url": "/polos-personalizados",
+  "slug": "polos-personalizados",
+  "parent_slug": "",
+  "search_intent": "Uniformes corporativos y merchandising con imagen de marca",
+  "siblings_intents": [
+    "camisetas-personalizadas",
+    "sudaderas-personalizadas"
+  ],
+  "hero_tituloPrincipal": "Polos Personalizados con tu Logo: Elegancia y Profesionalismo para tu Marca",
+  "hero_intro": "El polo personalizado es la prenda ideal para combinar comodidad, estilo y una imagen corporativa impecable. Bordamos o estampamos tu logo con la más alta calidad para uniformes de trabajo, eventos o regalos promocionales. Destaca la profesionalidad de tu equipo con un toque de distinción.",
+  "hub_subcategorias_texto": "Explora nuestras subcategorías especializadas:",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Polos Personalizados para tu Empresa?",
+    "items": [
+      "Refuerzo de la Identidad de Marca: Crea cohesión y reconocimiento inmediato con tu logo visible.",
+      "Imagen Profesional y Elegante: Ofrecen un look más formal que una camiseta, ideal para atención al cliente.",
+      "Durabilidad y Comodidad: Confeccionados con mezclas de algodón y poliéster para un uso diario prolongado.",
+      "Versatilidad Promocional: Perfectos como uniformes, regalos para ferias o merchandising de alta calidad."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Uniformes para Equipos de Ventas",
+      "descripcion": "Viste a tu equipo comercial con polos bordados para proyectar confianza y profesionalismo en reuniones y visitas a clientes.",
+      "image_alt": "Equipo de ventas con polos corporativos bordados"
+    },
+    {
+      "titulo": "Merchandising para Eventos y Ferias",
+      "descripcion": "Utiliza polos estampados con diseños llamativos como regalos de alto valor o para identificar fácilmente a tu personal en stands.",
+      "image_alt": "Personal de stand en feria con polos promocionales"
+    },
+    {
+      "titulo": "Ropa Laboral para Hostelería y Servicios",
+      "descripcion": "Polos de piqué resistentes y transpirables, ideales para camareros, recepcionistas y personal de servicio que requiere comodidad y presencia.",
+      "image_alt": "Camarero sirviendo con polo de uniforme"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la diferencia entre bordado y estampado para polos?",
+      "respuesta": "El **bordado** ofrece un acabado premium, duradero y de alta calidad, ideal para logos pequeños y uniformes de larga duración. El **estampado** (serigrafía o vinilo) es más económico para grandes cantidades y diseños con muchos colores o de gran tamaño."
+    },
+    {
+      "pregunta": "¿Qué tipos de polos se pueden personalizar?",
+      "respuesta": "Ofrecemos polos de piqué clásico, polos técnicos de secado rápido (ideales para deporte o trabajo físico), y polos de algodón orgánico. Todos disponibles en tallas de hombre, mujer y niño."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para polos personalizados?",
+      "respuesta": "Nuestro pedido mínimo varía según la técnica de personalización y el modelo de polo. Generalmente, el mínimo es de 10 unidades para bordado y 25 para serigrafía, pero consulta con nuestro equipo para pedidos especiales."
+    }
+  ],
+  "texto_final_refuerzo": "No comprometas la imagen de tu marca. Elige la calidad y el estilo de nuestros polos personalizados para dejar una impresión duradera en tus clientes y unificar a tu equipo.",
+  "cta_textoCta": "¡Pide tu Presupuesto Personalizado Ahora!",
+  "meta_title": "Polos Personalizados con Logo y Bordado | Uniformes de Empresa",
+  "meta_description": "Diseña polos personalizados para tu empresa. Bordado o estampado de alta calidad para uniformes, eventos y merchandising. ¡Pide tu presupuesto sin compromiso!"
+}

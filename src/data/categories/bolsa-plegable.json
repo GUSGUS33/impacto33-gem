@@ -1,0 +1,65 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-plegable",
+  "slug": "bolsa-plegable",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar bolsas plegables personalizadas para promoción o uso diario, buscando portabilidad y reutilización.",
+  "siblings_intents": [
+    "bolsa-papel",
+    "bolsa-tela",
+    "bolsa-yute",
+    "bolsa-non-woven",
+    "bolsa-algodon",
+    "bolsa-termica"
+  ],
+  "hero_tituloPrincipal": "Bolsas Plegables Personalizadas: La Solución Compacta y Reutilizable para tu Marca",
+  "hero_intro": "Maximiza la visibilidad de tu marca con nuestras **bolsas plegables personalizadas**. Ideales para el día a día, se guardan fácilmente en cualquier bolsillo o bolso, ofreciendo una comodidad inigualable a tus clientes. Fabricadas con materiales resistentes y sostenibles, son el regalo promocional perfecto que combina funcionalidad, ecología y un alto impacto publicitario.",
+  "hub_subcategorias_texto": "Descubre la versatilidad de nuestras bolsas plegables, disponibles en diversos materiales como poliéster reciclado (RPET) y nylon, y una amplia gama de colores. Son perfectas para supermercados, ferias, eventos y como un detalle corporativo práctico.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Bolsas Plegables",
+    "items": [
+      "Máxima Portabilidad: Se pliegan en un tamaño mínimo, fáciles de llevar a todas partes.",
+      "Alto Impacto Ecológico: Promueve la sostenibilidad con un producto reutilizable y duradero.",
+      "Personalización de Calidad: Impresión de tu logo con técnicas que garantizan la máxima durabilidad.",
+      "Variedad de Materiales: Opciones en RPET, poliéster y nylon para adaptarse a tu presupuesto y valores."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo en Ferias y Congresos",
+      "descripcion": "Entrega una bolsa plegable con tu logo en eventos. Los asistentes la usarán inmediatamente para guardar material y la conservarán por su utilidad, llevando tu marca a todas partes.",
+      "image_alt": "Persona usando una bolsa plegable personalizada en un congreso"
+    },
+    {
+      "titulo": "Promoción en Supermercados y Tiendas",
+      "descripcion": "Ofrece la bolsa plegable como alternativa a las bolsas de plástico. Fomenta la compra recurrente y refuerza tu compromiso con el medio ambiente.",
+      "image_alt": "Bolsa plegable con logo de supermercado en el carrito de compra"
+    },
+    {
+      "titulo": "Detalle Corporativo para Empleados",
+      "descripcion": "Incluye una bolsa plegable en el kit de bienvenida de nuevos empleados. Un detalle práctico que promueve la cultura de la reutilización dentro de la empresa.",
+      "image_alt": "Bolsa plegable doblada junto a material de oficina"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el material más común para las bolsas plegables?",
+      "respuesta": "El material más popular es el poliéster, especialmente el RPET (poliéster reciclado), por su ligereza, resistencia y capacidad de plegado. También ofrecemos opciones en nylon."
+    },
+    {
+      "pregunta": "¿Cómo se personalizan las bolsas plegables?",
+      "respuesta": "Utilizamos principalmente la serigrafía para logos sencillos y la sublimación o el transfer digital para diseños a todo color, asegurando que la impresión resista el uso y los pliegues."
+    },
+    {
+      "pregunta": "¿Cuál es el tamaño mínimo al que se pliegan?",
+      "respuesta": "Depende del modelo, pero la mayoría se pliegan hasta alcanzar un tamaño similar al de una cartera pequeña o un llavero, facilitando su transporte en el bolsillo o bolso."
+    },
+    {
+      "pregunta": "¿Son resistentes para llevar la compra?",
+      "respuesta": "Sí, están diseñadas para ser reutilizables y son muy resistentes. Los modelos estándar soportan entre 5 y 10 kg, siendo perfectas para la compra diaria."
+    }
+  ],
+  "texto_final_refuerzo": "Las bolsas plegables personalizadas son una inversión inteligente en marketing. No solo son un artículo de alta utilidad que tus clientes apreciarán, sino que también actúan como vallas publicitarias móviles, llevando tu mensaje a un público más amplio con cada uso.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado",
+  "meta_title": "Bolsas Plegables Personalizadas con Logo | Ecológicas y Compactas",
+  "meta_description": "Descubre nuestra selección de bolsas plegables personalizadas. Ideales para publicidad, ferias y compras. Máxima portabilidad y compromiso ecológico. ¡Pide tu presupuesto!"
+}

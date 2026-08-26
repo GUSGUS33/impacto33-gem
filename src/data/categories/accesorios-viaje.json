@@ -1,0 +1,48 @@
+{
+  "url": "/accesorios-viaje",
+  "slug": "accesorios-viaje",
+  "parent_slug": "",
+  "search_intent": "accesorios viaje personalizados",
+  "siblings_intents": [
+    "bolsas viaje",
+    "mochilas viaje"
+  ],
+  "hero_tituloPrincipal": "Accesorios de Viaje Personalizados",
+  "hero_intro": "Acompaña a tus clientes en cada aventura. Los accesorios de viaje personalizados son regalos útiles y valorados que llevan tu marca a destinos lejanos, asociándola con experiencias positivas.",
+  "hub_subcategorias_texto": "Complementos imprescindibles para el viajero:",
+  "ventajasEmpresa": {
+    "titulo": "Tu marca alrededor del mundo",
+    "items": [
+      "Utilidad Real: Artículos que solucionan problemas al viajar.",
+      "Larga Vida Útil: Productos duraderos que se usan durante años.",
+      "Visibilidad Global: Exposición de marca en aeropuertos y hoteles.",
+      "Percepción Premium: Regalos asociados al ocio y estilo de vida."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Agencias de Viajes",
+      "descripcion": "El obsequio perfecto para entregar con la documentación del viaje.",
+      "image_alt": "Regalos agencia viajes"
+    },
+    {
+      "titulo": "Congresos Internacionales",
+      "descripcion": "Facilita el viaje a los asistentes con adaptadores o identificadores.",
+      "image_alt": "Merchandising congresos"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué es lo más demandado?",
+      "respuesta": "Los identificadores de maleta, almohadas de viaje y adaptadores universales son los top ventas."
+    },
+    {
+      "pregunta": "¿Personalizáis maletas?",
+      "respuesta": "Sí, disponemos de trolleys de cabina personalizables mediante láser o gota de resina."
+    }
+  ],
+  "texto_final_refuerzo": "Haz que tu marca sea la compañera de viaje ideal con nuestros accesorios personalizados.",
+  "cta_textoCta": "¿Buscas regalos para viajeros?",
+  "meta_title": "Accesorios Viaje Personalizados | Regalos Viajeros | IMPACTO33",
+  "meta_description": "Accesorios de viaje personalizados para publicidad. Identificadores, almohadas, adaptadores y neceseres con tu logo. Merchandising para turismo y agencias."
+}

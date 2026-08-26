@@ -1,0 +1,61 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-estanca",
+  "slug": "bolsa-estanca",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar bolsas estancas personalizadas para actividades acuáticas o protección extrema",
+  "siblings_intents": [
+    "bolsa-de-tela",
+    "bolsa-de-papel",
+    "bolsa-de-algodon",
+    "bolsa-de-yute",
+    "bolsa-plegable",
+    "bolsa-de-compra"
+  ],
+  "hero_tituloPrincipal": "Bolsas Estancas Personalizadas: Protección Total para tu Marca",
+  "hero_intro": "Las **bolsas estancas personalizadas** son el aliado perfecto para marcas que se asocian con la aventura, los deportes acuáticos o la protección de equipos sensibles. Ofrecen una **impermeabilidad total** y durabilidad extrema, asegurando que el logo de tu empresa permanezca visible en los entornos más exigentes. Desde el kayak hasta la montaña, protege lo esencial con estilo y máxima visibilidad de marca.",
+  "hub_subcategorias_texto": "Explora nuestra selección de bolsas estancas, disponibles en diversos tamaños, colores y capacidades de sellado. Ideales para eventos al aire libre, regalos corporativos de alto valor o como parte de un kit de bienvenida para empleados que aman la naturaleza.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestras Bolsas Estancas Personalizadas",
+    "items": [
+      "Máxima Impermeabilidad: Protección certificada contra agua, polvo y arena.",
+      "Materiales de Alta Resistencia: Fabricadas para soportar condiciones extremas y uso rudo.",
+      "Personalización Duradera: Impresión de tu logo con técnicas que resisten el desgaste y la humedad.",
+      "Regalo de Alto Impacto: Un artículo promocional premium, práctico y memorable."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos y Deportes Acuáticos",
+      "descripcion": "Perfectas para regalar en regatas, competiciones de surf o eventos de kayak, asegurando que los participantes mantengan sus pertenencias secas.",
+      "image_alt": "Bolsa estanca personalizada flotando cerca de un kayak en el mar"
+    },
+    {
+      "titulo": "Kits de Aventura y Montañismo",
+      "descripcion": "Ideales para proteger equipos electrónicos, mapas o ropa extra en excursiones de senderismo, camping o expediciones de montaña.",
+      "image_alt": "Mochilero usando una bolsa estanca personalizada en un sendero de montaña"
+    },
+    {
+      "titulo": "Regalo Corporativo Premium",
+      "descripcion": "Un obsequio de alto valor percibido para clientes VIP o socios estratégicos, demostrando un compromiso con la calidad y la utilidad.",
+      "image_alt": "Bolsa estanca con logo corporativo sobre una mesa de oficina moderna"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué nivel de impermeabilidad ofrecen estas bolsas?",
+      "respuesta": "Nuestras bolsas estancas están diseñadas con cierres enrollables y materiales de PVC o Tarpaulin de alta densidad, ofreciendo un nivel de protección que va desde la resistencia a salpicaduras hasta la inmersión temporal, dependiendo del modelo."
+    },
+    {
+      "pregunta": "¿Cómo se personaliza el logo para que resista el agua?",
+      "respuesta": "Utilizamos técnicas de serigrafía especializadas o transfer de alta resistencia, diseñadas específicamente para adherirse a materiales impermeables y soportar la exposición constante a la humedad y la abrasión sin despegarse ni decolorarse."
+    },
+    {
+      "pregunta": "¿Cuál es el tamaño más popular para una bolsa estanca promocional?",
+      "respuesta": "Los tamaños más solicitados son los de 5 litros y 10 litros, ya que son lo suficientemente compactos para llevar objetos personales (móvil, cartera, llaves) y lo suficientemente grandes para ofrecer un buen espacio de impresión para tu marca."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que el agua o el polvo detengan la promoción de tu marca. Con nuestras bolsas estancas personalizadas, tu mensaje viaja seguro y visible a cualquier aventura. **Solicita tu presupuesto hoy** y lleva tu merchandising al siguiente nivel de resistencia.",
+  "cta_textoCta": "Protege tu Marca: Solicita tu Presupuesto de Bolsas Estancas",
+  "meta_title": "Bolsas Estancas Personalizadas con Logo | Máxima Protección y Visibilidad",
+  "meta_description": "Descubre bolsas estancas personalizadas para deportes acuáticos, camping y aventura. Impermeabilidad total y logo duradero. ¡El regalo promocional más resistente!"
+}

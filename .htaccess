@@ -1,0 +1,15 @@
+DirectoryIndex disabled
+
+AddType image/webp .webp
+AddType image/svg+xml .svg
+
+RewriteEngine On
+
+# Servir solo archivos reales desde disco
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Proxy a Next.js preservando URLs codificadas como %5Bslug%5D
+RewriteRule ^index\.html$ http://127.0.0.1:3000/ [P,L,NE]
+RewriteRule ^$ http://127.0.0.1:3000/ [P,L,NE]
+RewriteRule ^(.+)$ http://127.0.0.1:3000%{REQUEST_URI} [P,L,NE]

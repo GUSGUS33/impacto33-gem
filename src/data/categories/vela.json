@@ -1,0 +1,59 @@
+{
+  "url": "/hogar-personalizado/vela",
+  "slug": "vela",
+  "parent_slug": "hogar-personalizado",
+  "search_intent": "Comprar velas personalizadas con logo para regalos de empresa",
+  "siblings_intents": [
+    "taza",
+    "manta",
+    "cojin",
+    "ambientador"
+  ],
+  "hero_tituloPrincipal": "Velas Personalizadas: Ilumina tu Marca con Estilo y Aroma",
+  "hero_intro": "Descubre nuestra exclusiva colección de **velas personalizadas**, el detalle perfecto para eventos, regalos corporativos o para crear un ambiente único en tu negocio. Elige entre una variedad de aromas, colores y envases, y añade el logo de tu empresa para un impacto memorable y duradero.",
+  "hub_subcategorias_texto": "Explora las opciones de personalización que te ofrecemos para que cada vela refleje la esencia de tu marca. Desde cera de soja ecológica hasta sofisticados difusores de aroma, tenemos la solución ideal para tu estrategia de marketing olfativo.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Velas Personalizadas",
+    "items": [
+      "Materiales Ecológicos y Sostenibles (Cera de Soja, Mechas de Algodón)",
+      "Amplia Gama de Aromas Exclusivos y Duraderos",
+      "Personalización de Alta Calidad (Serigrafía, Grabado Láser, Etiquetas)",
+      "Entrega Rápida y Precios Competitivos para Grandes Volúmenes"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalos de Boda y Eventos",
+      "descripcion": "Velas con la fecha y los nombres de los novios, un recuerdo aromático y elegante para los invitados.",
+      "image_alt": "Vela personalizada para boda con etiqueta de diseño floral"
+    },
+    {
+      "titulo": "Merchandising para Hoteles y Spas",
+      "descripcion": "Crea una experiencia sensorial única con velas que llevan el aroma y el logo de tu establecimiento.",
+      "image_alt": "Vela aromática de lujo con logo grabado para hotel"
+    },
+    {
+      "titulo": "Lanzamiento de Productos y Campañas",
+      "descripcion": "Asocia tu nuevo producto a un aroma exclusivo, generando una conexión emocional profunda con tus clientes.",
+      "image_alt": "Vela promocional con packaging de marca para lanzamiento"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para velas personalizadas?",
+      "respuesta": "El pedido mínimo varía según el tipo de vela y el método de personalización. Generalmente, comienza a partir de 50 unidades. Consulta la ficha de producto para detalles específicos."
+    },
+    {
+      "pregunta": "¿Qué tipos de cera utilizan para las velas?",
+      "respuesta": "Priorizamos el uso de cera de soja natural y ecológica, conocida por su combustión limpia y lenta, aunque también ofrecemos opciones en cera de parafina de alta calidad bajo solicitud."
+    },
+    {
+      "pregunta": "¿Puedo elegir el aroma y el color del envase?",
+      "respuesta": "Sí, ofrecemos un amplio catálogo de esencias y una gran variedad de colores y materiales para el envase (vidrio, metal, cerámica), permitiendo una personalización completa."
+    }
+  ],
+  "texto_final_refuerzo": "Las velas personalizadas son más que un simple regalo; son una experiencia sensorial que perdura. Confía en nuestra calidad para dejar una impresión duradera y aromática de tu marca.",
+  "cta_textoCta": "Solicita tu Presupuesto Personalizado de Velas Ahora",
+  "meta_title": "Velas Personalizadas con Logo | Regalos de Empresa Aromáticos | [Nombre de la Marca]",
+  "meta_description": "Personaliza velas con tu logo para regalos corporativos, eventos o merchandising. Amplia selección de aromas, cera de soja ecológica y envases de diseño. ¡Pide tu presupuesto!"
+}

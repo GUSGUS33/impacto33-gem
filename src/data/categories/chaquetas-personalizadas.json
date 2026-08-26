@@ -1,0 +1,48 @@
+{
+  "url": "/chaquetas-personalizadas",
+  "slug": "chaquetas-personalizadas",
+  "parent_slug": "",
+  "search_intent": "chaquetas personalizadas",
+  "siblings_intents": [
+    "sudaderas personalizadas",
+    "chalecos personalizados"
+  ],
+  "hero_tituloPrincipal": "Chaquetas y Abrigos Personalizados",
+  "hero_intro": "Protege a tu equipo del frío con estilo. Nuestra gama de chaquetas, softshells y parkas personalizadas combina funcionalidad térmica con una imagen corporativa impecable para el invierno.",
+  "hub_subcategorias_texto": "Ropa de abrigo para cada clima y ocasión:",
+  "ventajasEmpresa": {
+    "titulo": "Abrigo corporativo de calidad",
+    "items": [
+      "Tecnología Térmica: Tejidos avanzados que mantienen el calor.",
+      "Impermeabilidad: Opciones resistentes a lluvia y viento.",
+      "Versatilidad: Desde cortavientos ligeros a parkas de alta montaña.",
+      "Marcaje Resistente: Bordados y parches que aguantan el uso rudo."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Trabajo en Exterior",
+      "descripcion": "Equipamiento esencial para obras, logística y mantenimiento.",
+      "image_alt": "Chaquetas trabajo exterior"
+    },
+    {
+      "titulo": "Equipos Comerciales",
+      "descripcion": "Softshells elegantes para visitas a clientes en invierno.",
+      "image_alt": "Softshell corporativo"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Se pueden bordar los softshells?",
+      "respuesta": "Sí, el bordado es la técnica ideal para softshells, ofreciendo un acabado premium y duradero."
+    },
+    {
+      "pregunta": "¿Son impermeables?",
+      "respuesta": "Muchos de nuestros modelos cuentan con columnas de agua superiores a 3000mm, garantizando impermeabilidad."
+    }
+  ],
+  "texto_final_refuerzo": "Que el frío no pare tu actividad. Equípate con chaquetas personalizadas de alto rendimiento.",
+  "cta_textoCta": "¿Necesitas ropa de abrigo personalizada?",
+  "meta_title": "Chaquetas Personalizadas Empresa | Softshell y Parkas | IMPACTO33",
+  "meta_description": "Chaquetas y abrigos personalizados para empresas. Softshell, polares y cortavientos con tu logo. Ropa de abrigo laboral y promocional de calidad."
+}

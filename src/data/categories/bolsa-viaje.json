@@ -1,0 +1,67 @@
+{
+  "url": "/bolsas-personalizadas/bolsa-viaje",
+  "slug": "bolsa-viaje",
+  "parent_slug": "bolsas-personalizadas",
+  "search_intent": "Comprar bolsas de viaje personalizadas para merchandising, eventos y regalos corporativos.",
+  "siblings_intents": [
+    "tote-bag",
+    "bolsa-papel",
+    "mochila",
+    "bolsa-termica",
+    "bolsa-plastico"
+  ],
+  "hero_tituloPrincipal": "Bolsas de Viaje Personalizadas con tu Logo: Comodidad y Visibilidad en Cada Destino",
+  "hero_intro": "Las bolsas de viaje personalizadas son el artículo de merchandising ideal para marcas que valoran la movilidad y la aventura. Ofrecen una gran superficie para tu logo, asegurando que tu marca viaje por el mundo y gane exposición en aeropuertos, estaciones y hoteles. Elige entre diseños funcionales y duraderos, perfectos para escapadas de fin de semana o viajes de negocios.",
+  "hub_subcategorias_texto": "Explora nuestra selección de bolsas de viaje, desde maletines de mano elegantes hasta duffels deportivos. Cada modelo está pensado para ofrecer la máxima comodidad y resistencia, convirtiéndose en un compañero de viaje indispensable para tus clientes y empleados.",
+  "ventajasEmpresa": {
+    "titulo": "Por Qué Elegir Nuestras Bolsas de Viaje Personalizadas",
+    "items": [
+      "Máxima Durabilidad: Fabricadas con materiales resistentes como poliéster de alta densidad y lona.",
+      "Impresión de Alta Calidad: Tu logo con serigrafía, bordado o transfer, garantizando colores vivos y permanentes.",
+      "Diseño Funcional: Compartimentos inteligentes, asas reforzadas y correas ajustables para un transporte cómodo.",
+      "Impacto de Marca Global: Tu publicidad en movimiento, visible en múltiples ubicaciones geográficas."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo de Bienvenida para Empleados",
+      "descripcion": "Incluye una bolsa de viaje personalizada en el 'welcome pack' de nuevos empleados, especialmente para aquellos con roles que requieren movilidad o viajes frecuentes. Un gesto que demuestra aprecio y equipa a tu equipo.",
+      "image_alt": "Bolsa de viaje personalizada en un escritorio junto a un portátil",
+      "image_path": "/images/bolsas-personalizadas/bolsa-viaje-empleados.jpg"
+    },
+    {
+      "titulo": "Merchandising para Eventos y Ferias",
+      "descripcion": "Utiliza bolsas de viaje de alta gama como sorteo o regalo premium en ferias internacionales o congresos. Atrae a visitantes de alto valor y asegúrate de que tu marca sea recordada mucho después del evento.",
+      "image_alt": "Bolsa de viaje con logo en un stand de feria",
+      "image_path": "/images/bolsas-personalizadas/bolsa-viaje-feria.jpg"
+    },
+    {
+      "titulo": "Incentivo para Clientes VIP",
+      "descripcion": "Premia la lealtad de tus clientes más valiosos con una bolsa de viaje exclusiva. Es un regalo práctico y de alto valor percibido que refuerza la relación y promueve un estilo de vida asociado a tu marca.",
+      "image_alt": "Cliente usando una bolsa de viaje personalizada en un aeropuerto",
+      "image_path": "/images/bolsas-personalizadas/bolsa-viaje-vip.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué técnicas de personalización están disponibles para las bolsas de viaje?",
+      "respuesta": "Ofrecemos varias técnicas, incluyendo serigrafía para logos sencillos, bordado para un acabado premium y duradero, y transfer digital para diseños a todo color. La elección depende del material de la bolsa y del diseño de tu logo."
+    },
+    {
+      "pregunta": "¿Cuál es el pedido mínimo para las bolsas de viaje personalizadas?",
+      "respuesta": "El pedido mínimo varía según el modelo y el proveedor, pero generalmente comienza a partir de 25 o 50 unidades. Te recomendamos consultar la ficha de producto específica o solicitar un presupuesto para conocer el mínimo exacto."
+    },
+    {
+      "pregunta": "¿Puedo ver una muestra antes de realizar el pedido grande?",
+      "respuesta": "Sí, ofrecemos la posibilidad de solicitar una muestra sin personalizar o, en algunos casos, una muestra virtual con tu logo para que puedas evaluar la calidad y el diseño antes de confirmar la producción completa."
+    },
+    {
+      "pregunta": "¿Son estas bolsas aptas como equipaje de mano en aerolíneas?",
+      "respuesta": "Muchos de nuestros modelos están diseñados para cumplir con las restricciones de tamaño de equipaje de mano de las principales aerolíneas. Sin embargo, siempre recomendamos verificar las dimensiones específicas del modelo elegido con las políticas de la aerolínea antes de viajar."
+    }
+  ],
+  "texto_final_refuerzo": "Una bolsa de viaje personalizada es más que un simple artículo promocional; es una inversión en la visibilidad de tu marca a largo plazo. Cada viaje se convierte en una oportunidad de exposición. Asegura que tu marca sea sinónimo de calidad, aventura y confianza.",
+  "cta_textoCta": "Diseña tu Bolsa de Viaje Perfecta y Solicita tu Presupuesto",
+  "meta_title": "Bolsas de Viaje Personalizadas con Logo | Merchandising de Alta Gama",
+  "meta_description": "Descubre bolsas de viaje personalizadas, maletines y duffels. Ideales para regalos corporativos y eventos. Impresión de alta calidad y máxima durabilidad. ¡Tu marca viaja contigo!"
+}

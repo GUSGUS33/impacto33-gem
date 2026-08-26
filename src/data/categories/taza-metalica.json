@@ -1,0 +1,52 @@
+{
+  "url": "/tazas-botellas/tazas/metalicas/",
+  "slug": "metalicas",
+  "parent_slug": "tazas",
+  "search_intent": "tazas metálicas personalizadas",
+  "siblings_intents": [
+    "tazas cerámica",
+    "termos"
+  ],
+  "hero_tituloPrincipal": "Tazas Metálicas",
+  "hero_intro": "Descubre nuestra selección de tazas metálicas. El regalo promocional perfecto para clientes y empleados.",
+  "hub_subcategorias_texto": "Elige tu estilo:",
+  "ventajasEmpresa": {
+    "titulo": "Durabilidad y Diseño",
+    "items": [
+      "Materiales de alta calidad",
+      "Aptas para lavavajillas (según modelo)",
+      "Impresión 360º disponible",
+      "Opciones térmicas y ecológicas"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Welcome Packs",
+      "descripcion": "Imprescindibles en el kit de bienvenida de nuevos empleados.",
+      "image_alt": "Tazas Metálicas en welcome pack"
+    },
+    {
+      "titulo": "Merchandising de Oficina",
+      "descripcion": "Refuerza tu imagen de marca en cada escritorio.",
+      "image_alt": "Tazas Metálicas en oficina"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Son aptas para microondas?",
+      "respuesta": "La mayoría de nuestras tazas de cerámica sí, pero las metálicas no. Consulta la ficha de cada producto."
+    },
+    {
+      "pregunta": "¿El marcaje se borra con los lavados?",
+      "respuesta": "Utilizamos tintas vitrificables y sublimación de alta calidad para garantizar la máxima durabilidad."
+    },
+    {
+      "pregunta": "¿Hacéis tazas con nombres individuales?",
+      "respuesta": "Sí, mediante sublimación podemos personalizar cada taza con un nombre diferente."
+    }
+  ],
+  "texto_final_refuerzo": "Haz que tu marca esté presente en cada sorbo con IMPACTO33.",
+  "cta_textoCta": "Consigue tu presupuesto ahora",
+  "meta_title": "Tazas Metálicas | Tazas y Botellas | IMPACTO33",
+  "meta_description": "Personaliza tazas metálicas con tu logo. Precios directos de fábrica y calidad garantizada. ¡Pide precio!"
+}

@@ -1,0 +1,52 @@
+{
+  "url": "/ropa-personalizada/sudaderas/capucha/",
+  "slug": "capucha",
+  "parent_slug": "sudaderas",
+  "search_intent": "sudaderas capucha personalizadas",
+  "siblings_intents": [
+    "sudaderas sin capucha",
+    "sudaderas cremallera"
+  ],
+  "hero_tituloPrincipal": "Sudaderas con Capucha",
+  "hero_intro": "Descubre nuestra colección de sudaderas con capucha. Calidad superior y personalización a medida para tu empresa o evento.",
+  "hub_subcategorias_texto": "Explora las opciones disponibles:",
+  "ventajasEmpresa": {
+    "titulo": "Calidad y Personalización Garantizada",
+    "items": [
+      "Tejidos de alta durabilidad",
+      "Impresión nítida y resistente",
+      "Variedad de tallas y colores",
+      "Precios competitivos por volumen"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Eventos Corporativos",
+      "descripcion": "Ideal para ferias, congresos y team building.",
+      "image_alt": "Sudaderas con Capucha en evento corporativo"
+    },
+    {
+      "titulo": "Uniformes de Trabajo",
+      "descripcion": "Ropa cómoda y profesional para el día a día.",
+      "image_alt": "Sudaderas con Capucha como uniforme laboral"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es el pedido mínimo?",
+      "respuesta": "Trabajamos a partir de 10 unidades para garantizar el mejor precio."
+    },
+    {
+      "pregunta": "¿Qué técnicas de personalización utilizáis?",
+      "respuesta": "Dependiendo de la prenda, usamos serigrafía, bordado, sublimación o DTF."
+    },
+    {
+      "pregunta": "¿Puedo ver una muestra antes de pedir?",
+      "respuesta": "Sí, podemos enviarte una muestra virtual o física (con coste) para tu aprobación."
+    }
+  ],
+  "texto_final_refuerzo": "Confía en IMPACTO33 para vestir a tu equipo con la mejor imagen.",
+  "cta_textoCta": "Solicita tu presupuesto personalizado ahora",
+  "meta_title": "Sudaderas con Capucha | Ropa Personalizada | IMPACTO33",
+  "meta_description": "Compra sudaderas con capucha personalizadas al mejor precio. Calidad garantizada y entrega rápida. ¡Pide presupuesto!"
+}

@@ -1,0 +1,58 @@
+{
+  "url": "/camisetas-personalizadas/camiseta-deporte",
+  "slug": "camiseta-deporte",
+  "parent_slug": "camisetas-personalizadas",
+  "search_intent": "Personalización de indumentaria deportiva técnica para equipos, eventos y gimnasios, buscando rendimiento y diseño unificado.",
+  "siblings_intents": [
+    "camiseta-ecologica",
+    "camiseta-algodon",
+    "camiseta-promocional"
+  ],
+  "hero_tituloPrincipal": "Camisetas Deportivas Personalizadas: Diseña la Equipación de tu Equipo",
+  "hero_intro": "Impulsa el espíritu de tu equipo y mejora el rendimiento con nuestras camisetas deportivas personalizadas. Fabricadas con tejidos técnicos transpirables, son ideales para fútbol, running, baloncesto o cualquier actividad física. Sube tu logo, escudo o diseño y crea una equipación profesional que marque la diferencia.",
+  "hub_subcategorias_texto": "Explora otras opciones de personalización para complementar tu pedido, como camisetas de algodón para el día a día o modelos ecológicos.",
+  "ventajasEmpresa": {
+    "titulo": "Ventajas de Elegir Nuestras Camisetas Técnicas Personalizadas",
+    "items": [
+      "Tejidos técnicos de secado rápido y alta transpirabilidad.",
+      "Impresión duradera y a todo color, ideal para logos y dorsales.",
+      "Asesoramiento en diseño para un acabado profesional.",
+      "Precios competitivos y descuentos por volumen para equipos y eventos."
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Equipaciones de Fútbol y Baloncesto",
+      "descripcion": "Personaliza camisetas con números, nombres y el escudo de tu club. Elige entre sublimación o vinilo para un acabado de alta resistencia.",
+      "image_alt": "Equipo de fútbol celebrando con camisetas personalizadas"
+    },
+    {
+      "titulo": "Eventos de Running y Maratones",
+      "descripcion": "Crea camisetas ligeras y transpirables para corredores. Perfectas como regalo de inscripción o para identificar a tu grupo de entrenamiento.",
+      "image_alt": "Grupo de corredores con camisetas técnicas personalizadas"
+    },
+    {
+      "titulo": "Ropa para Gimnasios y Entrenadores",
+      "descripcion": "Diseña la indumentaria de tu personal o crea una línea de ropa deportiva para vender a tus clientes. Comodidad y marca en cada prenda.",
+      "image_alt": "Entrenador personal con camiseta deportiva con logo de gimnasio"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Cuál es la mejor técnica de impresión para camisetas deportivas?",
+      "respuesta": "La sublimación es ideal para tejidos de poliéster, ya que el diseño se integra en la fibra, garantizando máxima transpirabilidad y durabilidad. Para algodón o mezclas, recomendamos el vinilo textil o la serigrafía."
+    },
+    {
+      "pregunta": "¿Qué tipo de tejido se utiliza en las camisetas técnicas?",
+      "respuesta": "Utilizamos principalmente poliéster técnico (tejido 'bird-eye' o similar) que facilita la evacuación del sudor y mantiene el cuerpo seco, optimizando el rendimiento deportivo."
+    },
+    {
+      "pregunta": "¿Hay un pedido mínimo para camisetas de deporte personalizadas?",
+      "respuesta": "Ofrecemos flexibilidad, pero el pedido mínimo varía según la técnica de impresión. Consulta con nuestro equipo para pedidos pequeños o grandes volúmenes."
+    }
+  ],
+  "texto_final_refuerzo": "No dejes que tu equipo pase desapercibido. Con nuestras camisetas deportivas personalizadas, conseguirás una imagen unificada, profesional y de alto rendimiento. ¡Empieza a diseñar hoy mismo!",
+  "cta_textoCta": "Diseña tu Camiseta Deportiva Ahora",
+  "meta_title": "Camisetas Deportivas Personalizadas | Técnicas y de Equipo | [Nombre de la Empresa]",
+  "meta_description": "Personaliza camisetas deportivas técnicas para tu equipo, evento o gimnasio. Tejidos transpirables, sublimación y vinilo de alta calidad. ¡Pide tu presupuesto!"
+}

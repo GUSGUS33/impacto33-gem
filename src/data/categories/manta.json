@@ -1,0 +1,59 @@
+{
+  "url": "/hogar-personalizado/manta",
+  "slug": "manta",
+  "parent_slug": "hogar-personalizado",
+  "search_intent": "Comprar manta personalizada con foto o diseño",
+  "siblings_intents": [
+    "cojin",
+    "taza",
+    "alfombra",
+    "cortina"
+  ],
+  "hero_tituloPrincipal": "Mantas Personalizadas: El Regalo Más Cálido y Único",
+  "hero_intro": "Transforma tus recuerdos favoritos en un abrazo tangible. Nuestras mantas personalizadas con fotos, diseños o mensajes son el detalle perfecto para cualquier ocasión, ofreciendo confort y un toque inigualable a tu hogar.",
+  "hub_subcategorias_texto": "Descubre la colección completa de artículos para el hogar que puedes personalizar. Desde cojines hasta tazas, cada pieza está diseñada para contar tu historia.",
+  "ventajasEmpresa": {
+    "titulo": "¿Por Qué Elegir Nuestras Mantas Personalizadas?",
+    "items": [
+      "Impresión de Alta Definición y Colores Vivos",
+      "Tejidos Suaves, Hipoalergénicos y Duraderos",
+      "Diseño Fácil y Rápido en Nuestra Plataforma",
+      "Entrega Rápida y Garantía de Satisfacción"
+    ]
+  },
+  "casosUso": [
+    {
+      "titulo": "Regalo de Aniversario con Fotos",
+      "descripcion": "Una manta con un collage de fotos de la pareja, ideal para celebrar un aniversario o San Valentín.",
+      "image_alt": "Manta personalizada con collage de fotos de pareja"
+    },
+    {
+      "titulo": "Manta Conmemorativa para Mascotas",
+      "descripcion": "Diseña una manta con la foto de tu mascota para tener un recuerdo cálido y especial.",
+      "image_alt": "Manta con foto de perro y mensaje conmemorativo"
+    },
+    {
+      "titulo": "Detalle Corporativo Exclusivo",
+      "descripcion": "Mantas con el logo de la empresa para eventos, regalos a clientes VIP o para decorar oficinas con un toque de marca.",
+      "image_alt": "Manta con logo de empresa en un sofá de oficina"
+    }
+  ],
+  "faq": [
+    {
+      "pregunta": "¿Qué tipos de tejido están disponibles para las mantas?",
+      "respuesta": "Ofrecemos tejidos de franela ultrasuave, polar térmico y sherpa de lujo. Cada uno garantiza máxima calidez y confort. Puedes seleccionar el material al iniciar tu diseño."
+    },
+    {
+      "pregunta": "¿Cómo debo lavar mi manta personalizada?",
+      "respuesta": "Recomendamos lavar a máquina con agua fría en ciclo suave y secar a baja temperatura o al aire. Evita el uso de blanqueadores para preservar la calidad de la impresión."
+    },
+    {
+      "pregunta": "¿Puedo usar varias fotos en el diseño de mi manta?",
+      "respuesta": "Sí, nuestra herramienta de diseño permite crear collages de fotos fácilmente. Puedes subir múltiples imágenes y distribuirlas en el lienzo de la manta."
+    }
+  ],
+  "texto_final_refuerzo": "No es solo una manta, es una pieza de arte funcional que te envuelve en tus mejores momentos. Empieza a crear tu diseño hoy y siente la diferencia de un producto hecho con el corazón.",
+  "cta_textoCta": "Diseña Tu Manta Única Ahora",
+  "meta_title": "Mantas Personalizadas con Foto y Diseño | Regalo Único | [Nombre de la Marca]",
+  "meta_description": "Crea mantas personalizadas con tus fotos, diseños o mensajes. El regalo perfecto para cualquier ocasión. Tejidos suaves, impresión HD y envío rápido."
+}
