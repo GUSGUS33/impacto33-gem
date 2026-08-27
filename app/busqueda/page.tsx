@@ -118,11 +118,12 @@ function matchCategory(
 export default async function SearchPage({
   searchParams,
 }: {
-  searchParams: { q?: string; category?: string; budget?: string };
+  searchParams: Promise<{ q?: string; category?: string; budget?: string }>;
 }) {
-  const searchTerm = (searchParams.q || '').trim();
-  const categoryStr = searchParams.category;
-  const budgetStr = searchParams.budget;
+  const resolvedSearchParams = await searchParams;
+  const searchTerm = (resolvedSearchParams.q || '').trim();
+  const categoryStr = resolvedSearchParams.category;
+  const budgetStr = resolvedSearchParams.budget;
 
   let products: any[] = [];
   let error = null;
