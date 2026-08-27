@@ -1,29 +1,9 @@
 /** @type {import('next').NextConfig} */
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const nextConfig = {
   compress: true,
   reactStrictMode: true,
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons', 'recharts'],
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      'wouter': path.resolve(__dirname, 'src/shims/wouter.tsx'),
-      'react-helmet-async': path.resolve(__dirname, 'src/shims/react-helmet-async.tsx'),
-    };
-    return config;
   },
   images: {
     formats: ['image/avif', 'image/webp'],

@@ -4,7 +4,7 @@ Aplicación web de IMPACTO33 construida con Next.js.
 
 ## Desarrollo local
 
-Requisitos: Node.js y npm.
+Requisitos: Node.js 20.9 o posterior y npm.
 
 1. Instala las dependencias con `npm install`.
 2. Copia `.env.example` como `.env.local` y configura las variables necesarias.
