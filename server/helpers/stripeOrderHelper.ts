@@ -1,22 +1,24 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 
 // Site ID fijo de impacto33
-const IMPACTO33_SITE_ID = '6321b8a8-976f-49b3-84f1-05b427f8e138';
+const IMPACTO33_SITE_ID = "6321b8a8-976f-49b3-84f1-05b427f8e138";
 
 const supabase = createClient(
-  process.env.VITE_SUPABASE_URL || '',
-  process.env.VITE_SUPABASE_ANON_KEY || ''
+  process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.VITE_SUPABASE_URL || "",
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+    process.env.VITE_SUPABASE_ANON_KEY ||
+    ""
 );
 
 /**
  * HELPER PARA CREAR ÓRDENES DESDE EVENTOS DE STRIPE
- * 
+ *
  * Este archivo contiene la lógica para procesar eventos de Stripe y crear órdenes
  * en la base de datos. Se implementará cuando STRIPE_ENABLED sea true y se active
  * el procesamiento de pagos.
- * 
+ *
  * MULTI-SITE: Todas las queries filtran por site_id = IMPACTO33_SITE_ID
- * 
+ *
  * Flujo esperado:
  * 1. Webhook de Stripe recibe evento 'payment_intent.succeeded'
  * 2. Valida la firma del webhook
@@ -39,7 +41,12 @@ interface StripePaymentEvent {
   amount: number;
   currency: string;
   metadata: StripePaymentIntentMetadata;
-  status: 'succeeded' | 'processing' | 'requires_action' | 'requires_payment_method' | 'canceled';
+  status:
+    | "succeeded"
+    | "processing"
+    | "requires_action"
+    | "requires_payment_method"
+    | "canceled";
   client_secret: string;
 }
 
@@ -51,7 +58,10 @@ export async function createOrderFromStripeEvent(
   paymentIntent: StripePaymentEvent
 ): Promise<string | null> {
   try {
-    console.log('[StripeOrderHelper] Procesando evento de pago:', paymentIntent.id);
+    console.log(
+      "[StripeOrderHelper] Procesando evento de pago:",
+      paymentIntent.id
+    );
 
     // TODO: Implementar lógica de creación de orden
     /*
@@ -153,10 +163,12 @@ export async function createOrderFromStripeEvent(
     */
 
     // Por ahora, solo registramos el evento
-    console.log('[StripeOrderHelper] Evento de pago registrado (implementación pendiente)');
+    console.log(
+      "[StripeOrderHelper] Evento de pago registrado (implementación pendiente)"
+    );
     return null;
   } catch (error) {
-    console.error('[StripeOrderHelper] Error procesando evento:', error);
+    console.error("[StripeOrderHelper] Error procesando evento:", error);
     return null;
   }
 }
@@ -170,37 +182,40 @@ export function validateStripeWebhookSignature(
   secret: string
 ): boolean {
   // TODO: Implementar validación de firma
-  console.log('[StripeOrderHelper] Validación de firma (implementación pendiente)');
+  console.log(
+    "[StripeOrderHelper] Validación de firma (implementación pendiente)"
+  );
   return false;
 }
 
 /**
  * Procesar webhook de Stripe
  */
-export async function handleStripeWebhook(
-  event: any
-): Promise<boolean> {
+export async function handleStripeWebhook(event: any): Promise<boolean> {
   try {
-    console.log('[StripeOrderHelper] Procesando webhook de Stripe:', event.type);
+    console.log(
+      "[StripeOrderHelper] Procesando webhook de Stripe:",
+      event.type
+    );
 
     switch (event.type) {
-      case 'payment_intent.succeeded':
+      case "payment_intent.succeeded":
         // TODO: Procesar pago exitoso
         // await createOrderFromStripeEvent(event.data.object);
         break;
 
-      case 'payment_intent.payment_failed':
+      case "payment_intent.payment_failed":
         // TODO: Procesar pago fallido
-        console.log('[StripeOrderHelper] Pago fallido:', event.data.object.id);
+        console.log("[StripeOrderHelper] Pago fallido:", event.data.object.id);
         break;
 
       default:
-        console.log('[StripeOrderHelper] Evento no procesado:', event.type);
+        console.log("[StripeOrderHelper] Evento no procesado:", event.type);
     }
 
     return true;
   } catch (error) {
-    console.error('[StripeOrderHelper] Error procesando webhook:', error);
+    console.error("[StripeOrderHelper] Error procesando webhook:", error);
     return false;
   }
 }

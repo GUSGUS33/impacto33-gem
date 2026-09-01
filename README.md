@@ -20,3 +20,8 @@ npm run builder:review -- /ruta/al/proyecto.zip
 ```
 
 Consulta el [flujo seguro para ZIP de Builder](docs/BUILDER_ZIP_WORKFLOW.md) antes de integrar cambios.
+
+## Producción
+
+La actualización del VPS se realiza de forma manual y reversible con Plesk, Git y PM2.
+Consulta la [guía de despliegue en Plesk](docs/PLESK_DEPLOYMENT.md) antes de actualizar LIVE.
