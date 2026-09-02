@@ -5,7 +5,7 @@ const appRoot = __dirname;
 module.exports = {
   apps: [
     {
-      name: "impacto33-web",
+      name: "impacto33",
       cwd: appRoot,
       script: path.join(appRoot, "node_modules/next/dist/bin/next"),
       args: "start --hostname 127.0.0.1 --port 3000",
@@ -19,7 +19,7 @@ module.exports = {
       env: {
         NODE_ENV: "production",
         PORT: "3000",
-        EXPRESS_PORT: "3001",
+        EXPRESS_PORT: "3101",
       },
     },
     {
@@ -35,7 +35,7 @@ module.exports = {
       restart_delay: 2000,
       env: {
         NODE_ENV: "production",
-        EXPRESS_PORT: "3001",
+        EXPRESS_PORT: "3101",
       },
     },
   ],
