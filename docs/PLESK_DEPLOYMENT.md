@@ -6,8 +6,9 @@ la versión activa hasta haber creado una copia recuperable.
 ## Arquitectura
 
 - Nginx/Apache de Plesk recibe HTTPS y envía las peticiones a Next.js en `127.0.0.1:3000`.
-- Next.js sirve la web y reenvía tRPC, OAuth y feeds a Express en `127.0.0.1:3001`.
-- PM2 mantiene los procesos `impacto33-web` e `impacto33-api`.
+- Next.js sirve la web y reenvía tRPC, OAuth y feeds a Express en `127.0.0.1:3101`.
+- PM2 mantiene los procesos `impacto33` e `impacto33-api`.
+- El puerto `3001` pertenece a otro servicio del VPS y no debe reutilizarse.
 - `GET /api/health` comprueba ambos procesos y responde `200` únicamente si los dos están disponibles.
 
 ## Requisitos previos
