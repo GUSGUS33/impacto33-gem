@@ -10,6 +10,7 @@ la versión activa hasta haber creado una copia recuperable.
 - PM2 mantiene los procesos `impacto33` e `impacto33-api`.
 - El puerto `3001` pertenece a otro servicio del VPS y no debe reutilizarse.
 - `GET /api/health` comprueba ambos procesos y responde `200` únicamente si los dos están disponibles.
+- `EXPRESS_HOST=127.0.0.1` impide exponer la API directamente fuera del VPS.
 
 ## Requisitos previos
 

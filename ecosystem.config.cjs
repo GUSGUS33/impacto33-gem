@@ -35,6 +35,7 @@ module.exports = {
       restart_delay: 2000,
       env: {
         NODE_ENV: "production",
+        EXPRESS_HOST: "127.0.0.1",
         EXPRESS_PORT: "3101",
       },
     },
