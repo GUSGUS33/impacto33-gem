@@ -73,3 +73,113 @@ export const GET_FILTERED_PRODUCTS = gql`
     }
   }
 `;
+
+export const GET_PRODUCTS_BY_INCLUDE_IDS = gql`
+  query GetProductsByIncludeIds($ids: [Int]!) {
+    products(where: { include: $ids, status: "publish" }, first: 100) {
+      nodes {
+        ... on SimpleProduct {
+          id
+          databaseId
+          name
+          slug
+          type
+          onSale
+          price
+          regularPrice
+          salePrice
+          featuredImage {
+            node {
+              sourceUrl
+              altText
+            }
+          }
+          productCategories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+        ... on VariableProduct {
+          id
+          databaseId
+          name
+          slug
+          type
+          onSale
+          price
+          regularPrice
+          salePrice
+          featuredImage {
+            node {
+              sourceUrl
+              altText
+            }
+          }
+          productCategories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const GET_PRODUCT_BY_SKU = gql`
+  query GetProductBySku($sku: String!) {
+    products(where: { sku: $sku, status: "publish" }, first: 1) {
+      nodes {
+        ... on SimpleProduct {
+          id
+          databaseId
+          name
+          slug
+          type
+          onSale
+          price
+          regularPrice
+          salePrice
+          featuredImage {
+            node {
+              sourceUrl
+              altText
+            }
+          }
+          productCategories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+        ... on VariableProduct {
+          id
+          databaseId
+          name
+          slug
+          type
+          onSale
+          price
+          regularPrice
+          salePrice
+          featuredImage {
+            node {
+              sourceUrl
+              altText
+            }
+          }
+          productCategories {
+            nodes {
+              name
+              slug
+            }
+          }
+        }
+      }
+    }
+  }
+`;

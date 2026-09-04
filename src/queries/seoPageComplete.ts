@@ -77,7 +77,7 @@ export const GET_SEO_PAGE_COMPLETE = gql`
       pageBlocks {
         pageBlocks {
           blockType
-          
+
           # 🎬 VIDEO PROMOCIONAL
           videoTitulo
           videoDescripcion
@@ -135,10 +135,12 @@ export const GET_SEO_PAGE_COMPLETE = gql`
             badge
           }
           
-          # 🎯 PRODUCTOS DINÁMICOS (por categoría)
+          # 🎯 PRODUCTOS DINÁMICOS (por categoría, IDs o SKUs)
           productosDinamicosTitulo
           productosDinamicosCategoria
           productosDinamicosEtiqueta
+          productosDinamicosSkus
+          productosDinamicosIds
           productosDinamicosMaximo
           productosDinamicosOrdenar
           
@@ -348,6 +350,31 @@ export const GET_SEO_PAGE_COMPLETE = gql`
               altText
             }
           }
+
+          # 🍱 HUB DE CARDS (Categoría / Provincia / Sector)
+          hubTitulo
+          hubSubtitulo
+          hubColumnas
+          hubVista
+          hubItems {
+            texto
+            descripcion
+            etiqueta
+            etiquetaImagen
+            destacado
+            slugCategoria
+            urlOverride
+            imagenOverride {
+              node {
+                sourceUrl
+                altText
+                mediaDetails {
+                  width
+                  height
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -416,6 +443,8 @@ export interface PageBlock {
   productosDinamicosTitulo?: string | null;
   productosDinamicosCategoria?: string | null;
   productosDinamicosEtiqueta?: string | null;
+  productosDinamicosSkus?: string | null;
+  productosDinamicosIds?: string | null;
   productosDinamicosMaximo?: number | null;
   productosDinamicosOrdenar?: string | null;
   
@@ -561,6 +590,33 @@ export interface PageBlock {
   socialproofTitulo?: string | null;
   socialproofLogos?: {
     nodes: Array<{ sourceUrl: string; altText: string }>;
+  } | null;
+
+  // Hubs de Cards
+  hubTitulo?: string | null;
+  hubSubtitulo?: string | null;
+  hubColumnas?: string[] | string | number | null;
+  hubVista?: string[] | string | null;
+  hubItems?: HubItem[] | null;
+}
+
+export interface HubItem {
+  texto?: string | null;
+  descripcion?: string | null;
+  etiqueta?: string | null;
+  etiquetaImagen?: string | null;
+  destacado?: boolean | null;
+  slugCategoria?: string | null;
+  urlOverride?: string | null;
+  imagenOverride?: {
+    node?: {
+      sourceUrl: string;
+      altText?: string;
+      mediaDetails?: {
+        width?: number | null;
+        height?: number | null;
+      } | null;
+    };
   } | null;
 }
 
