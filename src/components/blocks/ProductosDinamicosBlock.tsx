@@ -49,14 +49,19 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
     productosDinamicosTitulo = "Productos destacados",
     productosDinamicosCategoria,
     productosDinamicosEtiqueta,
+    productosDinamicosSkus,
+    productosDinamicosIds,
     productosDinamicosMaximo = 12,
     productosDinamicosOrdenar = "DATE",
   } = data;
 
-  // Si no hay categoría de WooCommerce configurada, marcar como no configurado
-  // El slug de la URI de la página NO coincide con los slugs de WooCommerce
+  // Comprobar si hay categoría o al menos IDs / SKUs manuales configurados
   const categorySlugToUse = productosDinamicosCategoria || null;
-  const isMissingCategoryConfig = !productosDinamicosCategoria;
+  const hasManualProducts = Boolean(
+    (productosDinamicosIds && String(productosDinamicosIds).trim() !== "") ||
+    (productosDinamicosSkus && String(productosDinamicosSkus).trim() !== "")
+  );
+  const isMissingConfig = !productosDinamicosCategoria && !hasManualProducts;
 
   // Estados de filtros
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
@@ -90,6 +95,8 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
   const { products, loading, error } = useFilteredProducts({
     categorySlug: categorySlugToUse,
     tagSlug: productosDinamicosEtiqueta,
+    productIds: productosDinamicosIds,
+    productSkus: productosDinamicosSkus,
     limit: productosDinamicosMaximo ?? undefined,
     orderBy: orderBy as any,
   });
@@ -173,8 +180,8 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
   // Si no hay título, no renderizar nada
   if (!productosDinamicosTitulo) return null;
 
-  // Si falta la categoría de WooCommerce, mostrar aviso al administrador
-  if (isMissingCategoryConfig) {
+  // Si no hay categoría de WooCommerce ni IDs/SKUs manuales, mostrar aviso al administrador
+  if (isMissingConfig) {
     return (
       <div className="container py-12">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
@@ -182,12 +189,10 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
         </h2>
         <div className="bg-amber-50 border-2 border-dashed border-amber-300 text-amber-800 p-8 rounded-lg text-center">
           <AlertCircle className="mx-auto mb-3 h-10 w-10 text-amber-500" />
-          <p className="font-bold text-lg">Categoría de productos no configurada</p>
+          <p className="font-bold text-lg">Productos no configurados</p>
           <p className="text-sm mt-2 max-w-lg mx-auto">
-            El campo <code className="bg-amber-100 px-1.5 py-0.5 rounded font-mono text-xs">productosDinamicosCategoria</code> está vacío en WordPress para esta página.
-          </p>
-          <p className="text-sm mt-1 max-w-lg mx-auto">
-            Configura el slug de la categoría de WooCommerce (ej: <code className="bg-amber-100 px-1.5 py-0.5 rounded font-mono text-xs">t_shirts</code>) en el bloque de productos dinámicos de esta página.
+            Debes indicar al menos una categoría de WooCommerce (<code className="bg-amber-100 px-1.5 py-0.5 rounded font-mono text-xs">productosDinamicosCategoria</code>),
+            IDs numéricos de producto (<code className="bg-amber-100 px-1.5 py-0.5 rounded font-mono text-xs">productosDinamicosIds</code>) o SKUs (<code className="bg-amber-100 px-1.5 py-0.5 rounded font-mono text-xs">productosDinamicosSkus</code>) en WordPress.
           </p>
           {pageUri && (
             <p className="text-xs mt-3 text-amber-600">

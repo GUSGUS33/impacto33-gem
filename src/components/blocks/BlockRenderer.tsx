@@ -25,6 +25,7 @@ import { BeneficiosBlock } from './BeneficiosBlock';
 import { VentajasBlock } from './VentajasBlock';
 import { GarantiaBlock } from './GarantiaBlock';
 import { SocialProofBlock } from './SocialProofBlock';
+import { HubsBlock } from './HubsBlock';
 
 /**
  * Mapeo de blockType a componentes React
@@ -60,6 +61,12 @@ const BLOCK_COMPONENTS: Record<string, React.ComponentType<{ data: PageBlock }>>
   ventajas: VentajasBlock,
   garantia: GarantiaBlock,
   socialproof: SocialProofBlock,
+  hubs: HubsBlock,
+  hub: HubsBlock,
+  hub_cards: HubsBlock,
+  hubcards: HubsBlock,
+  hub_de_cards: HubsBlock,
+  hubdecards: HubsBlock,
 };
 
 /**
@@ -94,7 +101,15 @@ export function BlockRenderer({ block, index, pageUri, pageTitle, parentUri }: B
     return null;
   }
 
-  const BlockComponent = BLOCK_COMPONENTS[blockTypeValue];
+  let BlockComponent = BLOCK_COMPONENTS[blockTypeValue];
+
+  // Si no se encuentra por nombre exacto, verificar si es un bloque Hub
+  if (!BlockComponent && (
+    (typeof blockTypeValue === 'string' && blockTypeValue.toLowerCase().includes('hub')) ||
+    (block.hubItems && block.hubItems.length > 0)
+  )) {
+    BlockComponent = HubsBlock;
+  }
 
   // Si no existe el componente, no renderizar nada
   if (!BlockComponent) {

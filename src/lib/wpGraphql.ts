@@ -259,6 +259,8 @@ export const QUERY_SEO_PAGE_COMPLETE = `
           productosDinamicosTitulo
           productosDinamicosCategoria
           productosDinamicosEtiqueta
+          productosDinamicosSkus
+          productosDinamicosIds
           productosDinamicosMaximo
           productosDinamicosOrdenar
           subcategoriasTitulo
@@ -425,6 +427,29 @@ export const QUERY_SEO_PAGE_COMPLETE = `
             nodes {
               sourceUrl
               altText
+            }
+          }
+          hubTitulo
+          hubSubtitulo
+          hubColumnas
+          hubVista
+          hubItems {
+            texto
+            descripcion
+            etiqueta
+            etiquetaImagen
+            destacado
+            slugCategoria
+            urlOverride
+            imagenOverride {
+              node {
+                sourceUrl
+                altText
+                mediaDetails {
+                  width
+                  height
+                }
+              }
             }
           }
         }
