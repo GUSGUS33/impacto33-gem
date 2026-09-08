@@ -2,7 +2,6 @@ import { wpGraphqlFetch } from '@/lib/wpGraphql'
 import { QUERY_GET_HOME_PAGE } from '@/lib/queries/home'
 import { HomeBlocks } from '@/components/home/HomeBlocks'
 import { generateOrganizationSchema, generateSeoMetadata } from '@/lib/seo'
-import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const revalidate = 3600
@@ -38,9 +37,9 @@ export default async function HomePage() {
 
   return (
     <>
-      <Script id="org-schema" type="application/ld+json" 
+      <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-      <Script id="website-schema" type="application/ld+json"
+      <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       
       <main className="min-h-screen bg-white">

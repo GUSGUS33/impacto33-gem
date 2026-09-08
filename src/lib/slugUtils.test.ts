@@ -170,10 +170,10 @@ describe('normalizeSlugs', () => {
 
 describe('sanitizeBreadcrumbUrl y Breadcrumbs Transaccionales', () => {
   it('debe eliminar prefijos de taxonomías nativas de WooCommerce (/categoria-producto/, /product-category/)', () => {
-    expect(sanitizeBreadcrumbUrl('/categoria-producto/t_shirts/')).toBe('/camisetas-personalizadas/');
-    expect(sanitizeBreadcrumbUrl('/product-category/camisetas-personalizadas/')).toBe('/camisetas-personalizadas/');
-    expect(sanitizeBreadcrumbUrl('/categoria/sudaderas/')).toBe('/sudaderas-personalizadas/');
-    expect(sanitizeBreadcrumbUrl('https://impacto33.com/categoria-producto/bags/')).toBe('/bolsas-personalizadas/');
+    expect(sanitizeBreadcrumbUrl('/categoria-producto/t_shirts/')).toBe('/camisetas-personalizadas');
+    expect(sanitizeBreadcrumbUrl('/product-category/camisetas-personalizadas/')).toBe('/camisetas-personalizadas');
+    expect(sanitizeBreadcrumbUrl('/categoria/sudaderas/')).toBe('/sudaderas-personalizadas');
+    expect(sanitizeBreadcrumbUrl('https://impacto33.com/categoria-producto/bags/')).toBe('/bolsas-personalizadas');
   });
 
   it('debe transformar slugs de WooCommerce a la URL de la página transaccional', () => {
@@ -181,7 +181,7 @@ describe('sanitizeBreadcrumbUrl y Breadcrumbs Transaccionales', () => {
       { name: 'Camisetas', slug: 't_shirts' }
     ]);
     expect(breadcrumb).not.toBeNull();
-    expect(breadcrumb?.url).toBe('/camisetas-personalizadas/');
+    expect(breadcrumb?.url).toBe('/camisetas-personalizadas');
     expect(breadcrumb?.url).not.toContain('categoria-producto');
     expect(breadcrumb?.url).not.toContain('t_shirts');
   });

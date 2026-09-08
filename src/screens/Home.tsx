@@ -89,13 +89,10 @@ export default function Home() {
     "url": "https://impacto33.com",
     "logo": "https://impacto33.com/images/logo-impacto33.png",
     "description": "Artículos promocionales y regalos publicitarios personalizados para empresas.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "ES"
-    },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+34690906027",
+      "email": "info@impacto33.com",
       "contactType": "customer service",
       "areaServed": "ES",
       "availableLanguage": "Spanish"

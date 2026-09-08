@@ -1,38 +1,45 @@
 import seoSitemap from '../data/seo-sitemap.json';
+import { normalizeInternalHref } from '@/lib/url';
 
 export const wooToTransactional: Record<string, string> = {
-  t_shirts: '/camisetas-personalizadas/',
-  cam: '/camisetas-personalizadas/',
-  cam_w: '/camisetas-personalizadas/',
-  cat: '/camisetas-personalizadas/',
-  sp_tshi: '/camisetas-personalizadas/camiseta-deporte/',
-  pol_s: '/polos-personalizados/',
-  cam_po: '/polos-personalizados/',
-  cam_sp: '/polos-personalizados/polo-deportivo/',
-  sp_polshi: '/polos-personalizados/polo-deportivo/',
-  bags: '/bolsas-personalizadas/',
-  bags_travel_backpack: '/mochilas-personalizadas/',
-  bags_travel: '/mochilas-personalizadas/',
-  coats: '/chaquetas-personalizadas/',
-  raincoats: '/chaquetas-personalizadas/',
-  tech_accessories: '/tecnologia-personalizada/',
-  speakers: '/tecnologia-personalizada/',
-  writing_office: '/escritura-personalizada/',
-  kitchen: '/hogar-personalizado/',
-  lanyards_badge_holde: '/eventos-personalizados/',
-  towels_sarong: '/verano-personalizado/',
-  sweatshirts: '/sudaderas-personalizadas/',
-  sudaderas: '/sudaderas-personalizadas/',
-  mugs: '/tazas-personalizadas/',
-  bottles_thermos_flas: '/botellas-personalizadas/',
-  bottles: '/botellas-personalizadas/',
-  glass_bottles: '/botellas-personalizadas/',
-  thermos_flasks: '/botellas-personalizadas/',
-  highviz: '/ropa-laboral-personalizada/ropa-alta-visibilidad/',
-  industry_services: '/ropa-laboral-personalizada/ropa-industria/',
-  sanitarybata: '/ropa-laboral-personalizada/ropa-sanidad/',
-  horeca: '/ropa-laboral-personalizada/ropa-hosteleria/',
-  travel_accessories: '/accesorios-viaje/',
+  t_shirts: '/camisetas-personalizadas',
+  cam: '/camisetas-personalizadas',
+  cam_w: '/camisetas-personalizadas',
+  cat: '/camisetas-personalizadas',
+  sp_tshi: '/camisetas-personalizadas/camiseta-deporte',
+  pol_s: '/polos-personalizados',
+  cam_po: '/polos-personalizados',
+  cam_sp: '/polos-personalizados/polo-deportivo',
+  sp_polshi: '/polos-personalizados/polo-deportivo',
+  bags: '/bolsas-personalizadas',
+  bags_travel_backpack: '/mochilas-personalizadas',
+  bags_travel: '/mochilas-personalizadas',
+  coats: '/chaquetas-personalizadas',
+  raincoats: '/chaquetas-personalizadas',
+  tech_accessories: '/tecnologia-personalizada',
+  speakers: '/tecnologia-personalizada',
+  writing_office: '/escritura-personalizada',
+  pencils: '/escritura-personalizada',
+  lapices: '/escritura-personalizada',
+  ball_pens: '/escritura-personalizada',
+  notebooks: '/escritura-personalizada',
+  diaries_calendars: '/escritura-personalizada',
+  office_accessories: '/escritura-personalizada',
+  kitchen: '/hogar-personalizado',
+  lanyards_badge_holde: '/eventos-personalizados',
+  towels_sarong: '/verano-personalizado',
+  sweatshirts: '/sudaderas-personalizadas',
+  sudaderas: '/sudaderas-personalizadas',
+  mugs: '/tazas-personalizadas',
+  bottles_thermos_flas: '/botellas-personalizadas',
+  bottles: '/botellas-personalizadas',
+  glass_bottles: '/botellas-personalizadas',
+  thermos_flasks: '/botellas-personalizadas',
+  highviz: '/ropa-laboral-personalizada/ropa-alta-visibilidad',
+  industry_services: '/ropa-laboral-personalizada/ropa-industria',
+  sanitarybata: '/ropa-laboral-personalizada/ropa-sanidad',
+  horeca: '/ropa-laboral-personalizada/ropa-hosteleria',
+  travel_accessories: '/accesorios-viaje',
 };
 
 export const transactionalTitles: Record<string, string> = {
@@ -64,7 +71,7 @@ export const transactionalTitles: Record<string, string> = {
 };
 
 export const productCategoryOverrides: Record<string, string> = {
-  'body-de-bebe-de-manga-larga-96-algodon-personalizable': '/camisetas-personalizadas/camisetas-manga-larga/',
+  'body-de-bebe-de-manga-larga-96-algodon-personalizable': '/camisetas-personalizadas/camisetas-manga-larga',
 };
 
 export function sanitizeBreadcrumbUrl(url?: string | null): string {
@@ -79,17 +86,16 @@ export function sanitizeBreadcrumbUrl(url?: string | null): string {
 
   // Si coincide directamente con una clave de WooCommerce en el mapa
   if (wooToTransactional[trimmed]) {
-    return wooToTransactional[trimmed];
+    return normalizeInternalHref(wooToTransactional[trimmed]);
   }
 
-  // Asegurar formato con trailing slash para consistencia transaccional
-  return `/${trimmed}/`;
+  return normalizeInternalHref(`/${trimmed}`);
 }
 
 export function getTransactionalUrl(wooSlug: string): string {
   if (!wooSlug) return '#';
   const clean = wooSlug.replace(/^\/(?:categoria-producto|product-category|categoria|product_cat)\//i, '').replace(/^\/+|\/+$/g, '');
-  return wooToTransactional[clean] ?? `/${clean}/`;
+  return normalizeInternalHref(wooToTransactional[clean] ?? `/${clean}`);
 }
 
 export interface CategoryNode {
@@ -116,17 +122,17 @@ export function getCategoryBreadcrumbForProduct(
     if (!cat.slug) continue;
     const mappedUrl = wooToTransactional[cat.slug];
     if (mappedUrl) {
-      const label = transactionalTitles[mappedUrl] || cat.name || 'Categoría';
-      return { label, url: mappedUrl };
+      const label = transactionalTitles[mappedUrl] || transactionalTitles[`${mappedUrl}/`] || cat.name || 'Categoría';
+      return { label, url: normalizeInternalHref(mappedUrl) };
     }
   }
 
   const first = categories[0];
   if (first?.name && first?.slug) {
-    const fallbackUrl = `/${first.slug}/`;
+    const fallbackUrl = normalizeInternalHref(`/${first.slug}`);
     return {
       label: first.name,
-      url: transactionalTitles[fallbackUrl] || fallbackUrl,
+      url: fallbackUrl,
     };
   }
 
@@ -189,7 +195,11 @@ export function getProductBreadcrumbChain(params: {
     // Chaquetas
     else if (textToSearch.includes('chaqueta') || textToSearch.includes('parka') || textToSearch.includes('softshell') || textToSearch.includes('cazadora')) {
       targetCategoryUrl = '/chaquetas-personalizadas/';
-    } 
+    }
+    // Artículos de escritura
+    else if (textToSearch.includes('lapiz') || textToSearch.includes('lápiz') || textToSearch.includes('pencil') || textToSearch.includes('boligrafo') || textToSearch.includes('bolígrafo') || textToSearch.includes('libreta') || textToSearch.includes('cuaderno') || textToSearch.includes('carpeta') || textToSearch.includes('tralem')) {
+      targetCategoryUrl = '/escritura-personalizada';
+    }
     // Camisetas por tipo
     else if (textToSearch.includes('manga larga') || textToSearch.includes('manga-larga') || textToSearch.includes('body')) {
       targetCategoryUrl = '/camisetas-personalizadas/camisetas-manga-larga/';
@@ -216,36 +226,39 @@ export function getProductBreadcrumbChain(params: {
 
   // 4. Construcción de jerarquía usando seo-sitemap.json
   const chain: BreadcrumbInfo[] = [];
-  const normalizedTarget = targetCategoryUrl.endsWith('/') ? targetCategoryUrl : `${targetCategoryUrl}/`;
+  const cleanTarget = normalizeInternalHref(targetCategoryUrl);
+  const targetWithSlash = `${cleanTarget}/`;
 
   const targetEntry = (seoSitemap as Array<any>).find(
-    (item) => item.url === normalizedTarget || item.url === targetCategoryUrl
+    (item) => item.url === cleanTarget || item.url === targetWithSlash
   );
 
   if (targetEntry) {
     if (targetEntry.parent) {
+      const parentClean = normalizeInternalHref(targetEntry.parent);
       const parentEntry = (seoSitemap as Array<any>).find(
-        (item) => item.url === targetEntry.parent || item.url === `${targetEntry.parent}/`
+        (item) => normalizeInternalHref(item.url) === parentClean
       );
       if (parentEntry) {
         chain.push({
-          label: parentEntry.anchor || transactionalTitles[parentEntry.url] || 'Categoría',
-          url: parentEntry.url,
+          label: parentEntry.anchor || transactionalTitles[parentClean] || transactionalTitles[`${parentClean}/`] || 'Categoría',
+          url: parentClean,
         });
       }
     }
     chain.push({
-      label: targetEntry.anchor || transactionalTitles[targetEntry.url] || 'Subcategoría',
-      url: targetEntry.url,
+      label: targetEntry.anchor || transactionalTitles[cleanTarget] || transactionalTitles[targetWithSlash] || 'Subcategoría',
+      url: cleanTarget,
     });
   } else {
     chain.push({
-      label: transactionalTitles[normalizedTarget] || 'Categoría',
-      url: normalizedTarget,
+      label: transactionalTitles[cleanTarget] || transactionalTitles[targetWithSlash] || 'Categoría',
+      url: cleanTarget,
     });
   }
 
-  return chain;
+  return chain.map((item) => ({
+    ...item,
+    url: normalizeInternalHref(item.url),
+  }));
 }
-
-
