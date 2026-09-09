@@ -311,27 +311,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://impacto33.com/vestuario-laboral/alimentaria/batas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/vestuario-laboral/alimentaria/gorros</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://impacto33.com/vestuario-laboral/sanitario</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/vestuario-laboral/sanitario/batas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/vestuario-laboral/sanitario/gorros</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -671,27 +651,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://impacto33.com/deporte-personalizado/equipaciones/camisetas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/deporte-personalizado/equipaciones/pantalones</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://impacto33.com/deporte-personalizado/accesorios</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/deporte-personalizado/accesorios/botellas</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://impacto33.com/deporte-personalizado/accesorios/toallas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

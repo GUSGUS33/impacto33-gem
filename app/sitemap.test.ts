@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import sitemap from './sitemap';
 import { PENINSULAR_PROVINCES } from '@/data/provincias';
 import extraRoutes from '@/data/sitemap-extra-routes.json';
+import excludedRoutes from '@/data/sitemap-excluded-routes.json';
 
 describe('sitemap', () => {
   it('combina rutas SEO y provincias sin duplicados ni trailing slash', () => {
@@ -17,6 +18,9 @@ describe('sitemap', () => {
     expect(urls.length).toBeGreaterThan(180);
     expect(new Set(urls).size).toBe(urls.length);
     expect(urls.every((url) => url === 'https://impacto33.com' || !url.endsWith('/'))).toBe(true);
+    for (const route of excludedRoutes) {
+      expect(urls).not.toContain(`https://impacto33.com${route}`);
+    }
   });
 
   it('mantiene las provincias sincronizadas con el sitemap estático del prebuild', () => {

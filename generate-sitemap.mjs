@@ -13,6 +13,10 @@ const seoDataPath = path.join(__dirname, 'src/data/seo-sitemap.json');
 const seoData = JSON.parse(fs.readFileSync(seoDataPath, 'utf-8'));
 const extraRoutesPath = path.join(__dirname, 'src/data/sitemap-extra-routes.json');
 const extraRoutes = JSON.parse(fs.readFileSync(extraRoutesPath, 'utf-8'));
+const excludedRoutesPath = path.join(__dirname, 'src/data/sitemap-excluded-routes.json');
+const excludedRoutes = new Set(
+  JSON.parse(fs.readFileSync(excludedRoutesPath, 'utf-8')).map(normalizePath)
+);
 
 function normalizePath(value) {
   if (!value || value === '/') return '/';
@@ -51,6 +55,7 @@ function generateSitemap() {
 
   function addUrl(route, changeFrequency, priority) {
     const normalizedPath = normalizePath(route);
+    if (excludedRoutes.has(normalizedPath)) return;
     const location = normalizedPath === '/' ? `${BASE_URL}/` : `${BASE_URL}${normalizedPath}`;
     if (seenUrls.has(location)) return;
 

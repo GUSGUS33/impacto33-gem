@@ -121,7 +121,7 @@ function generateProductSitemap(products) {
     if (!product.slug) return;
 
     const cleanSlug = product.slug.replace(/^\/+|\/+$/g, '');
-    const location = `${BASE_URL}/producto/${cleanSlug}`;
+    const location = `${BASE_URL}/producto/${encodeURIComponent(cleanSlug)}`;
 
     // Get last modified date or use today
     const lastMod = product.modified 

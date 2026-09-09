@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { PENINSULAR_PROVINCES } from '@/data/provincias';
 import seoSitemap from '@/data/seo-sitemap.json';
 import extraRoutes from '@/data/sitemap-extra-routes.json';
+import excludedRoutes from '@/data/sitemap-excluded-routes.json';
 
 const BASE_URL = 'https://impacto33.com';
 
@@ -12,6 +13,7 @@ function normalizePath(value: string): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const excludedRouteSet = new Set(excludedRoutes.map(normalizePath));
   const staticRoutes = [
     '',
     '/provincias',
@@ -59,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const route of staticRoutes) {
     const normalizedPath = normalizePath(route);
+    if (excludedRouteSet.has(normalizedPath)) continue;
     routes.set(normalizedPath, {
       url: `${BASE_URL}${normalizedPath}`,
       changeFrequency: normalizedPath === '' ? 'daily' : 'monthly',
@@ -68,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const route of categoryRoutes) {
     const normalizedPath = normalizePath(route);
+    if (excludedRouteSet.has(normalizedPath)) continue;
     if (!routes.has(normalizedPath)) {
       routes.set(normalizedPath, {
         url: `${BASE_URL}${normalizedPath}`,
@@ -79,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const route of provinceRoutes) {
     const normalizedPath = normalizePath(route);
+    if (excludedRouteSet.has(normalizedPath)) continue;
     if (!routes.has(normalizedPath)) {
       routes.set(normalizedPath, {
         url: `${BASE_URL}${normalizedPath}`,
