@@ -9,12 +9,21 @@ const __dirname = path.dirname(__filename);
 const BASE_URL = 'https://impacto33.com';
 
 // Load SEO data
-const seoDataPath = path.join(__dirname, 'client/src/data/seo-sitemap.json');
+const seoDataPath = path.join(__dirname, 'src/data/seo-sitemap.json');
 const seoData = JSON.parse(fs.readFileSync(seoDataPath, 'utf-8'));
+const extraRoutesPath = path.join(__dirname, 'src/data/sitemap-extra-routes.json');
+const extraRoutes = JSON.parse(fs.readFileSync(extraRoutesPath, 'utf-8'));
+
+function normalizePath(value) {
+  if (!value || value === '/') return '/';
+  const pathWithLeadingSlash = value.startsWith('/') ? value : `/${value}`;
+  return pathWithLeadingSlash.replace(/\/+$/, '');
+}
 
 // Static routes
 const staticRoutes = [
   '/',
+  '/provincias',
   '/contacto',
   '/presupuesto-rapido',
   '/quienes-somos',
@@ -37,52 +46,46 @@ function generateSitemap() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
-  // Add static routes
-  staticRoutes.forEach(route => {
+  const seenUrls = new Set();
+  let count = 0;
+
+  function addUrl(route, changeFrequency, priority) {
+    const normalizedPath = normalizePath(route);
+    const location = normalizedPath === '/' ? `${BASE_URL}/` : `${BASE_URL}${normalizedPath}`;
+    if (seenUrls.has(location)) return;
+
+    seenUrls.add(location);
+    count += 1;
     xml += '  <url>\n';
-    xml += `    <loc>${BASE_URL}${route}</loc>\n`;
-    xml += '    <changefreq>monthly</changefreq>\n';
-    xml += '    <priority>0.8</priority>\n';
+    xml += `    <loc>${location}</loc>\n`;
+    xml += `    <changefreq>${changeFrequency}</changefreq>\n`;
+    xml += `    <priority>${priority}</priority>\n`;
     xml += '  </url>\n';
+  }
+
+  staticRoutes.forEach(route => {
+    addUrl(route, 'monthly', '0.8');
   });
 
   // Add category routes from SEO data
   seoData.forEach(item => {
     if (item.url) {
-      // Ensure URL starts with / and doesn't end with / if it's already in the base URL logic (optional, but good for consistency)
-      // Here we assume item.url comes as "/category/" or "/category/subcategory/"
-      const url = item.url.startsWith('/') ? item.url : `/${item.url}`;
-      
-      xml += '  <url>\n';
-      xml += `    <loc>${BASE_URL}${url}</loc>\n`;
-      xml += '    <changefreq>weekly</changefreq>\n';
-      xml += '    <priority>0.9</priority>\n';
-      xml += '  </url>\n';
+      addUrl(item.url, 'weekly', '0.9');
     }
   });
 
-  // Note: Product URLs would typically be fetched from an API or database here
-  // For this MVP static generator, we are only including categories and static pages
-  // In a real scenario, you would fetch all products and add them:
-  /*
-  const products = await fetchProducts();
-  products.forEach(product => {
-    xml += '  <url>\n';
-    xml += `    <loc>${BASE_URL}/producto/${product.slug}</loc>\n`;
-    xml += '    <changefreq>daily</changefreq>\n';
-    xml += '    <priority>1.0</priority>\n';
-    xml += '  </url>\n';
+  extraRoutes.forEach(route => {
+    addUrl(route, 'weekly', '0.9');
   });
-  */
 
   xml += '</urlset>';
 
-  return xml;
+  return { xml, count };
 }
 
 // Write sitemap to public directory
-const sitemap = generateSitemap();
-const publicDir = path.join(__dirname, 'client/public');
+const { xml: sitemap, count } = generateSitemap();
+const publicDir = path.join(__dirname, 'public');
 
 if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
@@ -90,5 +93,5 @@ if (!fs.existsSync(publicDir)) {
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap);
 
-console.log('Sitemap generated successfully at client/public/sitemap.xml');
-console.log(`Total URLs: ${staticRoutes.length + seoData.length}`);
+console.log('Sitemap generated successfully at public/sitemap.xml');
+console.log(`Total URLs: ${count}`);

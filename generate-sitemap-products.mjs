@@ -102,7 +102,7 @@ async function fetchAllProducts() {
       }
     } catch (error) {
       console.error(`Error fetching page ${pageCount}:`, error.message);
-      hasNextPage = false;
+      throw error;
     }
   }
 
@@ -120,13 +120,16 @@ function generateProductSitemap(products) {
   products.forEach(product => {
     if (!product.slug) return;
 
+    const cleanSlug = product.slug.replace(/^\/+|\/+$/g, '');
+    const location = `${BASE_URL}/producto/${cleanSlug}`;
+
     // Get last modified date or use today
     const lastMod = product.modified 
       ? new Date(product.modified).toISOString().split('T')[0]
       : today;
 
     xml += '  <url>\n';
-    xml += `    <loc>${BASE_URL}/producto/${product.slug}</loc>\n`;
+    xml += `    <loc>${location}</loc>\n`;
     xml += `    <lastmod>${lastMod}</lastmod>\n`;
     xml += '    <changefreq>daily</changefreq>\n';
     xml += '    <priority>1.0</priority>\n';
@@ -188,7 +191,7 @@ async function main() {
   const products = await fetchAllProducts();
 
   if (products.length === 0) {
-    console.log('⚠️  No products found. Sitemap will be empty.');
+    throw new Error('No products found; the existing product sitemap was not replaced.');
   }
 
   // Generate product sitemap
@@ -200,7 +203,7 @@ async function main() {
   const sitemapIndex = generateSitemapIndex();
 
   // Write files to public directory
-  const publicDir = path.join(__dirname, 'client/public');
+  const publicDir = path.join(process.cwd(), 'public');
 
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
@@ -215,4 +218,7 @@ async function main() {
   console.log(`\n📍 Files saved to: ${publicDir}`);
 }
 
-main().catch(console.error);
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
