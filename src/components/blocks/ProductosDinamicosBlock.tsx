@@ -285,7 +285,7 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
       },
       "offers": {
         "@type": "Offer",
-        "url": `${window.location.origin}/producto/${product.slug}`,
+        "url": `https://impacto33.com/producto/${product.slug}`,
         "priceCurrency": "EUR",
         "price": priceValue.toFixed(2),
         "availability": "https://schema.org/InStock",

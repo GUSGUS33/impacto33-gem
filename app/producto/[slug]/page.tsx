@@ -149,10 +149,10 @@ export default async function ProductoPage({ params }: ProductPageProps) {
   });
 
   const breadcrumbs = [
-    { name: "Inicio", item: "https://impacto33.com/" },
+    { name: "Inicio", item: getCanonicalUrl("/") },
     ...categoryChain.map((cat) => ({
       name: cat.label,
-      item: `https://impacto33.com${cat.url.startsWith('/') ? cat.url : '/' + cat.url}`
+      item: getCanonicalUrl(cat.url)
     })),
     { name: productData?.name || slug.replace(/-/g, ' '), item: canonicalUrl }
   ];

@@ -16,28 +16,28 @@ export default function ContactPage() {
             "description": "Página de contacto de IMPACTO33, especialistas en regalos personalizados.",
             "url": "https://impacto33.com/contacto",
             "mainEntity": {
-              "@type": "LocalBusiness",
+              "@type": "Organization",
               "name": "IMPACTO33",
+              "url": "https://impacto33.com",
+              "logo": "https://impacto33.com/images/logo-impacto33.png",
               "image": "https://impacto33.com/images/logo-impacto33.png",
               "telephone": "+34690906027",
               "email": "info@impacto33.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "ES"
-              },
-              "openingHoursSpecification": [
+              "contactPoint": [
                 {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "09:00",
-                  "closes": "14:00"
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "15:00",
-                  "closes": "18:00"
+                  "@type": "ContactPoint",
+                  "telephone": "+34690906027",
+                  "email": "info@impacto33.com",
+                  "contactType": "customer service",
+                  "areaServed": "ES",
+                  "availableLanguage": ["Spanish", "English"]
                 }
+              ],
+              "sameAs": [
+                "https://www.facebook.com/impacto33",
+                "https://www.instagram.com/impacto33",
+                "https://twitter.com/impacto33",
+                "https://www.linkedin.com/company/impacto33"
               ]
             }
           })}} />

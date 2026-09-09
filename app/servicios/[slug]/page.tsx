@@ -85,8 +85,8 @@ export default async function Page({ params }: ServicePageProps) {
   const data = seoData[slug];
 
   const breadcrumbs = [
-    { name: "Inicio", item: "https://impacto33.com" },
-    { name: "Servicios", item: "https://impacto33.com/#servicios" },
+    { name: "Inicio", item: getCanonicalUrl("/") },
+    { name: "Servicios", item: getCanonicalUrl("/servicios") },
     { name: data?.title || slug.replace(/-/g, ' '), item: canonicalUrl }
   ];
 
