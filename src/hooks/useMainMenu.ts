@@ -2,6 +2,7 @@ import { useQuery } from "@apollo/client";
 import { useMemo } from "react";
 import { GET_MAIN_MENU } from "../queries/mainMenu";
 import type { MegaMenuSection, MenuItem } from "../components/MegaMenu";
+import { normalizeUri } from "@/lib/url";
 
 /**
  * Tipos de la respuesta de WPGraphQL para el menú
@@ -67,36 +68,24 @@ function slugify(text: string): string {
     .trim();
 }
 
-/**
- * Normaliza una URI de WordPress:
- * - Asegura que empiece con /
- * - Elimina trailing slash para consistencia (excepto /)
- */
-function normalizeUri(uri: string | null | undefined): string {
-  if (!uri) return "/";
-  // Si es un anchor (#), devolver tal cual
-  if (uri === "#" || uri.startsWith("#")) return uri;
-  
-  // Eliminar dominio si viene completo
-  let path = uri;
-  try {
-    const url = new URL(uri);
-    path = url.pathname;
-  } catch {
-    // Ya es un path relativo
+const SECTION_FALLBACK_HREFS: Record<string, string> = {
+  "ropa-personalizada": "/ropa-personalizada",
+  "bolsas-y-mochilas": "/bolsas-personalizadas",
+  "tazas-y-botellas": "/tazas-personalizadas",
+  merchandising: "/regalos-de-empresa",
+  servicios: "/servicios",
+};
+
+export function resolveSectionHref(
+  sectionKey: string,
+  href: string | null | undefined
+): string {
+  const normalizedHref = normalizeUri(href);
+  if (normalizedHref !== "#" && normalizedHref !== "/") {
+    return normalizedHref;
   }
-  
-  // Asegurar que empiece con /
-  if (!path.startsWith("/")) {
-    path = "/" + path;
-  }
-  
-  // Eliminar trailing slash (excepto para /)
-  if (path.length > 1 && path.endsWith("/")) {
-    path = path.slice(0, -1);
-  }
-  
-  return path;
+
+  return SECTION_FALLBACK_HREFS[sectionKey] ?? `/${sectionKey}`;
 }
 
 /**
@@ -153,7 +142,7 @@ function mapWPMenuToSections(
 
     sections[sectionKey] = {
       title: sectionTitle,
-      href: normalizeUri(topItem.uri),
+      href: resolveSectionHref(sectionKey, topItem.uri),
       columns,
     };
   }

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { useMainMenu } from "@/hooks/useMainMenu";
+import { resolveSectionHref, useMainMenu } from "@/hooks/useMainMenu";
 import { OptimizedImage } from "@/components/ui/OptimizedImage";
 import { ChevronDown } from "lucide-react";
 
@@ -120,19 +120,19 @@ export function MegaMenu() {
     console.warn("MegaMenu Error, falling back to static links:", error.message);
     return (
       <nav className="hidden xl:flex items-center gap-2.5 2xl:gap-7 font-bold text-xs 2xl:text-[13px] uppercase tracking-wider text-slate-800 h-full whitespace-nowrap shrink-0">
-        <Link href="/ropa-personalizada/" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
+        <Link href="/ropa-personalizada" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
           Ropa Personalizada
         </Link>
-        <Link href="/bolsas-personalizadas/" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
+        <Link href="/bolsas-personalizadas" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
           Bolsas y Mochilas
         </Link>
-        <Link href="/tazas-personalizadas/" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
+        <Link href="/tazas-personalizadas" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
           Tazas y Botellas
         </Link>
-        <Link href="/merchandising-eventos/" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
+        <Link href="/regalos-de-empresa" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
           Merchandising
         </Link>
-        <Link href="/servicios/" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
+        <Link href="/servicios" className="py-4 hover:text-blue-500 transition-colors whitespace-nowrap">
           Servicios
         </Link>
       </nav>
@@ -151,6 +151,7 @@ export function MegaMenu() {
       <nav className="hidden xl:flex items-center gap-1.5 2xl:gap-5 font-bold text-xs 2xl:text-[13px] uppercase tracking-wider text-slate-800 h-full whitespace-nowrap shrink-0">
         {Object.entries(sectionsToRender).map(([key, section]) => {
           const isActive = activeKey === key;
+          const sectionHref = resolveSectionHref(key, section.href);
           return (
             <div
               key={key}
@@ -158,7 +159,7 @@ export function MegaMenu() {
               onMouseEnter={() => handleMouseEnter(key)}
             >
               <Link
-                href={section.href || "#"}
+                href={sectionHref}
                 onClick={closeMenu}
                 className={`flex items-center gap-1.5 px-2.5 py-3 rounded-md transition-all duration-150 whitespace-nowrap ${
                   isActive
@@ -221,8 +222,7 @@ export function MegaMenu() {
                                       containerClassName="w-full h-full"
                                       className="object-cover"
                                       sizes="32px"
-                                      loading="eager"
-                                      unoptimized={true}
+                                      loading="lazy"
                                     />
                                   </div>
                                 ) : (
@@ -253,7 +253,7 @@ export function MegaMenu() {
                           width={300}
                           height={200}
                           className="w-full h-32 object-cover group-hover/srv:scale-105 transition-transform duration-500"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </Link>
                       <Link
@@ -281,7 +281,7 @@ export function MegaMenu() {
                   width={256}
                   height={256}
                   className="w-full h-auto rounded-lg shadow-sm"
-                  loading="eager"
+                  loading="lazy"
                 />
                 <p className="mt-2 text-center text-blue-600 font-semibold text-xs">
                   {currentSection.image.alt}
