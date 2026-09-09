@@ -22,4 +22,4 @@ Disallow: /*?*order*
 Disallow: /*?*q=*
 Disallow: /*?*s=*
 
-Sitemap: https://impacto33.com/sitemap.xml
+Sitemap: https://impacto33.com/sitemap-index.xml

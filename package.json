@@ -9,6 +9,7 @@
     "dev:turbo": "next dev --port 3000",
     "dev:server": "NODE_ENV=development EXPRESS_PORT=3001 tsx watch server/_core/index.ts",
     "dev:all": "concurrently \"pnpm dev\" \"pnpm dev:server\"",
+    "prebuild": "node generate-sitemap.mjs",
     "build": "cross-env NODE_ENV=production next build",
     "build:server": "esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "deploy:build": "npm run build && npm run build:server",
