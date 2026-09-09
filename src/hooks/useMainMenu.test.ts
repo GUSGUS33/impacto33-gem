@@ -168,6 +168,16 @@ describe("mapWPMenuToSections", () => {
     expect(sections["servicios"].title).toBe("Servicios");
   });
 
+  it("uses a canonical fallback when a top-level WordPress item is an anchor", () => {
+    const sections = mapWPMenuToSections(mockWPItems);
+    expect(sections["ropa-personalizada"].href).toBe("/ropa-personalizada");
+  });
+
+  it("keeps a valid top-level WordPress URI", () => {
+    const sections = mapWPMenuToSections(mockWPItems);
+    expect(sections.servicios.href).toBe("/servicios");
+  });
+
   it("maps columns (level 2) correctly", () => {
     const sections = mapWPMenuToSections(mockWPItems);
     const ropa = sections["ropa-personalizada"];
