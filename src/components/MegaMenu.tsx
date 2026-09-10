@@ -73,7 +73,18 @@ const serviceDescriptions: Record<string, string> = {
 
 export function MegaMenu() {
   const { menuSections, error } = useMainMenu();
+
+  return <MegaMenuContent menuSections={menuSections} error={error} />;
+}
+
+interface MegaMenuContentProps {
+  menuSections?: Record<string, MegaMenuSection> | null;
+  error?: { message: string } | null;
+}
+
+export function MegaMenuContent({ menuSections, error }: MegaMenuContentProps) {
   const [activeKey, setActiveKey] = useState<string | null>(null);
+  const [interactedSections, setInteractedSections] = useState<Record<string, boolean>>({});
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseEnter = (key: string) => {
@@ -81,6 +92,9 @@ export function MegaMenu() {
       clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
+    setInteractedSections((previous) =>
+      previous[key] ? previous : { ...previous, [key]: true },
+    );
     setActiveKey(key);
   };
 
@@ -140,7 +154,6 @@ export function MegaMenu() {
   }
 
   const sectionsToRender = menuSections || {};
-  const currentSection = activeKey ? sectionsToRender[activeKey] : null;
 
   return (
     <div
@@ -180,22 +193,32 @@ export function MegaMenu() {
         })}
       </nav>
 
-      {/* Panel Desplegable Único (Anclado exactamente bajo el header completo) */}
-      {currentSection && currentSection.columns && currentSection.columns.length > 0 && (
-        <div
-          className="absolute top-full left-0 right-0 w-full bg-white shadow-2xl border-t border-slate-100 z-50 transition-all duration-150 animate-in fade-in slide-in-from-top-1"
-          onMouseEnter={() => handleMouseEnter(activeKey!)}
-          onMouseLeave={handleMouseLeave}
-        >
+      {/* Los paneles se incluyen en SSR; las imágenes solo se crean tras interacción. */}
+      {Object.entries(sectionsToRender).map(([key, section]) => {
+        if (!section.columns || section.columns.length === 0) return null;
+
+        const isActive = activeKey === key;
+        const hasInteracted = Boolean(interactedSections[key]);
+
+        return (
+          <div
+            key={key}
+            data-mega-menu-panel={key}
+            className={`absolute top-full left-0 right-0 w-full bg-white shadow-2xl border-t border-slate-100 z-50 transition-all duration-150 ${
+              isActive ? "block animate-in fade-in slide-in-from-top-1" : "hidden"
+            }`}
+            onMouseEnter={() => handleMouseEnter(key)}
+            onMouseLeave={handleMouseLeave}
+          >
           {/* Barra de acento decorativa superior */}
           <div className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-600 w-full" />
 
           <div className="container mx-auto px-6 py-8 flex gap-8">
             {/* Columnas de Subcategorías */}
-            <div className={`flex-1 grid ${getGridCols(currentSection.columns.length)} gap-8`}>
-              {currentSection.columns.map((col, idx) => (
+            <div className={`flex-1 grid ${getGridCols(section.columns.length)} gap-8`}>
+              {section.columns.map((col, idx) => (
                 <div key={idx} className="min-w-0">
-                  {!isServiciosSection(activeKey!) && (
+                  {!isServiciosSection(key) && (
                     <>
                       <Link
                         href={col.href}
@@ -213,7 +236,7 @@ export function MegaMenu() {
                                 onClick={closeMenu}
                                 className="group/item flex items-center gap-3 text-slate-600 hover:text-blue-600 text-[11px] capitalize font-medium py-1 px-1.5 rounded hover:bg-slate-50 transition-all"
                               >
-                                {item.image ? (
+                                {hasInteracted && item.image?.src ? (
                                   <div className="relative w-7 h-7 xl:w-8 xl:h-8 flex-shrink-0 overflow-hidden rounded-full shadow-xs bg-slate-100 group-hover/item:ring-2 group-hover/item:ring-blue-500 transition-all">
                                     <OptimizedImage
                                       src={item.image.src}
@@ -240,21 +263,27 @@ export function MegaMenu() {
                   )}
 
                   {/* Renderizado especial para Servicios */}
-                  {isServiciosSection(activeKey!) && (
+                  {isServiciosSection(key) && (
                     <div className="mt-0">
                       <Link
                         href={col.href}
                         onClick={closeMenu}
                         className="block mb-3 overflow-hidden rounded-lg group/srv shadow-xs border border-slate-100"
                       >
-                        <OptimizedImage
-                          src={`/images/services/${getServiceImageSlug(col.href)}.jpg`}
-                          alt={col.title}
-                          width={300}
-                          height={200}
-                          className="w-full h-32 object-cover group-hover/srv:scale-105 transition-transform duration-500"
-                          loading="lazy"
-                        />
+                        {hasInteracted ? (
+                          <OptimizedImage
+                            src={`/images/services/${getServiceImageSlug(col.href)}.jpg`}
+                            alt={col.title}
+                            width={300}
+                            height={200}
+                            className="w-full h-32 object-cover group-hover/srv:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-32 bg-slate-100 flex items-center justify-center text-slate-400 text-xs font-semibold">
+                            {col.title}
+                          </div>
+                        )}
                       </Link>
                       <Link
                         href={col.href}
@@ -273,24 +302,29 @@ export function MegaMenu() {
             </div>
 
             {/* Imagen Destacada Opcional (Lado Derecho) */}
-            {currentSection.image && (
+            {section.image && (
               <div className="w-64 flex-shrink-0 border-l border-slate-100 pl-8">
-                <OptimizedImage
-                  src={currentSection.image.src}
-                  alt={currentSection.image.alt}
-                  width={256}
-                  height={256}
-                  className="w-full h-auto rounded-lg shadow-sm"
-                  loading="lazy"
-                />
+                {hasInteracted ? (
+                  <OptimizedImage
+                    src={section.image.src}
+                    alt={section.image.alt}
+                    width={256}
+                    height={256}
+                    className="w-full h-auto rounded-lg shadow-sm"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="w-full h-48 bg-slate-50 rounded-lg" />
+                )}
                 <p className="mt-2 text-center text-blue-600 font-semibold text-xs">
-                  {currentSection.image.alt}
+                  {section.image.alt}
                 </p>
               </div>
             )}
           </div>
-        </div>
-      )}
+          </div>
+        );
+      })}
     </div>
   );
 }

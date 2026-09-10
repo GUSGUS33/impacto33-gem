@@ -59,7 +59,7 @@ export async function TabProductos({ slugCategoria, cantidad }: { slugCategoria:
                       src={imageUrl}
                       alt={product.name}
                       fill
-                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
