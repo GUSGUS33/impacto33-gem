@@ -7,25 +7,32 @@ import { useQuery } from "@apollo/client";
 import { siteConfig } from "@/config/siteConfig";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Check, ChevronRight, ShieldCheck, Truck, Mail, Phone } from "lucide-react";
-import NotFound from "@/pages/NotFound";
+import NotFound from "@/screens/NotFound";
 import { GET_FULL_VARIABLE_PRODUCT } from "@/lib/queries";
 import ProductPricingFlow from "@/components/pricing/ProductPricingFlow";
 import { getProductBreadcrumbChain } from "@/lib/slugMap";
 import { formatPrice } from "@/lib/utils";
 
-export default function ProductPage({ serverSlug }: { serverSlug?: string }) {
+interface ProductPageProps {
+  serverSlug?: string;
+  initialProduct?: any;
+}
+
+export default function ProductPage({ serverSlug, initialProduct }: ProductPageProps) {
   const params = useParams();
   const [activeImage, setActiveImage] = useState<string | null>(null);
   const slug = serverSlug || (params?.slug as string);
 
   const { data, loading, error } = useQuery(GET_FULL_VARIABLE_PRODUCT, {
     variables: { slug },
-    skip: !slug
+    skip: !slug || Boolean(initialProduct),
   });
 
   if (!slug) return <NotFound />;
 
-  if (loading) {
+  const product = initialProduct || data?.product;
+
+  if (loading && !product) {
     return (
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -41,12 +48,30 @@ export default function ProductPage({ serverSlug }: { serverSlug?: string }) {
     );
   }
 
-  if (error || !data?.product) {
-    // Si falla la carga o no existe, mostramos un estado de error amigable o 404
+  if (!product && error) {
+    return (
+      <div className="container mx-auto px-4 py-16 text-center">
+        <div className="max-w-md mx-auto bg-slate-50 border border-slate-200 rounded-xl p-8 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-800 mb-2">No se pudo cargar el producto</h2>
+          <p className="text-sm text-slate-600 mb-6">
+            Ha ocurrido un problema temporal al consultar los datos del producto.
+          </p>
+          <button
+            type="button"
+            onClick={() => window.location.reload()}
+            className="bg-blue-700 text-white font-medium px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors"
+          >
+            Reintentar
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!product) {
     return <NotFound />;
   }
 
-  const product = data.product;
   const mainImage = product.featuredImage?.node?.sourceUrl || product.image?.sourceUrl;
   const gallery = product.galleryImages?.nodes || [];
   const currentImage = activeImage || mainImage;
@@ -54,7 +79,12 @@ export default function ProductPage({ serverSlug }: { serverSlug?: string }) {
   // Precio display
   const rawPrice = product.salePrice || product.price || product.regularPrice;
   const formattedPrice = formatPrice(rawPrice);
-  const displayPrice = formattedPrice ? (formattedPrice.toLowerCase().includes('desde') ? formattedPrice : `Desde ${formattedPrice}`) : "Consultar Precio";
+  const isVariable = product.__typename === "VariableProduct" || Boolean(product.variations?.nodes?.length);
+  const displayPrice = formattedPrice
+    ? (isVariable && !formattedPrice.toLowerCase().includes("desde")
+      ? `Desde ${formattedPrice}`
+      : formattedPrice)
+    : "Consultar Precio";
 
   // Cadena de categorías/subcategorías para breadcrumbs transaccionales
   const categoryChain = getProductBreadcrumbChain({
@@ -144,7 +174,7 @@ export default function ProductPage({ serverSlug }: { serverSlug?: string }) {
               )}
             </div>
 
-            <div className="prose prose-slate prose-sm mb-8 text-slate-600" dangerouslySetInnerHTML={{ __html: product.shortDescription || '' }} />
+            <div className="prose prose-slate prose-sm mb-8 text-slate-600" dangerouslySetInnerHTML={{ __html: product.shortDescription || product.description || '' }} />
 
             {/* Product Pricing Flow Integrado */}
             <div className="mt-8">

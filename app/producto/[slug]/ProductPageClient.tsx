@@ -1,16 +1,16 @@
 "use client";
 
-import ProductPage from "@/pages/shop/ProductPage";
+import ProductPage from "@/screens/shop/ProductPage";
 
 interface ProductPageClientProps {
   slug: string;
+  initialProduct: any;
 }
 
 /**
  * Client wrapper for the product page.
- * The actual ProductPage component uses useRoute from wouter (shimmed to Next.js)
- * to extract the slug from the URL, so we just need to render it.
+ * Mantiene en la hidratación los datos que ya se renderizaron en el servidor.
  */
-export function ProductPageClient({ slug }: ProductPageClientProps) {
-  return <ProductPage serverSlug={slug} />;
+export function ProductPageClient({ slug, initialProduct }: ProductPageClientProps) {
+  return <ProductPage serverSlug={slug} initialProduct={initialProduct} />;
 }
