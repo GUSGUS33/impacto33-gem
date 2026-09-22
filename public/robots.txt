@@ -3,6 +3,7 @@ Allow: /
 Allow: /_next/static/
 Allow: /_next/image/
 Allow: /images/
+Allow: /api/graphql
 
 Disallow: /admin
 Disallow: /administrador

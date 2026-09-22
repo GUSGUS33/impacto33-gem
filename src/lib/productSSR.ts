@@ -1,7 +1,5 @@
-import { gql } from '@apollo/client';
-
-export const GET_FULL_VARIABLE_PRODUCT = gql`
-  query GetFullVariableProduct($slug: ID!) {
+export const GET_FULL_PRODUCT_QUERY = `
+  query GetFullProductData($slug: ID!) {
     product(id: $slug, idType: SLUG) {
       __typename
       ... on VariableProduct {
@@ -10,19 +8,23 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
         name
         slug
         sku
+        shortDescription
+        description
         price
         regularPrice
         salePrice
         onSale
         stockStatus
         stockQuantity
-        shortDescription
-        description
         featuredImage {
           node {
             sourceUrl
             altText
           }
+        }
+        image {
+          sourceUrl
+          altText
         }
         galleryImages {
           nodes {
@@ -63,6 +65,7 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
             }
             image {
               sourceUrl
+              altText
             }
           }
         }
@@ -102,14 +105,14 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
         name
         slug
         sku
+        shortDescription
+        description
         price
         regularPrice
         salePrice
         onSale
         stockStatus
         stockQuantity
-        shortDescription
-        description
         featuredImage {
           node {
             sourceUrl
@@ -174,131 +177,87 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
   }
 `;
 
+export type ProductFetchResult =
+  | { status: "SUCCESS"; product: any }
+  | { status: "NOT_FOUND" }
+  | { status: "SERVER_ERROR"; error: string };
 
-export const GET_PRODUCTS_BY_SLUGS = gql`
-  query GetProductsBySlugs($slugs: [String!]!) {
-    products(where: { slugIn: $slugs }, first: 100) {
-      nodes {
-        id
-        name
-        slug
-        ... on VariableProduct {
-          price
-          regularPrice
-          salePrice
-          onSale
-          stockStatus
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on SimpleProduct {
-          price
-          regularPrice
-          salePrice
-          onSale
-          stockStatus
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on ExternalProduct {
-          price
-          regularPrice
-          salePrice
-          onSale
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on GroupProduct {
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+type GraphQlResponse = {
+  data?: { product?: any | null } | null;
+  errors?: Array<{ message?: string; path?: unknown[] }>;
+};
 
-export const GET_PRODUCTS_BY_IDS = gql`
-  query GetProductsByIds($ids: [Int]!) {
-    products(where: { include: $ids }, first: 100) {
-      nodes {
-        id
-        name
-        slug
-        ... on VariableProduct {
-          id
-          name
-          slug
-          price
-          regularPrice
-          salePrice
-          onSale
-          stockStatus
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on SimpleProduct {
-          id
-          name
-          slug
-          price
-          regularPrice
-          salePrice
-          onSale
-          stockStatus
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on ExternalProduct {
-          id
-          name
-          slug
-          price
-          regularPrice
-          salePrice
-          onSale
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-        ... on GroupProduct {
-          id
-          name
-          slug
-          featuredImage {
-            node {
-              sourceUrl
-              altText
-            }
-          }
-        }
-      }
+export function classifyProductResponse(payload: GraphQlResponse): ProductFetchResult {
+  if (payload.errors?.length) {
+    const confirmedNotFound = payload.errors.some((error) => {
+      const message = String(error.message ?? "").toLowerCase();
+      return (
+        message.includes("no product id was found") ||
+        message.includes("could not find") ||
+        (message.includes("not found") && error.path?.includes("product"))
+      );
+    });
+
+    if (confirmedNotFound && payload.data?.product == null) {
+      return { status: "NOT_FOUND" };
     }
+
+    return {
+      status: "SERVER_ERROR",
+      error: payload.errors[0]?.message || "GraphQL execution error",
+    };
   }
-`;
+
+  if (payload.data?.product) {
+    return { status: "SUCCESS", product: payload.data.product };
+  }
+
+  return { status: "NOT_FOUND" };
+}
+
+export async function fetchProductForSSR(
+  slug: string,
+  fetcher: typeof fetch = fetch,
+): Promise<ProductFetchResult> {
+  const graphqlUrl =
+    process.env.VITE_WP_GRAPHQL_URL ||
+    process.env.NEXT_PUBLIC_WP_GRAPHQL_URL ||
+    "https://creativu.es/graphql";
+
+  try {
+    const response = await fetcher(graphqlUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "User-Agent": "Impacto33-SSR/1.0",
+      },
+      body: JSON.stringify({
+        query: GET_FULL_PRODUCT_QUERY,
+        variables: { slug },
+      }),
+      signal: AbortSignal.timeout(12_000),
+      next: { revalidate: 3600 },
+    });
+
+    if (!response.ok) {
+      return {
+        status: "SERVER_ERROR",
+        error: `WordPress responded with HTTP status ${response.status}`,
+      };
+    }
+
+    return classifyProductResponse((await response.json()) as GraphQlResponse);
+  } catch (error) {
+    return {
+      status: "SERVER_ERROR",
+      error: error instanceof Error ? error.message : "Network failure or request timeout",
+    };
+  }
+}
+
+export function extractFirstPrice(value: unknown): string {
+  const text = String(value ?? "").replace(/<[^>]*>/g, " ");
+  const match = text.match(/\d+(?:[.,]\d+)?/);
+  return match ? match[0].replace(",", ".") : "0.00";
+}

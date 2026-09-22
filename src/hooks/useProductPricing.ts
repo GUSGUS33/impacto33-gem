@@ -27,6 +27,8 @@ export const useProductPricing = ({
   
   // --- DATOS DE PRICING ---
   const { pricingData, loading: loadingData, error: pricingError } = usePricingData(pricingCategory);
+  const isSimpleProduct = (product as Product & { __typename?: string })?.__typename === 'SimpleProduct'
+    || !product?.variations?.nodes?.length;
 
   // --- DERIVADOS DEL PRODUCTO ---
   
@@ -94,9 +96,25 @@ export const useProductPricing = ({
         stockQuantity: 999
       }));
     }
+
+    if (isSimpleProduct) {
+      return [{
+        id: 'standard',
+        name: 'Estándar',
+        value: 'Estándar',
+        stockStatus: (product.stockStatus === 'OUT_OF_STOCK' ? 'OUT_OF_STOCK' : 'IN_STOCK') as "OUT_OF_STOCK" | "IN_STOCK",
+        stockQuantity: product.stockQuantity ?? 9999,
+      }];
+    }
     
     return [];
-  }, [variationsByColor, product]);
+  }, [variationsByColor, product, isSimpleProduct]);
+
+  useEffect(() => {
+    if (isSimpleProduct && !selectedColor && availableColors.length === 1) {
+      setSelectedColor(availableColors[0].name);
+    }
+  }, [availableColors, isSimpleProduct, selectedColor]);
 
   // 3. Obtener variaciones (tallas) del color seleccionado
   const colorVariations = useMemo(() => {
@@ -118,12 +136,33 @@ export const useProductPricing = ({
         }
       });
     }
+
+    if (sizesSet.size === 0 && isSimpleProduct) {
+      const sizeAttribute = product?.attributes?.nodes.find(
+        (attribute) => attribute.name === 'pa_size' || attribute.name === 'pa_talla'
+      );
+      const sizes = sizeAttribute?.options?.filter(Boolean) || [];
+      (sizes.length > 0 ? sizes : ['Única']).forEach((size) => sizesSet.add(size));
+    }
     
     return Array.from(sizesSet);
-  }, [product]);
+  }, [product, isSimpleProduct]);
 
   // 4. Preparar opciones de talla para la tabla (TODAS las tallas, con stock 0 si no existen en el color actual)
   const sizeOptions = useMemo(() => {
+    if (isSimpleProduct) {
+      const effectiveStock = product.stockStatus === 'OUT_OF_STOCK'
+        ? 0
+        : (product.stockQuantity ?? 9999);
+      return allAvailableSizes.map((size) => ({
+        size,
+        stockStatus: effectiveStock > 0 ? 'IN_STOCK' as const : 'OUT_OF_STOCK' as const,
+        stockQuantity: effectiveStock,
+        price: basePrice,
+        variationId: product.id,
+      }));
+    }
+
     // Crear un mapa de tallas existentes en el color actual
     const existingSizesMap = new Map<string, any>();
     colorVariations.forEach(v => {
@@ -163,7 +202,7 @@ export const useProductPricing = ({
         };
       }
     });
-  }, [allAvailableSizes, colorVariations, basePrice]);
+  }, [allAvailableSizes, colorVariations, basePrice, isSimpleProduct, product]);
 
   // --- LÓGICA DE CÁLCULO ---
   

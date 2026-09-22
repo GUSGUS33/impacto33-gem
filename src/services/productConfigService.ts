@@ -23,6 +23,7 @@ const EXPIRATION_DAYS = 7;
  * Save product configuration to localStorage
  */
 export function saveProductConfig(config: ProductConfig): void {
+  if (typeof window === 'undefined') return;
   try {
     const key = `${STORAGE_KEY_PREFIX}${config.productSlug}`;
     const dataToSave = {
@@ -40,6 +41,7 @@ export function saveProductConfig(config: ProductConfig): void {
  * Returns null if not found or expired
  */
 export function loadProductConfig(productSlug: string): ProductConfig | null {
+  if (typeof window === 'undefined') return null;
   try {
     const key = `${STORAGE_KEY_PREFIX}${productSlug}`;
     const stored = localStorage.getItem(key);
@@ -70,6 +72,7 @@ export function loadProductConfig(productSlug: string): ProductConfig | null {
  * Clear product configuration from localStorage
  */
 export function clearProductConfig(productSlug: string): void {
+  if (typeof window === 'undefined') return;
   try {
     const key = `${STORAGE_KEY_PREFIX}${productSlug}`;
     localStorage.removeItem(key);
@@ -82,6 +85,7 @@ export function clearProductConfig(productSlug: string): void {
  * Clear all expired product configurations
  */
 export function clearExpiredConfigs(): void {
+  if (typeof window === 'undefined') return;
   try {
     const expirationTime = EXPIRATION_DAYS * 24 * 60 * 60 * 1000;
     const keys = Object.keys(localStorage);

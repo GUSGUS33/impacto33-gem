@@ -1,12 +1,23 @@
 import { describe, expect, it } from "vitest";
 import {
   generateBreadcrumbSchema,
+  generateSeoMetadata,
   generateOrganizationSchema,
   generateProductSchema,
   getCanonicalUrl,
 } from "./seo";
 
 describe("SEO structured data", () => {
+  it("delega la marca al template del layout y elimina sufijos duplicados", () => {
+    const metadata = generateSeoMetadata({
+      title: "Mochila personalizada | IMPACTO33 | IMPACTO33",
+      description: "Descripción",
+    });
+
+    expect(metadata.title).toBe("Mochila personalizada");
+    expect(metadata.openGraph?.title).toBe("Mochila personalizada | IMPACTO33");
+  });
+
   it("publica una Organization sin datos de local físico inventados", () => {
     const schema = generateOrganizationSchema() as Record<string, unknown>;
 

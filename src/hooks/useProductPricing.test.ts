@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { renderHook, act } from '@testing-library/react';
+import { renderHook, act, waitFor } from '@testing-library/react';
 import { useProductPricing } from './useProductPricing';
 import { Product } from "@shared/types";
 
@@ -74,5 +74,30 @@ describe('useProductPricing Hook', () => {
 
     expect(result.current.quantities['M']).toBe(5);
     expect(result.current.totalQuantity).toBe(5);
+  });
+
+  it('inicializa una opción estándar y talla única para productos simples', async () => {
+    const simpleProduct = {
+      ...mockProduct,
+      __typename: 'SimpleProduct',
+      variations: undefined,
+      attributes: { nodes: [] },
+      stockQuantity: null,
+    } as unknown as Product;
+
+    const { result } = renderHook(() => useProductPricing({
+      product: simpleProduct,
+      basePrice: 10,
+      pricingCategory: 'default',
+    }));
+
+    await waitFor(() => expect(result.current.selectedColor).toBe('Estándar'));
+    expect(result.current.sizeOptions).toEqual([
+      expect.objectContaining({ size: 'Única', stockQuantity: 9999 }),
+    ]);
+    expect(result.current.canEnterQuantities).toBe(true);
+
+    act(() => result.current.updateQuantity('Única', 25));
+    expect(result.current.totalQuantity).toBe(25);
   });
 });
