@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNotification } from '@/hooks/useNotification';
+import { formatProductOptionLabel } from '@/lib/productContent';
 
 interface SizeQuantityOption {
   size: string;
@@ -69,7 +70,7 @@ const SizeInput: React.FC<SizeInputProps> = ({
     onQuantityChange(size, newQuantity);
     
     if (newQuantity > 0) {
-      success(`Talla ${size}: ${newQuantity} ud.`);
+      success(`${formatProductOptionLabel(size)}: ${newQuantity} ud.`);
     }
   }, [localValue, size, maxStock, currentQuantity, onQuantityChange, success, error]);
 
@@ -143,6 +144,7 @@ const SizeInput: React.FC<SizeInputProps> = ({
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
           disabled={disabled}
+          aria-label={`Cantidad para ${formatProductOptionLabel(size)}`}
           className={`
             w-16 h-12 md:h-10 border-2 rounded-lg text-center font-bold text-lg outline-none transition-all touch-manipulation
             ${currentQuantity > 0 
@@ -217,7 +219,7 @@ const SizeQuantityTable: React.FC<SizeQuantityTableProps> = ({
   const SizeTable = ({ sizes, label }: { sizes: SizeQuantityOption[], label?: string }) => (
     <div>
       {label && (
-        <div className="bg-blue-50 px-4 py-2 mb-0 rounded-t-lg border border-blue-100 border-b-0 flex items-center justify-between">
+        <div className="bg-blue-50 px-4 py-2 mb-0 rounded-t-lg border border-blue-100 border-b-0 flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between">
           <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
             {label}
           </span>
@@ -229,7 +231,7 @@ const SizeQuantityTable: React.FC<SizeQuantityTableProps> = ({
       
       <div className="border border-slate-200 rounded-b-lg overflow-hidden bg-white">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[300px]">
+          <table className={`w-full ${sizes.length > 4 ? 'min-w-[520px]' : 'min-w-0'}`}>
             <thead className="bg-slate-50">
               <tr>
                 {sizes.map((size) => (
@@ -237,7 +239,7 @@ const SizeQuantityTable: React.FC<SizeQuantityTableProps> = ({
                     key={size.size}
                     className="px-2 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider border-b border-slate-200"
                   >
-                    {size.size}
+                    {formatProductOptionLabel(size.size)}
                   </th>
                 ))}
               </tr>
@@ -324,7 +326,13 @@ const SizeQuantityTable: React.FC<SizeQuantityTableProps> = ({
       
       {/* Tabla de tallas de adultos */}
       {sortedAdultSizes.length > 0 && (
-        <SizeTable sizes={sortedAdultSizes} label="👕 TALLAS DE ADULTOS" />
+        <SizeTable
+          sizes={sortedAdultSizes}
+          label={sortedAdultSizes.length === 1
+            && formatProductOptionLabel(sortedAdultSizes[0].size) === 'Talla única'
+            ? 'CANTIDAD'
+            : '👕 TALLAS DE ADULTOS'}
+        />
       )}
     </div>
   );

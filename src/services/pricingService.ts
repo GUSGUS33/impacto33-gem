@@ -2,7 +2,10 @@ import type { PricingData, PriceCalculation } from '../types/pricing';
 import type { PrintingMethodId } from '../types/printing';
 import defaultPricing from '../data/pricing/_default.json';
 import { getPricingFamilyConfig } from '../data/pricing/pricing-families';
-import { getPricingFamilyFromCategory } from '../data/pricing/category-to-family';
+import {
+  CATEGORY_TO_FAMILY_MAPPING,
+  getPricingFamilyFromCategory,
+} from '../data/pricing/category-to-family';
 import { getAllowedMethodsForCategory } from '../data/pricing/category-allowed-methods';
 import { PRINTING_METHODS, isPrintingMethodActive } from '../data/pricing/printing-methods';
 
@@ -43,9 +46,10 @@ export const loadPricingData = async (categoryId: string): Promise<PricingData> 
     return pricingCache.get(categoryId)!;
   }
 
+  // Normalizar ID de categoría para buscar el archivo o su familia.
+  const normalizedId = categoryId.toLowerCase().replace(/\s+/g, '-');
+
   try {
-    // Normalizar ID de categoría para buscar el archivo
-    const normalizedId = categoryId.toLowerCase().replace(/\s+/g, '-');
     
     // Nivel 2: Intentar cargar JSON específico
     // Nota: En Vite/Webpack, las importaciones dinámicas de JSON deben manejarse con cuidado.
@@ -56,11 +60,15 @@ export const loadPricingData = async (categoryId: string): Promise<PricingData> 
     pricingCache.set(categoryId, data);
     return data;
   } catch (error) {
-    console.warn(`Pricing data not found for category "${categoryId}", using default fallback.`);
-    
-    // Nivel 3: Fallback a _default.json
-    // Ya importado estáticamente arriba para asegurar disponibilidad
-    const fallbackData = defaultPricing as unknown as PricingData;
+    const mappedFamily = getPricingFamilyFromCategory(normalizedId);
+    const isMappedCategory = Boolean(CATEGORY_TO_FAMILY_MAPPING[normalizedId]);
+    const fallbackData = isMappedCategory
+      ? getPricingFamilyConfig(mappedFamily)
+      : defaultPricing as unknown as PricingData;
+
+    if (!isMappedCategory && normalizedId !== 'default') {
+      console.warn(`Pricing data not found for category "${categoryId}", using default fallback.`);
+    }
     
     // Guardamos en cache el fallback para esta categoría también
     pricingCache.set(categoryId, fallbackData);

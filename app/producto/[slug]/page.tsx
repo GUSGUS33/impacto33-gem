@@ -7,6 +7,10 @@ import { generateSeoMetadata, getCanonicalUrl } from "@/lib/seo";
 import { getProductBreadcrumbChain } from "@/lib/slugMap";
 import { handleVerifiedRedirect } from "@/lib/redirects";
 import { extractFirstPrice, fetchProductForSSR } from "@/lib/productSSR";
+import { buildProductFaqs } from "@/lib/productContent";
+import { resolveProductPricingCategory } from "@/lib/productPricingCategory";
+import { getPricingFamilyFromCategory } from "@/data/pricing/category-to-family";
+import { getPricingFamilyConfig } from "@/data/pricing/pricing-families";
 
 // ─── Renderizado dinámico con ISR ───────────────────────────────────────────
 export const revalidate = 3600;
@@ -114,6 +118,11 @@ export default async function ProductoPage({ params }: ProductPageProps) {
     })),
     { name: product.name, item: canonicalUrl }
   ];
+  const pricingCategory = resolveProductPricingCategory(product.productCategories?.nodes);
+  const minimumQuantity = getPricingFamilyConfig(
+    getPricingFamilyFromCategory(pricingCategory),
+  ).cantidad_minima;
+  const faqs = buildProductFaqs(product.name, minimumQuantity);
 
   return (
     <>
@@ -121,6 +130,7 @@ export default async function ProductoPage({ params }: ProductPageProps) {
         product={productData} 
         productUrl={canonicalUrl}
         breadcrumbs={breadcrumbs}
+        faqs={faqs}
       />
       <ProductPageClient slug={slug} initialProduct={product} />
     </>

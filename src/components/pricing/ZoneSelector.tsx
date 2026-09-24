@@ -58,9 +58,11 @@ const ZoneSelector: React.FC<ZoneSelectorProps> = ({
           
           return (
             <button
+              type="button"
               key={zone.id}
               onClick={() => handleToggle(zone.id)}
               disabled={disabled}
+              aria-pressed={isSelected}
               className={`
                 relative flex flex-col items-center justify-center p-3 rounded-xl border-2 transition-all duration-200
                 ${isSelected 

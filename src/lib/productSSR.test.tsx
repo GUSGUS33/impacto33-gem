@@ -84,6 +84,51 @@ describe("SSR de fichas de producto", () => {
     expect(html).not.toContain("¡Vaya! Parece que te has perdido");
   });
 
+  it("no duplica la descripción y mantiene la calculadora antes del contenido editorial", () => {
+    const duplicatedContentProduct = {
+      ...variableProduct,
+      shortDescription: "<p>Texto editorial repetido.</p>",
+      description: "<p>Texto editorial repetido.</p>",
+    };
+    const html = renderToStaticMarkup(
+      <ProductPage
+        serverSlug={duplicatedContentProduct.slug}
+        initialProduct={duplicatedContentProduct}
+      />,
+    );
+    expect(html.match(/<h1\b/g)).toHaveLength(1);
+    expect(html).not.toContain("data-product-summary");
+    expect(html.match(/Texto editorial repetido\./g)).toHaveLength(1);
+    expect(html.indexOf("data-product-pricing")).toBeLessThan(
+      html.indexOf("data-product-description"),
+    );
+  });
+
+  it("reserva los encabezados del documento para el contenido editorial", () => {
+    const html = renderToStaticMarkup(
+      <ProductPage serverSlug={variableProduct.slug} initialProduct={variableProduct} />,
+    );
+    const headings = [...html.matchAll(/<(h[1-6])\b[^>]*>(.*?)<\/\1>/g)]
+      .map((match) => ({
+        tagName: match[1].toUpperCase(),
+        textContent: match[2].replace(/<[^>]*>/g, ""),
+      }));
+
+    expect(headings.filter((heading) => heading.tagName === "H1")).toHaveLength(1);
+    expect(headings.filter((heading) => heading.tagName === "H2").map((heading) => heading.textContent))
+      .toEqual([
+        "Características principales de Mochila deportiva personalizada",
+        "Opciones de personalización de Mochila deportiva personalizada",
+        "Plazos, cantidades y presupuesto",
+        "Preguntas frecuentes sobre Mochila deportiva personalizada",
+      ]);
+    expect(headings.some((heading) => heading.tagName === "H3")).toBe(true);
+    expect(headings.some((heading) => ["H4", "H5", "H6"].includes(heading.tagName)))
+      .toBe(false);
+    expect(headings[0]?.textContent).toContain("Mochila deportiva personalizada");
+    expect(headings[1]?.textContent).toContain("Características principales");
+  });
+
   it("renderiza productos simples sin etiquetar su precio como Desde", () => {
     const html = renderToStaticMarkup(
       <ProductPage serverSlug={simpleProduct.slug} initialProduct={simpleProduct} />,

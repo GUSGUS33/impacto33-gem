@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import {
+  loadPricingData,
   loadPricingDataFromFamily,
   calculateScaledPrice,
   calculateScaledPriceFromCategory,
@@ -91,6 +92,14 @@ describe('Pricing Service - Fase 1.2', () => {
   });
 
   describe('Pricing Data from Family', () => {
+    it('debería usar la familia accesorios al cargar travel_accessories', async () => {
+      const pricingData = await loadPricingData('travel_accessories');
+
+      expect(pricingData.categoria).toBe('Accesorios Personalizados');
+      expect(pricingData.cantidad_minima).toBe(50);
+      expect(pricingData.zonas_permitidas).toEqual(['frontal', 'espalda']);
+    });
+
     it('debería cargar datos de familia ropa', () => {
       const pricingData = loadPricingDataFromFamily('t_shirts');
       expect(pricingData).toBeDefined();
