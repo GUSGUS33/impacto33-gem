@@ -5,6 +5,7 @@ import { formatEuroPrice } from '../../services/pricingService';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useNotification } from '@/hooks/useNotification';
+import { formatProductOptionLabel } from '@/lib/productContent';
 
 interface PriceCalculatorProps {
   priceCalculation: PriceCalculation | null;
@@ -58,7 +59,7 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
         <div className="mx-auto w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-3 text-slate-400">
           <FileText size={24} />
         </div>
-        <h3 className="text-slate-900 font-medium mb-1">Calculadora de Presupuesto</h3>
+        <p className="text-slate-900 font-medium mb-1">Calculadora de Presupuesto</p>
         <p className="text-slate-500 text-sm">
           Selecciona cantidad y zonas de personalización para ver el precio estimado.
         </p>
@@ -91,7 +92,7 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex items-start gap-4">
         <AlertCircle className="text-amber-600 shrink-0 mt-1" size={24} />
         <div>
-          <h3 className="text-amber-800 font-bold text-lg mb-1">Cantidad mínima no alcanzada</h3>
+          <p className="text-amber-800 font-bold text-lg mb-1">Cantidad mínima no alcanzada</p>
           <p className="text-amber-700 mb-4">
             La cantidad mínima para este producto es de <strong>{cantidadMinima} unidades</strong>. 
             Actualmente has seleccionado {cantidadTotal}.
@@ -107,8 +108,8 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
   return (
     <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
       {/* Header con Precio Total */}
-      <div className="p-6 bg-gradient-to-br from-blue-50 to-slate-50 border-b border-slate-100">
-        <div className="flex justify-between items-start mb-4">
+      <div className="p-4 bg-gradient-to-br from-blue-50 to-slate-50 border-b border-slate-100 sm:p-6">
+        <div className="flex flex-col gap-5 mb-4 sm:flex-row sm:justify-between sm:items-start">
           <div className="flex-1">
             <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-3">Presupuesto Estimado</p>
             
@@ -133,12 +134,12 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
             
             {/* TOTAL - Grande y Destacado */}
             <div>
-              <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Total a Pagar</p>
-              <span className="text-4xl font-bold text-blue-600">{formatEuroPrice(precioTotalConIVAConEntrega)}</span>
+              <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Total estimado con IVA</p>
+              <span className="text-3xl font-bold text-blue-600 sm:text-4xl">{formatEuroPrice(precioTotalConIVAConEntrega)}</span>
             </div>
           </div>
           
-          <div className="text-right">
+          <div className="border-t border-slate-200 pt-4 text-left sm:border-0 sm:pt-0 sm:text-right">
             <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Precio Unitario</p>
             <span className="text-2xl font-bold text-slate-900">{formatEuroPrice(precioUnitarioFinalConEntrega)}</span>
             <p className="text-xs text-slate-400 mt-1">/unidad</p>
@@ -187,7 +188,7 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
                   if (qty === 0) return null;
                   return (
                     <div key={size} className="flex justify-between text-slate-700">
-                      <span>Talla {size}:</span>
+                      <span>{formatProductOptionLabel(size)}:</span>
                       <span className="font-medium">{qty} uds.</span>
                     </div>
                   );
@@ -234,13 +235,13 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({
 
       {/* Selector de Tiempo de Entrega */}
       {deliveryTimeSelector && (
-        <div className="p-6 bg-slate-50 border-t border-slate-100">
+        <div className="p-4 bg-slate-50 border-t border-slate-100 sm:p-6">
           {deliveryTimeSelector}
         </div>
       )}
 
       {/* Acciones */}
-      <div className="p-6 bg-white">
+      <div className="p-4 bg-white sm:p-6">
         {onRequestQuote && (
           <>
             <Button 

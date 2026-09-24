@@ -176,6 +176,22 @@ describe('sanitizeBreadcrumbUrl y Breadcrumbs Transaccionales', () => {
     expect(sanitizeBreadcrumbUrl('https://impacto33.com/categoria-producto/bags/')).toBe('/bolsas-personalizadas');
   });
 
+  it('debe resolver tarjetas hub con rutas públicas limpias', async () => {
+    const { resolveHubCategoryUrl } = await import('./slugMap');
+
+    expect(resolveHubCategoryUrl({
+      categoryUri: '/categoria-producto/polos-personalizados/',
+      categorySlug: 'pol_s',
+    })).toBe('/polos-personalizados');
+    expect(resolveHubCategoryUrl({ categorySlug: 't_shirts' })).toBe('/camisetas-personalizadas');
+    expect(resolveHubCategoryUrl({
+      urlOverride: 'https://impacto33.com/categoria-producto/bags/?tipo=eco#modelos',
+    })).toBe('/bolsas-personalizadas?tipo=eco#modelos');
+    expect(resolveHubCategoryUrl({
+      urlOverride: 'https://example.com/categoria-producto/bags/',
+    })).toBe('https://example.com/categoria-producto/bags/');
+  });
+
   it('debe transformar slugs de WooCommerce a la URL de la página transaccional', () => {
     const breadcrumb = getCategoryBreadcrumbForProduct([
       { name: 'Camisetas', slug: 't_shirts' }

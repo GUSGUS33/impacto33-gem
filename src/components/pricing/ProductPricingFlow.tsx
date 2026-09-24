@@ -1,15 +1,14 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useProductPricing } from '../../hooks/useProductPricing';
 import { Product } from "@shared/types";
 import { Skeleton } from '@/components/ui/skeleton';
 import { QuoteRequestModal } from './QuoteRequestModal';
-import { getAllPrintingMethods } from '../../data/pricing/printing-methods';
 import { getAvailablePrintingMethods } from '../../services/pricingService';
 import type { PrintingMethodId } from '../../types/printing';
 import { CollapsibleSection } from '../CollapsibleSection';
 import { ChevronDown } from 'lucide-react';
 import { useProductConfig } from '../../hooks/useProductConfig';
-import { loadProductConfig } from '../../services/productConfigService';
+import { clearProductConfig } from '../../services/productConfigService';
 import deliveryConfig from '@shared/config/delivery-times.json';
 import ColorSelector from './ColorSelector';
 import SizeQuantityTable from './SizeQuantityTable';
@@ -18,6 +17,9 @@ import ZoneSelector from './ZoneSelector';
 import PriceCalculator from './PriceCalculator';
 import PriceScaleTable from './PriceScaleTable';
 import { DeliveryTimeSelector } from './DeliveryTimeSelector';
+import { resolveProductPricingCategory } from '@/lib/productPricingCategory';
+import { useRestoredProductConfig } from '@/hooks/useRestoredProductConfig';
+import { formatProductOptionLabel } from '@/lib/productContent';
 
 interface ProductPricingFlowProps {
   product: Product;
@@ -26,35 +28,25 @@ interface ProductPricingFlowProps {
 }
 
 const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onRequestQuote, onColorChange }: ProductPricingFlowProps) {
-  // Load saved configuration before initializing state
-  const savedConfig = useMemo(() => {
-    if (product.slug) {
-      return loadProductConfig(product.slug);
-    }
-    return null;
-  }, [product.slug]);
+  const { config: savedConfig, isReady: isSavedConfigReady } = useRestoredProductConfig(product.slug || '');
+  const [hasRestoredConfig, setHasRestoredConfig] = useState(false);
+  const [isPersistenceReady, setIsPersistenceReady] = useState(false);
 
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [selectedPrintingMethod, setSelectedPrintingMethod] = useState<PrintingMethodId>(
-    (savedConfig?.printingMethod as PrintingMethodId) || 'DTF'
+    'DTF'
   );
-  const [firstZoneInitialized, setFirstZoneInitialized] = useState(false);
   const [deliverySurchargePercent, setDeliverySurchargePercent] = useState(0);
-  const [selectedDeliveryOption, setSelectedDeliveryOption] = useState<'sin_prisa' | 'normal' | 'urgente'>(savedConfig?.deliveryOption || 'sin_prisa');
+  const [selectedDeliveryOption, setSelectedDeliveryOption] = useState<'sin_prisa' | 'normal' | 'urgente'>('sin_prisa');
   const [isSizeSectionOpen, setIsSizeSectionOpen] = useState(true);
   const [isPrintingMethodSectionOpen, setIsPrintingMethodSectionOpen] = useState(true);
   const [isZonesSectionOpen, setIsZonesSectionOpen] = useState(true);
-  const [skipAutoSave, setSkipAutoSave] = useState(true); // Skip auto-save during initialization
-
   // Obtener categoría del producto
-  const categorySlug = (product as any).categories?.nodes?.[0]?.slug || 'default';
+  const categorySlug = resolveProductPricingCategory(product.productCategories?.nodes);
   
   // Obtener métodos de impresión disponibles para esta categoría
   const availablePrintingMethods = getAvailablePrintingMethods(categorySlug);
   
-  // Obtener todos los métodos (activos e inactivos) para mostrar opciones futuras
-  const allPrintingMethods = getAllPrintingMethods().map(m => m.id) as PrintingMethodId[];
-
   const {
     // Datos
     availableColors,
@@ -79,37 +71,56 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
     // Acciones
     selectColor,
     updateQuantity,
-    toggleZone
+    toggleZone,
+    restoreConfiguration,
+    resetConfiguration,
   } = useProductPricing({ 
     product,
     basePrice: product.price ? parseFloat(product.price.replace(/[^0-9.,]/g, '').replace(',', '.')) : 0,
     pricingCategory: categorySlug, // Dinámico desde categoría del producto
-    initialColor: savedConfig?.selectedColor || '',
-    initialQuantities: savedConfig?.quantities || {},
-    initialZones: savedConfig?.activeZones || []
+    initialColor: '',
+    initialQuantities: {},
+    initialZones: []
   });
 
-  // Inicializar primera zona cuando hay cantidad y método no es "Sin Impresión"
   useEffect(() => {
-    if (hasSelectedColor && totalQuantity > 0 && pricingData && !firstZoneInitialized) {
-      // Si el método es "Sin Impresión", no activar zonas
-      if (selectedPrintingMethod === 'SIN_IMPRESION') {
-        if (selectedZones.length > 0) {
-          // Limpiar zonas si el método es Sin Impresión
-          selectedZones.forEach(zone => toggleZone(zone));
-        }
-      } else {
-        // Para DTF y Serigrafía, activar primera zona si no hay ninguna seleccionada
-        const availableZones = pricingData.zonas_permitidas || ['frontal', 'espalda', 'mangas'];
-        if (availableZones.length > 0 && selectedZones.length === 0) {
-          toggleZone(availableZones[0]);
-        }
-      }
-      setFirstZoneInitialized(true);
-    }
-  }, [hasSelectedColor, totalQuantity, pricingData, firstZoneInitialized, selectedPrintingMethod]);
+    if (!isSavedConfigReady) return;
 
-  // Configuration is now loaded via initialColor and initialQuantities in useProductPricing
+    if (savedConfig) {
+      restoreConfiguration({
+        selectedColor: savedConfig.selectedColor,
+        quantities: savedConfig.quantities,
+        selectedZones: savedConfig.activeZones,
+      });
+      setSelectedPrintingMethod((savedConfig.printingMethod as PrintingMethodId) || 'DTF');
+      setSelectedDeliveryOption(savedConfig.deliveryOption || 'sin_prisa');
+      setHasRestoredConfig(true);
+    }
+
+    setIsPersistenceReady(true);
+  }, [isSavedConfigReady, restoreConfiguration, savedConfig]);
+
+  // Mantener las zonas coherentes con el método seleccionado sin duplicar toggles.
+  useEffect(() => {
+    if (!hasSelectedColor || totalQuantity <= 0 || !pricingData) return;
+
+    if (selectedPrintingMethod === 'SIN_IMPRESION') {
+      selectedZones.forEach((zone) => toggleZone(zone));
+      return;
+    }
+
+    if (selectedZones.length === 0) {
+      const [firstAvailableZone] = pricingData.zonas_permitidas || ['frontal', 'espalda'];
+      if (firstAvailableZone) toggleZone(firstAvailableZone);
+    }
+  }, [
+    hasSelectedColor,
+    pricingData,
+    selectedPrintingMethod,
+    selectedZones,
+    toggleZone,
+    totalQuantity,
+  ]);
 
   // Restore delivery option from savedConfig
   useEffect(() => {
@@ -125,14 +136,6 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
     }
   }, [savedConfig?.deliveryOption, categorySlug]);
 
-  // Enable auto-save after initialization (2 seconds)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setSkipAutoSave(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   // Auto-save configuration with useProductConfig hook
   useProductConfig({
     productId: parseInt(product.id) || 0,
@@ -142,29 +145,38 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
     printingMethod: selectedPrintingMethod,
     activeZones: selectedZones,
     deliveryOption: selectedDeliveryOption,
-    skipAutoSave,
+    skipAutoSave: !isPersistenceReady,
   });
 
-  // Resetear zonas cuando cambia el método a "Sin Impresión"
-  useEffect(() => {
-    if (selectedPrintingMethod === 'SIN_IMPRESION' && selectedZones.length > 0) {
-      selectedZones.forEach(zone => toggleZone(zone));
-    } else if (selectedPrintingMethod !== 'SIN_IMPRESION' && selectedZones.length === 0 && hasSelectedColor && totalQuantity > 0 && pricingData) {
-      // Si vuelves a DTF/Serigrafía desde Sin Impresión, reactiva primera zona
-      const availableZones = pricingData.zonas_permitidas || ['frontal', 'espalda', 'mangas'];
-      if (availableZones.length > 0) {
-        toggleZone(availableZones[0]);
-      }
-    }
-  }, [selectedPrintingMethod]);
+  const handleResetConfiguration = () => {
+    clearProductConfig(product.slug || '');
+    resetConfiguration();
+    setSelectedPrintingMethod('DTF');
+    setSelectedDeliveryOption('sin_prisa');
+    setDeliverySurchargePercent(0);
+    setHasRestoredConfig(false);
+  };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
+      {hasRestoredConfig && (
+        <div role="status" className="flex flex-col gap-2 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-900 sm:flex-row sm:items-center sm:justify-between">
+          <span>Hemos recuperado tu configuración anterior.</span>
+          <button
+            type="button"
+            onClick={handleResetConfiguration}
+            className="font-semibold text-blue-700 underline underline-offset-2 hover:text-blue-900"
+          >
+            Empezar de nuevo
+          </button>
+        </div>
+      )}
       {/* Cuadro integrado: Color + Tallas + Precios */}
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm relative">
+      <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm relative sm:p-6">
         {/* Botón de colapsar/expandir en esquina superior derecha */}
         {canEnterQuantities && (
           <button
+            type="button"
             onClick={() => setIsSizeSectionOpen(!isSizeSectionOpen)}
             className="absolute top-4 right-4 p-2 hover:bg-slate-100 rounded-lg transition-colors z-10"
             aria-label={isSizeSectionOpen ? 'Ocultar tallas' : 'Mostrar tallas'}
@@ -198,6 +210,7 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
             {/* Resumen colapsado - Estilo badge verde clickeable */}
             {!isSizeSectionOpen && totalQuantity > 0 && (
               <button
+                type="button"
                 onClick={() => setIsSizeSectionOpen(true)}
                 className="w-full text-left p-3 bg-green-50 border border-green-100 rounded-lg hover:bg-green-100 transition-all duration-300 cursor-pointer flex items-center gap-2 animate-in fade-in-0 zoom-in-95"
                 aria-label="Expandir tabla de tallas"
@@ -208,7 +221,7 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
                 <p className="text-sm text-green-700 font-medium">
                   {Object.entries(quantities)
                     .filter(([_, qty]) => qty > 0)
-                    .map(([size, qty]) => `Talla ${size.toUpperCase()}: ${qty} ud.`)
+                    .map(([size, qty]) => `${formatProductOptionLabel(size)}: ${qty} ud.`)
                     .join(', ')}
                 </p>
               </button>
@@ -230,7 +243,7 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
             
               {/* Resumen de selección */}
               {totalQuantity > 0 && (
-                <div className="mt-4 p-3 bg-green-50 border border-green-100 rounded-lg flex items-center justify-between">
+                <div className="mt-4 p-3 bg-green-50 border border-green-100 rounded-lg flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                     <p className="text-green-800 text-sm font-medium">
@@ -264,9 +277,10 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
 
       {/* 3. Selector de Método de Impresión */}
       {hasSelectedColor && totalQuantity > 0 && pricingData?.cantidad_minima && totalQuantity >= pricingData.cantidad_minima && availablePrintingMethods.length > 0 && (
-        <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm relative">
+        <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm relative sm:p-6" role="group" aria-labelledby="printing-method-label">
           {/* Botón de colapsar/expandir */}
           <button
+            type="button"
             onClick={() => setIsPrintingMethodSectionOpen(!isPrintingMethodSectionOpen)}
             className="absolute top-4 right-4 p-2 hover:bg-slate-100 rounded-lg transition-colors z-10"
             aria-label={isPrintingMethodSectionOpen ? 'Ocultar método de impresión' : 'Mostrar método de impresión'}
@@ -279,11 +293,12 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
             />
           </button>
 
-          <h3 className="text-base font-semibold text-slate-900 mb-4">🎨 Método de Impresión</h3>
+          <p id="printing-method-label" className="text-base font-semibold text-slate-900 mb-4">🎨 Método de Impresión</p>
 
           {/* Resumen colapsado - Estilo badge verde clickeable */}
           {!isPrintingMethodSectionOpen && (
             <button
+              type="button"
               onClick={() => setIsPrintingMethodSectionOpen(true)}
               className="w-full text-left p-3 bg-green-50 border border-green-100 rounded-lg hover:bg-green-100 transition-all duration-300 cursor-pointer flex items-center gap-2 animate-in fade-in-0 zoom-in-95"
               aria-label="Expandir método de impresión"
@@ -316,9 +331,10 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
 
       {/* 4. Selector de Zonas de Personalización */}
       {hasSelectedColor && totalQuantity > 0 && pricingData && pricingData.cantidad_minima && totalQuantity >= pricingData.cantidad_minima && (
-        <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm relative">
+        <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm relative sm:p-6" role="group" aria-labelledby="personalization-zones-label">
           {/* Botón de colapsar/expandir */}
           <button
+            type="button"
             onClick={() => setIsZonesSectionOpen(!isZonesSectionOpen)}
             className="absolute top-4 right-4 p-2 hover:bg-slate-100 rounded-lg transition-colors z-10"
             aria-label={isZonesSectionOpen ? 'Ocultar zonas' : 'Mostrar zonas'}
@@ -331,11 +347,12 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
             />
           </button>
 
-          <h3 className="text-base font-semibold text-slate-900 mb-4">📍 Zonas de Personalización</h3>
+          <p id="personalization-zones-label" className="text-base font-semibold text-slate-900 mb-4">📍 Zonas de Personalización</p>
 
           {/* Resumen colapsado - Estilo badge verde clickeable */}
           {!isZonesSectionOpen && selectedZones.length > 0 && (
             <button
+              type="button"
               onClick={() => setIsZonesSectionOpen(true)}
               className="w-full text-left p-3 bg-green-50 border border-green-100 rounded-lg hover:bg-green-100 transition-all duration-300 cursor-pointer flex items-center gap-2 animate-in fade-in-0 zoom-in-95"
               aria-label="Expandir zonas de personalización"
@@ -390,10 +407,7 @@ const ProductPricingFlow = React.memo(function ProductPricingFlow({ product, onR
 
       {/* 5. Calculadora de Precios */}
       {isReadyForPricing && pricingData?.cantidad_minima && totalQuantity >= pricingData.cantidad_minima && (
-        <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-inner animate-in fade-in slide-in-from-top-4 duration-500 delay-200">
-          <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
-            💰 Presupuesto Estimado
-          </h3>
+        <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 shadow-inner animate-in fade-in slide-in-from-top-4 duration-500 delay-200 sm:p-6">
           <PriceCalculator
             priceCalculation={priceCalculation}
             selectedColor={selectedColor}

@@ -1,46 +1,8 @@
 import seoSitemap from '../data/seo-sitemap.json';
+import wooCategoryRoutes from '../data/woo-category-routes.json';
 import { normalizeInternalHref } from '@/lib/url';
 
-export const wooToTransactional: Record<string, string> = {
-  t_shirts: '/camisetas-personalizadas',
-  cam: '/camisetas-personalizadas',
-  cam_w: '/camisetas-personalizadas',
-  cat: '/camisetas-personalizadas',
-  sp_tshi: '/camisetas-personalizadas/camiseta-deporte',
-  pol_s: '/polos-personalizados',
-  cam_po: '/polos-personalizados',
-  cam_sp: '/polos-personalizados/polo-deportivo',
-  sp_polshi: '/polos-personalizados/polo-deportivo',
-  bags: '/bolsas-personalizadas',
-  bags_travel_backpack: '/mochilas-personalizadas',
-  bags_travel: '/mochilas-personalizadas',
-  coats: '/chaquetas-personalizadas',
-  raincoats: '/chaquetas-personalizadas',
-  tech_accessories: '/tecnologia-personalizada',
-  speakers: '/tecnologia-personalizada',
-  writing_office: '/escritura-personalizada',
-  pencils: '/escritura-personalizada',
-  lapices: '/escritura-personalizada',
-  ball_pens: '/escritura-personalizada',
-  notebooks: '/escritura-personalizada',
-  diaries_calendars: '/escritura-personalizada',
-  office_accessories: '/escritura-personalizada',
-  kitchen: '/hogar-personalizado',
-  lanyards_badge_holde: '/eventos-personalizados',
-  towels_sarong: '/verano-personalizado',
-  sweatshirts: '/sudaderas-personalizadas',
-  sudaderas: '/sudaderas-personalizadas',
-  mugs: '/tazas-personalizadas',
-  bottles_thermos_flas: '/botellas-personalizadas',
-  bottles: '/botellas-personalizadas',
-  glass_bottles: '/botellas-personalizadas',
-  thermos_flasks: '/botellas-personalizadas',
-  highviz: '/ropa-laboral-personalizada/ropa-alta-visibilidad',
-  industry_services: '/ropa-laboral-personalizada/ropa-industria',
-  sanitarybata: '/ropa-laboral-personalizada/ropa-sanidad',
-  horeca: '/ropa-laboral-personalizada/ropa-hosteleria',
-  travel_accessories: '/accesorios-viaje',
-};
+export const wooToTransactional: Record<string, string> = wooCategoryRoutes;
 
 export const transactionalTitles: Record<string, string> = {
   '/camisetas-personalizadas/': 'Camisetas personalizadas',
@@ -96,6 +58,49 @@ export function getTransactionalUrl(wooSlug: string): string {
   if (!wooSlug) return '#';
   const clean = wooSlug.replace(/^\/(?:categoria-producto|product-category|categoria|product_cat)\//i, '').replace(/^\/+|\/+$/g, '');
   return normalizeInternalHref(wooToTransactional[clean] ?? `/${clean}`);
+}
+
+export interface HubCategoryUrlInput {
+  urlOverride?: string | null;
+  categoryUri?: string | null;
+  categorySlug?: string | null;
+}
+
+/**
+ * Resuelve la URL pública de una tarjeta de categoría sin exponer las bases
+ * nativas de taxonomía de WooCommerce.
+ */
+export function resolveHubCategoryUrl({
+  urlOverride,
+  categoryUri,
+  categorySlug,
+}: HubCategoryUrlInput): string {
+  const override = urlOverride?.trim();
+
+  if (override) {
+    if (/^https?:\/\//i.test(override)) {
+      try {
+        const parsed = new URL(override);
+        const isImpacto33 = /^(?:www\.)?impacto33\.com$/i.test(parsed.hostname);
+        if (!isImpacto33) return override;
+        return `${sanitizeBreadcrumbUrl(parsed.pathname)}${parsed.search}${parsed.hash}`;
+      } catch {
+        return override;
+      }
+    }
+
+    return sanitizeBreadcrumbUrl(override);
+  }
+
+  if (categoryUri) {
+    return sanitizeBreadcrumbUrl(categoryUri);
+  }
+
+  if (categorySlug) {
+    return getTransactionalUrl(categorySlug);
+  }
+
+  return '#';
 }
 
 export interface CategoryNode {

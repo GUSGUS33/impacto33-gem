@@ -49,10 +49,10 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({
   };
 
   return (
-    <div className="mb-8">
-      <h3 className="text-lg font-semibold text-[#48475c] mb-4 flex items-center gap-2">
+    <fieldset className="mb-6">
+      <legend className="text-lg font-semibold text-[#48475c] mb-4 flex items-center gap-2">
         🎨 Selecciona Color
-      </h3>
+      </legend>
       
       <div className="flex flex-wrap gap-2">
         {availableColors.map((color) => {
@@ -61,6 +61,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({
           
           return (
             <button
+              type="button"
               key={color.id}
               onClick={() => {
                 if (!disabled && !isOutOfStock) {
@@ -69,8 +70,10 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({
                 }
               }}
               disabled={disabled || isOutOfStock}
+              aria-pressed={isSelected}
+              aria-label={`${color.name}${isOutOfStock ? ', sin stock' : ''}`}
               className={`
-                relative w-10 h-10 rounded-md border-2 overflow-hidden transition-all group
+                relative w-11 h-11 rounded-md border-2 overflow-hidden transition-all group
                 ${isSelected 
                   ? 'border-blue-600 ring-2 ring-blue-200 scale-110 z-10' 
                   : 'border-slate-200 hover:border-blue-400'
@@ -122,7 +125,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = ({
           </span>
         </div>
       )}
-    </div>
+    </fieldset>
   );
 };
 

@@ -65,7 +65,7 @@ const PriceScaleTable: React.FC<PriceScaleTableProps> = ({
       </div>
       
       {/* Grid de precios sutil */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {priceScales.map((scale) => {
           const isSelectedTier = currentQuantity >= scale.cantidad;
           return (
@@ -92,4 +92,3 @@ const PriceScaleTable: React.FC<PriceScaleTableProps> = ({
 };
 
 export default PriceScaleTable;
-

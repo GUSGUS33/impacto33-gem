@@ -7,6 +7,7 @@ import { GET_CATEGORIES_FOR_HUB } from "@/queries/hubCategories";
 import { useQuery } from "@apollo/client";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, Sparkles, FolderOpen, ArrowRight } from "lucide-react";
+import { resolveHubCategoryUrl } from "@/lib/slugMap";
 
 interface HubsBlockProps {
   data: PageBlock;
@@ -82,26 +83,11 @@ const HubCard = React.memo(function HubCard({
 }: HubCardProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
-  // Resolución de URL
-  let url = item.urlOverride?.trim() || "";
-  if (!url && category?.uri) {
-    url = category.uri;
-  } else if (!url && item.slugCategoria) {
-    url = `/categoria-producto/${item.slugCategoria}/`;
-  }
-  if (!url) url = "#";
-
-  // Si es URL absoluta hacia impacto33.com, convertir a ruta relativa interna
-  if (url.startsWith("https://impacto33.com") || url.startsWith("http://impacto33.com")) {
-    try {
-      const parsed = new URL(url);
-      url = parsed.pathname + parsed.search + parsed.hash;
-    } catch {
-      // Ignorar si falla parseo
-    }
-  } else if (url !== "#" && !url.startsWith("http") && !url.startsWith("/")) {
-    url = `/${url}`;
-  }
+  const url = resolveHubCategoryUrl({
+    urlOverride: item.urlOverride,
+    categoryUri: category?.uri,
+    categorySlug: item.slugCategoria,
+  });
 
   // Resolución de imagen
   const imageUrl = item.imagenOverride?.node?.sourceUrl || category?.image?.sourceUrl || null;

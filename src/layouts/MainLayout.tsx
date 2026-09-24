@@ -43,7 +43,8 @@ export function MainLayout({ children }: MainLayoutProps) {
 
   const handleLogout = async () => {
     await signOut();
-    window.location.href = '/';
+    router.replace('/');
+    router.refresh();
   };
 
   const toggleSubmenu = (key: string) => {
@@ -468,7 +469,7 @@ export function MainLayout({ children }: MainLayoutProps) {
           href={`https://wa.me/${siteConfig.whatsappNumber.replace(/\D/g, '')}`}
           target="_blank" 
           rel="noopener noreferrer"
-          className="fixed bottom-20 xl:bottom-6 right-4 xl:right-6 z-50 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 flex items-center justify-center group animate-in fade-in zoom-in duration-500"
+          className="fixed bottom-6 right-6 z-50 hidden bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 xl:flex items-center justify-center group animate-in fade-in zoom-in duration-500"
           aria-label="Contactar por WhatsApp"
         >
           <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" className="w-7 h-7">

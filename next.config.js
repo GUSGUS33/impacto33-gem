@@ -1,3 +1,10 @@
+import { readFileSync } from "node:fs";
+
+const wooCategoryRoutes = JSON.parse(
+  readFileSync(new URL("./src/data/woo-category-routes.json", import.meta.url), "utf8"),
+);
+const legacyCategoryPrefixes = ["categoria-producto", "product-category"];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
@@ -43,6 +50,25 @@ const nextConfig = {
           },
         ],
       },
+    ];
+  },
+  async redirects() {
+    const mappedCategoryRedirects = Object.entries(wooCategoryRoutes).flatMap(
+      ([wooSlug, destination]) =>
+        legacyCategoryPrefixes.map((prefix) => ({
+          source: `/${prefix}/${wooSlug}`,
+          destination,
+          statusCode: 301,
+        })),
+    );
+
+    return [
+      ...mappedCategoryRedirects,
+      ...legacyCategoryPrefixes.map((prefix) => ({
+        source: `/${prefix}/:path*`,
+        destination: "/:path*",
+        statusCode: 301,
+      })),
     ];
   },
   async rewrites() {

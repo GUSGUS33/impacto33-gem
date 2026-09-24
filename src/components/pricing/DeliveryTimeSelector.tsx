@@ -55,9 +55,11 @@ export function DeliveryTimeSelector({
 
     return (
       <button
+        type="button"
         key={key}
         onClick={() => handleSelect(key)}
-        className={`relative flex flex-col items-center p-4 border-2 rounded-lg transition-all ${
+        aria-pressed={isSelected}
+        className={`relative flex min-h-28 flex-col items-center justify-center p-3 border-2 rounded-lg transition-all sm:p-4 ${
           isSelected
             ? 'border-red-600 bg-red-50'
             : 'border-slate-300 bg-white hover:border-red-400'
@@ -83,16 +85,16 @@ export function DeliveryTimeSelector({
   };
 
   return (
-    <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-slate-900">Tiempo de producción</h3>
+    <fieldset className="space-y-4">
+      <legend className="text-lg font-semibold text-slate-900">Tiempo de producción</legend>
       
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
         {renderOption('sin_prisa')}
         {renderOption('normal')}
         {renderOption('urgente')}
       </div>
 
-      <p className="text-xs text-slate-500 text-right">{deliveryConfig.disclaimer}</p>
-    </div>
+      <p className="text-xs leading-relaxed text-slate-500 sm:text-right">{deliveryConfig.disclaimer}</p>
+    </fieldset>
   );
 }

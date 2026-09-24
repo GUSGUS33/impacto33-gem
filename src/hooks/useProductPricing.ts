@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { usePriceCalculation } from './usePriceCalculation';
 import { usePricingData } from './usePricing';
 import { Product } from "@shared/types";
@@ -244,7 +244,7 @@ export const useProductPricing = ({
     }
   };
 
-  const toggleZone = (zoneId: string) => {
+  const toggleZone = useCallback((zoneId: string) => {
     setSelectedZones(prev => {
       if (prev.includes(zoneId)) {
         return prev.filter(z => z !== zoneId);
@@ -252,7 +252,23 @@ export const useProductPricing = ({
         return [...prev, zoneId];
       }
     });
-  };
+  }, []);
+
+  const restoreConfiguration = useCallback((config: {
+    selectedColor?: string | null;
+    quantities?: Record<string, number>;
+    selectedZones?: string[];
+  }) => {
+    setSelectedColor(config.selectedColor || '');
+    setQuantities(config.quantities || {});
+    setSelectedZones(config.selectedZones || []);
+  }, []);
+
+  const resetConfiguration = useCallback(() => {
+    setSelectedColor('');
+    setQuantities({});
+    setSelectedZones([]);
+  }, []);
 
   // --- ESTADO DEL FLUJO ---
   const hasSelectedColor = !!selectedColor;
@@ -285,6 +301,8 @@ export const useProductPricing = ({
     // Acciones
     selectColor,
     updateQuantity,
-    toggleZone
+    toggleZone,
+    restoreConfiguration,
+    resetConfiguration,
   };
 };

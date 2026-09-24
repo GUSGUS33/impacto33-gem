@@ -106,6 +106,7 @@ const PrintingMethodSelector: React.FC<PrintingMethodSelectorProps> = ({
 
           return (
             <button
+              type="button"
               key={methodId}
               onClick={() => {
                 if (isActive) {
@@ -113,6 +114,7 @@ const PrintingMethodSelector: React.FC<PrintingMethodSelectorProps> = ({
                 }
               }}
               disabled={!isActive}
+              aria-pressed={isSelected}
               className={`
                 relative p-4 rounded-lg border-2 transition-all duration-200
                 flex flex-col items-center text-center gap-3
@@ -142,9 +144,9 @@ const PrintingMethodSelector: React.FC<PrintingMethodSelectorProps> = ({
 
               {/* Nombre del método */}
               <div className="flex-1 min-w-0">
-                <h4 className="font-semibold text-sm md:text-base text-slate-900 line-clamp-2">
+                <span className="block font-semibold text-sm md:text-base text-slate-900 line-clamp-2">
                   {publicName}
-                </h4>
+                </span>
                 
                 {/* Descripción breve */}
                 <p className="text-xs text-slate-600 mt-1 line-clamp-2">
