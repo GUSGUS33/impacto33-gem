@@ -1,22 +1,14 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React from "react";
 import { Providers } from "./providers";
 
 /**
- * ClientProviders wraps the heavy Providers in a Suspense boundary.
- * This allows Next.js to prerender _not-found without crashing when
- * hooks like usePathname() are called during static generation.
- * 
- * The Suspense boundary catches the error thrown by useSearchParams/usePathname
- * during prerendering and falls back to rendering children without providers.
+ * Global client providers only. Do not wrap route children in Suspense here:
+ * starting the response stream before notFound() resolves turns a real 404 into
+ * an HTTP 200 soft-404. Components that genuinely suspend must own a local
+ * boundary around only that component.
  */
 export function ClientProviders({ children }: { children: React.ReactNode }) {
-  return (
-    <Providers>
-      <Suspense fallback={<div id="app-loading" className="min-h-screen flex items-center justify-center">Cargando...</div>}>
-        {children}
-      </Suspense>
-    </Providers>
-  );
+  return <Providers>{children}</Providers>;
 }

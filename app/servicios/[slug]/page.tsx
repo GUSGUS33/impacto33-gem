@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import ServicePageClient from '@/screens/ServicePage';
 import { SeoSchemas } from '@/components/seo/SeoSchemas';
-import { generateSeoMetadata, getCanonicalUrl } from '@/lib/seo';
+import { generateSeoMetadata, generateServiceSchema, getCanonicalUrl } from '@/lib/seo';
 
 // ─── Renderizado con ISR (1 hora) ───────────────────────────────────────────
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return [
@@ -89,10 +89,19 @@ export default async function Page({ params }: ServicePageProps) {
     { name: "Servicios", item: getCanonicalUrl("/servicios") },
     { name: data?.title || slug.replace(/-/g, ' '), item: canonicalUrl }
   ];
+  const serviceSchema = data
+    ? generateServiceSchema({
+        name: data.title,
+        description: data.metaDescription,
+        url: canonicalUrl,
+        image: data.image,
+        serviceType: data.title,
+      })
+    : undefined;
 
   return (
     <>
-      <SeoSchemas breadcrumbs={breadcrumbs} />
+      <SeoSchemas breadcrumbs={breadcrumbs} customSchema={serviceSchema} />
       <ServicePageClient serverSlug={slug} />
     </>
   );

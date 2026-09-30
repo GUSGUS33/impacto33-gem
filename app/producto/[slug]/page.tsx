@@ -123,6 +123,11 @@ export default async function ProductoPage({ params }: ProductPageProps) {
     getPricingFamilyFromCategory(pricingCategory),
   ).cantidad_minima;
   const faqs = buildProductFaqs(product.name, minimumQuantity);
+  const relatedItems = (product.related?.nodes || []).slice(0, 4).map((relatedProduct: any) => ({
+    name: relatedProduct.name,
+    url: getCanonicalUrl(`/producto/${relatedProduct.slug}`),
+    image: relatedProduct.featuredImage?.node?.sourceUrl,
+  }));
 
   return (
     <>
@@ -131,6 +136,10 @@ export default async function ProductoPage({ params }: ProductPageProps) {
         productUrl={canonicalUrl}
         breadcrumbs={breadcrumbs}
         faqs={faqs}
+        itemList={relatedItems.length > 0 ? {
+          name: `Productos similares a ${product.name}`,
+          items: relatedItems,
+        } : undefined}
       />
       <ProductPageClient slug={slug} initialProduct={product} />
     </>

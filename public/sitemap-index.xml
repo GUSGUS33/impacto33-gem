@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://impacto33.com/sitemap.xml</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://impacto33.com/sitemaps/pages.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://impacto33.com/sitemaps/categories.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://impacto33.com/sitemaps/discovery.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://impacto33.com/sitemap-products.xml</loc>
-    <lastmod>2026-09-09</lastmod>
   </sitemap>
 </sitemapindex>

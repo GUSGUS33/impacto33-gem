@@ -8,6 +8,7 @@ import { HeroAdvancedSearch } from './HeroAdvancedSearch';
 
 export function HeroSlider({ data }: { data: any }) {
   const slides = data?.slides || [];
+  const primaryHeadingIndex = slides.findIndex((slide: any) => Boolean(slide?.titulo));
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -59,11 +60,15 @@ export function HeroSlider({ data }: { data: any }) {
                       {slide.badge}
                     </span>
                   )}
-                  {slide.titulo && (
+                  {slide.titulo && (index === primaryHeadingIndex ? (
                     <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 sm:mb-4 leading-tight">
                       {slide.titulo}
                     </h1>
-                  )}
+                  ) : (
+                    <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-2 sm:mb-4 leading-tight">
+                      {slide.titulo}
+                    </h2>
+                  ))}
                   {slide.subtitulo && (
                     <p className="text-sm sm:text-lg md:text-xl text-slate-200 mb-5 sm:mb-8 max-w-2xl mx-auto line-clamp-2 sm:line-clamp-none">
                       {slide.subtitulo}

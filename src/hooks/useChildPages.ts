@@ -39,17 +39,20 @@ interface UseChildPagesResult {
  * @param parentUri - URI del padre (ej: "camisetas-personalizadas")
  * @returns Páginas hijas, loading, error
  */
-export function useChildPages(parentUri: string | undefined): UseChildPagesResult {
+export function useChildPages(
+  parentUri: string | undefined,
+  initialChildPages: ChildPage[] = [],
+): UseChildPagesResult {
   const { data, loading, error } = useQuery(GET_CHILD_PAGES_BY_PARENT_URI, {
     variables: { parentUri },
     skip: !parentUri,
   });
 
-  const childPages: ChildPage[] = data?.page?.children?.nodes || [];
+  const childPages: ChildPage[] = data?.page?.children?.nodes || initialChildPages;
 
   return {
     childPages,
-    loading,
+    loading: loading && initialChildPages.length === 0,
     error,
   };
 }

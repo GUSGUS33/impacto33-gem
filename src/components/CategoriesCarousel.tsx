@@ -38,8 +38,8 @@ export function CategoriesCarousel({
     { name: "Hogar", img: "categoria-tazas.webp", link: "/hogar-personalizado/", alt: "Artículos para el hogar personalizados" },
     { name: "Merchandising eventos", img: "categoria-articulos-para-fiestas.webp", link: "/merchandising-eventos/", alt: "Merchandising personalizado para eventos" },
     { name: "Verano", img: "categoria-verano.webp", link: "/verano-personalizado/", alt: "Artículos de verano personalizados" },
-    { name: "Mascotas", img: "categoria-mascotas.webp", link: "/mascotas-personalizadas/", alt: "Artículos para mascotas personalizados" },
-    { name: "Deporte", img: "categoria-camisetas-tecnicas.webp", link: "/deporte-personalizado/", alt: "Artículos deportivos personalizados" },
+    { name: "Mascotas", img: "categoria-mascotas.webp", link: "/accesorios-para-mascotas-personalizados", alt: "Artículos para mascotas personalizados" },
+    { name: "Deporte", img: "categoria-camisetas-tecnicas.webp", link: "/deportes-personalizados", alt: "Artículos deportivos personalizados" },
   ];
 
   const categoriesToShow = categories || defaultCategories;

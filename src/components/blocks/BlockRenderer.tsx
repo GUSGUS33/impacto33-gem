@@ -26,6 +26,8 @@ import { VentajasBlock } from './VentajasBlock';
 import { GarantiaBlock } from './GarantiaBlock';
 import { SocialProofBlock } from './SocialProofBlock';
 import { HubsBlock } from './HubsBlock';
+import type { FilteredProduct } from '@/hooks/useFilteredProducts';
+import type { ChildPage } from '@/hooks/useChildPages';
 
 /**
  * Mapeo de blockType a componentes React
@@ -85,13 +87,15 @@ interface BlockRendererProps {
   pageUri?: string; // URI de la página actual
   pageTitle?: string; // Título de la página actual
   parentUri?: string | null; // URI del padre (si es página hija)
+  initialProducts?: FilteredProduct[];
+  initialChildPages?: ChildPage[];
 }
 
 /**
  * Componente que renderiza un bloque según su tipo
  * Aplica fondos alternados y espaciado
  */
-export function BlockRenderer({ block, index, pageUri, pageTitle, parentUri }: BlockRendererProps) {
+export function BlockRenderer({ block, index, pageUri, pageTitle, parentUri, initialProducts = [], initialChildPages = [] }: BlockRendererProps) {
   // Ocultar SubcategoriasBlock porque ahora está fusionado en el hero
   // Los datos vienen de WordPress pero se renderizan solo en TransactionalPage
   // blockType es un array, comparar con el primer elemento
@@ -136,6 +140,8 @@ export function BlockRenderer({ block, index, pageUri, pageTitle, parentUri }: B
     blockProps.pageUri = pageUri;
     blockProps.pageTitle = pageTitle;
     blockProps.parentUri = parentUri;
+    blockProps.initialProducts = initialProducts;
+    blockProps.initialChildPages = initialChildPages;
   }
 
   return (

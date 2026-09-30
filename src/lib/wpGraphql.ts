@@ -114,7 +114,9 @@ export const QUERY_ALL_TRANSACTIONAL_PAGES = `
  * Fetches ALL transactional pages with automatic pagination.
  * WordPress GraphQL limits to 100 per request, so we paginate.
  */
-export async function fetchAllTransactionalPages(): Promise<TransactionalPageListItem[]> {
+export async function fetchAllTransactionalPages(
+  options: { strict?: boolean } = {},
+): Promise<TransactionalPageListItem[]> {
   let allNodes: TransactionalPageListItem[] = [];
   let hasNextPage = true;
   let after: string | null = null;
@@ -138,6 +140,7 @@ export async function fetchAllTransactionalPages(): Promise<TransactionalPageLis
       after = data.pages.pageInfo.endCursor ?? null;
     } catch (error) {
       console.error("Error fetching transactional pages:", error);
+      if (options.strict) throw error;
       hasNextPage = false;
     }
   }

@@ -1,5 +1,24 @@
 import { Metadata } from 'next';
 
+const SITE_URL = "https://impacto33.com";
+const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+
+export interface ItemListEntry {
+  name: string;
+  url: string;
+  image?: string;
+}
+
+export interface ServiceSchemaInput {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+  serviceType?: string;
+  areaServed?: string;
+}
+
 interface SeoProps {
   title: string;
   description: string;
@@ -19,16 +38,17 @@ export function generateSeoMetadata({
 }: SeoProps): Metadata {
   const cleanTitle = title.replace(/(?:\s*\|\s*IMPACTO33\s*)+$/i, '').trim() || title;
   const socialTitle = `${cleanTitle} | IMPACTO33`;
+  const canonicalUrl = url ? getCanonicalUrl(url) : undefined;
 
   return {
     title: cleanTitle,
     description: description || "Artículos promocionales y regalos publicitarios personalizados para empresas.",
     metadataBase: new URL('https://impacto33.com'),
-    ...(url && { alternates: { canonical: url } }),
+    ...(canonicalUrl && { alternates: { canonical: canonicalUrl } }),
     openGraph: {
       title: socialTitle,
       description,
-      url,
+      url: canonicalUrl,
       siteName: 'IMPACTO33',
       images: [
         {
@@ -63,7 +83,8 @@ export function generateSeoMetadata({
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "OnlineStore",
+    "@id": ORGANIZATION_ID,
     "name": "IMPACTO33",
     "legalName": "IMPACTO33 S.L.",
     "alternateName": "Impacto 33 Artículos Promocionales",
@@ -87,6 +108,20 @@ export function generateOrganizationSchema() {
       "https://twitter.com/impacto33",
       "https://www.linkedin.com/company/impacto33"
     ]
+  };
+}
+
+export function generateWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    "name": "IMPACTO33",
+    "alternateName": ["Impacto33", "impacto33.com"],
+    "url": `${SITE_URL}/`,
+    "publisher": {
+      "@id": ORGANIZATION_ID,
+    },
   };
 }
 
@@ -127,10 +162,60 @@ export function generateProductSchema(product: any, url: string) {
       "availability": product.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "Organization",
+        "@id": ORGANIZATION_ID,
         "name": "IMPACTO33",
-        "url": "https://impacto33.com"
+        "url": SITE_URL
       }
     }
+  };
+}
+
+export function generateItemListSchema(name: string, items: ItemListEntry[]) {
+  const validItems = items.filter((item) => item.name && item.url);
+  if (validItems.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": name,
+    "numberOfItems": validItems.length,
+    "itemListElement": validItems.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": getCanonicalUrl(item.url),
+      "name": item.name,
+      ...(item.image ? { "image": item.image } : {}),
+    })),
+  };
+}
+
+export function generateServiceSchema(service: ServiceSchemaInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${getCanonicalUrl(service.url)}#service`,
+    "name": service.name,
+    "description": service.description,
+    "url": getCanonicalUrl(service.url),
+    ...(service.image ? { "image": service.image } : {}),
+    "serviceType": service.serviceType || service.name,
+    "provider": {
+      "@id": ORGANIZATION_ID,
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": service.areaServed || "España",
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": getCanonicalUrl(service.url),
+      "servicePhone": {
+        "@type": "ContactPoint",
+        "telephone": "+34690906027",
+        "contactType": "sales",
+        "availableLanguage": ["Spanish", "English"],
+      },
+    },
   };
 }
 
@@ -166,7 +251,7 @@ export function generateFaqPageSchema(faqs: { question: string; answer: string }
 }
 
 export function getCanonicalUrl(routeOrUrl: string): string {
-  const baseUrl = "https://impacto33.com";
+  const baseUrl = SITE_URL;
   if (!routeOrUrl) return baseUrl;
 
   let path = routeOrUrl;
