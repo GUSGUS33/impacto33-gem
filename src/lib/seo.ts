@@ -38,16 +38,17 @@ export function generateSeoMetadata({
 }: SeoProps): Metadata {
   const cleanTitle = title.replace(/(?:\s*\|\s*IMPACTO33\s*)+$/i, '').trim() || title;
   const socialTitle = `${cleanTitle} | IMPACTO33`;
+  const canonicalUrl = url ? getCanonicalUrl(url) : undefined;
 
   return {
     title: cleanTitle,
     description: description || "Artículos promocionales y regalos publicitarios personalizados para empresas.",
     metadataBase: new URL('https://impacto33.com'),
-    ...(url && { alternates: { canonical: url } }),
+    ...(canonicalUrl && { alternates: { canonical: canonicalUrl } }),
     openGraph: {
       title: socialTitle,
       description,
-      url,
+      url: canonicalUrl,
       siteName: 'IMPACTO33',
       images: [
         {

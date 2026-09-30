@@ -11,6 +11,14 @@ import {
 } from "./seo";
 
 describe("SEO structured data", () => {
+  it("normaliza canonical y Open Graph recibidos de WordPress", () => {
+    const metadata = generateSeoMetadata({
+      title: "Categoría", description: "Descripción",
+      url: "https://impacto33.com/camisetas-personalizadas/?utm_source=test",
+    });
+    expect(metadata.alternates?.canonical).toBe("https://impacto33.com/camisetas-personalizadas");
+    expect(metadata.openGraph?.url).toBe("https://impacto33.com/camisetas-personalizadas");
+  });
   it("delega la marca al template del layout y elimina sufijos duplicados", () => {
     const metadata = generateSeoMetadata({
       title: "Mochila personalizada | IMPACTO33 | IMPACTO33",

@@ -115,9 +115,10 @@ export async function generateMetadata({
       page.seoMeta?.metaDescription ||
       page.heroPageSeo?.intro ||
       "";
-    const canonicalUrl =
+    const canonicalUrl = getCanonicalUrl(
       page.seoMeta?.canonicalUrl ||
-      `https://impacto33.com${page.uri || `/${fullUri}/`}`;
+      `https://impacto33.com${page.uri || `/${fullUri}/`}`,
+    );
     const ogImage =
       page.seoMeta?.openGraph?.image?.node?.sourceUrl;
 
