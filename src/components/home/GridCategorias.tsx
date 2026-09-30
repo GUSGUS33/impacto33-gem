@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { first } from '@/lib/queries/home';
+import { normalizeInternalHref } from '@/lib/url';
 
 export function GridCategorias({ data }: { data: any }) {
   const { titulo, subtitulo, columnas, categorias } = data;
@@ -33,7 +34,7 @@ export function GridCategorias({ data }: { data: any }) {
             return (
               <Link 
                 key={index} 
-                href={`/${slug}`}
+                href={normalizeInternalHref(slug)}
                 className="group flex flex-col items-center"
               >
                 <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 mb-3 md:mb-4 rounded-full overflow-hidden bg-slate-100 flex items-center justify-center border-2 border-transparent group-hover:border-brand transition-colors shadow-sm group-hover:shadow-md">

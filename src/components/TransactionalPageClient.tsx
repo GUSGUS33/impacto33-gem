@@ -18,6 +18,8 @@ import { BreadcrumbsWithSchema } from "@/components/BreadcrumbsWithSchema";
 import { useChildPages } from "@/hooks/useChildPages";
 import { usePrefetch } from "@/hooks/usePrefetch";
 import type { PageBlock } from "@/queries/seoPageComplete";
+import type { ChildPage } from "@/hooks/useChildPages";
+import type { FilteredProduct } from "@/hooks/useFilteredProducts";
 
 // ─── Tipos ──────────────────────────────────────────────────────────────────
 
@@ -72,6 +74,8 @@ interface PageData {
 interface TransactionalPageClientProps {
   page: PageData;
   blocks: PageBlock[];
+  initialChildPages?: ChildPage[];
+  initialProductsByBlock?: Record<number, FilteredProduct[]>;
 }
 
 // ─── Componente principal ───────────────────────────────────────────────────
@@ -79,6 +83,8 @@ interface TransactionalPageClientProps {
 export default function TransactionalPageClient({
   page,
   blocks,
+  initialChildPages = [],
+  initialProductsByBlock = {},
 }: TransactionalPageClientProps) {
   return (
     <div className="min-h-screen">
@@ -89,6 +95,7 @@ export default function TransactionalPageClient({
           description={page.heroPageSeo.intro}
           pageUri={page.uri}
           parentUri={page.parent?.node?.uri || null}
+          initialChildPages={initialChildPages}
         />
       )}
 
@@ -116,6 +123,8 @@ export default function TransactionalPageClient({
           pageUri={page.uri}
           pageTitle={page.title}
           parentUri={page.parent?.node?.uri || null}
+          initialChildPages={initialChildPages}
+          initialProducts={initialProductsByBlock[index] || []}
         />
       ))}
     </div>
@@ -129,6 +138,7 @@ interface HeroWithSubcategoriesProps {
   description: string | null;
   pageUri: string;
   parentUri?: string | null;
+  initialChildPages?: ChildPage[];
 }
 
 function HeroWithSubcategories({
@@ -136,9 +146,10 @@ function HeroWithSubcategories({
   description,
   pageUri,
   parentUri,
+  initialChildPages = [],
 }: HeroWithSubcategoriesProps) {
   const uriToFetch = parentUri || pageUri;
-  const { childPages, loading } = useChildPages(uriToFetch);
+  const { childPages, loading } = useChildPages(uriToFetch, initialChildPages);
   const prefetchPage = usePrefetch();
 
   // Filtrar la página actual de las hermanas

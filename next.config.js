@@ -4,11 +4,22 @@ const wooCategoryRoutes = JSON.parse(
   readFileSync(new URL("./src/data/woo-category-routes.json", import.meta.url), "utf8"),
 );
 const legacyCategoryPrefixes = ["categoria-producto", "product-category"];
+const sitemapCleanupRedirects = [
+  ["/vestuario-laboral/alimentaria/batas", "/vestuario-laboral/alimentaria"],
+  ["/vestuario-laboral/alimentaria/gorros", "/vestuario-laboral/alimentaria"],
+  ["/vestuario-laboral/sanidad/batas", "/vestuario-laboral/sanidad"],
+  ["/vestuario-laboral/sanidad/gorros", "/vestuario-laboral/sanidad"],
+  ["/deporte-personalizado/equipaciones/camisetas", "/deporte-personalizado/equipaciones"],
+  ["/deporte-personalizado/equipaciones/pantalones", "/deporte-personalizado/equipaciones"],
+  ["/deporte-personalizado/accesorios/botellas", "/deporte-personalizado/accesorios"],
+  ["/deporte-personalizado/accesorios/toallas", "/deporte-personalizado/accesorios"],
+];
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
   reactStrictMode: true,
+  skipTrailingSlashRedirect: true,
   experimental: {
     optimizePackageImports: [
       "lucide-react",
@@ -62,13 +73,26 @@ const nextConfig = {
         })),
     );
 
+    const cleanupRedirects = sitemapCleanupRedirects.flatMap(
+      ([source, destination]) => [
+        { source, destination, statusCode: 301 },
+        { source: `${source}/`, destination, statusCode: 301 },
+      ],
+    );
+
     return [
+      ...cleanupRedirects,
       ...mappedCategoryRedirects,
       ...legacyCategoryPrefixes.map((prefix) => ({
         source: `/${prefix}/:path*`,
         destination: "/:path*",
         statusCode: 301,
       })),
+      {
+        source: "/:path+/",
+        destination: "/:path+",
+        statusCode: 301,
+      },
     ];
   },
   async rewrites() {

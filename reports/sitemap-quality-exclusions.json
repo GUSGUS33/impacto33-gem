@@ -1,0 +1,562 @@
+{
+  "generatedAt": "2026-09-29T06:47:40.211Z",
+  "source": "https://creativu.es/graphql",
+  "counts": {
+    "pages": 24,
+    "categories": 112,
+    "discovery": 30,
+    "products": 1974
+  },
+  "exclusions": [
+    {
+      "type": "discovery",
+      "url": "/a-coruna",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/accesorios-viaje",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/accesorios-viaje/identificador-maleta",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/accesorios-viaje/maletas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/accesorios-viaje/neceser",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/alava",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/albacete",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/alicante",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/almeria",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/asturias",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/avila",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/badajoz",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/boligrafos-ecologicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/boligrafos-madera",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/boligrafos-metalicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/boligrafos-plastico",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/ecologicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/madera",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/metalicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/plastico",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/boligrafos-personalizados/sets-escritura",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/burgos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/caceres",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/cadiz",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/camisetas-personalizadas/camisetas-deporte",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/camisetas-personalizadas/camisetas-roly-dry",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "page",
+      "url": "/camisetas-personalizadas/camisetas-tecnicas",
+      "reason": "Falta H1 (heroPageSeo.tituloPrincipal)"
+    },
+    {
+      "type": "discovery",
+      "url": "/cantabria",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/carpetas-personalizadas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/castellon",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/chapas-personalizadas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/chaquetas-personalizadas/chaquetas-cortaviento",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/chaquetas-personalizadas/chaquetas-horeca",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "page",
+      "url": "/chaquetas-personalizadas/chaquetas-horeca-cocina",
+      "reason": "Falta H1 (heroPageSeo.tituloPrincipal)"
+    },
+    {
+      "type": "categories",
+      "url": "/chaquetas-personalizadas/chaquetas-ignifugas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/ciudad-real",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/cordoba",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/cuenca",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/deporte-personalizado",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/deporte-personalizado/accesorios",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/deporte-personalizado/equipaciones",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/girona",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/granada",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/guadalajara",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/guipuzcoa",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/huelva",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/huesca",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/imanes-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/invierno-personalizado",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/invierno-personalizado/guantes",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/invierno-personalizado/termicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/jaen",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/la-rioja",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/lanyards-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/leon",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/con-boligrafo",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/libretas-corporativas-bolsillo",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/libretas-publicitarias",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/notas-adhesivas-personalizadas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/portafolios-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/libretas-personalizadas/recicladas-ecologicas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/llaveros-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/lleida",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/lugo",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/madrid",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/malaga",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/mascotas-personalizadas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/mascotas-personalizadas/gatos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/mascotas-personalizadas/perros",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/mochilas-personalizadas/mochilas-escolar",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/monos-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/monos-personalizados/monos-ignifugos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/monos-personalizados/monos-industria",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/murcia",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/navarra",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/ourense",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/palencia",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/papeleria-personalizada",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/papeleria-personalizada/agendas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/paraguas-personalizados",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/paraguas-personalizados/paraguas-promocionales-plegables",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/paraguas-personalizados/paraguas-publicitarios-clasicos",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/paraguas-personalizados/paraguas-tormenta-publicidad",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/paraguas-personalizados/paraguas-xxl",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/pontevedra",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/salamanca",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/segovia",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/sevilla",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/soria",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "page",
+      "url": "/sudaderas-personalizadas/sudaderas-alta-visibilidad-2",
+      "reason": "Falta H1 (heroPageSeo.tituloPrincipal)"
+    },
+    {
+      "type": "categories",
+      "url": "/sudaderas-personalizadas/sudaderas-industria",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "page",
+      "url": "/sudaderas-personalizadas/sudaderas-para-empresas",
+      "reason": "Falta H1 (heroPageSeo.tituloPrincipal)"
+    },
+    {
+      "type": "discovery",
+      "url": "/tarragona",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/tecnologia-personalizada/altavoz",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/tecnologia-personalizada/auriculares",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/tecnologia-personalizada/memoria-usb",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/tecnologia-personalizada/power-bank",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/teruel",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/toledo",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/valencia",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/valladolid",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/vestuario-laboral/ignifugo",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/vestuario-laboral/sanitario",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/vestuario-laboral/sanitario/batas",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "categories",
+      "url": "/vestuario-laboral/sanitario/gorros",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/vizcaya",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/zamora",
+      "reason": "No existe como página publicada en WordPress"
+    },
+    {
+      "type": "discovery",
+      "url": "/zaragoza",
+      "reason": "No existe como página publicada en WordPress"
+    }
+  ]
+}

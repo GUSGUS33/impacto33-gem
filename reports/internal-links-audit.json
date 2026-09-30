@@ -1,0 +1,215 @@
+{
+  "base": "http://127.0.0.1:3400",
+  "sources": [
+    "/",
+    "/camisetas-personalizadas",
+    "/sector/hosteleria-y-restauracion"
+  ],
+  "checkedTargets": 205,
+  "sourceErrors": [],
+  "findings": [
+    {
+      "source": "/",
+      "label": "Camisetas",
+      "target": "/camisetas-personalizadas/",
+      "status": 301,
+      "location": "/camisetas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Polos",
+      "target": "/polos-personalizados/",
+      "status": 301,
+      "location": "/polos-personalizados"
+    },
+    {
+      "source": "/",
+      "label": "Sudaderas",
+      "target": "/sudaderas-personalizadas/",
+      "status": 301,
+      "location": "/sudaderas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Chaquetas",
+      "target": "/chaquetas-personalizadas/",
+      "status": 301,
+      "location": "/chaquetas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Mochilas",
+      "target": "/mochilas-personalizadas/",
+      "status": 301,
+      "location": "/mochilas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Bolsas",
+      "target": "/bolsas-personalizadas/",
+      "status": 301,
+      "location": "/bolsas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Accesorios de viaje",
+      "target": "/bolsas-personalizadas/bolsas-viaje/",
+      "status": 301,
+      "location": "/bolsas-personalizadas/bolsas-viaje"
+    },
+    {
+      "source": "/",
+      "label": "Tecnología",
+      "target": "/tecnologia-personalizada/",
+      "status": 301,
+      "location": "/tecnologia-personalizada"
+    },
+    {
+      "source": "/",
+      "label": "Escritura",
+      "target": "/escritura-personalizada/",
+      "status": 301,
+      "location": "/escritura-personalizada"
+    },
+    {
+      "source": "/",
+      "label": "Botellas",
+      "target": "/botellas-personalizadas/",
+      "status": 301,
+      "location": "/botellas-personalizadas"
+    },
+    {
+      "source": "/",
+      "label": "Eventos",
+      "target": "/merchandising-eventos/",
+      "status": 301,
+      "location": "/merchandising-eventos"
+    },
+    {
+      "source": "/",
+      "label": "Verano",
+      "target": "/verano-personalizado/",
+      "status": 301,
+      "location": "/verano-personalizado"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Personalizadas",
+      "target": "/camisetas-personalizadas/",
+      "status": 301,
+      "location": "/camisetas-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "camisetas Técnicas",
+      "target": "/camisetas-personalizadas/camisetas-tecnicas/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-tecnicas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Ignífugas",
+      "target": "/camisetas-personalizadas/camisetas-ignifugas/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-ignifugas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Industria",
+      "target": "/camisetas-personalizadas/camisetas-industria/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-industria"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Ecológicas",
+      "target": "/camisetas-personalizadas/camisetas-ecologicas/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-ecologicas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas de Tirantes",
+      "target": "/camisetas-personalizadas/camisetas-tirantes/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-tirantes"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Manga Larga",
+      "target": "/camisetas-personalizadas/camisetas-manga-larga/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-manga-larga"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Reflectantes Alta Visibilidad",
+      "target": "/camisetas-personalizadas/camisetas-reflectantes/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-reflectantes"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Camisetas Manga Corta",
+      "target": "/camisetas-personalizadas/camisetas-manga-corta/",
+      "status": 301,
+      "location": "/camisetas-personalizadas/camisetas-manga-corta"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Sudaderas personalizadas con capucha y cremallera",
+      "target": "/sudaderas-personalizadas/",
+      "status": 301,
+      "location": "/sudaderas-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Polos personalizados para empresas y eventos",
+      "target": "/polos-personalizadas/",
+      "status": 301,
+      "location": "/polos-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Bolsas de tela ecológicas personalizadas",
+      "target": "/bolsas-personalizadas/",
+      "status": 301,
+      "location": "/bolsas-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Gorras personalizadas con bordado o serigrafía",
+      "target": "/gorras-personalizadas/",
+      "status": 301,
+      "location": "/gorras-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Chaquetas y ropa de abrigo personalizada",
+      "target": "/chaquetas-personalizadas/",
+      "status": 301,
+      "location": "/chaquetas-personalizadas"
+    },
+    {
+      "source": "/camisetas-personalizadas",
+      "label": "Merchandising publicitario para empresas y eventos",
+      "target": "/merchandising-eventos/",
+      "status": 301,
+      "location": "/merchandising-eventos"
+    },
+    {
+      "source": "/sector/hosteleria-y-restauracion",
+      "label": "DestacadoCOCINAChaquetas para hosteleríaChaquetillas de cocina resistentes a calor, manchas y lavado industrial.Explorar",
+      "target": "/chaquetas-horeca",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "source": "/sector/hosteleria-y-restauracion",
+      "label": "UNIFORME COMPLETOPantalones para hosteleríaPantalones de cocina y sala para completar la uniformidad del equipo.Explorar",
+      "target": "/pantalones-horeca",
+      "status": null,
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { wpGraphqlFetch } from '@/lib/wpGraphql'
 import { QUERY_GET_HOME_PAGE } from '@/lib/queries/home'
 import { HomeBlocks } from '@/components/home/HomeBlocks'
-import { generateOrganizationSchema, generateSeoMetadata } from '@/lib/seo'
+import { generateOrganizationSchema, generateSeoMetadata, generateWebSiteSchema } from '@/lib/seo'
 import { Metadata } from 'next'
 
 export const revalidate = 3600
@@ -20,20 +20,7 @@ export default async function HomePage() {
   const blocks = data?.page?.bloquesHome?.homeblocks ?? []
   
   const organizationSchema = generateOrganizationSchema()
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "IMPACTO33",
-    "url": "https://impacto33.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://impacto33.com/busqueda?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
-  }
+  const websiteSchema = generateWebSiteSchema()
 
   return (
     <>

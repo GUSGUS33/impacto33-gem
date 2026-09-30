@@ -61,6 +61,7 @@ interface UseFilteredProductsOptions {
   productSkus?: string[] | string | null;
   limit?: number;
   orderBy?: "DATE" | "PRICE" | "POPULARITY" | "RATING" | "TITLE";
+  initialProducts?: FilteredProduct[];
 }
 
 interface UseFilteredProductsResult {
@@ -117,6 +118,7 @@ export function useFilteredProducts(options: UseFilteredProductsOptions): UseFil
     productSkus,
     limit = 20,
     orderBy = "DATE",
+    initialProducts = [],
   } = options;
 
   const apolloClient = useApolloClient();
@@ -136,6 +138,8 @@ export function useFilteredProducts(options: UseFilteredProductsOptions): UseFil
   const [manualProducts, setManualProducts] = useState<FilteredProduct[]>([]);
   const [manualLoading, setManualLoading] = useState<boolean>(false);
   const [manualError, setManualError] = useState<Error | undefined>(undefined);
+  const [resolvedManualKey, setResolvedManualKey] = useState<string | null>(null);
+  const manualKey = `${idsKey}|${skusKey}`;
 
   // Efecto para buscar productos por ID o por SKU
   useEffect(() => {
@@ -191,6 +195,7 @@ export function useFilteredProducts(options: UseFilteredProductsOptions): UseFil
 
         if (isMounted) {
           setManualProducts(fetched);
+          setResolvedManualKey(`${idsKey}|${skusKey}`);
           setManualLoading(false);
         }
       } catch (err: any) {
@@ -230,12 +235,17 @@ export function useFilteredProducts(options: UseFilteredProductsOptions): UseFil
     return data?.products?.nodes || [];
   }, [data]);
 
+  const clientReady = (!hasCategoryOrTag || Boolean(data)) &&
+    (!(parsedIds.length || parsedSkus.length) || resolvedManualKey === manualKey) &&
+    !catLoading && !manualLoading && !catError && !manualError;
+
   // Combinar productos: manuales (IDs/SKUs) + categoría (sin duplicados)
   const combinedProducts = useMemo(() => {
+    if (!clientReady && initialProducts.length) return initialProducts;
     const seenIds = new Set<string | number>();
     const result: FilteredProduct[] = [];
 
-    // Primero los productos manuales (IDs / SKUs) para respetar el orden destacado
+    // Después los productos manuales (IDs / SKUs) para respetar destacados nuevos.
     for (const p of manualProducts) {
       const key = p.databaseId || p.id;
       if (key && !seenIds.has(key)) {
@@ -255,12 +265,13 @@ export function useFilteredProducts(options: UseFilteredProductsOptions): UseFil
 
     // Limitar al máximo solicitado si está definido
     return limit ? result.slice(0, limit) : result;
-  }, [manualProducts, categoryProducts, limit]);
+  }, [clientReady, initialProducts, manualProducts, categoryProducts, limit]);
 
   // Si no hay categoría/etiqueta, el loading y error dependen únicamente de los manuales
-  const loading = hasCategoryOrTag
+  const clientLoading = hasCategoryOrTag
     ? catLoading || manualLoading
     : manualLoading;
+  const loading = clientLoading && initialProducts.length === 0;
 
   const error = catError || manualError;
 

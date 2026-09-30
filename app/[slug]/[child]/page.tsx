@@ -12,16 +12,33 @@ import { SeoSchemas } from "@/components/seo/SeoSchemas";
 import { getCanonicalUrl } from "@/lib/seo";
 import { transactionalTitles } from "@/lib/slugMap";
 import { handleVerifiedRedirect } from "@/lib/redirects";
+import { prefetchTransactionalPageData } from "@/lib/transactionalPrefetch";
 
 // ─── Renderizado dinámico con ISR ───────────────────────────────────────────
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 // ─── Tipos ──────────────────────────────────────────────────────────────────
 
 interface PageProps {
   params: Promise<{ slug: string; child: string }>;
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}
+
+export async function generateStaticParams() {
+  const allPages = await fetchAllTransactionalPages({ strict: true });
+  const params = new Map<string, { slug: string; child: string }>();
+
+  for (const page of allPages) {
+    const segments = page.uri.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
+    if (segments.length !== 2) continue;
+    const [slug, child] = segments;
+    params.set(`${slug}/${child}`, { slug, child });
+  }
+
+  return [...params.values()].sort((a, b) =>
+    `${a.slug}/${a.child}`.localeCompare(`${b.slug}/${b.child}`),
+  );
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -159,6 +176,7 @@ export default async function TransactionalChildPage({
   const blocks = (page.pageBlocks?.pageBlocks || []).filter(
     (block: any) => hasBlockContent(block)
   );
+  const initialData = await prefetchTransactionalPageData(page, blocks);
 
   // 4. Breadcrumbs canónicos transaccionales
   const parentUrl = getCanonicalUrl(`/${slug}`);
@@ -176,7 +194,12 @@ export default async function TransactionalChildPage({
   return (
     <>
       <SeoSchemas breadcrumbs={breadcrumbs} />
-      <TransactionalPageClient page={page} blocks={blocks} />
+      <TransactionalPageClient
+        page={page}
+        blocks={blocks}
+        initialChildPages={initialData.childPages}
+        initialProductsByBlock={initialData.productsByBlock}
+      />
     </>
   );
 }

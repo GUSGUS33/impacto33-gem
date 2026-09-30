@@ -1,6 +1,7 @@
 import { PageBlock } from '@/queries/seoPageComplete';
 import Link from "next/link";
 import { ArrowRight } from 'lucide-react';
+import { normalizeInternalHref } from '@/lib/url';
 
 interface InterlinkingItem {
   texto: string;
@@ -27,7 +28,7 @@ export function InterlinkingBlock({ data }: { data: PageBlock }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {enlaces.map((enlace, index) => (
-          <Link key={index} href={enlace.url}>
+          <Link key={index} href={normalizeInternalHref(enlace.url)}>
             <div className="group relative bg-white border border-slate-200 rounded-lg p-5 hover:border-blue-500 hover:shadow-md transition-all duration-300 cursor-pointer h-full flex flex-col">
               {/* Flecha en esquina superior derecha */}
               <ArrowRight className="absolute top-4 right-4 w-5 h-5 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />

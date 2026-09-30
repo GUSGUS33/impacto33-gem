@@ -14,10 +14,11 @@ import InfoPage from "@/screens/InfoPage";
 import { SeoSchemas } from "@/components/seo/SeoSchemas";
 import { generateSeoMetadata, getCanonicalUrl } from "@/lib/seo";
 import { handleVerifiedRedirect } from "@/lib/redirects";
+import { prefetchTransactionalPageData } from "@/lib/transactionalPrefetch";
 
 // ─── Renderizado dinámico con ISR ───────────────────────────────────────────
 export const revalidate = 3600;
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 const KNOWN_INFO_SLUGS = [
   'quienes-somos',
@@ -54,6 +55,18 @@ const KNOWN_TITLES: Record<string, string> = {
   'preguntas-frecuentes': 'Preguntas Frecuentes (FAQ)',
   'blog': 'Blog de Personalización Textil'
 };
+
+export async function generateStaticParams() {
+  const allPages = await fetchAllTransactionalPages({ strict: true });
+  const slugs = new Set(KNOWN_INFO_SLUGS);
+
+  for (const page of allPages) {
+    const segments = page.uri.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
+    if (segments.length === 1) slugs.add(segments[0]);
+  }
+
+  return [...slugs].sort().map((slug) => ({ slug }));
+}
 
 // ─── Tipos ──────────────────────────────────────────────────────────────────
 
@@ -245,6 +258,7 @@ export default async function TransactionalSlugPage({
   const blocks = (page.pageBlocks?.pageBlocks || []).filter(
     (block: any) => hasBlockContent(block)
   );
+  const initialData = await prefetchTransactionalPageData(page, blocks);
 
   const canonicalUrl = getCanonicalUrl(`/${cleanSlug}`);
   const breadcrumbs = [
@@ -256,7 +270,12 @@ export default async function TransactionalSlugPage({
   return (
     <>
       <SeoSchemas breadcrumbs={breadcrumbs} />
-      <TransactionalPageClient page={page} blocks={blocks} />
+      <TransactionalPageClient
+        page={page}
+        blocks={blocks}
+        initialChildPages={initialData.childPages}
+        initialProductsByBlock={initialData.productsByBlock}
+      />
     </>
   );
 }

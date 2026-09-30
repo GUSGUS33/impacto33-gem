@@ -7,17 +7,21 @@ import { usePathname } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import { AlertCircle } from "lucide-react";
 import { formatPrice } from "@/lib/utils";
+import { generateItemListSchema } from "@/lib/seo";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { ProductFilters, ColorOption, SubcategoryLink } from "@/components/ProductFilters";
 import { useFilteredProducts, FilteredProduct, ProductVariation } from "@/hooks/useFilteredProducts";
 import { PageBlock } from "@/queries/seoPageComplete";
 import { useChildPages } from "@/hooks/useChildPages";
+import { normalizeInternalHref } from "@/lib/url";
 
 interface ProductosDinamicosBlockProps {
   data: PageBlock;
   pageUri?: string; // URI de la página actual
   pageTitle?: string; // Título de la página actual (categoría madre o hija)
   parentUri?: string | null; // URI del padre (si es página hija)
+  initialProducts?: FilteredProduct[];
+  initialChildPages?: import("@/hooks/useChildPages").ChildPage[];
 }
 
 /**
@@ -33,12 +37,12 @@ interface ProductosDinamicosBlockProps {
  * 
  * Prioridad: ALTA (conversión directa)
  */
-export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlock({ data, pageUri, pageTitle, parentUri }: ProductosDinamicosBlockProps) {
+export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlock({ data, pageUri, pageTitle, parentUri, initialProducts = [], initialChildPages = [] }: ProductosDinamicosBlockProps) {
   const location = usePathname() || "";
   
   // Si tiene padre, obtener hermanas. Si no, obtener hijas
   const uriToFetch = parentUri || pageUri || "";
-  const { childPages } = useChildPages(uriToFetch);
+  const { childPages } = useChildPages(uriToFetch, initialChildPages);
   
   // Filtrar página actual si estamos mostrando hermanas
   const pagesToShow = parentUri 
@@ -61,7 +65,7 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
     (productosDinamicosIds && String(productosDinamicosIds).trim() !== "") ||
     (productosDinamicosSkus && String(productosDinamicosSkus).trim() !== "")
   );
-  const isMissingConfig = !productosDinamicosCategoria && !hasManualProducts;
+  const isMissingConfig = !productosDinamicosCategoria && !productosDinamicosEtiqueta && !hasManualProducts;
 
   // Estados de filtros
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
@@ -69,7 +73,7 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
   // Preparar datos de navegación de categorías (hijas o hermanas)
   const subcategories: SubcategoryLink[] = pagesToShow.map(child => ({
     name: child.title,
-    url: child.uri,
+    url: normalizeInternalHref(child.uri),
   }));
 
   // Normalizar orderBy: puede venir como array o string desde WordPress
@@ -99,6 +103,7 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
     productSkus: productosDinamicosSkus,
     limit: productosDinamicosMaximo ?? undefined,
     orderBy: orderBy as any,
+    initialProducts,
   });
 
   // Extraer colores únicos con sus imágenes de todas las variaciones
@@ -232,7 +237,7 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
   }
 
   // Estado de error
-  if (error) {
+  if (error && products.length === 0) {
     console.error("[ProductosDinamicosBlock] Error loading products:", error);
     return (
       <div className="container py-12">
@@ -263,47 +268,30 @@ export const ProductosDinamicosBlock = React.memo(function ProductosDinamicosBlo
     );
   }
 
-  // Generar Product Schema para cada producto visible
-  const productSchemas = filteredProducts.map((product) => {
+  // El listado describe las tarjetas visibles; cada ficha conserva su propio Product Schema.
+  const itemListSchema = generateItemListSchema(
+    productosDinamicosTitulo,
+    filteredProducts.map((product) => {
     const selectedVar = product.selectedVariation;
     const displayImage = selectedVar?.image?.sourceUrl || product.featuredImage?.node?.sourceUrl;
-    const displayPrice = selectedVar?.price || product.salePrice || product.price || product.regularPrice;
-    
-    // Extraer precio numérico (eliminar símbolos de moneda y espacios)
-    const priceValue = displayPrice ? parseFloat(displayPrice.replace(/[^0-9.,]/g, '').replace(',', '.')) : 0;
-    
+
     return {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": product.name,
-      "image": displayImage || '',
-      "description": product.name,
-      "sku": product.databaseId.toString(),
-      "brand": {
-        "@type": "Brand",
-        "name": "IMPACTO33"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": `https://impacto33.com/producto/${product.slug}`,
-        "priceCurrency": "EUR",
-        "price": priceValue.toFixed(2),
-        "availability": "https://schema.org/InStock",
-        "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
-      }
+      name: product.name,
+      url: `/producto/${product.slug}`,
+      image: displayImage || undefined,
     };
-  });
+    }),
+  );
 
   return (
     <div className="container">
-      {/* Product Schema (JSON-LD) para cada producto */}
-      {productSchemas.map((schema, index) => (
+      {/* ItemList de las mismas tarjetas de producto que ve el usuario */}
+      {itemListSchema && (
         <script
-          key={`product-schema-${index}`}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
         />
-      ))}
+      )}
       
       {/* Título del bloque */}
       <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 md:mb-12 text-center">
