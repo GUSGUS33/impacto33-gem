@@ -9,10 +9,22 @@ const sitemapCleanupRedirects = [
   ["/vestuario-laboral/alimentaria/gorros", "/vestuario-laboral/alimentaria"],
   ["/vestuario-laboral/sanidad/batas", "/vestuario-laboral/sanidad"],
   ["/vestuario-laboral/sanidad/gorros", "/vestuario-laboral/sanidad"],
-  ["/deporte-personalizado/equipaciones/camisetas", "/deporte-personalizado/equipaciones"],
-  ["/deporte-personalizado/equipaciones/pantalones", "/deporte-personalizado/equipaciones"],
-  ["/deporte-personalizado/accesorios/botellas", "/deporte-personalizado/accesorios"],
-  ["/deporte-personalizado/accesorios/toallas", "/deporte-personalizado/accesorios"],
+  [
+    "/deporte-personalizado/equipaciones/camisetas",
+    "/deportes-personalizados/equipaciones-personalizadas",
+  ],
+  [
+    "/deporte-personalizado/equipaciones/pantalones",
+    "/deportes-personalizados/equipaciones-personalizadas",
+  ],
+  [
+    "/deporte-personalizado/accesorios/botellas",
+    "/deportes-personalizados/accesorios-deportivos-personalizados",
+  ],
+  [
+    "/deporte-personalizado/accesorios/toallas",
+    "/deportes-personalizados/accesorios-deportivos-personalizados",
+  ],
 ];
 
 /** @type {import('next').NextConfig} */
