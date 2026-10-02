@@ -18,6 +18,7 @@
     "start:server": "NODE_ENV=production node dist/index.js",
     "build:sitemap": "node scripts/generate-sitemap-canonical.mjs",
     "build:sitemap:products": "node scripts/generate-sitemap-canonical.mjs",
+    "verify:legacy-redirects": "node scripts/verify-legacy-redirects.mjs",
     "lint": "eslint .",
     "check": "tsc --noEmit",
     "test": "vitest run",

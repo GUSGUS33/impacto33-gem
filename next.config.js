@@ -1,9 +1,19 @@
 import { readFileSync } from "node:fs";
 
 const wooCategoryRoutes = JSON.parse(
-  readFileSync(new URL("./src/data/woo-category-routes.json", import.meta.url), "utf8"),
+  readFileSync(
+    new URL("./src/data/woo-category-routes.json", import.meta.url),
+    "utf8"
+  )
+);
+const auditedLegacyRedirects = JSON.parse(
+  readFileSync(
+    new URL("./src/data/legacy-redirects.json", import.meta.url),
+    "utf8"
+  )
 );
 const legacyCategoryPrefixes = ["categoria-producto", "product-category"];
+const canonicalOrigin = "https://impacto33.com";
 const sitemapCleanupRedirects = [
   ["/vestuario-laboral/alimentaria/batas", "/vestuario-laboral/alimentaria"],
   ["/vestuario-laboral/alimentaria/gorros", "/vestuario-laboral/alimentaria"],
@@ -76,33 +86,57 @@ const nextConfig = {
     ];
   },
   async redirects() {
+    const migrationRedirects = auditedLegacyRedirects
+      .filter(({ sourceQuery }) => !sourceQuery)
+      .flatMap(({ source, destination }) => [
+        {
+          source,
+          destination: `${canonicalOrigin}${destination}`,
+          statusCode: 301,
+        },
+        {
+          source: `${source}/`,
+          destination: `${canonicalOrigin}${destination}`,
+          statusCode: 301,
+        },
+      ]);
+
     const mappedCategoryRedirects = Object.entries(wooCategoryRoutes).flatMap(
       ([wooSlug, destination]) =>
-        legacyCategoryPrefixes.map((prefix) => ({
+        legacyCategoryPrefixes.map(prefix => ({
           source: `/${prefix}/${wooSlug}`,
-          destination,
+          destination: `${canonicalOrigin}${destination}`,
           statusCode: 301,
-        })),
+        }))
     );
 
     const cleanupRedirects = sitemapCleanupRedirects.flatMap(
       ([source, destination]) => [
-        { source, destination, statusCode: 301 },
-        { source: `${source}/`, destination, statusCode: 301 },
-      ],
+        {
+          source,
+          destination: `${canonicalOrigin}${destination}`,
+          statusCode: 301,
+        },
+        {
+          source: `${source}/`,
+          destination: `${canonicalOrigin}${destination}`,
+          statusCode: 301,
+        },
+      ]
     );
 
     return [
+      ...migrationRedirects,
       ...cleanupRedirects,
       ...mappedCategoryRedirects,
-      ...legacyCategoryPrefixes.map((prefix) => ({
+      ...legacyCategoryPrefixes.map(prefix => ({
         source: `/${prefix}/:path*`,
-        destination: "/:path*",
+        destination: `${canonicalOrigin}/:path*`,
         statusCode: 301,
       })),
       {
         source: "/:path+/",
-        destination: "/:path+",
+        destination: `${canonicalOrigin}/:path+`,
         statusCode: 301,
       },
     ];

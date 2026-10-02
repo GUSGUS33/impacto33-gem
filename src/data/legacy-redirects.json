@@ -1,0 +1,1768 @@
+[
+  {
+    "source": "/presupuesto-express",
+    "destination": "/presupuesto-rapido",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-hombre",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-ninos",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-manga-larga",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral",
+    "destination": "/vestuario-laboral",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-deportiva-personalizada",
+    "destination": "/deportes-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/chandales-personalizados",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/equipaciones-futbol-personalizadas",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-de-tela-personalizadas",
+    "destination": "/bolsas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsa-de-algodon",
+    "destination": "/bolsas-personalizadas/bolsas-algodon",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-para-vinos",
+    "destination": "/bolsas-personalizadas/bolsas-botella",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-papel",
+    "destination": "/bolsas-personalizadas/bolsas-papel",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-plegables",
+    "destination": "/bolsas-personalizadas/bolsas-plegables",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-mosby-para-colorear",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/mochila-para-eventos",
+    "destination": "/mochilas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/merchandising",
+    "destination": "/merchandising-eventos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/chapas-personalizadas",
+    "destination": "/merchandising-eventos/chapas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion",
+    "destination": "/servicios",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion/serigrafia",
+    "destination": "/servicios/serigrafia",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion/sublimacion",
+    "destination": "/servicios/sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion/bordado-textil",
+    "destination": "/servicios/bordado",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion/impresion-digital",
+    "destination": "/servicios/impresion-digital",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/servicios-de-impresion/vinilo-textil",
+    "destination": "/servicios/vinilo",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/catalogo-textil",
+    "destination": "/ropa-personalizada",
+    "confidence": "Media"
+  },
+  {
+    "source": "/servicios-de-impresion/transfer-textil",
+    "destination": "/servicios",
+    "confidence": "Media"
+  },
+  {
+    "source": "/post-produccion",
+    "destination": "/servicios",
+    "confidence": "Media"
+  },
+  {
+    "source": "/como-enviar-originales",
+    "destination": "/enviar-archivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/empresa/quienes-somos",
+    "destination": "/quienes-somos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/marcas-textiles",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/condiciones-generales-de-uso",
+    "destination": "/condiciones-generales",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/privacidad-y-proteccion-de-datos",
+    "destination": "/politica-privacidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/politica-de-cookies",
+    "destination": "/cookies",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-clasica-roly",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-new-supreme",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudadera-capucha-gildan-heavy",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-hombre/roly-camiseta-atomic-150",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-de-manga-corta-tejido-tubular-beagle-roly",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/dogo-premium-roly",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-sols-imperial",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/antartida-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/chaqueta-yukon-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/chaqueta-unisex-utah-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-hosteleria/delantal-classic-roly",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria/delantal-cocina-benoit-roly",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria/delantal-laboral-uniformidad-roly-ducasse",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-camimera-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-bahrain-mujer",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-bahrain-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-tecnicas-w-roly-montecarlo",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-deportivas-bicolor-roly-shanghai-woman",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-suzuka-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-tecnicas-bicolor-roly-indianapolis",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-bugatti-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tallas-grandes",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ecologicas-organicas",
+    "destination": "/camisetas-personalizadas/camisetas-ecologicas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-hombre/regent-sols",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-valueweight-fruit-of-the-loom",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-gildan-64000-ring-spun",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-hombre-e150-bc",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-akita-roly",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/roly-samoyedo-cuello-v",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-baseball-sols",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-heavy-t-fruit-195",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/roly-teckel-bolsillo",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camiseta-bc-190-new",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-value-cuello-v",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-tecnicas-personalizadas-gildan-performance-3xl",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-sols-imperial-fit",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/gildan-heavy-algodon",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-premium-personalizadas-gildan-premium",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-fruit-super-premium",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-baseball-fruit",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/gildan-ultra",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-hombre/camisetas-sols-camo-01188",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-tecnicas-shura",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-tecnicas-infantiles-indianapolis-kids",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-montecarlo-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-deportivas-tirantes-roly-interlagos",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-monaco-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-detroit-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-roly-montecarlo-ml-kids-ca0415-k",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-roly-tokyo-bicolor",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-bicolor-roly-shanghai",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-roly-sepang-ca0416",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/camisetas-roly-montecarlo-ml-ca0415",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-austin-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-mirano-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-assen-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-tecnicas-personalizadas/tecnica-mujer-melbourne-roly",
+    "destination": "/deportes-personalizados",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-manga-corta",
+    "destination": "/camisetas-personalizadas/camisetas-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-ninos/camisetas-imperial-190-k",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/camiseta-sols-regent-ninos",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/value-infantil-kids",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/camisetas-original-t-ninos",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/camiseta-crusader-kids",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/value-kids-manga-larga",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-ninos/camiseta-miles-kids",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/camisetas-manga-larga/camiseta-manga-larga-hombre-roly-extreme",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-manga-larga/roly-pointer",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-manga-larga/camisetas-value-manga-larga",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-manga-larga/camisetas-bicolor-baseball-fruit",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-manga-larga/running-sols-berlin",
+    "destination": "/camisetas-personalizadas/camisetas-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/camisetas-tirantes-sols-justin",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/carolina-roly",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/camisetas-tirantes-jane",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/camisetas-sols-jamaica-tirantes-es-382ec30455386f4bea85e867f0a24bb9",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/interlagos-roly",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-tirantes-sin-mangas/brenda-roly",
+    "destination": "/camisetas-personalizadas/camisetas-tirantes",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-ninos-gildan-heavy-clasica",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-manga-montada",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-roly-epiro",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-spider",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-roly-elbrus",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-roly-mana",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/roly-sudadera-malone",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/fruit-of-the-loom-manga-montada-ninos",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-heavy-clasica-gildan",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-ligeras-fruit-of-the-loom-lightweight-capucha",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-roly-annapurna",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-infantil-roly-capucha-kids",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-sully",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-fruit-capucha",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudadera-con-capucha-dryblend",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-roly-capucha",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-capucha-roly-urban",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-mujer-con-capucha",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-mujer-cuello-redondo",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-sandro",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-scott",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudadera-sols-sundae",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-basicas/sudaderas-estampadas-fruit-of-the-loom-lightweight-cremallera",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudaderas-roly-montblanc-capucha-y-cremallera",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/sudaderas-personalizadas/sudaderas-hombre-con-capucha/sudadera-roly-fuji",
+    "destination": "/sudaderas-personalizadas/sudaderas-con-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/chaquetas-personalizadas/escocia-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/angelo",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/parka-europa-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/chaqueta-alaska-unisex-roly",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chaquetas-personalizadas/graham-kids",
+    "destination": "/chaquetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/chaleco-laboral-roly-altavisibilidad-sirio",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/pantalon-largo-alta-visibilidad-hv-roly-naos",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/pantalones-multibolsillos-alta-visibilidad-roly-soan",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/pantalon-largo-alta-visibilidad-hv-roly-alfa",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/softshells-personalizados-alta-visibilidad-roly-antares",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-alta-visibilidad/chaquetas-alta-visibilidad-roly-epsylon",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria/delantal-laboral-uniformidad-roly-ramsay",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria/uniformidad-delantal-roly-acosta",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-hosteleria/uniformidad-pantalon-largo-hombre-roly-waiter",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/chandales-personalizados/chandal-athenas",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/chandales-personalizados/esparta",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/pantalones-deporte/pantalon-corto-deportivo-player",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte/pantalones-cortos-deportivos-roly-spiro",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte/pantalones-roly-new-astun",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte/leggings-roly-lg0405",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte/pantalones-deporte-roly-adelpho",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/pantalones-deporte/leggins-termicos-estampados-roly-better",
+    "destination": "/pantalones-personalizados/pantalones-deportivos",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/equipaciones-futbol-personalizadas/equipacion-deportiva-estampada-roly-united",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/equipaciones-futbol-personalizadas/equipacion-camiseta-deporte-roly-racing",
+    "destination": "/deportes-personalizados/equipaciones-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/chaleco-laboral-roly-altavisibilidad-sirio",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-delantal-roly-benoit",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/polos-personalizados-alta-visibilidad-roly-polaris",
+    "destination": "/vestuario-laboral/alta-visibilidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-sanitaria-pantalon-largo-roly-vademecum",
+    "destination": "/vestuario-laboral/sanidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-sanitaria-camiseta-panacea-roly",
+    "destination": "/vestuario-laboral/sanidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/chaleco-laboral-roly-venera",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-pantalon-pintor-roly-unisex",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-sanitaria-bata-roly-vaccine",
+    "destination": "/vestuario-laboral/sanidad",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-pantalon-largo-hombre-roly-waiter",
+    "destination": "/vestuario-laboral/hosteleria",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/ropa-laboral/chaleco-almanzor-roly",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-pantalon-largo-roly-safety",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-pantalon-unisex-largo-roly-protect",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/ropa-laboral/uniformidad-pantalon-largo-roly-unisex-guardian",
+    "destination": "/vestuario-laboral",
+    "confidence": "Media"
+  },
+  {
+    "source": "/bolsas-termicas",
+    "destination": "/bolsas-personalizadas/bolsas-termicas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-con-cordones",
+    "destination": "/mochilas-personalizadas/mochilas-cuerdas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-ferias-eventos",
+    "destination": "/bolsas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-para-zapatos",
+    "destination": "/bolsas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-makito-blaster",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-crest-roly",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-de-non-woven-makito-tucson",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-decal-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsa-de-algodon/bolsa-roly-hill",
+    "destination": "/bolsas-personalizadas/bolsas-algodon",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-dhar-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-tela-kalkut-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-farus-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-cekon-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsa-de-algodon/bolsa-mountain-roly",
+    "destination": "/bolsas-personalizadas/bolsas-algodon",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-carole-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-yute/bolsa-solux-makito",
+    "destination": "/bolsas-personalizadas/bolsas-yute",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-botellas-vino-non-woven-river-roly",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-economica-desmond-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-non-woven-ocean-roly",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-non-woven-jazzin-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-makito-nox-asa-corta",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-valley-roly",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-de-non-woven-makito-fair",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-mirtal-para-sublimar-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-cattyr-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-plegable-konsum-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-nonwoven-kustal-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-de-non-woven-makito-bagster",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-de-non-woven-makito-shopper",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-natia-makito",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-non-woven/bolsa-cave-roly",
+    "destination": "/bolsas-personalizadas/bolsas-non-woven",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsas-para-vinos/bolsa-yute-para-vino-koop-makito",
+    "destination": "/bolsas-personalizadas/bolsas-botella",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-dolten-para-sublimar",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-wilem-de-metal",
+    "destination": "/tazas-personalizadas/tazas-metalicas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-bercom-ceramica-bicolor",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-bornel-para-sublimacion",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-bitrok-de-vidrio",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-zifor-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-harnet-para-sublimacion",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-colorful-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/tasa-plesik-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-kantol-para-sublimar",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-talmex-para-sublimar",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-gover-para-sublimar",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-kaffir-para-sublimacion",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-sinor-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-cotes-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-bardot-para-sublimar",
+    "destination": "/tazas-personalizadas/tazas-sublimacion",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-fesient-para-colorear",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-colcer-con-tapa",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-samay-con-cuchara",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-dariel-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-margot-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-pasak-con-tapadera",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tazas-personalizadas/taza-nuglex-ceramica",
+    "destination": "/tazas-personalizadas/tazas-ceramica",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-iskan",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-dokath",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-zanip",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-henzo",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-terkol",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-mento",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-keiler",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-kelit-con-enfriador",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-delby",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-barrister",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-vandix",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidAn-kutyl",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-deldye",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-herilox",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-rudix-tritan",
+    "destination": "/botellas-personalizadas/botellas-plastico",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-burdis",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidAn-de-aluminio-de-650-ml-es-e8f07ecbf06414aea302fd1182cc67f9",
+    "destination": "/botellas-personalizadas/botellas-aluminio",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-kasfol-cristal",
+    "destination": "/botellas-personalizadas/botellas-cristal",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-rextan",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-cartex-aluminio",
+    "destination": "/botellas-personalizadas/botellas-aluminio",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-lurok",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-sublimacion-bayron",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-smaly",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-personalizadas/bidon-pernal-acero-inox",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-zurix",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-tunel",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/bloc-notas-cilux",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/bloc-notas-talfor",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-tremen",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-neck",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-edain",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-mirok",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-yemil-32gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-us--laval-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-fixing-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-horiox-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/mochila-para-eventos/mochila-roly-ninfa",
+    "destination": "/mochilas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/bloc-zinko-notas-adhesivas",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-almohadilla-komod",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/bloc-notas-surma",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-ecocard",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/minilibreta-duxo",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-concern",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/bloc-nota-kine",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-dienel",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-bucef",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-sulax",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-candel-corcho-natural",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-pilaf",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-leray",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-nazga",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-navil",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-lamark",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/cuaderno-dibujo-rudex",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-gulliver",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-antibacteriana-neltec",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/libretas-personalizadas/libreta-antibacteriana-polax",
+    "destination": "/escritura-personalizada/libretas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-antiestrAs-rodio",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-sigex",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-portamascarillas-menfix",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-kappin",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-bob",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-kunel",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/identificador-lanyard-cail",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/pompero-fabulak",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-portamascarillas-lerop",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-perux",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-portavasos-frinly",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/cargador-sincronizador-doffer",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/lanyards-personalizados/lanyard-lemer",
+    "destination": "/merchandising-eventos/lanyards-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-kontix-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-cetrex-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-ditop-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-haidam-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-glyner-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-eku-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-zilak",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-blidek-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/boligrafo-puntero-usb-sivart-8gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-drelan-8gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-domar-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-zilda-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/memoria-usb-daclon-16gb",
+    "destination": "/tecnologia-personalizada/memorias-usb-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/power-bank-usb-spencer",
+    "destination": "/tecnologia-personalizada/power-banks-personalizados",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/usb-personalizados/bloc-notas-multifunciAn-malvet",
+    "destination": "/tecnologia-personalizada",
+    "confidence": "Media"
+  },
+  {
+    "source": "/tarifa-serigrafia",
+    "destination": "/servicios/serigrafia",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/serigrafia",
+    "destination": "/servicios/serigrafia",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bordado-3d",
+    "destination": "/servicios/bordado",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/parches-personalizados",
+    "destination": "/servicios/bordado",
+    "confidence": "Media"
+  },
+  {
+    "source": "/etiqueta-bordada",
+    "destination": "/servicios/bordado",
+    "confidence": "Media"
+  },
+  {
+    "source": "/bordados-personalizados",
+    "destination": "/servicios/bordado",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-mujer-manga-corta/polos-doble-pique-gildan-w",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/polo-roly-star",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/safran-180-bc",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/roly-nation",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/roly-montreal",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/roly-austral",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta/roly-imperium",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-corta",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-hombre-manga-larga",
+    "destination": "/polos-personalizados/polos-manga-larga",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/polos-personalizados/polos-mujer-manga-corta",
+    "destination": "/polos-personalizados/polos-manga-corta",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisas-personalizadas",
+    "destination": "/ropa-personalizada",
+    "confidence": "Media"
+  },
+  {
+    "source": "/forros-polares-personalizados",
+    "destination": "/chaquetas-personalizadas/chaquetas-polares",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bolsos-mochilas-personalizadas",
+    "destination": "/mochilas-personalizadas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/camisetas-mujer",
+    "destination": "/camisetas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/sudaderas-sin-capucha-personalizadas",
+    "destination": "/sudaderas-personalizadas/sudaderas-clasica-sin-capucha",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/tazas-cafe-te",
+    "destination": "/tazas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/botellas-aluminio",
+    "destination": "/botellas-personalizadas/botellas-aluminio",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bidones-personalizados",
+    "destination": "/botellas-personalizadas",
+    "confidence": "Media"
+  },
+  {
+    "source": "/roly",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/gildan",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/fruit-of-the-loom",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/bc-catalogo",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/stanley-stella",
+    "destination": "/marcas",
+    "confidence": "Alta"
+  },
+  {
+    "source": "/propiedad-intelectual",
+    "destination": "/aviso-legal",
+    "confidence": "Media"
+  },
+  {
+    "source": "/bolsas-ferias-eventos/bolsa-sea-roly",
+    "destination": "/bolsas-personalizadas",
+    "confidence": "Media",
+    "sourceQuery": "IDPRO=2979&ID_MENU_NIVEL_1=156&idi_lang=1"
+  }
+]
