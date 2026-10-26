@@ -51,6 +51,7 @@ export default function ProductQuoteCalculator({
   const categorySlug = resolveProductPricingCategory(
     product.productCategories?.nodes
   );
+  const deliveryDates = useMemo(() => getDeliveryDates(categorySlug), [categorySlug]);
 
   // Obtener métodos de impresión disponibles para esta categoría
   const availablePrintingMethods = getAvailablePrintingMethods(categorySlug);
@@ -195,7 +196,6 @@ export default function ProductQuoteCalculator({
       color && "image" in color ? color.image : undefined
     );
   };
-  const deliveryDates = useMemo(() => getDeliveryDates(categorySlug), [categorySlug]);
   const quoteSnapshot = useMemo(() => priceCalculation
     ? captureQuoteSnapshot(priceCalculation, deliverySurchargePercent, selectedDeliveryOption,
         deliveryDates[selectedDeliveryOption], selectedPrintingMethod)
