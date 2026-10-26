@@ -113,3 +113,7 @@ real_categories.json
 *.db
 *.sqlite
 *.sqlite3
+
+# Local calculator review material: keep recoverable copies off GitHub.
+/calculadora/backup/
+/calculadora/capturas/

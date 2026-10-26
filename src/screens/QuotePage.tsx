@@ -2,8 +2,9 @@
 import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { useExternalScripts } from "@/hooks/useExternalScripts";
 import { Button } from "@/components/ui/button";
+import { jotformQuoteUrl, type QuoteProduct } from '@/lib/quoteLinks';
 
-export default function QuotePage() {
+export default function QuotePage({ product }: { product?: QuoteProduct | null }) {
   const scriptsLoaded = useExternalScripts();
   return (
     <>
@@ -30,6 +31,7 @@ export default function QuotePage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
+            {product && <p className="mb-4 rounded-lg border border-slate-200 bg-white p-4 text-slate-700">Presupuesto para: <strong>{product.name}</strong></p>}
             {/* Benefits Banner */}
             <div className="bg-blue-600 text-white p-4 md:p-6 rounded-t-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-4 mb-0">
               <div className="flex items-center gap-2">
@@ -52,7 +54,7 @@ export default function QuotePage() {
                 <iframe
                   id="JotFormIFrame-203603626827052"
                   title="Formulario pedido de presupuesto"
-                  src="https://form.jotform.com/203603626827052"
+                  src={jotformQuoteUrl(product)}
                   style={{ width: "100%", minHeight: "2000px", border: "0" }}
                   scrolling="no"
                   allowFullScreen={true}

@@ -1,3 +1,4 @@
+import type { QuoteSnapshot } from "../lib/quoteSnapshot";
 import { PriceCalculationResult } from '../hooks/usePriceCalculation';
 import { trpc } from '@/lib/trpc';
 
@@ -19,6 +20,8 @@ export interface QuoteData {
     selectedZones: string[];
   };
   pricing: PriceCalculationResult;
+  // Optional for compatibility with existing callers. Present on new product quotes.
+  quoteSnapshot?: QuoteSnapshot;
 }
 
 // Esta función ya no se usa directamente, el componente usa tRPC

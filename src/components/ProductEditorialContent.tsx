@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sameFamilyRelated } from '@/lib/relatedProductFamily';
 import { ChevronRight, Clock3, Palette, Ruler } from "lucide-react";
 import type { Product } from "@shared/types";
 import type { PrintingMethodId } from "@/types/printing";
@@ -39,7 +40,7 @@ export default function ProductEditorialContent({
 }: ProductEditorialContentProps) {
   const attributeGroups = getProductAttributeGroups(product.attributes?.nodes);
   const faqs = buildProductFaqs(product.name, minimumQuantity);
-  const relatedProducts = product.related?.nodes || [];
+  const relatedProducts = sameFamilyRelated(product);
 
   return (
     <div className="mt-12 space-y-14 border-t border-slate-200 pt-10 md:mt-16 md:space-y-16 md:pt-12">
@@ -161,12 +162,12 @@ export default function ProductEditorialContent({
                 href={`/producto/${relatedProduct.slug}`}
                 className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
               >
-                <div className="aspect-square bg-slate-50 p-3 sm:p-5">
+                <div className="overflow-hidden rounded-t-xl bg-slate-50">
                   <img
                     src={relatedProduct.featuredImage?.node?.sourceUrl || "/placeholder-image.jpg"}
                     alt={relatedProduct.featuredImage?.node?.altText || relatedProduct.name}
                     loading="lazy"
-                    className="h-full w-full object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
+                    className="block h-auto w-full rounded-t-xl"
                   />
                 </div>
                 <div className="p-3 sm:p-4">

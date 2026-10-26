@@ -1,3 +1,4 @@
+import { formatEuroPrice } from '../src/services/pricingService';
 import nodemailer from 'nodemailer';
 import type { QuoteData } from '../src/services/emailService';
 
@@ -73,8 +74,8 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
         <tr>
           <td style="padding: 8px; border: 1px solid #e5e7eb;">Talla ${escapeHtml(size)}</td>
           <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: center;">${qty} uds.</td>
-          <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${data.pricing.precioUnitarioFinal.toFixed(2)}€</td>
-          <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${(qty * data.pricing.precioUnitarioFinal).toFixed(2)}€</td>
+          <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${formatEuroPrice(data.pricing.precioUnitarioFinal)}</td>
+          <td style="padding: 8px; border: 1px solid #e5e7eb; text-align: right;">${formatEuroPrice(qty * data.pricing.precioUnitarioFinal)}</td>
         </tr>
       `)
       .join('');
@@ -92,6 +93,30 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
       selectedColor: escapeHtml(data.product.selectedColor),
       selectedZones: data.product.selectedZones.map(escapeHtml),
     };
+
+    // New quotes render the supplied snapshot. Legacy quotes keep their original totals.
+    // No delivery percentage, tier or VAT formula is applied here.
+    const amounts = data.quoteSnapshot || {
+      subtotal: data.pricing.precioTotalSinIVA,
+      totalExVat: data.pricing.precioTotalSinIVA,
+      totalIncVat: data.pricing.precioTotalConIVA,
+      vat: data.pricing.precioTotalConIVA - data.pricing.precioTotalSinIVA,
+      surcharge: 0,
+    };
+    const delivery = data.quoteSnapshot?.delivery;
+    const orderMetadata = `
+      <p><strong>SKU:</strong> ${escapeHtml(data.product.sku || 'No disponible')}</p>
+      ${delivery ? `<p><strong>Plazo:</strong> ${escapeHtml(delivery.label)} (${delivery.percent}%)</p>
+      <p><strong>Entrega:</strong> ${escapeHtml(delivery.dateLabel)} · ${escapeHtml(delivery.date)}</p>` : '<p>Plazo no informado (solicitud anterior)</p>'}
+      ${data.quoteSnapshot ? `<p><strong>Técnica:</strong> ${escapeHtml(data.quoteSnapshot.technique.label)}</p>` : ''}
+    `;
+    const totalsTable = `<table>
+      <tr><td>Subtotal</td><td>${formatEuroPrice(amounts.subtotal)}</td></tr>
+      <tr><td>Recargo ${delivery ? escapeHtml(delivery.label) + ' (' + delivery.percent + '%)' : '(no informado)'}</td><td>${formatEuroPrice(amounts.surcharge)}</td></tr>
+      <tr><td>Total sin IVA</td><td>${formatEuroPrice(amounts.totalExVat)}</td></tr>
+      <tr><td>IVA (21%)</td><td>${formatEuroPrice(amounts.vat)}</td></tr>
+      <tr><td><strong>Total con IVA</strong></td><td><strong>${formatEuroPrice(amounts.totalIncVat)}</strong></td></tr>
+    </table>`;
 
     // HTML para el cliente
     const customerHtml = `
@@ -123,10 +148,11 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
             <div class="product-info">
               <h2 style="margin-top: 0;">Resumen de tu solicitud</h2>
               <p><strong>Producto:</strong> ${safeProduct.name}</p>
+              ${orderMetadata}
               <p><strong>Color seleccionado:</strong> ${safeProduct.selectedColor}</p>
               ${safeProduct.selectedZones.length > 0 ? `<p><strong>Zonas de personalización:</strong> ${safeProduct.selectedZones.join(', ')}</p>` : ''}
               
-              <h3>Desglose por talla</h3>
+              <h3>Desglose por talla (antes del recargo)</h3>
               <table>
                 <thead>
                   <tr>
@@ -141,20 +167,7 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
                 </tbody>
               </table>
               
-              <table style="margin-top: 20px;">
-                <tr>
-                  <td style="padding: 8px;"><strong>Subtotal:</strong></td>
-                  <td style="padding: 8px; text-align: right;">${data.pricing.precioTotalSinIVA.toFixed(2)}€</td>
-                </tr>
-                <tr>
-                  <td style="padding: 8px;"><strong>IVA (21%):</strong></td>
-                  <td style="padding: 8px; text-align: right;">${(data.pricing.precioTotalConIVA - data.pricing.precioTotalSinIVA).toFixed(2)}€</td>
-                </tr>
-                <tr style="background: #f3f4f6;">
-                  <td style="padding: 12px;"><strong class="total">TOTAL:</strong></td>
-                  <td style="padding: 12px; text-align: right;"><strong class="total">${data.pricing.precioTotalConIVA.toFixed(2)}€</strong></td>
-                </tr>
-              </table>
+              ${totalsTable}
             </div>
             
             ${data.customer.message ? `<p><strong>Tu mensaje:</strong><br>${safeCustomer.message}</p>` : ''}
@@ -208,11 +221,13 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
             <div class="section">
               <h2 style="margin-top: 0;">🛍️ Detalles del Producto</h2>
               <p><strong>Producto:</strong> ${safeProduct.name}</p>
+              ${orderMetadata}
               <p><strong>ID:</strong> ${safeProduct.id}</p>
               <p><strong>Color:</strong> ${safeProduct.selectedColor}</p>
               ${safeProduct.selectedZones.length > 0 ? `<p><strong>Zonas personalizadas:</strong> ${safeProduct.selectedZones.join(', ')}</p>` : ''}
               
-              <h3>Cantidades solicitadas</h3>
+              ${totalsTable}
+              <h3>Cantidades solicitadas (antes del recargo)</h3>
               <table>
                 <thead>
                   <tr>
@@ -224,10 +239,7 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
                 </thead>
                 <tbody>
                   ${quantitiesTable}
-                  <tr style="background: #f3f4f6; font-weight: bold;">
-                    <td colspan="3" style="text-align: right; padding: 12px;">TOTAL (con IVA):</td>
-                    <td style="text-align: right; padding: 12px; color: #2563eb; font-size: 1.1em;">${data.pricing.precioTotalConIVA.toFixed(2)}€</td>
-                  </tr>
+
                 </tbody>
               </table>
             </div>
@@ -265,10 +277,10 @@ export async function sendQuoteEmail(data: QuoteData): Promise<boolean> {
       replyTo: data.customer.email,
     });
 
-    console.log(`✅ Emails enviados correctamente a ${sanitizeHeaderValue(data.customer.email)} y ${config.user}`);
+    console.info('[quote.email] Emails enviados');
     return true;
   } catch (error) {
-    console.error('❌ Error al enviar emails:', error);
+    console.error('[quote.email] Fallo de envío SMTP');
     throw error;
   }
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { resolveSectionHref, useMainMenu } from "@/hooks/useMainMenu";
 import { OptimizedImage } from "@/components/ui/OptimizedImage";
 import { ChevronDown } from "lucide-react";
+import motion from "./menu-motion.module.css";
 
 export interface MenuItem {
   title: string;
@@ -157,8 +158,14 @@ export function MegaMenuContent({ menuSections, error }: MegaMenuContentProps) {
 
   return (
     <div
-      className="h-full flex items-center"
+      className={`${motion.scope} h-full flex items-center`}
+      data-keyboard="false"
       onMouseLeave={handleMouseLeave}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) closeMenu();
+      }}
+      onKeyDownCapture={(event) => { event.currentTarget.dataset.keyboard = "true"; }}
+      onPointerDownCapture={(event) => { event.currentTarget.dataset.keyboard = "false"; }}
     >
       {/* Barra de Categorías Principales */}
       <nav className="hidden xl:flex items-center gap-1.5 2xl:gap-5 font-bold text-xs 2xl:text-[13px] uppercase tracking-wider text-slate-800 h-full whitespace-nowrap shrink-0">
@@ -169,12 +176,20 @@ export function MegaMenuContent({ menuSections, error }: MegaMenuContentProps) {
             <div
               key={key}
               className="relative h-full flex items-center shrink-0"
-              onMouseEnter={() => handleMouseEnter(key)}
+              onMouseEnter={(event) => {
+                if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+                  event.currentTarget.closest("[data-keyboard]")?.setAttribute("data-keyboard", "false");
+                  handleMouseEnter(key);
+                }
+              }}
             >
               <Link
                 href={sectionHref}
                 onClick={closeMenu}
-                className={`flex items-center gap-1.5 px-2.5 py-3 rounded-md transition-all duration-150 whitespace-nowrap ${
+                onFocus={() => handleMouseEnter(key)}
+                aria-expanded={isActive}
+                aria-controls={`mega-panel-${key}`}
+                className={`flex items-center gap-1.5 px-2.5 py-3 rounded-md transition-colors duration-150 whitespace-nowrap ${
                   isActive
                     ? "text-blue-600 bg-blue-50/70"
                     : "text-slate-800 hover:text-blue-600 hover:bg-slate-50"
@@ -183,8 +198,9 @@ export function MegaMenuContent({ menuSections, error }: MegaMenuContentProps) {
                 <span>{section.title}</span>
                 <ChevronDown
                   size={13}
-                  className={`transition-transform duration-200 ${
-                    isActive ? "rotate-180 text-blue-600" : "text-slate-400"
+                  data-open={isActive}
+                  className={`${motion.chevron} ${
+                    isActive ? "text-blue-600" : "text-slate-400"
                   }`}
                 />
               </Link>
@@ -204,9 +220,11 @@ export function MegaMenuContent({ menuSections, error }: MegaMenuContentProps) {
           <div
             key={key}
             data-mega-menu-panel={key}
-            className={`absolute top-full left-0 right-0 w-full bg-white shadow-2xl border-t border-slate-100 z-50 transition-all duration-150 ${
-              isActive ? "block animate-in fade-in slide-in-from-top-1" : "hidden"
-            }`}
+            id={`mega-panel-${key}`}
+            data-open={isActive}
+            aria-hidden={!isActive}
+            inert={!isActive}
+            className={`${motion.panel} hidden xl:block absolute top-full left-0 right-0 w-full bg-white shadow-2xl border-t border-slate-100 z-50`}
             onMouseEnter={() => handleMouseEnter(key)}
             onMouseLeave={handleMouseLeave}
           >

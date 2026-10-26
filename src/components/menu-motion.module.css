@@ -1,0 +1,74 @@
+.scope {
+  --menu-ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.panel {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 160ms var(--menu-ease), transform 160ms var(--menu-ease), visibility 0s 160ms;
+}
+
+.panel[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.mobilePanel {
+  max-height: calc(100dvh - var(--menu-header-bottom, 160px));
+  overscroll-behavior: contain;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  transition-duration: 220ms, 220ms, 0s;
+  transition-delay: 0s, 0s, 220ms;
+}
+
+.mobilePanel[data-open="true"] { transition-delay: 0s; }
+
+@starting-style {
+  .panel[data-open="true"] {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+.chevron {
+  transition: transform 160ms var(--menu-ease);
+}
+
+.chevron[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.press {
+  touch-action: manipulation;
+  transition: transform 160ms var(--menu-ease);
+}
+
+.press:active {
+  transform: scale(0.97);
+  transition-duration: 100ms;
+}
+
+.scope[data-keyboard="true"] .panel,
+.scope[data-keyboard="true"] .chevron,
+.scope[data-keyboard="true"] .press {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .panel[data-open="true"],
+  .press:active {
+    transform: none;
+  }
+  .panel { transition: opacity 100ms ease, visibility 0s 100ms; }
+  .panel[data-open="true"] { transition-delay: 0s; }
+  .chevron { transition: none; }
+  @starting-style {
+    .panel[data-open="true"] { transform: none; }
+  }
+}
