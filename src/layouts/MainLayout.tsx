@@ -4,13 +4,15 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { siteConfig } from "@/config/siteConfig";
 import { Phone, Mail, Menu, Search, ShoppingBag, X, Heart, Home, FileText } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import motion from "@/components/menu-motion.module.css";
 import { Button } from "@/components/ui/button";
 import { OptimizedImage } from "@/components/ui/OptimizedImage";
 import { MegaMenu } from "@/components/MegaMenu";
+import { QuoteBanner } from '@/components/QuoteBanner';
 import type { MegaMenuSection, MenuItem } from "@/components/MegaMenu";
 import { useMainMenu } from "@/hooks/useMainMenu";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useExternalScripts } from "@/hooks/useExternalScripts";
 import { useAuth } from "@/context/AuthContext";
 import { signOut } from "@/services/authService";
@@ -30,6 +32,9 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hasOpenedMobileMenu, setHasOpenedMobileMenu] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
   const { menuSections } = useMainMenu();
@@ -39,7 +44,6 @@ export function MainLayout({ children }: MainLayoutProps) {
   const scriptsLoaded = useExternalScripts();
   const { user, profile } = useAuth();
   const { itemCount } = useCart();
-  const [isBannerVisible, setIsBannerVisible] = useState(true);
 
   const handleLogout = async () => {
     await signOut();
@@ -53,30 +57,7 @@ export function MainLayout({ children }: MainLayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans text-slate-900">
-      {/* Announcement Banner */}
-      {isBannerVisible && (
-        <div className="bg-[#e49b9b] text-white text-sm py-2.5 px-4 relative flex items-center justify-center z-50">
-          <div className="container mx-auto flex items-center justify-center text-center pr-8 max-md:flex-col max-md:gap-1">
-            <span>
-              <span className="font-bold mr-2">Aviso de mantenimiento:</span>
-              Las funciones de compra no están disponibles temporalmente.
-            </span>
-            <span>
-              Por favor, 
-              <a href={`https://wa.me/${siteConfig.whatsappNumber.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="underline font-bold ml-1 hover:text-white/80 transition-colors">
-                escríbenos por WhatsApp
-              </a> para pedidos o dudas.
-            </span>
-          </div>
-          <button 
-            onClick={() => setIsBannerVisible(false)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-white/80 transition-colors p-1"
-            aria-label="Cerrar aviso"
-          >
-            <X size={18} />
-          </button>
-        </div>
-      )}
+      <QuoteBanner />
 
       {/* Top Bar */}
       <div className="bg-white border-b border-slate-100 text-slate-600 text-[11px] py-2 font-medium tracking-wide hidden lg:block">
@@ -99,7 +80,16 @@ export function MainLayout({ children }: MainLayoutProps) {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 bg-white z-50 shadow-sm relative">
+      <header ref={headerRef} className={`${motion.scope} sticky top-0 bg-white z-50 shadow-sm relative`}
+        onKeyDownCapture={(event) => {
+          event.currentTarget.dataset.keyboard = "true";
+          if (event.key === "Escape" && isMobileMenuOpen) {
+            setIsMobileMenuOpen(false);
+            menuButtonRef.current?.focus();
+          }
+        }}
+        onPointerDownCapture={(event) => { event.currentTarget.dataset.keyboard = "false"; }}
+      >
         <div className="container mx-auto px-4 py-2.5 sm:py-3 md:py-5">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -244,9 +234,17 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <Search size={22} />
               </button>
               <button 
-                className="xl:hidden w-11 h-11 flex items-center justify-center hover:bg-slate-100 rounded-full text-slate-700 active:scale-95 transition-all"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className={`${motion.press} xl:hidden w-11 h-11 flex items-center justify-center hover:bg-slate-100 rounded-full text-slate-700`}
+                ref={menuButtonRef}
+                onClick={() => {
+                  const bottom = headerRef.current?.getBoundingClientRect().bottom ?? 160;
+                  headerRef.current?.style.setProperty("--menu-header-bottom", `${bottom}px`);
+                  setHasOpenedMobileMenu(true);
+                  setIsMobileMenuOpen(!isMobileMenuOpen);
+                }}
                 aria-label="Menú"
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-main-menu"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -288,8 +286,9 @@ export function MainLayout({ children }: MainLayoutProps) {
         )}
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-slate-100 bg-white absolute w-full left-0 shadow-lg h-[calc(100vh-80px)] overflow-y-auto z-50">
+        {hasOpenedMobileMenu && (
+          <div id="mobile-main-menu" data-open={isMobileMenuOpen} aria-hidden={!isMobileMenuOpen} inert={!isMobileMenuOpen}
+            className={`${motion.panel} ${motion.mobilePanel} xl:hidden border-t border-slate-100 bg-white absolute w-full left-0 shadow-lg overflow-y-auto z-50`}>
             <nav className="flex flex-col p-4 gap-2 font-medium text-sm uppercase">
               {menuSections && Object.entries(menuSections).map(([key, section]: [string, MegaMenuSection]) => (
                 <div key={key} className="border-b border-slate-50 last:border-0">
@@ -299,15 +298,17 @@ export function MainLayout({ children }: MainLayoutProps) {
                     </span>
                     <button 
                       onClick={() => toggleSubmenu(key)}
-                      className="p-2 text-slate-400 hover:text-blue-500"
+                      aria-label={`Mostrar categorías de ${section.title}`}
+                      aria-expanded={expandedMenu === key}
+                      className={`${motion.press} min-w-11 min-h-11 flex items-center justify-center text-slate-400 hover:text-blue-500`}
                     >
-                      {expandedMenu === key ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                      <ChevronDown size={16} className={motion.chevron} data-open={expandedMenu === key} />
                     </button>
                   </div>
                   
                   {/* Submenu Accordion */}
                   {expandedMenu === key && (
-                    <div className="pl-4 pb-2 bg-slate-50/50 rounded-md mb-2 animate-in slide-in-from-top-1">
+                    <div className="pl-4 pb-2 bg-slate-50/50 rounded-md mb-2">
                       {section.columns.map((col: MenuItem, idx: number) => (
                         <div key={idx} className="mb-3 last:mb-0">
                           <Link 
@@ -485,7 +486,7 @@ export function MainLayout({ children }: MainLayoutProps) {
       <footer className="bg-[#f8f9fa] pt-16 pb-8 text-slate-500 text-sm border-t border-slate-100">
         <div className="container mx-auto px-4 flex flex-col items-center mb-12">
              <div className="mb-8">
-                <img src="/images/footer/logo-footer.png" alt="IMPACTO33" width={220} height={45} loading="lazy" className="w-auto h-9 max-w-full" />
+                <img src="/images/footer/logo-footer.png" alt="IMPACTO33" width={153} height={153} loading="lazy" className="w-[153px] h-auto max-w-full" />
              </div>
         </div>
 

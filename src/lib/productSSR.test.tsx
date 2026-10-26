@@ -2,6 +2,8 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import ProductPage from "@/screens/shop/ProductPage";
+import { loadPricingData, calculateScaledPrice, formatEuroPrice } from '@/services/pricingService';
+import { includedZones } from '@/components/pricing/product-quote/includedZones';
 import {
   classifyProductResponse,
   extractFirstPrice,
@@ -71,15 +73,19 @@ describe("SSR de fichas de producto", () => {
     mockUseQuery.mockReturnValue({ data: undefined, loading: false, error: undefined });
   });
 
-  it("incluye el H1, descripción, precio e imagen reales en el HTML inicial", () => {
+  it("incluye el H1, descripción, precio personalizado e imagen en el HTML inicial", async () => {
+    const pricing = await loadPricingData('default');
+    const quantity = Math.max(...Object.keys(pricing.factores_escalado).map(Number).filter(n => n <= 1000));
+    const expected = calculateScaledPrice(5.86, quantity, includedZones(pricing), pricing).precioUnitarioFinal;
     const html = renderToStaticMarkup(
-      <ProductPage serverSlug={variableProduct.slug} initialProduct={variableProduct} />,
+      <ProductPage serverSlug={variableProduct.slug} initialProduct={variableProduct} initialPricingData={pricing} />,
     );
 
     expect(html).toContain("<h1");
     expect(html).toContain("Mochila deportiva personalizada");
     expect(html).toContain("Mochila resistente para eventos");
-    expect(html).toContain("Desde 5,86 €");
+    expect(html).toContain(`Desde ${formatEuroPrice(expected)}/ud`);
+    expect(html).toContain('impresión incluida');
     expect(html).toContain("https://example.com/mochila.jpg");
     expect(html).not.toContain("¡Vaya! Parece que te has perdido");
   });
@@ -117,6 +123,7 @@ describe("SSR de fichas de producto", () => {
     expect(headings.filter((heading) => heading.tagName === "H1")).toHaveLength(1);
     expect(headings.filter((heading) => heading.tagName === "H2").map((heading) => heading.textContent))
       .toEqual([
+        "Configura tu presupuesto",
         "Características principales de Mochila deportiva personalizada",
         "Opciones de personalización de Mochila deportiva personalizada",
         "Plazos, cantidades y presupuesto",
@@ -126,17 +133,20 @@ describe("SSR de fichas de producto", () => {
     expect(headings.some((heading) => ["H4", "H5", "H6"].includes(heading.tagName)))
       .toBe(false);
     expect(headings[0]?.textContent).toContain("Mochila deportiva personalizada");
-    expect(headings[1]?.textContent).toContain("Características principales");
+    expect(headings[1]?.textContent).toContain("Configura tu presupuesto");
   });
 
-  it("renderiza productos simples sin etiquetar su precio como Desde", () => {
+  it("renderiza también el precio personalizado por tramo de productos simples en SSR", async () => {
+    const pricing = await loadPricingData('default');
+    const quantity = Math.max(...Object.keys(pricing.factores_escalado).map(Number).filter(n => n <= 1000));
+    const expected = calculateScaledPrice(1.25, quantity, includedZones(pricing), pricing).precioUnitarioFinal;
     const html = renderToStaticMarkup(
-      <ProductPage serverSlug={simpleProduct.slug} initialProduct={simpleProduct} />,
+      <ProductPage serverSlug={simpleProduct.slug} initialProduct={simpleProduct} initialPricingData={pricing} />,
     );
 
     expect(html).toContain("Antifaz de viaje personalizado");
-    expect(html).toContain("1,25 €");
-    expect(html).not.toContain("Desde 1,25 €");
+    expect(html).toContain(`Desde ${formatEuroPrice(expected)}/ud`);
+    expect(html).toContain('impresión incluida');
   });
 
   it("evita la consulta Apollo cuando el servidor ya entregó el producto", () => {

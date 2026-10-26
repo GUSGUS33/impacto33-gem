@@ -1,3 +1,4 @@
+import type { DeliveryDates } from "@/lib/quoteSnapshot";
 import { useState, useMemo, useEffect } from 'react';
 import { Check } from 'lucide-react';
 import deliveryConfig from '@shared/config/delivery-times.json';
@@ -6,13 +7,17 @@ import { addBusinessDays, formatDeliveryDate } from '@shared/utils/businessDays'
 export type DeliveryOption = 'sin_prisa' | 'normal' | 'urgente';
 
 interface DeliveryTimeSelectorProps {
+  positiveHighlight?: boolean;
+  deliveryDates?: DeliveryDates;
   categorySlug?: string;
   onSelect: (option: DeliveryOption, surchargePercent: number) => void;
   defaultOption?: DeliveryOption;
 }
 
 export function DeliveryTimeSelector({
+  positiveHighlight = false,
   categorySlug,
+  deliveryDates: suppliedDeliveryDates,
   onSelect,
   defaultOption = deliveryConfig.defaultOption as DeliveryOption
 }: DeliveryTimeSelectorProps) {
@@ -33,13 +38,14 @@ export function DeliveryTimeSelector({
 
   // Calculate delivery dates for each option
   const deliveryDates = useMemo(() => {
+    if (suppliedDeliveryDates) return suppliedDeliveryDates;
     const today = new Date();
     return {
       sin_prisa: addBusinessDays(today, options.sin_prisa.businessDays),
       normal: addBusinessDays(today, options.normal.businessDays),
       urgente: addBusinessDays(today, options.urgente.businessDays)
     };
-  }, [options]);
+  }, [options, suppliedDeliveryDates]);
 
   const handleSelect = (option: DeliveryOption) => {
     setSelected(option);
@@ -61,12 +67,12 @@ export function DeliveryTimeSelector({
         aria-pressed={isSelected}
         className={`relative flex min-h-28 flex-col items-center justify-center p-3 border-2 rounded-lg transition-all sm:p-4 ${
           isSelected
-            ? 'border-red-600 bg-red-50'
-            : 'border-slate-300 bg-white hover:border-red-400'
+            ? (positiveHighlight ? 'border-green-700 bg-green-50' : 'border-red-600 bg-red-50')
+            : (positiveHighlight ? 'border-slate-300 bg-white hover:border-green-600' : 'border-slate-300 bg-white hover:border-red-400')
         }`}
       >
         {isSelected && (
-          <div className="absolute top-2 right-2 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+          <div className={`absolute top-2 right-2 w-6 h-6 ${positiveHighlight ? 'bg-green-700' : 'bg-red-600'} rounded-full flex items-center justify-center`}>
             <Check className="w-4 h-4 text-white" />
           </div>
         )}
@@ -76,7 +82,7 @@ export function DeliveryTimeSelector({
         <div className="text-sm text-slate-600 mb-3">{month}</div>
         
         <div className={`px-4 py-1 rounded text-sm font-semibold ${
-          isSelected ? 'bg-red-600 text-white' : 'bg-slate-200 text-slate-700'
+          isSelected ? (positiveHighlight ? 'bg-green-700 text-white' : 'bg-red-600 text-white') : 'bg-slate-200 text-slate-700'
         }`}>
           {option.label}
         </div>

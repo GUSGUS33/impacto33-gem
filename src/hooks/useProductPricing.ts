@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { usePriceCalculation } from './usePriceCalculation';
 import { usePricingData } from './usePricing';
 import { Product } from "@shared/types";
+import { normalizeProductPrice } from '@/lib/normalizeProductPrice';
 
 interface UseProductPricingProps {
   product: Product;
@@ -188,7 +189,7 @@ export const useProductPricing = ({
           size,
           stockStatus: variation.stockStatus,
           stockQuantity: effectiveStock,
-          price: variation.price ? parseFloat(variation.price.replace(/[^0-9.,]/g, '').replace(',', '.')) : basePrice,
+          price: variation.price ? normalizeProductPrice(variation.price) : basePrice,
           variationId: variation.id
         };
       } else {

@@ -1,4 +1,6 @@
 import { cache } from "react";
+import { loadPricingData } from '@/services/pricingService';
+import { sameFamilyRelated } from '@/lib/relatedProductFamily';
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProductPageClient } from "./ProductPageClient";
@@ -123,7 +125,7 @@ export default async function ProductoPage({ params }: ProductPageProps) {
     getPricingFamilyFromCategory(pricingCategory),
   ).cantidad_minima;
   const faqs = buildProductFaqs(product.name, minimumQuantity);
-  const relatedItems = (product.related?.nodes || []).slice(0, 4).map((relatedProduct: any) => ({
+  const relatedItems = sameFamilyRelated(product).slice(0, 4).map((relatedProduct: any) => ({
     name: relatedProduct.name,
     url: getCanonicalUrl(`/producto/${relatedProduct.slug}`),
     image: relatedProduct.featuredImage?.node?.sourceUrl,
@@ -141,7 +143,7 @@ export default async function ProductoPage({ params }: ProductPageProps) {
           items: relatedItems,
         } : undefined}
       />
-      <ProductPageClient slug={slug} initialProduct={product} />
+      <ProductPageClient slug={slug} initialProduct={product} initialPricingData={await loadPricingData(pricingCategory)} />
     </>
   );
 }

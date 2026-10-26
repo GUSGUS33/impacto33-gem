@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import type { PricingData } from '@/types/pricing';
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useQuery } from "@apollo/client";
@@ -8,7 +9,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Check, ChevronRight, ShieldCheck, Truck } from "lucide-react";
 import NotFound from "@/screens/NotFound";
 import { GET_FULL_VARIABLE_PRODUCT } from "@/lib/queries";
-import ProductPricingFlow from "@/components/pricing/ProductPricingFlow";
+import ProductPricingFlow from "@/components/pricing/product-quote/ProductQuoteCalculator";
+import FromPrice from "@/components/pricing/product-quote/FromPrice";
+import calculatorStyles from "@/components/pricing/product-quote/calculator.module.css";
 import ProductEditorialContent from "@/components/ProductEditorialContent";
 import { getProductBreadcrumbChain } from "@/lib/slugMap";
 import { formatPrice } from "@/lib/utils";
@@ -22,9 +25,10 @@ import {
 interface ProductPageProps {
   serverSlug?: string;
   initialProduct?: any;
+  initialPricingData?: PricingData;
 }
 
-export default function ProductPage({ serverSlug, initialProduct }: ProductPageProps) {
+export default function ProductPage({ serverSlug, initialProduct, initialPricingData }: ProductPageProps) {
   const params = useParams();
   const [activeImage, setActiveImage] = useState<string | null>(null);
   const slug = serverSlug || (params?.slug as string);
@@ -131,8 +135,8 @@ export default function ProductPage({ serverSlug, initialProduct }: ProductPageP
         <div className="grid grid-cols-1 gap-7 lg:grid-cols-2 lg:gap-12">
           
           {/* Columna Izquierda: Galería */}
-          <div className="order-2 space-y-4 lg:order-1">
-            <div className="aspect-square bg-slate-50 border border-slate-200 rounded-xl overflow-hidden relative group shadow-sm sm:aspect-[4/5]">
+          <div className={`order-2 space-y-4 lg:order-1 ${calculatorStyles.stickyGallery}`}>
+            <div data-has-image={Boolean(currentImage)} className={`aspect-square bg-slate-50 border border-slate-200 rounded-xl overflow-hidden relative group shadow-sm sm:aspect-[4/5] ${calculatorStyles.galleryImage}`}>
               {currentImage ? (
                 <img 
                   src={currentImage} 
@@ -179,7 +183,7 @@ export default function ProductPage({ serverSlug, initialProduct }: ProductPageP
             
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <div className="text-2xl font-bold text-blue-700">
-                  {displayPrice}
+                  <FromPrice initialPricingData={initialPricingData} regularPrice={product.price ? parseFloat(String(product.price).replace(/[^0-9.,]/g, '').replace(',', '.')) : 0} categorySlug={pricingCategory} />
                 </div>
                 {product.stockStatus === 'IN_STOCK' && (
                   <span className="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
@@ -203,6 +207,7 @@ export default function ProductPage({ serverSlug, initialProduct }: ProductPageP
             {/* Product Pricing Flow Integrado */}
             <div id="configurar-producto" data-product-pricing className="order-3 scroll-mt-28 lg:order-none lg:mt-6">
               <ProductPricingFlow 
+                key={product.slug || product.id}
                 product={product}
                 onColorChange={(colorName, colorImage) => setActiveImage(colorImage || mainImage)}
               />

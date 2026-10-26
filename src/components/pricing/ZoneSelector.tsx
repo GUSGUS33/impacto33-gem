@@ -1,3 +1,4 @@
+import { formatEuroPrice } from '@/services/pricingService';
 import React from 'react';
 import { Check } from 'lucide-react';
 import { useNotification } from '@/hooks/useNotification';
@@ -31,7 +32,7 @@ const ZoneSelector: React.FC<ZoneSelectorProps> = ({
     onZoneChange(zoneId);
     if (zone) {
       if (!isSelected) {
-        success(`${zone.label} anadida (+${zone.cost.toFixed(2)} eur/ud)`);
+        success(`${zone.label} anadida (+${formatEuroPrice(zone.cost)}/ud)`);
       } else {
         info(`${zone.label} removida`);
       }
@@ -81,7 +82,7 @@ const ZoneSelector: React.FC<ZoneSelectorProps> = ({
               <span className="text-2xl mb-2 filter drop-shadow-sm">{getZoneIcon(zone.id)}</span>
               <span className="text-sm font-bold">{zone.label}</span>
               <span className="text-xs text-slate-500 mt-1 font-medium">
-                +{zone.cost.toFixed(2)}€/ud
+                +{formatEuroPrice(zone.cost)}/ud
               </span>
             </button>
           );

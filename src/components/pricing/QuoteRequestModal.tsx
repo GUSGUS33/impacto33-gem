@@ -1,4 +1,7 @@
-import { useState } from 'react';
+import { QuoteTotals } from "./QuoteTotals";
+import { captureQuoteSnapshot, getDeliveryDates, type QuoteSnapshot, type DeliveryDates } from "@/lib/quoteSnapshot";
+import { formatEuroPrice } from "@/services/pricingService";
+import { useState, useMemo } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,6 +15,8 @@ import { useQuote } from '../../contexts/QuoteContext';
 import { DeliveryTimeSelector } from './DeliveryTimeSelector';
 
 interface QuoteRequestModalProps {
+  quoteSnapshot?: QuoteSnapshot;
+  deliveryDates?: DeliveryDates;
   isOpen: boolean;
   onClose: () => void;
   product: Product;
@@ -28,6 +33,8 @@ interface QuoteRequestModalProps {
 }
 
 export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
+  quoteSnapshot,
+  deliveryDates: suppliedDeliveryDates,
   isOpen,
   onClose,
   product,
@@ -43,6 +50,12 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
   onDeliveryOptionChange
 }) => {
   const { submitQuote } = useQuote();
+  const deliveryDates = useMemo(() => suppliedDeliveryDates || getDeliveryDates(categorySlug), [suppliedDeliveryDates, categorySlug]);
+  // Legacy callers do not supply a snapshot: capture their existing popup amounts once.
+  const displayedQuote = useMemo(() => quoteSnapshot || captureQuoteSnapshot(
+    priceCalculation, deliverySurchargePercent, selectedDeliveryOption,
+    deliveryDates[selectedDeliveryOption], selectedPrintingMethod
+  ), [quoteSnapshot, priceCalculation, deliverySurchargePercent, selectedDeliveryOption, deliveryDates, selectedPrintingMethod]);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -71,13 +84,14 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
         product: {
           id: product.id,
           name: product.name,
-          sku: '',
+          sku: (product as Product & { sku?: string }).sku || '',
           image: product.featuredImage?.node?.sourceUrl || '',
           selectedColor,
-          quantities,
+          quantities: Object.fromEntries(Object.entries(quantities).filter(([, qty]) => qty !== 0)),
           selectedZones
         },
-        pricing: priceCalculation
+        pricing: priceCalculation,
+        quoteSnapshot: displayedQuote
       });
 
       setSuccess(true);
@@ -143,6 +157,8 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
           <div className="bg-white flex flex-col hidden lg:flex overflow-hidden lg:border-r border-slate-200">
             <ScrollArea className="flex-1 h-full">
               <div className="p-4 sm:p-6 lg:p-8 space-y-6 sm:space-y-8">
+                {/* Total first, followed by its breakdown and order details. */}
+                <QuoteTotals quote={displayedQuote} sku={(product as Product & { sku?: string }).sku || ''} />
                 
                 {/* Producto */}
                 <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm border border-slate-200">
@@ -181,8 +197,8 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
                         <div key={size} className="flex items-center justify-between p-2 sm:p-3 bg-slate-50 rounded-lg border border-slate-200">
                           <span className="font-medium text-xs sm:text-sm text-slate-900">Talla {size}</span>
                           <div className="text-right">
-                            <p className="text-xs sm:text-sm text-slate-600">{qty} uds. × {unitPrice.toFixed(2)}€</p>
-                            <p className="font-bold text-sm sm:text-base text-blue-600">{total.toFixed(2)}€</p>
+                            <p className="text-xs sm:text-sm text-slate-600">{qty} uds. × {formatEuroPrice(unitPrice)}</p>
+                            <p className="font-bold text-sm sm:text-base text-blue-600">{formatEuroPrice(total)}</p>
                           </div>
                         </div>
                       );
@@ -230,6 +246,8 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
                 {/* Selector de Tiempo de Entrega */}
                 <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-sm border border-slate-200">
                   <DeliveryTimeSelector
+                    positiveHighlight
+                    deliveryDates={deliveryDates}
                     key={selectedDeliveryOption}
                     categorySlug={categorySlug}
                     onSelect={(option, surchargePercent) => {
@@ -239,27 +257,6 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
                   />
                 </div>
 
-                {/* Totales */}
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg sm:rounded-xl p-4 sm:p-6 border-2 border-blue-200 space-y-3 sm:space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-blue-200 gap-2">
-                    <span className="text-xs sm:text-sm text-slate-700">Subtotal</span>
-                    <span className="font-semibold text-sm sm:text-base text-slate-900">{priceCalculation.precioTotalSinIVA.toFixed(2)}€</span>
-                  </div>
-                  {deliverySurchargePercent > 0 && (
-                    <div className="flex justify-between items-center py-2 border-b border-blue-200 gap-2">
-                      <span className="text-xs sm:text-sm text-slate-700">Recargo entrega ({deliverySurchargePercent}%)</span>
-                      <span className="font-semibold text-sm sm:text-base text-slate-900">{((priceCalculation.precioTotalSinIVA * deliverySurchargePercent) / 100).toFixed(2)}€</span>
-                    </div>
-                  )}
-                  <div className="flex justify-between items-center py-2 border-b border-blue-200 gap-2">
-                    <span className="text-xs sm:text-sm text-slate-700">IVA (21%)</span>
-                    <span className="font-semibold text-sm sm:text-base text-slate-900">{(((priceCalculation.precioTotalSinIVA * (1 + deliverySurchargePercent / 100)) * 1.21) - (priceCalculation.precioTotalSinIVA * (1 + deliverySurchargePercent / 100))).toFixed(2)}€</span>
-                  </div>
-                  <div className="flex justify-between items-center pt-3 sm:pt-4 gap-2">
-                    <span className="text-base sm:text-lg font-bold text-slate-900">TOTAL</span>
-                    <span className="text-2xl sm:text-3xl font-bold text-blue-600">{((priceCalculation.precioTotalSinIVA * (1 + deliverySurchargePercent / 100)) * 1.21).toFixed(2)}€</span>
-                  </div>
-                </div>
               </div>
             </ScrollArea>
           </div>
@@ -410,6 +407,7 @@ export const QuoteRequestModal: React.FC<QuoteRequestModalProps> = ({
 
         {/* Mobile: Formulario debajo en móvil - Sin limitación de altura */}
         <div className="lg:hidden bg-white border-t border-slate-200 p-4 sm:p-6">
+          <QuoteTotals quote={displayedQuote} sku={(product as Product & { sku?: string }).sku || ''} />
           {success ? (
             <div className="flex flex-col items-center justify-center text-center space-y-4">
               <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center">

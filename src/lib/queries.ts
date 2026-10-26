@@ -68,6 +68,10 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
         }
         related(first: 4) {
           nodes {
+            ... on VariableProduct { productCategories { nodes { slug } } }
+            ... on SimpleProduct { productCategories { nodes { slug } } }
+            ... on VariableProduct { attributes { nodes { name options } } }
+            ... on SimpleProduct { attributes { nodes { name options } } }
             id
             name
             slug
@@ -142,6 +146,10 @@ export const GET_FULL_VARIABLE_PRODUCT = gql`
         }
         related(first: 4) {
           nodes {
+            ... on VariableProduct { productCategories { nodes { slug } } }
+            ... on SimpleProduct { productCategories { nodes { slug } } }
+            ... on VariableProduct { attributes { nodes { name options } } }
+            ... on SimpleProduct { attributes { nodes { name options } } }
             id
             name
             slug
